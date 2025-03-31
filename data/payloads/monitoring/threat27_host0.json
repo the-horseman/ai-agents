@@ -1,0 +1,2737 @@
+{
+  "detections": [
+    {
+      "id": "3605273738",
+      "traceId": "6788a5db-0731-42a1-a6ee-b5f924466fd6",
+      "firstDetected": "2024-01-31T13:48:46Z",
+      "severity": "s4",
+      "rank": 271,
+      "tags": [
+        "@ATE.T1021.003",
+        "@ATE.T1134.001",
+        "@MSI._hunting_credential_access2",
+        "@ATA.LateralMovement",
+        "@MSI._process_unistall_reg",
+        "@ATE.T1047",
+        "@MSI._ps_assembly_load",
+        "@ATE.T1082",
+        "@ATA.DefenseEvasion",
+        "@ATE.T1016",
+        "@MSI._process_ps_process_list",
+        "@ATE.T1003.005",
+        "@MSI._process_ps_get_process",
+        "@ATA.Persistence",
+        "@ATA.Discovery",
+        "@ATE.T1074.001",
+        "@ATE.T1057",
+        "@MSI._process_lolbas_no_param_csc",
+        "@ATE.T1033",
+        "@ATA.PrivilegeEscalation",
+        "@MSI._process_exec2",
+        "@ATE.T1204.002",
+        "@MSI._apt_process_PS_Get_systeminfo",
+        "@MSI._process_psdownload_script",
+        "@MSI._process_pssteal_credentials",
+        "@ATE.T1059.001",
+        "@MSI._hunting_pe_created_geno",
+        "@ATE.T1570",
+        "@MSI._apt_process_PS_win32_systeminfo",
+        "@ATA.CommandAndControl",
+        "@ATE.T1106",
+        "@ATE.T1105",
+        "@ATE.T1059",
+        "@MSI._process_core_ps_download",
+        "@MSI._process_psdownload_executable",
+        "@ATE.T1134",
+        "@ATE.T1059.003",
+        "@ATE.T1559.001",
+        "@MSI._process_exec3",
+        "@ATE.T1547.009",
+        "@MSI._apt_process_PS_env_systeminfo",
+        "@MSI._process_suspicious_path",
+        "@MSI._process_regsvr32_register",
+        "@MSI._apt_process_PS_env_userinfo",
+        "@MSI._process_epp_response_blocked",
+        "@ATA.Execution",
+        "@ATA.Collection",
+        "@MSI._apt_process_PS_Get_userinfo",
+        "@MSI._process_local_data_staging",
+        "@MSI._apt_process_gwmi",
+        "@MSI._process_unmanaged_powershell",
+        "@MSI._hunting_pe_created_geno_path",
+        "@ATA.CredentialAccess",
+        "@MSI._process_ps_comobject",
+        "@ATE.T1083",
+        "@MSI._process_create_suspicious_file",
+        "@MSI._api_token_impersonation",
+        "@ATE.T1518",
+        "@MSI._file_sysscript",
+        "@ATE.T1129",
+        "@ATE.T1087.001",
+        "@ATE.T1071",
+        "@ATE.T1218.010",
+        "@ATE.T1036",
+        "@MSI._process_psofficeapp"
+      ],
+      "host": {
+        "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+        "hostname": "800IS268",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-26T12:55:50Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "ac:1a:3d:5f:0f:0a",
+            "ip": "169.254.218.187",
+            "type": 6
+          },
+          {
+            "name": "vEthernet (Default Switch)",
+            "macAddress": "00:15:5d:0f:b9:bd",
+            "ip": "172.24.176.1",
+            "type": 6
+          },
+          {
+            "name": "vEthernet (WSL)",
+            "macAddress": "00:15:5d:d4:23:be",
+            "ip": "192.168.240.1",
+            "type": 6
+          },
+          {
+            "name": "Ethernet 4",
+            "macAddress": "0a:00:27:00:00:06",
+            "ip": "192.168.56.1",
+            "type": 6
+          },
+          {
+            "name": "Local Area Connection* 9",
+            "macAddress": "e4:60:17:db:dc:02",
+            "ip": "169.254.131.61",
+            "type": 71
+          },
+          {
+            "name": "Local Area Connection* 10",
+            "macAddress": "e6:60:17:db:dc:01",
+            "ip": "169.254.134.180",
+            "type": 71
+          },
+          {
+            "name": "Wi-Fi",
+            "macAddress": "e4:60:17:db:dc:01",
+            "ip": "10.0.0.18",
+            "type": 71
+          },
+          {
+            "name": "Bluetooth Network Connection",
+            "macAddress": "e4:60:17:db:dc:05",
+            "ip": "169.254.8.148",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "924E37885D4B3B365225C773A6C4266ED7076494E3693EC487BEC066AB5BC5F7"
+    },
+    {
+      "id": "3633337643",
+      "traceId": "9acb6b9e-b0a9-458b-b0b0-bf05f5b82e34",
+      "firstDetected": "2024-02-22T13:56:00Z",
+      "severity": "s4",
+      "rank": 271,
+      "tags": [
+        "@ATE.T1021.003",
+        "@ATE.T1134.001",
+        "@MSI._hunting_credential_access2",
+        "@ATA.LateralMovement",
+        "@MSI._process_unistall_reg",
+        "@ATE.T1047",
+        "@MSI._ps_assembly_load",
+        "@ATE.T1082",
+        "@ATA.DefenseEvasion",
+        "@ATE.T1016",
+        "@MSI._process_ps_process_list",
+        "@ATE.T1003.005",
+        "@MSI._process_ps_get_process",
+        "@ATA.Persistence",
+        "@ATA.Discovery",
+        "@ATE.T1074.001",
+        "@ATE.T1057",
+        "@ATE.T1033",
+        "@ATA.PrivilegeEscalation",
+        "@MSI._process_exec2",
+        "@ATE.T1204.002",
+        "@MSI._apt_process_PS_Get_systeminfo",
+        "@MSI._process_psdownload_script",
+        "@MSI._process_pssteal_credentials",
+        "@ATE.T1059.001",
+        "@ATE.T1570",
+        "@MSI._apt_process_PS_win32_systeminfo",
+        "@ATA.CommandAndControl",
+        "@ATE.T1106",
+        "@ATE.T1105",
+        "@ATE.T1059",
+        "@MSI._process_core_ps_download",
+        "@MSI._process_psdownload_executable",
+        "@ATE.T1134",
+        "@ATE.T1059.003",
+        "@ATE.T1559.001",
+        "@MSI._process_exec3",
+        "@ATE.T1547.009",
+        "@MSI._apt_process_PS_env_systeminfo",
+        "@MSI._process_suspicious_path",
+        "@MSI._apt_process_PS_env_userinfo",
+        "@MSI._process_epp_response_blocked",
+        "@ATA.Execution",
+        "@ATA.Collection",
+        "@MSI._apt_process_PS_Get_userinfo",
+        "@MSI._process_local_data_staging",
+        "@MSI._apt_process_gwmi",
+        "@MSI._process_unmanaged_powershell",
+        "@MSI._hunting_pe_created_geno_path",
+        "@ATA.CredentialAccess",
+        "@MSI._process_ps_comobject",
+        "@ATE.T1083",
+        "@MSI._process_create_suspicious_file",
+        "@MSI._api_token_impersonation",
+        "@ATE.T1518",
+        "@MSI._file_sysscript",
+        "@ATE.T1129",
+        "@ATE.T1087.001",
+        "@ATE.T1071",
+        "@ATE.T1036",
+        "@MSI._process_psofficeapp"
+      ],
+      "host": {
+        "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+        "hostname": "800IS268",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-26T12:55:50Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "ac:1a:3d:5f:0f:0a",
+            "ip": "169.254.218.187",
+            "type": 6
+          },
+          {
+            "name": "vEthernet (Default Switch)",
+            "macAddress": "00:15:5d:0f:b9:bd",
+            "ip": "172.24.176.1",
+            "type": 6
+          },
+          {
+            "name": "vEthernet (WSL)",
+            "macAddress": "00:15:5d:d4:23:be",
+            "ip": "192.168.240.1",
+            "type": 6
+          },
+          {
+            "name": "Ethernet 4",
+            "macAddress": "0a:00:27:00:00:06",
+            "ip": "192.168.56.1",
+            "type": 6
+          },
+          {
+            "name": "Local Area Connection* 9",
+            "macAddress": "e4:60:17:db:dc:02",
+            "ip": "169.254.131.61",
+            "type": 71
+          },
+          {
+            "name": "Local Area Connection* 10",
+            "macAddress": "e6:60:17:db:dc:01",
+            "ip": "169.254.134.180",
+            "type": 71
+          },
+          {
+            "name": "Wi-Fi",
+            "macAddress": "e4:60:17:db:dc:01",
+            "ip": "10.0.0.18",
+            "type": 71
+          },
+          {
+            "name": "Bluetooth Network Connection",
+            "macAddress": "e4:60:17:db:dc:05",
+            "ip": "169.254.8.148",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "924E37885D4B3B365225C773A6C4266ED7076494E3693EC487BEC066AB5BC5F7"
+    },
+    {
+      "id": "3633421751",
+      "traceId": "3d9cf0a2-bf57-451c-8984-954fdaf45550",
+      "firstDetected": "2024-02-22T14:59:13Z",
+      "severity": "s1",
+      "rank": 100,
+      "tags": [
+        "@ATA.CommandAndControl",
+        "@ATE.T1021.003",
+        "@ATE.T1106",
+        "@ATE.T1134.001",
+        "@ATE.T1105",
+        "@MSI._hunting_credential_access2",
+        "@ATE.T1059",
+        "@ATA.LateralMovement",
+        "@MSI._process_core_ps_download",
+        "@ATE.T1021",
+        "@ATE.T1134",
+        "@ATE.T1059.003",
+        "@ATE.T1559.001",
+        "@MSI._process_remote_services",
+        "@ATE.T1082",
+        "@ATA.DefenseEvasion",
+        "@ATE.T1016",
+        "@ATE.T1547.009",
+        "@ATE.T1003.005",
+        "@ATA.Persistence",
+        "@MSI._apt_process_PS_env_systeminfo",
+        "@MSI._process_suspicious_path",
+        "@MSI._apt_process_PS_env_userinfo",
+        "@ATA.Discovery",
+        "@ATE.T1074.001",
+        "@MSI._apt_process_netshwinhttp_discovery",
+        "@ATA.Execution",
+        "@ATA.Collection",
+        "@ATE.T1057",
+        "@MSI._apt_process_PS_Get_userinfo",
+        "@MSI._process_local_data_staging",
+        "@MSI._process_unmanaged_powershell",
+        "@ATE.T1033",
+        "@ATA.PrivilegeEscalation",
+        "@ATA.CredentialAccess",
+        "@MSI._process_ps_comobject",
+        "@MSI._process_exec2",
+        "@ATE.T1083",
+        "@ATE.T1218.007",
+        "@MSI._api_token_impersonation",
+        "@MSI._file_sysscript",
+        "@MSI._process_pssteal_credentials",
+        "@ATE.T1059.001",
+        "@ATE.T1087.001",
+        "@ATE.T1071",
+        "@MSI._apt_file_msiinstall",
+        "@ATE.T1036",
+        "@MSI._process_psofficeapp"
+      ],
+      "host": {
+        "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+        "hostname": "800IS268",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-26T12:55:50Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "ac:1a:3d:5f:0f:0a",
+            "ip": "169.254.218.187",
+            "type": 6
+          },
+          {
+            "name": "vEthernet (Default Switch)",
+            "macAddress": "00:15:5d:0f:b9:bd",
+            "ip": "172.24.176.1",
+            "type": 6
+          },
+          {
+            "name": "vEthernet (WSL)",
+            "macAddress": "00:15:5d:d4:23:be",
+            "ip": "192.168.240.1",
+            "type": 6
+          },
+          {
+            "name": "Ethernet 4",
+            "macAddress": "0a:00:27:00:00:06",
+            "ip": "192.168.56.1",
+            "type": 6
+          },
+          {
+            "name": "Local Area Connection* 9",
+            "macAddress": "e4:60:17:db:dc:02",
+            "ip": "169.254.131.61",
+            "type": 71
+          },
+          {
+            "name": "Local Area Connection* 10",
+            "macAddress": "e6:60:17:db:dc:01",
+            "ip": "169.254.134.180",
+            "type": 71
+          },
+          {
+            "name": "Wi-Fi",
+            "macAddress": "e4:60:17:db:dc:01",
+            "ip": "10.0.0.18",
+            "type": 71
+          },
+          {
+            "name": "Bluetooth Network Connection",
+            "macAddress": "e4:60:17:db:dc:05",
+            "ip": "169.254.8.148",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "924E37885D4B3B365225C773A6C4266ED7076494E3693EC487BEC066AB5BC5F7"
+    },
+    {
+      "id": "3633421753",
+      "traceId": "a02015ad-75f9-4777-8474-c60797756a2e",
+      "firstDetected": "2024-02-22T14:59:13Z",
+      "severity": "s1",
+      "rank": 100,
+      "tags": [
+        "@ATE.T1021.003",
+        "@ATE.T1134.001",
+        "@MSI._hunting_credential_access2",
+        "@ATA.LateralMovement",
+        "@MSI._process_unistall_reg",
+        "@ATE.T1047",
+        "@MSI._ps_assembly_load",
+        "@ATE.T1140",
+        "@MSI._process_dotnet_binary_suspicious_launch",
+        "@MSI._apt_file_addcert",
+        "@ATE.T1553.004",
+        "@MSI._api_tokenimpersonation_privileges",
+        "@ATE.T1082",
+        "@ATA.DefenseEvasion",
+        "@ATE.T1016",
+        "@MSI._process_ps_process_list",
+        "@ATE.T1003.005",
+        "@MSI._process_csc_cmdline_compiling",
+        "@MSI._process_ps_get_process",
+        "@ATA.Persistence",
+        "@ATA.Discovery",
+        "@ATE.T1074.001",
+        "@ATE.T1057",
+        "@MSI._process_lolbas_no_param_csc",
+        "@ATE.T1033",
+        "@ATA.PrivilegeEscalation",
+        "@MSI._process_exec2",
+        "@ATE.T1204.002",
+        "@MSI._apt_process_PS_Get_systeminfo",
+        "@MSI._process_psdownload_script",
+        "@MSI._process_pssteal_credentials",
+        "@ATE.T1059.001",
+        "@MSI._hunting_pe_created_geno",
+        "@ATE.T1570",
+        "@MSI._apt_process_PS_win32_systeminfo",
+        "@ATA.CommandAndControl",
+        "@ATE.T1106",
+        "@ATE.T1105",
+        "@ATE.T1059",
+        "@MSI._process_core_ps_download",
+        "@MSI._process_psdownload_executable",
+        "@ATE.T1134",
+        "@ATE.T1059.003",
+        "@ATE.T1559.001",
+        "@ATE.T1027",
+        "@MSI._process_psencoded",
+        "@MSI._process_file_deleted_via_encoded_powershell",
+        "@ATE.T1547.009",
+        "@MSI._apt_process_PS_env_systeminfo",
+        "@MSI._process_suspicious_path",
+        "@ATE.T1127",
+        "@MSI._apt_process_PS_env_userinfo",
+        "@ATA.Execution",
+        "@ATA.Collection",
+        "@MSI._apt_process_PS_Get_userinfo",
+        "@MSI._process_local_data_staging",
+        "@MSI._apt_process_gwmi",
+        "@MSI._process_unmanaged_powershell",
+        "@ATA.CredentialAccess",
+        "@MSI._process_ps_comobject",
+        "@ATE.T1083",
+        "@MSI._process_anyfileread_via_powershell",
+        "@MSI._api_token_impersonation",
+        "@ATE.T1518",
+        "@MSI._file_sysscript",
+        "@ATE.T1129",
+        "@ATE.T1087.001",
+        "@ATE.T1071",
+        "@ATE.T1127.001",
+        "@MSI._process_epp_response_would_blocked",
+        "@ATE.T1036",
+        "@MSI._process_psofficeapp",
+        "@ATE.T1070.004"
+      ],
+      "host": {
+        "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+        "hostname": "800IS268",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-26T12:55:50Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "ac:1a:3d:5f:0f:0a",
+            "ip": "169.254.218.187",
+            "type": 6
+          },
+          {
+            "name": "vEthernet (Default Switch)",
+            "macAddress": "00:15:5d:0f:b9:bd",
+            "ip": "172.24.176.1",
+            "type": 6
+          },
+          {
+            "name": "vEthernet (WSL)",
+            "macAddress": "00:15:5d:d4:23:be",
+            "ip": "192.168.240.1",
+            "type": 6
+          },
+          {
+            "name": "Ethernet 4",
+            "macAddress": "0a:00:27:00:00:06",
+            "ip": "192.168.56.1",
+            "type": 6
+          },
+          {
+            "name": "Local Area Connection* 9",
+            "macAddress": "e4:60:17:db:dc:02",
+            "ip": "169.254.131.61",
+            "type": 71
+          },
+          {
+            "name": "Local Area Connection* 10",
+            "macAddress": "e6:60:17:db:dc:01",
+            "ip": "169.254.134.180",
+            "type": 71
+          },
+          {
+            "name": "Wi-Fi",
+            "macAddress": "e4:60:17:db:dc:01",
+            "ip": "10.0.0.18",
+            "type": 71
+          },
+          {
+            "name": "Bluetooth Network Connection",
+            "macAddress": "e4:60:17:db:dc:05",
+            "ip": "169.254.8.148",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "924E37885D4B3B365225C773A6C4266ED7076494E3693EC487BEC066AB5BC5F7"
+    },
+    {
+      "id": "3633430763",
+      "traceId": "259f92ca-ae01-4957-a578-3d72a835a552",
+      "firstDetected": "2024-02-22T15:04:18Z",
+      "severity": "s1",
+      "rank": 100,
+      "tags": [
+        "@ATE.T1021.003",
+        "@ATE.T1134.001",
+        "@MSI._hunting_credential_access2",
+        "@ATA.LateralMovement",
+        "@MSI._process_unistall_reg",
+        "@ATE.T1047",
+        "@MSI._ps_assembly_load",
+        "@ATE.T1082",
+        "@ATA.DefenseEvasion",
+        "@ATE.T1016",
+        "@MSI._process_ps_process_list",
+        "@ATE.T1003.005",
+        "@MSI._process_ps_get_process",
+        "@ATA.Persistence",
+        "@ATA.Discovery",
+        "@ATE.T1074.001",
+        "@ATE.T1057",
+        "@ATE.T1033",
+        "@ATA.PrivilegeEscalation",
+        "@MSI._process_exec2",
+        "@MSI._apt_process_PS_Get_systeminfo",
+        "@MSI._process_psdownload_script",
+        "@MSI._process_pssteal_credentials",
+        "@ATE.T1059.001",
+        "@MSI._apt_file_msiinstall",
+        "@MSI._apt_process_PS_win32_systeminfo",
+        "@ATA.CommandAndControl",
+        "@ATE.T1106",
+        "@ATE.T1105",
+        "@ATE.T1059",
+        "@MSI._process_core_ps_download",
+        "@ATE.T1134",
+        "@ATE.T1059.003",
+        "@ATE.T1559.001",
+        "@ATE.T1547.009",
+        "@MSI._apt_process_PS_env_systeminfo",
+        "@MSI._process_suspicious_path",
+        "@MSI._apt_process_PS_env_userinfo",
+        "@ATA.Execution",
+        "@ATA.Collection",
+        "@MSI._apt_process_PS_Get_userinfo",
+        "@MSI._process_local_data_staging",
+        "@MSI._apt_process_gwmi",
+        "@MSI._process_unmanaged_powershell",
+        "@ATA.CredentialAccess",
+        "@MSI._process_ps_comobject",
+        "@ATE.T1083",
+        "@ATE.T1218.007",
+        "@MSI._api_token_impersonation",
+        "@ATE.T1518",
+        "@MSI._file_sysscript",
+        "@ATE.T1129",
+        "@ATE.T1087.001",
+        "@ATE.T1071",
+        "@ATE.T1036",
+        "@MSI._process_psofficeapp"
+      ],
+      "host": {
+        "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+        "hostname": "800IS268",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-26T12:55:50Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "ac:1a:3d:5f:0f:0a",
+            "ip": "169.254.218.187",
+            "type": 6
+          },
+          {
+            "name": "vEthernet (Default Switch)",
+            "macAddress": "00:15:5d:0f:b9:bd",
+            "ip": "172.24.176.1",
+            "type": 6
+          },
+          {
+            "name": "vEthernet (WSL)",
+            "macAddress": "00:15:5d:d4:23:be",
+            "ip": "192.168.240.1",
+            "type": 6
+          },
+          {
+            "name": "Ethernet 4",
+            "macAddress": "0a:00:27:00:00:06",
+            "ip": "192.168.56.1",
+            "type": 6
+          },
+          {
+            "name": "Local Area Connection* 9",
+            "macAddress": "e4:60:17:db:dc:02",
+            "ip": "169.254.131.61",
+            "type": 71
+          },
+          {
+            "name": "Local Area Connection* 10",
+            "macAddress": "e6:60:17:db:dc:01",
+            "ip": "169.254.134.180",
+            "type": 71
+          },
+          {
+            "name": "Wi-Fi",
+            "macAddress": "e4:60:17:db:dc:01",
+            "ip": "10.0.0.18",
+            "type": 71
+          },
+          {
+            "name": "Bluetooth Network Connection",
+            "macAddress": "e4:60:17:db:dc:05",
+            "ip": "169.254.8.148",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "924E37885D4B3B365225C773A6C4266ED7076494E3693EC487BEC066AB5BC5F7"
+    },
+    {
+      "id": "3633456060",
+      "traceId": "0ee29e86-4e4d-4685-9bcf-6a1947a0fb91",
+      "firstDetected": "2024-02-22T15:16:48Z",
+      "severity": "s1",
+      "rank": 100,
+      "tags": [
+        "@ATE.T1021.003",
+        "@ATE.T1134.001",
+        "@MSI._file_ep0171_newcmd",
+        "@MSI._hunting_credential_access2",
+        "@ATA.LateralMovement",
+        "@MSI._process_unistall_reg",
+        "@ATE.T1047",
+        "@MSI._ps_assembly_load",
+        "@MSI._process_dotnet_binary_suspicious_launch",
+        "@ATE.T1082",
+        "@ATA.DefenseEvasion",
+        "@ATE.T1016",
+        "@MSI._process_ps_process_list",
+        "@ATE.T1003.005",
+        "@MSI._process_csc_cmdline_compiling",
+        "@MSI._process_ps_get_process",
+        "@ATA.Persistence",
+        "@ATA.Discovery",
+        "@ATE.T1074.001",
+        "@ATE.T1057",
+        "@MSI._process_lolbas_no_param_csc",
+        "@ATE.T1033",
+        "@ATA.PrivilegeEscalation",
+        "@MSI._process_exec2",
+        "@MSI._apt_process_PS_Get_systeminfo",
+        "@MSI._process_psdownload_script",
+        "@MSI._process_pssteal_credentials",
+        "@ATE.T1059.001",
+        "@MSI._hunting_pe_created_geno",
+        "@ATE.T1570",
+        "@MSI._apt_process_PS_win32_systeminfo",
+        "@ATA.CommandAndControl",
+        "@ATE.T1106",
+        "@ATE.T1105",
+        "@ATE.T1059",
+        "@MSI._process_core_ps_download",
+        "@MSI._process_psdownload_executable",
+        "@ATE.T1134",
+        "@ATE.T1059.003",
+        "@ATE.T1559.001",
+        "@ATE.T1547.009",
+        "@MSI._apt_process_PS_env_systeminfo",
+        "@MSI._process_suspicious_path",
+        "@ATE.T1127",
+        "@MSI._apt_process_PS_env_userinfo",
+        "@ATA.Execution",
+        "@ATA.Collection",
+        "@MSI._apt_process_PS_Get_userinfo",
+        "@MSI._process_local_data_staging",
+        "@MSI._apt_process_gwmi",
+        "@MSI._process_unmanaged_powershell",
+        "@MSI._hunting_pe_created_geno_path",
+        "@ATA.CredentialAccess",
+        "@MSI._process_ps_comobject",
+        "@ATE.T1083",
+        "@MSI._process_create_suspicious_file",
+        "@MSI._api_token_impersonation",
+        "@ATE.T1518",
+        "@MSI._file_sysscript",
+        "@ATE.T1129",
+        "@ATE.T1087.001",
+        "@ATE.T1071",
+        "@ATE.T1127.001",
+        "@ATE.T1036",
+        "@MSI._process_psofficeapp"
+      ],
+      "host": {
+        "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+        "hostname": "800IS268",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-26T12:55:50Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "ac:1a:3d:5f:0f:0a",
+            "ip": "169.254.218.187",
+            "type": 6
+          },
+          {
+            "name": "vEthernet (Default Switch)",
+            "macAddress": "00:15:5d:0f:b9:bd",
+            "ip": "172.24.176.1",
+            "type": 6
+          },
+          {
+            "name": "vEthernet (WSL)",
+            "macAddress": "00:15:5d:d4:23:be",
+            "ip": "192.168.240.1",
+            "type": 6
+          },
+          {
+            "name": "Ethernet 4",
+            "macAddress": "0a:00:27:00:00:06",
+            "ip": "192.168.56.1",
+            "type": 6
+          },
+          {
+            "name": "Local Area Connection* 9",
+            "macAddress": "e4:60:17:db:dc:02",
+            "ip": "169.254.131.61",
+            "type": 71
+          },
+          {
+            "name": "Local Area Connection* 10",
+            "macAddress": "e6:60:17:db:dc:01",
+            "ip": "169.254.134.180",
+            "type": 71
+          },
+          {
+            "name": "Wi-Fi",
+            "macAddress": "e4:60:17:db:dc:01",
+            "ip": "10.0.0.18",
+            "type": 71
+          },
+          {
+            "name": "Bluetooth Network Connection",
+            "macAddress": "e4:60:17:db:dc:05",
+            "ip": "169.254.8.148",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "924E37885D4B3B365225C773A6C4266ED7076494E3693EC487BEC066AB5BC5F7"
+    },
+    {
+      "id": "3633456063",
+      "traceId": "85e76fe6-866f-4cd1-ad17-36a2cca287f6",
+      "firstDetected": "2024-02-22T15:16:48Z",
+      "severity": "s1",
+      "rank": 100,
+      "tags": [
+        "@ATE.T1021.003",
+        "@ATE.T1134.001",
+        "@MSI._hunting_credential_access2",
+        "@ATA.LateralMovement",
+        "@MSI._process_unistall_reg",
+        "@ATE.T1047",
+        "@MSI._ps_assembly_load",
+        "@ATE.T1082",
+        "@ATA.DefenseEvasion",
+        "@ATE.T1016",
+        "@MSI._process_ps_process_list",
+        "@ATE.T1003.005",
+        "@MSI._process_ps_get_process",
+        "@ATA.Persistence",
+        "@ATA.Discovery",
+        "@ATE.T1074.001",
+        "@ATE.T1057",
+        "@ATE.T1033",
+        "@ATA.PrivilegeEscalation",
+        "@MSI._process_exec2",
+        "@MSI._apt_process_PS_Get_systeminfo",
+        "@MSI._process_psdownload_script",
+        "@MSI._process_pssteal_credentials",
+        "@ATE.T1059.001",
+        "@MSI._apt_process_PS_win32_systeminfo",
+        "@ATA.CommandAndControl",
+        "@ATE.T1106",
+        "@ATE.T1105",
+        "@ATE.T1059",
+        "@MSI._process_core_ps_download",
+        "@ATE.T1134",
+        "@ATE.T1059.003",
+        "@ATE.T1559.001",
+        "@ATE.T1547.009",
+        "@MSI._apt_process_PS_env_systeminfo",
+        "@MSI._process_suspicious_path",
+        "@MSI._apt_process_PS_env_userinfo",
+        "@ATA.Execution",
+        "@ATA.Collection",
+        "@MSI._apt_process_PS_Get_userinfo",
+        "@MSI._process_local_data_staging",
+        "@MSI._apt_process_gwmi",
+        "@MSI._process_unmanaged_powershell",
+        "@ATA.CredentialAccess",
+        "@MSI._process_ps_comobject",
+        "@ATE.T1083",
+        "@MSI._api_token_impersonation",
+        "@ATE.T1518",
+        "@MSI._file_sysscript",
+        "@ATE.T1129",
+        "@ATE.T1087.001",
+        "@ATE.T1071",
+        "@ATE.T1036",
+        "@MSI._process_psofficeapp"
+      ],
+      "host": {
+        "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+        "hostname": "800IS268",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-26T12:55:50Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "ac:1a:3d:5f:0f:0a",
+            "ip": "169.254.218.187",
+            "type": 6
+          },
+          {
+            "name": "vEthernet (Default Switch)",
+            "macAddress": "00:15:5d:0f:b9:bd",
+            "ip": "172.24.176.1",
+            "type": 6
+          },
+          {
+            "name": "vEthernet (WSL)",
+            "macAddress": "00:15:5d:d4:23:be",
+            "ip": "192.168.240.1",
+            "type": 6
+          },
+          {
+            "name": "Ethernet 4",
+            "macAddress": "0a:00:27:00:00:06",
+            "ip": "192.168.56.1",
+            "type": 6
+          },
+          {
+            "name": "Local Area Connection* 9",
+            "macAddress": "e4:60:17:db:dc:02",
+            "ip": "169.254.131.61",
+            "type": 71
+          },
+          {
+            "name": "Local Area Connection* 10",
+            "macAddress": "e6:60:17:db:dc:01",
+            "ip": "169.254.134.180",
+            "type": 71
+          },
+          {
+            "name": "Wi-Fi",
+            "macAddress": "e4:60:17:db:dc:01",
+            "ip": "10.0.0.18",
+            "type": 71
+          },
+          {
+            "name": "Bluetooth Network Connection",
+            "macAddress": "e4:60:17:db:dc:05",
+            "ip": "169.254.8.148",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "924E37885D4B3B365225C773A6C4266ED7076494E3693EC487BEC066AB5BC5F7"
+    },
+    {
+      "id": "3633456065",
+      "traceId": "fb56e85f-d727-48cb-a7f8-c341e207032b",
+      "firstDetected": "2024-02-22T15:16:48Z",
+      "severity": "s1",
+      "rank": 100,
+      "tags": [
+        "@ATE.T1021.003",
+        "@ATE.T1134.001",
+        "@MSI._hunting_credential_access2",
+        "@ATA.LateralMovement",
+        "@MSI._process_unistall_reg",
+        "@ATE.T1047",
+        "@MSI._ps_assembly_load",
+        "@ATE.T1021",
+        "@ATE.T1082",
+        "@ATA.DefenseEvasion",
+        "@ATE.T1016",
+        "@MSI._process_ps_process_list",
+        "@ATE.T1003.005",
+        "@MSI._process_ps_get_process",
+        "@ATA.Persistence",
+        "@ATA.Discovery",
+        "@ATE.T1074.001",
+        "@ATE.T1057",
+        "@ATE.T1033",
+        "@ATA.PrivilegeEscalation",
+        "@MSI._process_exec2",
+        "@MSI._apt_process_PS_Get_systeminfo",
+        "@MSI._process_psdownload_script",
+        "@MSI._process_pssteal_credentials",
+        "@ATE.T1059.001",
+        "@MSI._apt_file_msiinstall",
+        "@MSI._apt_process_PS_win32_systeminfo",
+        "@ATA.CommandAndControl",
+        "@ATE.T1106",
+        "@ATE.T1105",
+        "@ATE.T1059",
+        "@MSI._process_core_ps_download",
+        "@ATE.T1134",
+        "@ATE.T1059.003",
+        "@ATE.T1559.001",
+        "@MSI._process_remote_services",
+        "@ATE.T1547.009",
+        "@MSI._apt_process_PS_env_systeminfo",
+        "@MSI._process_suspicious_path",
+        "@MSI._apt_process_PS_env_userinfo",
+        "@ATA.Execution",
+        "@ATA.Collection",
+        "@MSI._apt_process_PS_Get_userinfo",
+        "@MSI._process_local_data_staging",
+        "@MSI._apt_process_gwmi",
+        "@MSI._process_unmanaged_powershell",
+        "@ATA.CredentialAccess",
+        "@MSI._process_ps_comobject",
+        "@ATE.T1083",
+        "@ATE.T1218.007",
+        "@MSI._api_token_impersonation",
+        "@ATE.T1518",
+        "@MSI._file_sysscript",
+        "@ATE.T1129",
+        "@ATE.T1087.001",
+        "@ATE.T1071",
+        "@ATE.T1036",
+        "@MSI._process_psofficeapp"
+      ],
+      "host": {
+        "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+        "hostname": "800IS268",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-26T12:55:50Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "ac:1a:3d:5f:0f:0a",
+            "ip": "169.254.218.187",
+            "type": 6
+          },
+          {
+            "name": "vEthernet (Default Switch)",
+            "macAddress": "00:15:5d:0f:b9:bd",
+            "ip": "172.24.176.1",
+            "type": 6
+          },
+          {
+            "name": "vEthernet (WSL)",
+            "macAddress": "00:15:5d:d4:23:be",
+            "ip": "192.168.240.1",
+            "type": 6
+          },
+          {
+            "name": "Ethernet 4",
+            "macAddress": "0a:00:27:00:00:06",
+            "ip": "192.168.56.1",
+            "type": 6
+          },
+          {
+            "name": "Local Area Connection* 9",
+            "macAddress": "e4:60:17:db:dc:02",
+            "ip": "169.254.131.61",
+            "type": 71
+          },
+          {
+            "name": "Local Area Connection* 10",
+            "macAddress": "e6:60:17:db:dc:01",
+            "ip": "169.254.134.180",
+            "type": 71
+          },
+          {
+            "name": "Wi-Fi",
+            "macAddress": "e4:60:17:db:dc:01",
+            "ip": "10.0.0.18",
+            "type": 71
+          },
+          {
+            "name": "Bluetooth Network Connection",
+            "macAddress": "e4:60:17:db:dc:05",
+            "ip": "169.254.8.148",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "924E37885D4B3B365225C773A6C4266ED7076494E3693EC487BEC066AB5BC5F7"
+    },
+    {
+      "id": "3633456067",
+      "traceId": "b700d1bc-da90-48b1-b127-816ad7bf06c6",
+      "firstDetected": "2024-02-22T15:16:48Z",
+      "severity": "s1",
+      "rank": 100,
+      "tags": [
+        "@ATE.T1021.003",
+        "@ATE.T1134.001",
+        "@MSI._hunting_credential_access2",
+        "@ATA.LateralMovement",
+        "@MSI._process_unistall_reg",
+        "@ATE.T1047",
+        "@MSI._ps_assembly_load",
+        "@ATE.T1082",
+        "@ATA.DefenseEvasion",
+        "@ATE.T1016",
+        "@MSI._process_ps_process_list",
+        "@ATE.T1003.005",
+        "@MSI._process_ps_get_process",
+        "@ATA.Persistence",
+        "@ATA.Discovery",
+        "@ATE.T1074.001",
+        "@ATE.T1546.013",
+        "@ATE.T1057",
+        "@ATE.T1033",
+        "@ATA.PrivilegeEscalation",
+        "@MSI._process_exec2",
+        "@MSI._apt_process_PS_Get_systeminfo",
+        "@MSI._process_psdownload_script",
+        "@MSI._process_pssteal_credentials",
+        "@ATE.T1059.001",
+        "@MSI._hunting_pe_created_geno",
+        "@ATE.T1570",
+        "@MSI._apt_process_PS_win32_systeminfo",
+        "@ATA.CommandAndControl",
+        "@ATE.T1106",
+        "@ATE.T1105",
+        "@ATE.T1059",
+        "@MSI._process_core_ps_download",
+        "@MSI._process_psdownload_executable",
+        "@ATE.T1134",
+        "@ATE.T1059.003",
+        "@ATE.T1559.001",
+        "@ATE.T1547.009",
+        "@MSI._apt_process_PS_env_systeminfo",
+        "@MSI._process_suspicious_path",
+        "@MSI._apt_process_PS_env_userinfo",
+        "@ATA.Execution",
+        "@ATA.Collection",
+        "@MSI._apt_process_PS_Get_userinfo",
+        "@MSI._process_local_data_staging",
+        "@MSI._apt_process_gwmi",
+        "@MSI._process_unmanaged_powershell",
+        "@ATA.CredentialAccess",
+        "@MSI._process_ps_comobject",
+        "@ATE.T1083",
+        "@MSI._api_token_impersonation",
+        "@ATE.T1518",
+        "@MSI._file_sysscript",
+        "@ATE.T1129",
+        "@MSI._file_powershell_profile_modification_by_unsual_process",
+        "@ATE.T1087.001",
+        "@ATE.T1071",
+        "@ATE.T1036",
+        "@MSI._process_psofficeapp"
+      ],
+      "host": {
+        "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+        "hostname": "800IS268",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-26T12:55:50Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "ac:1a:3d:5f:0f:0a",
+            "ip": "169.254.218.187",
+            "type": 6
+          },
+          {
+            "name": "vEthernet (Default Switch)",
+            "macAddress": "00:15:5d:0f:b9:bd",
+            "ip": "172.24.176.1",
+            "type": 6
+          },
+          {
+            "name": "vEthernet (WSL)",
+            "macAddress": "00:15:5d:d4:23:be",
+            "ip": "192.168.240.1",
+            "type": 6
+          },
+          {
+            "name": "Ethernet 4",
+            "macAddress": "0a:00:27:00:00:06",
+            "ip": "192.168.56.1",
+            "type": 6
+          },
+          {
+            "name": "Local Area Connection* 9",
+            "macAddress": "e4:60:17:db:dc:02",
+            "ip": "169.254.131.61",
+            "type": 71
+          },
+          {
+            "name": "Local Area Connection* 10",
+            "macAddress": "e6:60:17:db:dc:01",
+            "ip": "169.254.134.180",
+            "type": 71
+          },
+          {
+            "name": "Wi-Fi",
+            "macAddress": "e4:60:17:db:dc:01",
+            "ip": "10.0.0.18",
+            "type": 71
+          },
+          {
+            "name": "Bluetooth Network Connection",
+            "macAddress": "e4:60:17:db:dc:05",
+            "ip": "169.254.8.148",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "924E37885D4B3B365225C773A6C4266ED7076494E3693EC487BEC066AB5BC5F7"
+    }
+  ],
+  "traces": [
+    {
+      "eventType": "Process Created",
+      "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+      "host": "800IS268",
+      "rv": 2287,
+      "parentTraceId": "0df2497d-65ea-47c1-a27e-8375b450c9e5",
+      "traceId": "7cabeb1e-56fc-47fb-8481-8633fa71b407",
+      "contextTraceId": "21295750-1778-40d6-873f-c920d5833f61",
+      "pid": 28856,
+      "it": 1,
+      "time": "2024-01-31T13:46:00.583Z",
+      "pSha2": "31AEE70F9705F6578C6B41849EA3B5A948A446F494F24BEFCF5B169A1C2A71D2",
+      "ppid": 24532,
+      "pFullName": "C:\\ProgramData\\chocolatey\\lib\\notepadplusplus.install\\tools\\npp.8.6.2.Installer.x64.exe",
+      "cmdLine": "regsvr32 /s \"C:\\Program Files\\Notepad++\\contextMenu\\NppShell.dll\"",
+      "processName": "regsvr32.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2904903",
+        "name": "kevin"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:10:04.089Z",
+        "md5": "878E47C8656E53AE8A8A21E927C6F7E0",
+        "sha1": "CB377E2BA78E131D7A1887C58C073E23D003454F",
+        "sha256": "31AEE70F9705F6578C6B41849EA3B5A948A446F494F24BEFCF5B169A1C2A71D2",
+        "name": "regsvr32.exe",
+        "path": "C:\\Windows\\SysWOW64\\regsvr32.exe",
+        "size": 20992,
+        "embedFilename": "REGSVR32.EXE",
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.1",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "0df2497d-65ea-47c1-a27e-8375b450c9e5",
+        "eefe03df-1838-4cb5-a2e3-32189b0b67d9",
+        "6788a5db-0731-42a1-a6ee-b5f924466fd6",
+        "044e7c66-2ccc-47f5-8ee6-9b609af76a6e",
+        "2e1a702c-8672-4cb2-a020-9f518095c68b",
+        "097c6c34-9f74-4154-9048-100468b381df",
+        "3a390f98-4e88-48c9-bb74-54a54e9c908d"
+      ],
+      "tdmRuleIds": [
+        1333,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-31T13:46:11Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATE.T1218.010",
+            "@MSI._process_regsvr32_register"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+      "host": "800IS268",
+      "rv": 2287,
+      "parentTraceId": "00000000-0000-0000-0000-000000000000",
+      "traceId": "3a390f98-4e88-48c9-bb74-54a54e9c908d",
+      "contextTraceId": "21295750-1778-40d6-873f-c920d5833f61",
+      "pid": 916,
+      "time": "2024-01-30T13:28:16.046Z",
+      "pSha2": "D07523D9640BB239D74A26A4DE12CAE5F7A509B796DBA1B58D64AA7892B37B66",
+      "ppid": 744,
+      "pFullName": "",
+      "cmdLine": "C:\\Windows\\System32\\wininit.exe",
+      "processName": "wininit.exe",
+      "integrity": 4,
+      "user": {
+        "domain": "NT AUTHORITY",
+        "id": "S-1-5-18",
+        "name": "NT AUTHORITY\\SYSTEM"
+      },
+      "procFileAttrs": {
+        "creationDate": "2024-01-18T14:00:21.297Z",
+        "md5": "1FD4446BC2C8154A3A063EF0DEE5C166",
+        "sha1": "9C49BCBEF25A20B098BE433BEDF3F26BA3C6D378",
+        "sha256": "D07523D9640BB239D74A26A4DE12CAE5F7A509B796DBA1B58D64AA7892B37B66",
+        "name": "wininit.exe",
+        "path": "C:\\Windows\\System32\\wininit.exe",
+        "size": 427200,
+        "embedFilename": "WinInit.exe",
+        "embedFileVersion": "10.0.19041.3758 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3758",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-30T13:29:01Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Api",
+      "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+      "host": "800IS268",
+      "rv": 2287,
+      "parentTraceId": "6788a5db-0731-42a1-a6ee-b5f924466fd6",
+      "traceId": "c0f7586d-5ff5-4779-98bf-dc04f7f521a0",
+      "contextTraceId": "21295750-1778-40d6-873f-c920d5833f61",
+      "pid": 9104,
+      "it": 1,
+      "time": "2024-01-31T13:45:48.268Z",
+      "pSha2": "924E37885D4B3B365225C773A6C4266ED7076494E3693EC487BEC066AB5BC5F7",
+      "ppid": 9104,
+      "pFullName": "C:\\ProgramData\\chocolatey\\bin\\choco.exe",
+      "api": {
+        "name": "WriteProcessMemory",
+        "data": "AAADblABAAA=",
+        "result": "0",
+        "moduleName": "",
+        "arguments": [
+          "0x274a172d8",
+          "0x8",
+          "0x0"
+        ],
+        "targetPid": 27280
+      },
+      "uniqueRuleId": 11,
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-31T13:46:11Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.APICall"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+      "host": "800IS268",
+      "rv": 2287,
+      "parentTraceId": "3a390f98-4e88-48c9-bb74-54a54e9c908d",
+      "traceId": "097c6c34-9f74-4154-9048-100468b381df",
+      "contextTraceId": "21295750-1778-40d6-873f-c920d5833f61",
+      "pid": 108,
+      "time": "2024-01-30T13:28:16.100Z",
+      "pSha2": "43EC773E0EC626BF6D8A7FD04E64DC36AFA6801444A3C36EF4DA2A909FA0D83F",
+      "ppid": 916,
+      "pFullName": "C:\\Windows\\System32\\wininit.exe",
+      "cmdLine": "C:\\Windows\\System32\\services.exe",
+      "processName": "services.exe",
+      "integrity": 4,
+      "user": {
+        "domain": "NT AUTHORITY",
+        "id": "S-1-5-18",
+        "name": "NT AUTHORITY\\SYSTEM"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-12-18T17:44:02.333Z",
+        "md5": "E606E7E0D5E94AF8222715A24DF0776B",
+        "sha1": "E5704D8E560122C2A23DE8912AE63B213D67C860",
+        "sha256": "43EC773E0EC626BF6D8A7FD04E64DC36AFA6801444A3C36EF4DA2A909FA0D83F",
+        "name": "services.exe",
+        "path": "C:\\Windows\\System32\\services.exe",
+        "size": 716032,
+        "embedFilename": "services.exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "3a390f98-4e88-48c9-bb74-54a54e9c908d"
+      ],
+      "tdmRuleIds": [
+        1110,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-30T13:29:01Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+      "host": "800IS268",
+      "rv": 2287,
+      "parentTraceId": "eefe03df-1838-4cb5-a2e3-32189b0b67d9",
+      "traceId": "0df2497d-65ea-47c1-a27e-8375b450c9e5",
+      "contextTraceId": "21295750-1778-40d6-873f-c920d5833f61",
+      "pid": 24532,
+      "it": 1,
+      "time": "2024-01-31T13:45:59.482Z",
+      "pSha2": "724C134F991443085BFDD1BFF6595D5EB85BC67770BBECAED43C4505E01724EF",
+      "ppid": 27280,
+      "pFullName": "C:\\ProgramData\\chocolatey\\choco.exe",
+      "cmdLine": "\"C:\\ProgramData\\chocolatey\\lib\\notepadplusplus.install\\tools\\npp.8.6.2.Installer.x64.exe\" /S ",
+      "processName": "npp.8.6.2.Installer.x64.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2904903",
+        "name": "kevin"
+      },
+      "procFileAttrs": {
+        "creationDate": "2024-01-31T13:45:53.576Z",
+        "md5": "027915384E3CC7B04D9E636171AA3E15",
+        "sha1": "B4785869C7642AF6107AF65E5CBACDB9124B0AA2",
+        "sha256": "724C134F991443085BFDD1BFF6595D5EB85BC67770BBECAED43C4505E01724EF",
+        "name": "npp.8.6.2.Installer.x64.exe",
+        "path": "C:\\ProgramData\\chocolatey\\lib\\notepadplusplus.install\\tools\\npp.8.6.2.Installer.x64.exe",
+        "size": 4840120,
+        "embedFilename": "",
+        "embedFileVersion": "8.6.2.0",
+        "embedProductName": "Notepad++",
+        "embedProductVersion": "8.62",
+        "embedVendorName": "Don HO don.h@free.fr",
+        "subsystem": 2,
+        "certificates": [
+          [
+            {
+              "issuerName": "US, \"DigiCert, Inc.\", DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1",
+              "publicKeyHash": "E687332916D6B681FE28C5EF423CEE259D3953B9",
+              "subject": "FR, Ile-de-France, Saint Cloud, \"Notepad++\", \"Notepad++\"",
+              "sha1": "A731D48CD8E2A99BB91F7C096F40CEDF3A468BA6"
+            },
+            {
+              "issuerName": "US, DigiCert Inc, www.digicert.com, DigiCert Trusted Root G4",
+              "publicKeyHash": "6837E0EBB63BF85F1186FBFE617B088865F44E42",
+              "subject": "US, \"DigiCert, Inc.\", DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1",
+              "sha1": "7B0F360B775F76C94A12CA48445AA2D2A875701C"
+            },
+            {
+              "issuerName": "US, DigiCert Inc, www.digicert.com, DigiCert Assured ID Root CA",
+              "publicKeyHash": "ECD7E382D2715D644CDF2E673FE7BA98AE1C0F4F",
+              "subject": "US, DigiCert Inc, www.digicert.com, DigiCert Trusted Root G4",
+              "sha1": "A99D5B79E9F1CDA59CDAB6373169D5353F5874C6"
+            },
+            {
+              "issuerName": "US, DigiCert Inc, www.digicert.com, DigiCert Assured ID Root CA",
+              "publicKeyHash": "45EBA2AFF492CB82312D518BA7A7219DF36DC80F",
+              "subject": "US, DigiCert Inc, www.digicert.com, DigiCert Assured ID Root CA",
+              "sha1": "0563B8630D62D75ABBC8AB1E4BDFB5A899B24D43"
+            }
+          ]
+        ]
+      },
+      "parentsTraceId": [
+        "eefe03df-1838-4cb5-a2e3-32189b0b67d9",
+        "6788a5db-0731-42a1-a6ee-b5f924466fd6",
+        "044e7c66-2ccc-47f5-8ee6-9b609af76a6e",
+        "2e1a702c-8672-4cb2-a020-9f518095c68b",
+        "097c6c34-9f74-4154-9048-100468b381df",
+        "3a390f98-4e88-48c9-bb74-54a54e9c908d"
+      ],
+      "tdmRuleIds": [
+        108,
+        100003,
+        100005,
+        100006
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-31T13:46:11Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Image Loaded",
+      "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+      "host": "800IS268",
+      "rv": 2287,
+      "parentTraceId": "6788a5db-0731-42a1-a6ee-b5f924466fd6",
+      "traceId": "e023baae-13e9-47e7-a04b-1206df0d722b",
+      "contextTraceId": "21295750-1778-40d6-873f-c920d5833f61",
+      "pid": 9104,
+      "it": 1,
+      "time": "2024-01-31T13:45:48.201Z",
+      "pSha2": "924E37885D4B3B365225C773A6C4266ED7076494E3693EC487BEC066AB5BC5F7",
+      "ppid": 9104,
+      "pFullName": "C:\\ProgramData\\chocolatey\\bin\\choco.exe",
+      "uniqueRuleId": 18,
+      "modules": [
+        {
+          "sha256": "5D05DB7DB46D509FF71B7A952FD36D3A9E432F1E8E26FA0A5772F3D260146E81",
+          "name": "C:\\WINDOWS\\SYSTEM32\\BCRYPT.DLL",
+          "loadTime": "2024-01-31T13:45:48.201Z",
+          "vtpPrivileges": 1,
+          "fsattrs": 32
+        }
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-31T13:46:11Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.LoadedDLLs"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+      "host": "800IS268",
+      "rv": 2287,
+      "parentTraceId": "6788a5db-0731-42a1-a6ee-b5f924466fd6",
+      "traceId": "eefe03df-1838-4cb5-a2e3-32189b0b67d9",
+      "contextTraceId": "21295750-1778-40d6-873f-c920d5833f61",
+      "pid": 27280,
+      "it": 1,
+      "time": "2024-01-31T13:45:48.249Z",
+      "pSha2": "463637654593C3AE015F556CCD9427EFC6FEB6AA466A0D29993ACC611ADF19AD",
+      "ppid": 9104,
+      "pFullName": "C:\\ProgramData\\chocolatey\\bin\\choco.exe",
+      "cmdLine": "\"C:\\ProgramData\\chocolatey\\choco.exe\" install notepadplusplus -y",
+      "processName": "choco.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2904903",
+        "name": "kevin"
+      },
+      "procFileAttrs": {
+        "creationDate": "2024-01-11T13:38:17.407Z",
+        "md5": "E007586A7919AB631C6A0807C5980C29",
+        "sha1": "AA678E654B7A0577952F0495CE24CE13A88A87D7",
+        "sha256": "463637654593C3AE015F556CCD9427EFC6FEB6AA466A0D29993ACC611ADF19AD",
+        "name": "choco.exe",
+        "path": "C:\\ProgramData\\chocolatey\\choco.exe",
+        "size": 10958464,
+        "embedFilename": "choco.exe",
+        "embedFileVersion": "2.2.2.0",
+        "embedProductName": "Chocolatey",
+        "embedProductVersion": "2.2.2",
+        "embedVendorName": "Chocolatey Software, Inc.",
+        "subsystem": 3,
+        "certificates": [
+          [
+            {
+              "issuerName": "US, DigiCert Inc, www.digicert.com, DigiCert SHA2 Assured ID Code Signing CA",
+              "publicKeyHash": "4EF305185D95EB29506A516DF9A7D15E349A0483",
+              "subject": "US, Kansas, Topeka, \"Chocolatey Software, Inc.\", \"Chocolatey Software, Inc.\"",
+              "sha1": "83AC7D88C66CB8680BCE802E0F0F5C179722764B"
+            },
+            {
+              "issuerName": "US, DigiCert Inc, www.digicert.com, DigiCert Assured ID Root CA",
+              "publicKeyHash": "5AC4B97B2A0AA3A5EA7103C060F92DF665750E58",
+              "subject": "US, DigiCert Inc, www.digicert.com, DigiCert SHA2 Assured ID Code Signing CA",
+              "sha1": "92C1588E85AF2201CE7915E8538B492F605B80C6"
+            },
+            {
+              "issuerName": "US, DigiCert Inc, www.digicert.com, DigiCert Assured ID Root CA",
+              "publicKeyHash": "45EBA2AFF492CB82312D518BA7A7219DF36DC80F",
+              "subject": "US, DigiCert Inc, www.digicert.com, DigiCert Assured ID Root CA",
+              "sha1": "0563B8630D62D75ABBC8AB1E4BDFB5A899B24D43"
+            }
+          ]
+        ]
+      },
+      "parentsTraceId": [
+        "6788a5db-0731-42a1-a6ee-b5f924466fd6",
+        "044e7c66-2ccc-47f5-8ee6-9b609af76a6e",
+        "2e1a702c-8672-4cb2-a020-9f518095c68b",
+        "097c6c34-9f74-4154-9048-100468b381df",
+        "3a390f98-4e88-48c9-bb74-54a54e9c908d"
+      ],
+      "tdmRuleIds": [
+        108,
+        100000,
+        100002,
+        100003,
+        100005
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-31T13:46:11Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s4",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Collection",
+            "@ATE.T1074.001",
+            "@MSI._process_local_data_staging"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.Discovery",
+            "@ATE.T1059.001",
+            "@ATE.T1057",
+            "@MSI._process_ps_get_process"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.LateralMovement",
+            "@ATE.T1570",
+            "@MSI._hunting_pe_created_geno"
+          ]
+        },
+        {
+          "sev": "s4",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1059.003",
+            "@MSI._process_exec3"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATA.Execution",
+            "@ATE.T1033",
+            "@ATE.T1059.001",
+            "@ATE.T1087.001",
+            "@ATE.T1083",
+            "@MSI._apt_process_PS_env_userinfo"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1204.002",
+            "@MSI._process_epp_response_blocked"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.DefenseEvasion",
+            "@ATE.T1059.001",
+            "@ATE.T1036",
+            "@MSI._process_unmanaged_powershell"
+          ]
+        },
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1059.003",
+            "@MSI._process_exec2"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1083",
+            "@ATE.T1518",
+            "@MSI._process_unistall_reg"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1059.001",
+            "@ATE.T1047",
+            "@MSI._apt_process_gwmi"
+          ]
+        },
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.PrivilegeEscalation",
+            "@ATE.T1134",
+            "@MSI._hunting_credential_access2"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.LateralMovement",
+            "@ATE.T1059.001",
+            "@ATE.T1021.003",
+            "@MSI._process_psofficeapp"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATA.Execution",
+            "@ATE.T1033",
+            "@ATE.T1059.001",
+            "@ATE.T1087.001",
+            "@MSI._apt_process_PS_Get_userinfo"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1559.001",
+            "@MSI._process_ps_comobject"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATA.DefenseEvasion",
+            "@ATA.PrivilegeEscalation",
+            "@ATA.Execution",
+            "@ATE.T1057",
+            "@ATE.T1134.001",
+            "@ATE.T1106",
+            "@MSI._api_token_impersonation"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@MSI._process_suspicious_path"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATE.T1036",
+            "@MSI._process_create_suspicious_file"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.CommandAndControl",
+            "@ATE.T1059.001",
+            "@ATE.T1105",
+            "@ATE.T1071",
+            "@MSI._process_psdownload_script"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.Persistence",
+            "@ATA.PrivilegeEscalation",
+            "@ATE.T1059",
+            "@ATE.T1547.009",
+            "@MSI._file_sysscript"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATA.Execution",
+            "@ATE.T1082",
+            "@ATE.T1059.001",
+            "@MSI._apt_process_PS_Get_systeminfo"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATA.Execution",
+            "@ATE.T1082",
+            "@ATE.T1059.001",
+            "@MSI._apt_process_PS_env_systeminfo"
+          ]
+        },
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.CredentialAccess",
+            "@ATE.T1059.001",
+            "@ATE.T1003.005",
+            "@MSI._process_pssteal_credentials"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATA.Execution",
+            "@ATE.T1082",
+            "@ATE.T1016",
+            "@ATE.T1059.001",
+            "@ATE.T1047",
+            "@MSI._apt_process_PS_win32_systeminfo"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1129",
+            "@ATE.T1059.001",
+            "@MSI._ps_assembly_load"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.CommandAndControl",
+            "@ATE.T1059.001",
+            "@ATE.T1105",
+            "@ATE.T1071",
+            "@MSI._process_psdownload_executable"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.LateralMovement",
+            "@ATE.T1570",
+            "@MSI._hunting_pe_created_geno_path"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.CommandAndControl",
+            "@ATE.T1059.001",
+            "@ATE.T1105",
+            "@ATE.T1071",
+            "@MSI._process_core_ps_download"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.Discovery",
+            "@ATE.T1059.001",
+            "@ATE.T1057",
+            "@ATE.T1047",
+            "@MSI._process_ps_process_list"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+      "host": "800IS268",
+      "rv": 2287,
+      "parentTraceId": "eefe03df-1838-4cb5-a2e3-32189b0b67d9",
+      "traceId": "1eca93b1-8ff7-4281-a9c7-f287e7b2bd28",
+      "contextTraceId": "21295750-1778-40d6-873f-c920d5833f61",
+      "pid": 29616,
+      "it": 1,
+      "time": "2024-01-31T13:46:02.351Z",
+      "pSha2": "53551B1FFB15CDCF40A77470AD7FF81C0AB7ED5A24ACD5AD1BE3379612B9DE8D",
+      "ppid": 27280,
+      "pFullName": "C:\\ProgramData\\chocolatey\\choco.exe",
+      "cmdLine": "\"C:\\ProgramData\\chocolatey\\tools\\shimgen.exe\" -o \"C:\\ProgramData\\chocolatey\\bin\\notepad++.exe\" -p \"c:\\program files\\notepad++\\notepad++.exe\" -i \"C:\\Program Files\\Notepad++\\notepad++.exe\"",
+      "processName": "shimgen.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2904903",
+        "name": "kevin"
+      },
+      "procFileAttrs": {
+        "creationDate": "2024-01-11T13:38:17.662Z",
+        "md5": "97F02D9FBE04B14C5B24EC0DA1944212",
+        "sha1": "A499A66FCC4C5A7ED15A28E5FA655B9EE2C0A453",
+        "sha256": "53551B1FFB15CDCF40A77470AD7FF81C0AB7ED5A24ACD5AD1BE3379612B9DE8D",
+        "name": "shimgen.exe",
+        "path": "C:\\ProgramData\\chocolatey\\tools\\shimgen.exe",
+        "size": 567936,
+        "embedFilename": "shimgen.exe",
+        "embedFileVersion": "2.0.0.0",
+        "embedProductName": "Shim Generator",
+        "embedProductVersion": "2.0.0",
+        "embedVendorName": "Chocolatey Software, Inc.",
+        "subsystem": 3,
+        "certificates": [
+          [
+            {
+              "issuerName": "US, DigiCert Inc, www.digicert.com, DigiCert SHA2 Assured ID Code Signing CA",
+              "publicKeyHash": "4EF305185D95EB29506A516DF9A7D15E349A0483",
+              "subject": "US, Kansas, Topeka, \"Chocolatey Software, Inc.\", \"Chocolatey Software, Inc.\"",
+              "sha1": "83AC7D88C66CB8680BCE802E0F0F5C179722764B"
+            },
+            {
+              "issuerName": "US, DigiCert Inc, www.digicert.com, DigiCert Assured ID Root CA",
+              "publicKeyHash": "5AC4B97B2A0AA3A5EA7103C060F92DF665750E58",
+              "subject": "US, DigiCert Inc, www.digicert.com, DigiCert SHA2 Assured ID Code Signing CA",
+              "sha1": "92C1588E85AF2201CE7915E8538B492F605B80C6"
+            },
+            {
+              "issuerName": "US, DigiCert Inc, www.digicert.com, DigiCert Assured ID Root CA",
+              "publicKeyHash": "45EBA2AFF492CB82312D518BA7A7219DF36DC80F",
+              "subject": "US, DigiCert Inc, www.digicert.com, DigiCert Assured ID Root CA",
+              "sha1": "0563B8630D62D75ABBC8AB1E4BDFB5A899B24D43"
+            }
+          ]
+        ]
+      },
+      "parentsTraceId": [
+        "eefe03df-1838-4cb5-a2e3-32189b0b67d9",
+        "6788a5db-0731-42a1-a6ee-b5f924466fd6",
+        "044e7c66-2ccc-47f5-8ee6-9b609af76a6e",
+        "2e1a702c-8672-4cb2-a020-9f518095c68b",
+        "097c6c34-9f74-4154-9048-100468b381df",
+        "3a390f98-4e88-48c9-bb74-54a54e9c908d"
+      ],
+      "tdmRuleIds": [
+        108,
+        100000,
+        100002,
+        100003,
+        100005
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-31T13:46:11Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@MSI._process_suspicious_path"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Api",
+      "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+      "host": "800IS268",
+      "rv": 2287,
+      "parentTraceId": "6788a5db-0731-42a1-a6ee-b5f924466fd6",
+      "traceId": "f5378d2b-5b2f-4f01-83ce-a6b182f4d50b",
+      "contextTraceId": "21295750-1778-40d6-873f-c920d5833f61",
+      "pid": 9104,
+      "it": 1,
+      "time": "2024-01-31T13:45:48.204Z",
+      "pSha2": "924E37885D4B3B365225C773A6C4266ED7076494E3693EC487BEC066AB5BC5F7",
+      "ppid": 9104,
+      "pFullName": "C:\\ProgramData\\chocolatey\\bin\\choco.exe",
+      "api": {
+        "name": "FindFirstFile",
+        "data": "QzpcV2luZG93c1xNaWNyb3NvZnQuTkVUXEZyYW1ld29yazY0XHY0LjAuMzAzMTlcbXNjb3JlZWkuZGxs",
+        "result": "20884736",
+        "moduleName": "",
+        "arguments": [],
+        "targetPid": 0
+      },
+      "uniqueRuleId": 19120,
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-31T13:46:11Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.APICall"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+      "host": "800IS268",
+      "rv": 2287,
+      "parentTraceId": "097c6c34-9f74-4154-9048-100468b381df",
+      "traceId": "2e1a702c-8672-4cb2-a020-9f518095c68b",
+      "contextTraceId": "21295750-1778-40d6-873f-c920d5833f61",
+      "pid": 16072,
+      "time": "2024-01-30T13:34:25.647Z",
+      "pSha2": "F13DE58416730D210DAB465B242E9C949FB0A0245EEF45B07C381F0C6C8A43C3",
+      "ppid": 108,
+      "pFullName": "C:\\Windows\\System32\\services.exe",
+      "cmdLine": "C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s Appinfo",
+      "processName": "svchost.exe",
+      "integrity": 4,
+      "user": {
+        "domain": "NT AUTHORITY",
+        "id": "S-1-5-18",
+        "name": "SYSTEM"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-12-18T17:43:58.524Z",
+        "md5": "145DCF6706EEEA5B066885EE17964C09",
+        "sha1": "445F5F38365AF88EC29B357F4696F0E3EE50A1D8",
+        "sha256": "F13DE58416730D210DAB465B242E9C949FB0A0245EEF45B07C381F0C6C8A43C3",
+        "name": "svchost.exe",
+        "path": "C:\\Windows\\System32\\svchost.exe",
+        "size": 55456,
+        "embedFilename": "svchost.exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "097c6c34-9f74-4154-9048-100468b381df",
+        "3a390f98-4e88-48c9-bb74-54a54e9c908d"
+      ],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-30T13:34:33Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+      "host": "800IS268",
+      "rv": 2287,
+      "parentTraceId": "2e1a702c-8672-4cb2-a020-9f518095c68b",
+      "traceId": "044e7c66-2ccc-47f5-8ee6-9b609af76a6e",
+      "contextTraceId": "21295750-1778-40d6-873f-c920d5833f61",
+      "pid": 2572,
+      "it": 1,
+      "time": "2024-01-31T13:45:29.188Z",
+      "pSha2": "265B69033CEA7A9F8214A34CD9B17912909AF46C7A47395DD7BB893A24507E59",
+      "ppid": 16072,
+      "pFullName": "C:\\Windows\\System32\\svchost.exe",
+      "cmdLine": "\"C:\\Windows\\system32\\cmd.exe\" ",
+      "processName": "cmd.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2904903",
+        "name": "kevin"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-12-18T17:43:45.235Z",
+        "md5": "CB6CD09F6A25744A8FA6E4B3E4D260C5",
+        "sha1": "E9BE2F86E3A3BFF02D1953AECCF0ED22284596D4",
+        "sha256": "265B69033CEA7A9F8214A34CD9B17912909AF46C7A47395DD7BB893A24507E59",
+        "name": "cmd.exe",
+        "path": "C:\\Windows\\System32\\cmd.exe",
+        "size": 289792,
+        "embedFilename": "Cmd.Exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "2e1a702c-8672-4cb2-a020-9f518095c68b",
+        "097c6c34-9f74-4154-9048-100468b381df",
+        "3a390f98-4e88-48c9-bb74-54a54e9c908d"
+      ],
+      "tdmRuleIds": [
+        103,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-31T13:45:45Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "interpreter": "cmd",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+      "host": "800IS268",
+      "rv": 2287,
+      "parentTraceId": "7cabeb1e-56fc-47fb-8481-8633fa71b407",
+      "traceId": "f547cfa8-edc5-4aae-b40d-a445048cc4db",
+      "contextTraceId": "21295750-1778-40d6-873f-c920d5833f61",
+      "pid": 2732,
+      "it": 1,
+      "time": "2024-01-31T13:46:00.691Z",
+      "pSha2": "022CB167A29A32DAE848BE91AEF721C74F1975AF151807DAFCC5ED832DB246B7",
+      "ppid": 28856,
+      "pFullName": "C:\\Windows\\SysWOW64\\regsvr32.exe",
+      "cmdLine": " /s \"C:\\Program Files\\Notepad++\\contextMenu\\NppShell.dll\"",
+      "processName": "regsvr32.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2904903",
+        "name": "kevin"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:09:46.007Z",
+        "md5": "B0C2FA35D14A9FAD919E99D9D75E1B9E",
+        "sha1": "8D7C2FD354363DAEE63E8F591EC52FA5D0E23F6F",
+        "sha256": "022CB167A29A32DAE848BE91AEF721C74F1975AF151807DAFCC5ED832DB246B7",
+        "name": "regsvr32.exe",
+        "path": "C:\\Windows\\System32\\regsvr32.exe",
+        "size": 25088,
+        "embedFilename": "REGSVR32.EXE",
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.1",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "7cabeb1e-56fc-47fb-8481-8633fa71b407",
+        "0df2497d-65ea-47c1-a27e-8375b450c9e5",
+        "eefe03df-1838-4cb5-a2e3-32189b0b67d9",
+        "6788a5db-0731-42a1-a6ee-b5f924466fd6",
+        "044e7c66-2ccc-47f5-8ee6-9b609af76a6e",
+        "2e1a702c-8672-4cb2-a020-9f518095c68b",
+        "097c6c34-9f74-4154-9048-100468b381df",
+        "3a390f98-4e88-48c9-bb74-54a54e9c908d"
+      ],
+      "tdmRuleIds": [
+        1333,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-31T13:46:11Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATE.T1218.010",
+            "@MSI._process_regsvr32_register"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+      "host": "800IS268",
+      "rv": 2287,
+      "parentTraceId": "00ded376-7d4e-41aa-b807-9b5cf398e5e8",
+      "traceId": "f9829e05-ef23-4c0d-953c-4217426bf206",
+      "contextTraceId": "21295750-1778-40d6-873f-c920d5833f61",
+      "pid": 15208,
+      "it": 1,
+      "time": "2024-01-31T13:46:02.751Z",
+      "pSha2": "1FE531EAC592B480AA4BD16052B909C3431434F17E7AE163D248355558CE43A6",
+      "ppid": 15772,
+      "pFullName": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe",
+      "cmdLine": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\cvtres.exe /NOLOGO /READONLY /MACHINE:IX86 \"/OUT:C:\\Users\\kevin\\AppData\\Local\\Temp\\chocolatey\\RESD18F.tmp\" \"c:\\ProgramData\\chocolatey\\bin\\CSCA1AADBE21D7646109594C164D8B26D9.TMP\"",
+      "processName": "cvtres.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2904903",
+        "name": "kevin"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:10:36.196Z",
+        "md5": "C877CBB966EA5939AA2A17B6A5160950",
+        "sha1": "2A3249732F5AA4588A4A9895FFE217355041D663",
+        "sha256": "1FE531EAC592B480AA4BD16052B909C3431434F17E7AE163D248355558CE43A6",
+        "name": "cvtres.exe",
+        "path": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\cvtres.exe",
+        "size": 52744,
+        "embedFilename": "CVTRES.EXE",
+        "embedFileVersion": "14.10.25028.0 built by: VCTOOLSD15RTM",
+        "embedProductName": "Microsoft\u00ae .NET Framework",
+        "embedProductVersion": "14.10.25028.0",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "00ded376-7d4e-41aa-b807-9b5cf398e5e8",
+        "1eca93b1-8ff7-4281-a9c7-f287e7b2bd28",
+        "eefe03df-1838-4cb5-a2e3-32189b0b67d9",
+        "6788a5db-0731-42a1-a6ee-b5f924466fd6",
+        "044e7c66-2ccc-47f5-8ee6-9b609af76a6e",
+        "2e1a702c-8672-4cb2-a020-9f518095c68b",
+        "097c6c34-9f74-4154-9048-100468b381df",
+        "3a390f98-4e88-48c9-bb74-54a54e9c908d"
+      ],
+      "tdmRuleIds": [
+        110,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-31T13:46:11Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+      "host": "800IS268",
+      "rv": 2287,
+      "parentTraceId": "044e7c66-2ccc-47f5-8ee6-9b609af76a6e",
+      "traceId": "6788a5db-0731-42a1-a6ee-b5f924466fd6",
+      "contextTraceId": "21295750-1778-40d6-873f-c920d5833f61",
+      "pid": 9104,
+      "it": 1,
+      "time": "2024-01-31T13:45:48.170Z",
+      "pSha2": "924E37885D4B3B365225C773A6C4266ED7076494E3693EC487BEC066AB5BC5F7",
+      "ppid": 2572,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "choco  install notepadplusplus -y",
+      "processName": "choco.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2904903",
+        "name": "kevin"
+      },
+      "procFileAttrs": {
+        "creationDate": "2024-01-11T13:38:17.723Z",
+        "md5": "E2EC62E46450D5E09E813929D97C00C7",
+        "sha1": "E22EF68DF395516A8E8E13A9739578D1A48EC843",
+        "sha256": "924E37885D4B3B365225C773A6C4266ED7076494E3693EC487BEC066AB5BC5F7",
+        "name": "choco.exe",
+        "path": "C:\\ProgramData\\chocolatey\\bin\\choco.exe",
+        "size": 146048,
+        "embedFilename": "choco.exe",
+        "embedFileVersion": "0.12.1.0",
+        "embedProductName": "chocolatey - Chocolatey Shim",
+        "embedProductVersion": "0.12.1 - Chocolatey Shim: 1.0.0",
+        "embedVendorName": "Chocolatey Software, Inc.",
+        "subsystem": 3,
+        "certificates": [
+          [
+            {
+              "issuerName": "US, DigiCert Inc, www.digicert.com, DigiCert SHA2 Assured ID Code Signing CA",
+              "publicKeyHash": "4EF305185D95EB29506A516DF9A7D15E349A0483",
+              "subject": "US, Kansas, Topeka, \"Chocolatey Software, Inc.\", \"Chocolatey Software, Inc.\"",
+              "sha1": "83AC7D88C66CB8680BCE802E0F0F5C179722764B"
+            },
+            {
+              "issuerName": "US, DigiCert Inc, www.digicert.com, DigiCert Assured ID Root CA",
+              "publicKeyHash": "5AC4B97B2A0AA3A5EA7103C060F92DF665750E58",
+              "subject": "US, DigiCert Inc, www.digicert.com, DigiCert SHA2 Assured ID Code Signing CA",
+              "sha1": "92C1588E85AF2201CE7915E8538B492F605B80C6"
+            },
+            {
+              "issuerName": "US, DigiCert Inc, www.digicert.com, DigiCert Assured ID Root CA",
+              "publicKeyHash": "45EBA2AFF492CB82312D518BA7A7219DF36DC80F",
+              "subject": "US, DigiCert Inc, www.digicert.com, DigiCert Assured ID Root CA",
+              "sha1": "0563B8630D62D75ABBC8AB1E4BDFB5A899B24D43"
+            }
+          ]
+        ]
+      },
+      "parentsTraceId": [
+        "044e7c66-2ccc-47f5-8ee6-9b609af76a6e",
+        "2e1a702c-8672-4cb2-a020-9f518095c68b",
+        "097c6c34-9f74-4154-9048-100468b381df",
+        "3a390f98-4e88-48c9-bb74-54a54e9c908d"
+      ],
+      "tdmRuleIds": [
+        108,
+        100000,
+        100002,
+        100003,
+        100005
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-31T13:46:11Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@MSI._process_suspicious_path"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+      "host": "800IS268",
+      "rv": 2287,
+      "parentTraceId": "eefe03df-1838-4cb5-a2e3-32189b0b67d9",
+      "traceId": "f17d202d-4d2f-42f1-9618-0c44036e7dee",
+      "contextTraceId": "21295750-1778-40d6-873f-c920d5833f61",
+      "pid": 29664,
+      "it": 1,
+      "time": "2024-01-31T13:46:04.569Z",
+      "pSha2": "D4E68CC9CB1965D70134C68BD1A090E0AFAE5B8B3D8018C6B6564852AE7BF396",
+      "ppid": 27280,
+      "pFullName": "C:\\ProgramData\\chocolatey\\choco.exe",
+      "cmdLine": "\"C:\\Windows\\System32\\shutdown.exe\" /a",
+      "processName": "shutdown.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2904903",
+        "name": "kevin"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:08:54.533Z",
+        "md5": "F2A4E18DA72BB2C5B21076A5DE382A20",
+        "sha1": "DAF6D8AF4E015DD9242998D8288557B253F30143",
+        "sha256": "D4E68CC9CB1965D70134C68BD1A090E0AFAE5B8B3D8018C6B6564852AE7BF396",
+        "name": "shutdown.exe",
+        "path": "C:\\Windows\\System32\\shutdown.exe",
+        "size": 28160,
+        "embedFilename": "SHUTDOWN.EXE",
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.1",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "eefe03df-1838-4cb5-a2e3-32189b0b67d9",
+        "6788a5db-0731-42a1-a6ee-b5f924466fd6",
+        "044e7c66-2ccc-47f5-8ee6-9b609af76a6e",
+        "2e1a702c-8672-4cb2-a020-9f518095c68b",
+        "097c6c34-9f74-4154-9048-100468b381df",
+        "3a390f98-4e88-48c9-bb74-54a54e9c908d"
+      ],
+      "tdmRuleIds": [
+        110,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-31T13:46:12Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+      "host": "800IS268",
+      "rv": 2287,
+      "parentTraceId": "1eca93b1-8ff7-4281-a9c7-f287e7b2bd28",
+      "traceId": "00ded376-7d4e-41aa-b807-9b5cf398e5e8",
+      "contextTraceId": "21295750-1778-40d6-873f-c920d5833f61",
+      "pid": 15772,
+      "it": 1,
+      "time": "2024-01-31T13:46:02.575Z",
+      "pSha2": "4A6D0864E19C0368A47217C129B075DDDF61A6A262388F9D21045D82F3423ED7",
+      "ppid": 29616,
+      "pFullName": "C:\\ProgramData\\chocolatey\\tools\\shimgen.exe",
+      "cmdLine": "\"C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe\" /noconfig /checked+ /nowarn:1701,1702 /nostdlib+ /platform:AnyCPU /errorreport:prompt /main:shim.ShimProgram /errorendlocation /preferreduilang:en-US /highentropyva- /reference:\"C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll\" /reference:\"C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Core.dll\" /reference:\"C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.dll\" /debug- /filealign:512 /optimize+ /out:\"C:\\ProgramData\\chocolatey\\bin\\notepad++.exe\" /target:exe /utf8output /win32icon:\"C:\\ProgramData\\shimgen\\generatedfiles\\20240131_074602_4972\\shim.ico\" /win32manifest:\"C:\\ProgramData\\shimgen\\generatedfiles\\20240131_074602_4972\\app.manifest\" \"C:\\ProgramData\\shimgen\\generatedfiles\\20240131_074602_4972\\CommandExecutor.cs\" \"C:\\ProgramData\\shimgen\\generatedfiles\\20240131_074602_4972\\ShimProgram.cs\" \"C:\\ProgramData\\shimgen\\generatedfiles\\20240131_074602_4972\\Assembly.cs\"",
+      "processName": "csc.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2904903",
+        "name": "kevin"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:10:35.992Z",
+        "md5": "F65B029562077B648A6A5F6A1AA76A66",
+        "sha1": "528973416456C780051889CA1709510B6BF73370",
+        "sha256": "4A6D0864E19C0368A47217C129B075DDDF61A6A262388F9D21045D82F3423ED7",
+        "name": "csc.exe",
+        "path": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe",
+        "size": 2759232,
+        "embedFilename": "csc.exe",
+        "embedFileVersion": "4.8.4084.0 built by: NET48REL1",
+        "embedProductName": "Microsoft\u00ae .NET Framework",
+        "embedProductVersion": "4.8.4084.0",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "1eca93b1-8ff7-4281-a9c7-f287e7b2bd28",
+        "eefe03df-1838-4cb5-a2e3-32189b0b67d9",
+        "6788a5db-0731-42a1-a6ee-b5f924466fd6",
+        "044e7c66-2ccc-47f5-8ee6-9b609af76a6e",
+        "2e1a702c-8672-4cb2-a020-9f518095c68b",
+        "097c6c34-9f74-4154-9048-100468b381df",
+        "3a390f98-4e88-48c9-bb74-54a54e9c908d"
+      ],
+      "tdmRuleIds": [
+        110,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-31T13:46:11Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.LateralMovement",
+            "@ATE.T1570",
+            "@MSI._hunting_pe_created_geno"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@MSI._process_lolbas_no_param_csc"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.LateralMovement",
+            "@ATE.T1570",
+            "@MSI._hunting_pe_created_geno_path"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATE.T1036",
+            "@MSI._process_create_suspicious_file"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Api",
+      "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+      "host": "800IS268",
+      "rv": 2287,
+      "parentTraceId": "6788a5db-0731-42a1-a6ee-b5f924466fd6",
+      "traceId": "42d8ea76-701d-4632-a996-2386ee73a5ef",
+      "contextTraceId": "21295750-1778-40d6-873f-c920d5833f61",
+      "pid": 9104,
+      "it": 1,
+      "time": "2024-01-31T13:45:48.268Z",
+      "pSha2": "924E37885D4B3B365225C773A6C4266ED7076494E3693EC487BEC066AB5BC5F7",
+      "ppid": 9104,
+      "pFullName": "C:\\ProgramData\\chocolatey\\bin\\choco.exe",
+      "api": {
+        "name": "WriteProcessMemory",
+        "data": "AWAAAA==",
+        "result": "0",
+        "moduleName": "",
+        "arguments": [
+          "0x1506dfd0008",
+          "0x4",
+          "0x0"
+        ],
+        "targetPid": 27280
+      },
+      "uniqueRuleId": 11,
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-31T13:46:11Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.APICall"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "A9EC8DA8-9DC3-11EE-39B4-000000000000",
+      "host": "800IS268",
+      "rv": 2287,
+      "parentTraceId": "eefe03df-1838-4cb5-a2e3-32189b0b67d9",
+      "traceId": "16006918-38b5-4c5b-8e54-70938da5ac80",
+      "contextTraceId": "21295750-1778-40d6-873f-c920d5833f61",
+      "pid": 16616,
+      "it": 1,
+      "time": "2024-01-31T13:46:03.034Z",
+      "pSha2": "D4E68CC9CB1965D70134C68BD1A090E0AFAE5B8B3D8018C6B6564852AE7BF396",
+      "ppid": 27280,
+      "pFullName": "C:\\ProgramData\\chocolatey\\choco.exe",
+      "cmdLine": "\"C:\\Windows\\System32\\shutdown.exe\" /a",
+      "processName": "shutdown.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2904903",
+        "name": "kevin"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:08:54.533Z",
+        "md5": "F2A4E18DA72BB2C5B21076A5DE382A20",
+        "sha1": "DAF6D8AF4E015DD9242998D8288557B253F30143",
+        "sha256": "D4E68CC9CB1965D70134C68BD1A090E0AFAE5B8B3D8018C6B6564852AE7BF396",
+        "name": "shutdown.exe",
+        "path": "C:\\Windows\\System32\\shutdown.exe",
+        "size": 28160,
+        "embedFilename": "SHUTDOWN.EXE",
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.1",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "eefe03df-1838-4cb5-a2e3-32189b0b67d9",
+        "6788a5db-0731-42a1-a6ee-b5f924466fd6",
+        "044e7c66-2ccc-47f5-8ee6-9b609af76a6e",
+        "2e1a702c-8672-4cb2-a020-9f518095c68b",
+        "097c6c34-9f74-4154-9048-100468b381df",
+        "3a390f98-4e88-48c9-bb74-54a54e9c908d"
+      ],
+      "tdmRuleIds": [
+        110,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-31T13:46:11Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    }
+  ]
+}

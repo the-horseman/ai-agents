@@ -1,0 +1,3625 @@
+{
+  "detections": [
+    {
+      "id": "3603197238",
+      "traceId": "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+      "firstDetected": "2024-01-29T21:14:33Z",
+      "severity": "s4",
+      "rank": 280,
+      "tags": [
+        "@MSI._apt_process_user",
+        "@ATA.PrivilegeEscalation",
+        "@MSI._process_rundllcpl",
+        "@ATE.T1059.003",
+        "@ATE.T1569.002",
+        "@ATE.T1087.002",
+        "@ATE.T1218.002",
+        "@ATA.InitialAccess",
+        "@MSI._file_ep0061_delexecfileswindows",
+        "@MSI._apt_process_serviceexecute",
+        "@ATE.T1135",
+        "@MSI._apt_process_PS_env_systeminfo",
+        "@MSI._apt_process_servicemodify",
+        "@ATE.T1087.001",
+        "@ATE.T1136.002",
+        "@MSI._file_ep0061_delfileswindows",
+        "@ATE.T1049",
+        "@ATE.T1069.001",
+        "@ATE.T1070.004",
+        "@ATE.T1078.003",
+        "@MSI._hunting_discovery_persistence",
+        "@ATE.T1057",
+        "@ATE.T1489",
+        "@ATE.T1482",
+        "@MSI._apt_process_ipconfiginfo",
+        "@ATE.T1082",
+        "@ATE.T1078.001",
+        "@ATE.T1543.003",
+        "@MSI._apt_process_newuser_high",
+        "@ATE.T1059.001",
+        "@ATE.T1562.001",
+        "@MSI._apt_process_adduser",
+        "@ATE.T1074.002",
+        "@ATE.T1033",
+        "@MSI._file_ep0171_deletecmd",
+        "@MSI._process_general_discovery_usercreated",
+        "@MSI._process_general_discovery",
+        "@MSI._process_service_manipulate",
+        "@ATE.T1218.011",
+        "@ATA.Impact",
+        "@MSI._file_ep0061_delfilesinstall",
+        "@ATE.T1136.001",
+        "@ATE.T1098",
+        "@MSI._apt_process_netuseremote",
+        "@ATA.Persistence",
+        "@MSI._process_added_user_elevated_groups",
+        "@ATE.T1016",
+        "@ATA.DefenseEvasion",
+        "@MSI._apt_process_taskkillname",
+        "@ATA.Execution",
+        "@MSI._apt_process_usergroup",
+        "@ATA.Collection",
+        "@ATE.T1069.002",
+        "@ATE.T1018",
+        "@ATA.Discovery"
+      ],
+      "host": {
+        "maGuid": "21433986-898A-11EE-1281-000000000000",
+        "hostname": "1462MED-HDICT4",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-23T22:12:17Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "e4:54:e8:52:3b:06",
+            "ip": "10.45.150.127",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "F13DE58416730D210DAB465B242E9C949FB0A0245EEF45B07C381F0C6C8A43C3"
+    },
+    {
+      "id": "3614877217",
+      "traceId": "c328ed4c-b5e0-4d93-9f92-9f877454f4cb",
+      "firstDetected": "2024-02-08T21:08:17Z",
+      "severity": "s1",
+      "rank": 100,
+      "tags": [
+        "@ATE.T1550.002",
+        "@MSI._registry_disablewindowsdefender",
+        "@ATA.PrivilegeEscalation",
+        "@MSI._reg_ep0074_1_winupdate",
+        "@ATA.DefenseEvasion",
+        "@ATA.LateralMovement",
+        "@MSI._registry_ps_scriptblocklogging_manipulated",
+        "@MSI._reg_ep0540_dep",
+        "@ATE.T1548.002",
+        "@ATE.T1112",
+        "@MSI._reg_uacrestrictnetlogon",
+        "@ATE.T1562.001",
+        "@MSI._reg_ep0537_autorundrives"
+      ],
+      "host": {
+        "maGuid": "21433986-898A-11EE-1281-000000000000",
+        "hostname": "1462MED-HDICT4",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-23T22:12:17Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "e4:54:e8:52:3b:06",
+            "ip": "10.45.150.127",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "F13DE58416730D210DAB465B242E9C949FB0A0245EEF45B07C381F0C6C8A43C3"
+    },
+    {
+      "id": "3616836886",
+      "traceId": "1eb52814-5042-40aa-a591-1caf78059594",
+      "firstDetected": "2024-02-10T14:46:46Z",
+      "severity": "s1",
+      "rank": 100,
+      "tags": [
+        "@ATE.T1550.002",
+        "@MSI._registry_disablewindowsdefender",
+        "@ATA.PrivilegeEscalation",
+        "@MSI._reg_ep0074_1_winupdate",
+        "@ATA.DefenseEvasion",
+        "@ATA.LateralMovement",
+        "@MSI._registry_ps_scriptblocklogging_manipulated",
+        "@MSI._reg_ep0540_dep",
+        "@ATE.T1548.002",
+        "@ATE.T1112",
+        "@MSI._reg_uacrestrictnetlogon",
+        "@ATE.T1562.001",
+        "@MSI._reg_ep0537_autorundrives"
+      ],
+      "host": {
+        "maGuid": "21433986-898A-11EE-1281-000000000000",
+        "hostname": "1462MED-HDICT4",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-23T22:12:17Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "e4:54:e8:52:3b:06",
+            "ip": "10.45.150.127",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "F13DE58416730D210DAB465B242E9C949FB0A0245EEF45B07C381F0C6C8A43C3"
+    },
+    {
+      "id": "3636293672",
+      "traceId": "87e7b860-c748-4365-b6f8-058a98c45a64",
+      "firstDetected": "2024-02-24T13:35:08Z",
+      "severity": "s1",
+      "rank": 100,
+      "tags": [
+        "@ATE.T1550.002",
+        "@MSI._registry_disablewindowsdefender",
+        "@ATA.PrivilegeEscalation",
+        "@MSI._reg_ep0074_1_winupdate",
+        "@ATA.DefenseEvasion",
+        "@ATA.LateralMovement",
+        "@MSI._registry_ps_scriptblocklogging_manipulated",
+        "@MSI._reg_ep0540_dep",
+        "@ATE.T1548.002",
+        "@ATE.T1112",
+        "@MSI._reg_uacrestrictnetlogon",
+        "@ATE.T1562.001",
+        "@MSI._reg_ep0537_autorundrives"
+      ],
+      "host": {
+        "maGuid": "21433986-898A-11EE-1281-000000000000",
+        "hostname": "1462MED-HDICT4",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-23T22:12:17Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "e4:54:e8:52:3b:06",
+            "ip": "10.45.150.127",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "F13DE58416730D210DAB465B242E9C949FB0A0245EEF45B07C381F0C6C8A43C3"
+    },
+    {
+      "id": "3603195506",
+      "traceId": "47f81145-d5e4-487a-8e3e-daabfee261cb",
+      "firstDetected": "2024-01-29T21:11:36Z",
+      "severity": "s1",
+      "rank": 86,
+      "tags": [
+        "@ATA.DefenseEvasion",
+        "@MSI._reg_shellfolders",
+        "@MSI._reg_ep0088_modfolder",
+        "@MSI._reg_ep0007_ieurlhooks",
+        "@ATE.T1112"
+      ],
+      "host": {
+        "maGuid": "21433986-898A-11EE-1281-000000000000",
+        "hostname": "1462MED-HDICT4",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-23T22:12:17Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "e4:54:e8:52:3b:06",
+            "ip": "10.45.150.127",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "F13DE58416730D210DAB465B242E9C949FB0A0245EEF45B07C381F0C6C8A43C3"
+    },
+    {
+      "id": "3603195505",
+      "traceId": "2b8f7081-390b-48fe-bc21-b54ea44506ff",
+      "firstDetected": "2024-01-29T21:11:36Z",
+      "severity": "s1",
+      "rank": 81,
+      "tags": [
+        "@ATA.Collection",
+        "@ATE.T1113",
+        "@ATA.DefenseEvasion",
+        "@ATA.Execution",
+        "@ATE.T1106",
+        "@MSI._process_lolbas_no_param_gpscript",
+        "@MSI._api_screenshot",
+        "@MSI._reg_ep0537_autorundrives",
+        "@ATE.T1112"
+      ],
+      "host": {
+        "maGuid": "21433986-898A-11EE-1281-000000000000",
+        "hostname": "1462MED-HDICT4",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-23T22:12:17Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "e4:54:e8:52:3b:06",
+            "ip": "10.45.150.127",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "F13DE58416730D210DAB465B242E9C949FB0A0245EEF45B07C381F0C6C8A43C3"
+    },
+    {
+      "id": "3615058270",
+      "traceId": "dcf5c2ff-59c6-4566-a6a1-c4e05fdd7110",
+      "firstDetected": "2024-02-09T00:18:00Z",
+      "severity": "s1",
+      "rank": 81,
+      "tags": [
+        "@ATE.T1071",
+        "@ATA.CommandAndControl",
+        "@MSI._api_AdsOpenObject_LDAP",
+        "@MSI._process_psdownload_script",
+        "@ATA.Execution",
+        "@ATE.T1059.001",
+        "@ATE.T1105",
+        "@ATE.T1087.002",
+        "@ATA.Discovery"
+      ],
+      "host": {
+        "maGuid": "21433986-898A-11EE-1281-000000000000",
+        "hostname": "1462MED-HDICT4",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-23T22:12:17Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "e4:54:e8:52:3b:06",
+            "ip": "10.45.150.127",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "F13DE58416730D210DAB465B242E9C949FB0A0245EEF45B07C381F0C6C8A43C3"
+    },
+    {
+      "id": "3616836884",
+      "traceId": "fcfbba5b-f6ed-4735-a6fb-b234055651f3",
+      "firstDetected": "2024-02-10T14:46:46Z",
+      "severity": "s1",
+      "rank": 81,
+      "tags": [
+        "@ATE.T1071",
+        "@ATA.CommandAndControl",
+        "@MSI._api_AdsOpenObject_LDAP",
+        "@MSI._process_psdownload_script",
+        "@ATA.Execution",
+        "@ATE.T1059.001",
+        "@ATE.T1105",
+        "@ATE.T1087.002",
+        "@ATA.Discovery"
+      ],
+      "host": {
+        "maGuid": "21433986-898A-11EE-1281-000000000000",
+        "hostname": "1462MED-HDICT4",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-23T22:12:17Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "e4:54:e8:52:3b:06",
+            "ip": "10.45.150.127",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "F13DE58416730D210DAB465B242E9C949FB0A0245EEF45B07C381F0C6C8A43C3"
+    },
+    {
+      "id": "3635638734",
+      "traceId": "ed3b8513-d601-4161-9d68-4e4fc6a1464f",
+      "firstDetected": "2024-02-23T23:28:14Z",
+      "severity": "s1",
+      "rank": 81,
+      "tags": [
+        "@ATE.T1071",
+        "@ATA.CommandAndControl",
+        "@MSI._api_AdsOpenObject_LDAP",
+        "@MSI._process_psdownload_script",
+        "@ATA.Execution",
+        "@ATE.T1059.001",
+        "@ATE.T1105",
+        "@ATE.T1087.002",
+        "@ATA.Discovery"
+      ],
+      "host": {
+        "maGuid": "21433986-898A-11EE-1281-000000000000",
+        "hostname": "1462MED-HDICT4",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-23T22:12:17Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "e4:54:e8:52:3b:06",
+            "ip": "10.45.150.127",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "F13DE58416730D210DAB465B242E9C949FB0A0245EEF45B07C381F0C6C8A43C3"
+    }
+  ],
+  "traces": [
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+      "traceId": "dd51dd38-3de7-4020-9117-ca3dbea37fe6",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 15968,
+      "it": 1,
+      "time": "2024-01-29T21:15:11.709Z",
+      "pSha2": "64042DD34CA74881EF81354016B6539284BDA9F1BC5289158E620E3BF928153F",
+      "ppid": 5172,
+      "pFullName": "C:\\Windows\\System32\\svchost.exe",
+      "cmdLine": "\"regedit.exe\" \"C:\\Users\\tayla\\Desktop\\AutoLoginDoctor.reg\"",
+      "processName": "regedit.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-11-28T05:38:49.861Z",
+        "md5": "94CBD1A2FE23F3ABEA434D1499B3A5DF",
+        "sha1": "3BF386AAA9D7D53D8E37B5CA5C99465D2EA4E978",
+        "sha256": "64042DD34CA74881EF81354016B6539284BDA9F1BC5289158E620E3BF928153F",
+        "name": "regedit.exe",
+        "path": "C:\\Windows\\regedit.exe",
+        "size": 370176,
+        "embedFilename": "REGEDIT.EXE",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:15:32Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@MSI._process_lolbas_no_param_regedit"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+      "traceId": "e31282f9-5669-41c3-9d55-1e3b288137a9",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 7220,
+      "it": 1,
+      "time": "2024-01-29T21:08:40.639Z",
+      "pSha2": "BC1AC9C190C716778D80EF36AAE620F2B7B334D3776B628907581301ED97128C",
+      "ppid": 5172,
+      "pFullName": "C:\\Windows\\System32\\svchost.exe",
+      "cmdLine": "consent.exe 5172 288 000002C00A65ECC0",
+      "processName": "consent.exe",
+      "integrity": 4,
+      "user": {
+        "domain": "NT AUTHORITY",
+        "id": "S-1-5-18",
+        "name": "SYSTEM"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-11-28T05:37:16.014Z",
+        "md5": "959461FE7E338B2BF1F75D6F860DAAE1",
+        "sha1": "4FB83228E33895D3D756531491CA52D2BB39F305",
+        "sha256": "BC1AC9C190C716778D80EF36AAE620F2B7B334D3776B628907581301ED97128C",
+        "name": "consent.exe",
+        "path": "C:\\Windows\\System32\\consent.exe",
+        "size": 186848,
+        "embedFilename": "consent.exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:08:58Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Persistence",
+            "@ATA.DefenseEvasion",
+            "@ATA.PrivilegeEscalation",
+            "@ATE.T1547.001",
+            "@ATE.T1112",
+            "@MSI._reg_ep0104_run_del"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "ea625c96-053c-4ca0-bf08-e3935516c85a",
+      "traceId": "8939624d-e6ed-4211-ada8-7e79aa1f548e",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 18628,
+      "it": 1,
+      "time": "2024-01-29T21:11:23.222Z",
+      "pSha2": "265B69033CEA7A9F8214A34CD9B17912909AF46C7A47395DD7BB893A24507E59",
+      "ppid": 21640,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "C:\\Windows\\system32\\cmd.exe /c \"\"\\\\fl1462itmon\\applications\\Applications\\SCCM\\runAllSccmActions.bat\" \"",
+      "processName": "cmd.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-11-28T05:36:34.904Z",
+        "md5": "CB6CD09F6A25744A8FA6E4B3E4D260C5",
+        "sha1": "E9BE2F86E3A3BFF02D1953AECCF0ED22284596D4",
+        "sha256": "265B69033CEA7A9F8214A34CD9B17912909AF46C7A47395DD7BB893A24507E59",
+        "name": "cmd.exe",
+        "path": "C:\\Windows\\System32\\cmd.exe",
+        "size": 289792,
+        "embedFilename": "Cmd.Exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        103,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:11:31Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "interpreter": "cmd",
+      "nonpeType": "file",
+      "nonpeScript": "\"\\fl1462itmon\\applications\\Applications\\SCCM\\runAllSccmActions.bat",
+      "pattern": "runAllSccmActions.bat",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Api",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+      "traceId": "828d3eef-3bec-417b-a2d5-1bd80dfcdf44",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 5172,
+      "it": 1,
+      "time": "2024-01-29T21:08:43.074Z",
+      "pSha2": "F13DE58416730D210DAB465B242E9C949FB0A0245EEF45B07C381F0C6C8A43C3",
+      "ppid": 5172,
+      "pFullName": "C:\\Windows\\System32\\svchost.exe",
+      "api": {
+        "name": "WriteProcessMemory",
+        "data": "AACeXI8BAAA=",
+        "result": "0",
+        "moduleName": "",
+        "arguments": [
+          "0x49d3b782d8",
+          "0x8",
+          "0x0"
+        ],
+        "targetPid": 21640
+      },
+      "uniqueRuleId": 11,
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:08:58Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.APICall"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+      "traceId": "ea625c96-053c-4ca0-bf08-e3935516c85a",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 21640,
+      "it": 1,
+      "time": "2024-01-29T21:08:43.048Z",
+      "pSha2": "265B69033CEA7A9F8214A34CD9B17912909AF46C7A47395DD7BB893A24507E59",
+      "ppid": 5172,
+      "pFullName": "C:\\Windows\\System32\\svchost.exe",
+      "cmdLine": "\"C:\\Windows\\system32\\cmd.exe\" ",
+      "processName": "cmd.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-11-28T05:36:34.904Z",
+        "md5": "CB6CD09F6A25744A8FA6E4B3E4D260C5",
+        "sha1": "E9BE2F86E3A3BFF02D1953AECCF0ED22284596D4",
+        "sha256": "265B69033CEA7A9F8214A34CD9B17912909AF46C7A47395DD7BB893A24507E59",
+        "name": "cmd.exe",
+        "path": "C:\\Windows\\System32\\cmd.exe",
+        "size": 289792,
+        "embedFilename": "Cmd.Exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        103,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:08:58Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "interpreter": "cmd",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s4",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Persistence",
+            "@ATE.T1136.001",
+            "@ATE.T1136.002",
+            "@MSI._apt_process_newuser_high"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.DefenseEvasion",
+            "@ATA.Impact",
+            "@ATE.T1569.002",
+            "@ATE.T1489",
+            "@ATE.T1562.001",
+            "@MSI._process_service_manipulate"
+          ]
+        },
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.Persistence",
+            "@ATA.Discovery",
+            "@ATE.T1069.002",
+            "@ATE.T1087.002",
+            "@MSI._process_added_user_elevated_groups"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATE.T1070.004",
+            "@MSI._file_ep0061_delfileswindows"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1033",
+            "@ATE.T1069.001",
+            "@ATE.T1069.002",
+            "@ATE.T1087.001",
+            "@ATE.T1087.002",
+            "@ATE.T1018",
+            "@MSI._apt_process_user"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATE.T1070.004",
+            "@MSI._file_ep0061_delexecfileswindows"
+          ]
+        },
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1016",
+            "@MSI._process_general_discovery"
+          ]
+        },
+        {
+          "sev": "s4",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1016",
+            "@ATE.T1482",
+            "@MSI._process_general_discovery_usercreated"
+          ]
+        },
+        {
+          "sev": "s4",
+          "tags": [
+            "@ATA.Persistence",
+            "@ATA.Discovery",
+            "@ATE.T1016",
+            "@ATE.T1482",
+            "@MSI._hunting_discovery_persistence"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATE.T1070.004",
+            "@MSI._file_ep0061_delfilesinstall"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1016",
+            "@MSI._apt_process_ipconfiginfo"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATA.Execution",
+            "@ATE.T1059.003",
+            "@ATE.T1070.004",
+            "@MSI._file_ep0171_deletecmd"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Collection",
+            "@ATA.Discovery",
+            "@ATE.T1074.002",
+            "@ATE.T1049",
+            "@ATE.T1135",
+            "@MSI._apt_process_netuseremote"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "ea625c96-053c-4ca0-bf08-e3935516c85a",
+      "traceId": "c8c937e0-1279-4799-baf9-c1e9c2101649",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 14956,
+      "it": 1,
+      "time": "2024-01-29T21:10:50.535Z",
+      "pSha2": "9F376759BCBCD705F726460FC4A7E2B07F310F52BAA73CAAAAA124FDDBDF993E",
+      "ppid": 21640,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "net  user 862administrator s@nt@R0s@ /add",
+      "processName": "net.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:09:33.990Z",
+        "md5": "0BD94A338EEA5A4E1F2830AE326E6D19",
+        "sha1": "88B101598CC6726B7A57D02B1FA95BE1B272A821",
+        "sha256": "9F376759BCBCD705F726460FC4A7E2B07F310F52BAA73CAAAAA124FDDBDF993E",
+        "name": "net.exe",
+        "path": "C:\\Windows\\System32\\net.exe",
+        "size": 59904,
+        "embedFilename": "net.exe",
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.1",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:10:55Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s4",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Persistence",
+            "@ATE.T1136.001",
+            "@ATE.T1136.002",
+            "@MSI._apt_process_newuser_high"
+          ]
+        },
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1016",
+            "@MSI._process_general_discovery"
+          ]
+        },
+        {
+          "sev": "s4",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1016",
+            "@ATE.T1482",
+            "@MSI._process_general_discovery_usercreated"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1033",
+            "@ATE.T1069.001",
+            "@ATE.T1069.002",
+            "@ATE.T1087.001",
+            "@ATE.T1087.002",
+            "@ATE.T1018",
+            "@MSI._apt_process_user"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "427e4351-650f-42de-aa55-885ac383cd24",
+      "traceId": "486026dd-f1bc-4d1c-a3e8-77a1c54cb38b",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 7428,
+      "it": 1,
+      "time": "2024-01-29T21:10:44.115Z",
+      "pSha2": "00BE065F405E93233CC2F0012DEFDCBB1D6817B58969D5FFD9FD72FC4783C6F4",
+      "ppid": 2784,
+      "pFullName": "C:\\Windows\\System32\\rundll32.exe",
+      "cmdLine": "C:\\Windows\\system32\\rundll32.exe C:\\Windows\\system32\\inetcpl.cpl,ClearMyTracksByProcess Flags:255 WinX:0 WinY:0 IEFrame:0000000000000000",
+      "processName": "rundll32.exe",
+      "integrity": 1,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-11-28T05:37:02.366Z",
+        "md5": "100F56A73211E0B2BCD076A55E6393FD",
+        "sha1": "2576C63F45FBE13DBDC619C39124FADE94E002D0",
+        "sha256": "00BE065F405E93233CC2F0012DEFDCBB1D6817B58969D5FFD9FD72FC4783C6F4",
+        "name": "rundll32.exe",
+        "path": "C:\\Windows\\System32\\rundll32.exe",
+        "size": 71680,
+        "embedFilename": "RUNDLL32.EXE",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "427e4351-650f-42de-aa55-885ac383cd24",
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        1333,
+        100003,
+        100008
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:10:55Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.DefenseEvasion",
+            "@ATE.T1218.011",
+            "@ATE.T1218.002",
+            "@MSI._process_rundllcpl"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Api",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+      "traceId": "c9162c53-f793-4b9f-92e1-99849eb951e5",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 5172,
+      "it": 1,
+      "time": "2024-01-29T21:15:11.740Z",
+      "pSha2": "F13DE58416730D210DAB465B242E9C949FB0A0245EEF45B07C381F0C6C8A43C3",
+      "ppid": 5172,
+      "pFullName": "C:\\Windows\\System32\\svchost.exe",
+      "api": {
+        "name": "WriteProcessMemory",
+        "data": "AAAi4CECAAA=",
+        "result": "0",
+        "moduleName": "",
+        "arguments": [
+          "0x97538e82d8",
+          "0x8",
+          "0x0"
+        ],
+        "targetPid": 15968
+      },
+      "uniqueRuleId": 11,
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:15:32Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.APICall"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "ea625c96-053c-4ca0-bf08-e3935516c85a",
+      "traceId": "3d0e796a-e660-431b-8db5-04965fc3b601",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 16616,
+      "it": 1,
+      "time": "2024-01-29T21:10:25.624Z",
+      "pSha2": "9F376759BCBCD705F726460FC4A7E2B07F310F52BAA73CAAAAA124FDDBDF993E",
+      "ppid": 21640,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "net  stop spooler",
+      "processName": "net.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:09:33.990Z",
+        "md5": "0BD94A338EEA5A4E1F2830AE326E6D19",
+        "sha1": "88B101598CC6726B7A57D02B1FA95BE1B272A821",
+        "sha256": "9F376759BCBCD705F726460FC4A7E2B07F310F52BAA73CAAAAA124FDDBDF993E",
+        "name": "net.exe",
+        "path": "C:\\Windows\\System32\\net.exe",
+        "size": 59904,
+        "embedFilename": "net.exe",
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.1",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:11:03Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.DefenseEvasion",
+            "@ATA.Impact",
+            "@ATE.T1569.002",
+            "@ATE.T1489",
+            "@ATE.T1562.001",
+            "@MSI._process_service_manipulate"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "ea625c96-053c-4ca0-bf08-e3935516c85a",
+      "traceId": "97a52cab-3970-4b8f-b1f9-20643c0938c5",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 20808,
+      "it": 1,
+      "time": "2024-01-29T21:10:25.773Z",
+      "pSha2": "9F376759BCBCD705F726460FC4A7E2B07F310F52BAA73CAAAAA124FDDBDF993E",
+      "ppid": 21640,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "net  start spooler",
+      "processName": "net.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:09:33.990Z",
+        "md5": "0BD94A338EEA5A4E1F2830AE326E6D19",
+        "sha1": "88B101598CC6726B7A57D02B1FA95BE1B272A821",
+        "sha256": "9F376759BCBCD705F726460FC4A7E2B07F310F52BAA73CAAAAA124FDDBDF993E",
+        "name": "net.exe",
+        "path": "C:\\Windows\\System32\\net.exe",
+        "size": 59904,
+        "embedFilename": "net.exe",
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.1",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:11:03Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s1",
+      "detectionsSets": [
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1016",
+            "@MSI._process_general_discovery"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "ea625c96-053c-4ca0-bf08-e3935516c85a",
+      "traceId": "e141048c-51cc-4bcb-9f28-0390ea197789",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 21936,
+      "it": 1,
+      "time": "2024-01-29T21:11:21.547Z",
+      "pSha2": "56F8CC2C1790C389394733B84C3FB55E10977E9F0FE0C08110AC11F0FE47F05E",
+      "ppid": 21640,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "taskkill  /F /IM \"SCClient.exe\"",
+      "processName": "taskkill.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:09:51.678Z",
+        "md5": "A599D3B2FAFBDE4C1A6D7D0F839451C7",
+        "sha1": "0225BBEC16CB7B23B189F811065767180EDA9801",
+        "sha256": "56F8CC2C1790C389394733B84C3FB55E10977E9F0FE0C08110AC11F0FE47F05E",
+        "name": "taskkill.exe",
+        "path": "C:\\Windows\\System32\\taskkill.exe",
+        "size": 101376,
+        "embedFilename": "taskkill.exe",
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.1",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:11:31Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATA.DefenseEvasion",
+            "@ATA.Impact",
+            "@ATE.T1057",
+            "@ATE.T1562.001",
+            "@ATE.T1489",
+            "@MSI._apt_process_taskkillname"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "ea625c96-053c-4ca0-bf08-e3935516c85a",
+      "traceId": "984dc0bc-a0e9-47ce-a206-f2d628ce4a80",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 22280,
+      "it": 1,
+      "time": "2024-01-29T21:10:33.778Z",
+      "pSha2": "9F376759BCBCD705F726460FC4A7E2B07F310F52BAA73CAAAAA124FDDBDF993E",
+      "ppid": 21640,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "net  start wuauserv",
+      "processName": "net.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:09:33.990Z",
+        "md5": "0BD94A338EEA5A4E1F2830AE326E6D19",
+        "sha1": "88B101598CC6726B7A57D02B1FA95BE1B272A821",
+        "sha256": "9F376759BCBCD705F726460FC4A7E2B07F310F52BAA73CAAAAA124FDDBDF993E",
+        "name": "net.exe",
+        "path": "C:\\Windows\\System32\\net.exe",
+        "size": 59904,
+        "embedFilename": "net.exe",
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.1",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:11:03Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Api",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+      "traceId": "0c8f7c9f-34a4-4d82-9601-edd298512ae1",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 5172,
+      "it": 1,
+      "time": "2024-01-29T21:07:15.947Z",
+      "pSha2": "F13DE58416730D210DAB465B242E9C949FB0A0245EEF45B07C381F0C6C8A43C3",
+      "ppid": 5172,
+      "pFullName": "C:\\Windows\\System32\\svchost.exe",
+      "api": {
+        "name": "WriteProcessMemory",
+        "data": "AADBr5sCAAA=",
+        "result": "0",
+        "moduleName": "",
+        "arguments": [
+          "0xef946d42d8",
+          "0x8",
+          "0x0"
+        ],
+        "targetPid": 16460
+      },
+      "uniqueRuleId": 11,
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:07:30Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.APICall"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "14a44e39-ff96-4fe4-bdd5-4fbade9e609f",
+      "traceId": "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 1016,
+      "time": "2024-01-29T19:55:20.837Z",
+      "pSha2": "43EC773E0EC626BF6D8A7FD04E64DC36AFA6801444A3C36EF4DA2A909FA0D83F",
+      "ppid": 944,
+      "pFullName": "C:\\Windows\\System32\\wininit.exe",
+      "cmdLine": "C:\\Windows\\System32\\services.exe",
+      "processName": "services.exe",
+      "integrity": 4,
+      "user": {
+        "domain": "NT AUTHORITY",
+        "id": "S-1-5-18",
+        "name": "NT AUTHORITY\\SYSTEM"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-11-28T05:37:00.663Z",
+        "md5": "E606E7E0D5E94AF8222715A24DF0776B",
+        "sha1": "E5704D8E560122C2A23DE8912AE63B213D67C860",
+        "sha256": "43EC773E0EC626BF6D8A7FD04E64DC36AFA6801444A3C36EF4DA2A909FA0D83F",
+        "name": "services.exe",
+        "path": "C:\\Windows\\System32\\services.exe",
+        "size": 716032,
+        "embedFilename": "services.exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        1110,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T19:56:19Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "ea625c96-053c-4ca0-bf08-e3935516c85a",
+      "traceId": "e3b241be-09d8-4384-b48d-7cc8e85a858d",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 21656,
+      "it": 1,
+      "time": "2024-01-29T21:11:21.488Z",
+      "pSha2": "41F067C3A11B02FE39947F9EBA68AE5C7CB5BD1872A6009A4CD1506554A9ABA9",
+      "ppid": 21640,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "sc  config CscService start= disabled",
+      "processName": "sc.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:09:34.006Z",
+        "md5": "3FB5CF71F7E7EB49790CB0E663434D80",
+        "sha1": "B4979A9F970029889713D756C3F123643DDE73DA",
+        "sha256": "41F067C3A11B02FE39947F9EBA68AE5C7CB5BD1872A6009A4CD1506554A9ABA9",
+        "name": "sc.exe",
+        "path": "C:\\Windows\\System32\\sc.exe",
+        "size": 72192,
+        "embedFilename": "sc.exe",
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.1",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        103,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:11:31Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Persistence",
+            "@ATA.PrivilegeEscalation",
+            "@ATE.T1543.003",
+            "@MSI._apt_process_servicemodify"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "ea625c96-053c-4ca0-bf08-e3935516c85a",
+      "traceId": "a56d82b6-5265-4937-b873-1b447c6eb6b3",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 20656,
+      "it": 1,
+      "time": "2024-01-29T21:11:21.435Z",
+      "pSha2": "41F067C3A11B02FE39947F9EBA68AE5C7CB5BD1872A6009A4CD1506554A9ABA9",
+      "ppid": 21640,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "sc  stop CscService",
+      "processName": "sc.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:09:34.006Z",
+        "md5": "3FB5CF71F7E7EB49790CB0E663434D80",
+        "sha1": "B4979A9F970029889713D756C3F123643DDE73DA",
+        "sha256": "41F067C3A11B02FE39947F9EBA68AE5C7CB5BD1872A6009A4CD1506554A9ABA9",
+        "name": "sc.exe",
+        "path": "C:\\Windows\\System32\\sc.exe",
+        "size": 72192,
+        "embedFilename": "sc.exe",
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.1",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        103,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:11:31Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.DefenseEvasion",
+            "@ATA.Impact",
+            "@ATE.T1569.002",
+            "@ATE.T1489",
+            "@ATE.T1562.001",
+            "@MSI._process_service_manipulate"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.DefenseEvasion",
+            "@ATA.Impact",
+            "@ATE.T1569.002",
+            "@ATE.T1489",
+            "@ATE.T1562.001",
+            "@MSI._process_service_manipulate"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "4ddf104e-1449-4673-835a-2fcd90e7aabe",
+      "traceId": "1e2a4e77-ac43-440c-bf3b-833e7b6cd836",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 7488,
+      "it": 1,
+      "time": "2024-01-29T21:10:31.196Z",
+      "pSha2": "E62071AA18768DD88ACAF97FA7B1F2FEC9FCCE89736C1EE9A800699328D196EA",
+      "ppid": 13568,
+      "pFullName": "C:\\Windows\\System32\\net.exe",
+      "cmdLine": "C:\\Windows\\system32\\net1  stop wuauserv",
+      "processName": "net1.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-11-28T05:38:30.486Z",
+        "md5": "78E53D5AE8839C58FA40BEA32B775999",
+        "sha1": "886622877AFB2F110ABFAAB79C107119A7E569AB",
+        "sha256": "E62071AA18768DD88ACAF97FA7B1F2FEC9FCCE89736C1EE9A800699328D196EA",
+        "name": "net1.exe",
+        "path": "C:\\Windows\\System32\\net1.exe",
+        "size": 183808,
+        "embedFilename": "net1.exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "4ddf104e-1449-4673-835a-2fcd90e7aabe",
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:11:03Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.DefenseEvasion",
+            "@ATA.Impact",
+            "@ATE.T1569.002",
+            "@ATE.T1489",
+            "@ATE.T1562.001",
+            "@MSI._process_service_manipulate"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.DefenseEvasion",
+            "@ATA.Impact",
+            "@ATE.T1569.002",
+            "@ATE.T1489",
+            "@ATE.T1562.001",
+            "@MSI._process_service_manipulate"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "ea625c96-053c-4ca0-bf08-e3935516c85a",
+      "traceId": "4ddf104e-1449-4673-835a-2fcd90e7aabe",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 13568,
+      "it": 1,
+      "time": "2024-01-29T21:10:31.156Z",
+      "pSha2": "9F376759BCBCD705F726460FC4A7E2B07F310F52BAA73CAAAAA124FDDBDF993E",
+      "ppid": 21640,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "net  stop wuauserv",
+      "processName": "net.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:09:33.990Z",
+        "md5": "0BD94A338EEA5A4E1F2830AE326E6D19",
+        "sha1": "88B101598CC6726B7A57D02B1FA95BE1B272A821",
+        "sha256": "9F376759BCBCD705F726460FC4A7E2B07F310F52BAA73CAAAAA124FDDBDF993E",
+        "name": "net.exe",
+        "path": "C:\\Windows\\System32\\net.exe",
+        "size": 59904,
+        "embedFilename": "net.exe",
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.1",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:11:03Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.DefenseEvasion",
+            "@ATA.Impact",
+            "@ATE.T1569.002",
+            "@ATE.T1489",
+            "@ATE.T1562.001",
+            "@MSI._process_service_manipulate"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Api",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+      "traceId": "7ea3a54e-1d1c-4079-89a4-2cb1b37f0152",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 5172,
+      "it": 1,
+      "time": "2024-01-29T21:08:40.706Z",
+      "pSha2": "F13DE58416730D210DAB465B242E9C949FB0A0245EEF45B07C381F0C6C8A43C3",
+      "ppid": 5172,
+      "pFullName": "C:\\Windows\\System32\\svchost.exe",
+      "api": {
+        "name": "WriteProcessMemory",
+        "data": "AACQNF0CAAA=",
+        "result": "0",
+        "moduleName": "",
+        "arguments": [
+          "0xf81b3ac2d8",
+          "0x8",
+          "0x0"
+        ],
+        "targetPid": 7220
+      },
+      "uniqueRuleId": 11,
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:08:58Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.APICall"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+      "traceId": "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 5172,
+      "it": 1,
+      "time": "2024-01-29T20:51:50.149Z",
+      "pSha2": "F13DE58416730D210DAB465B242E9C949FB0A0245EEF45B07C381F0C6C8A43C3",
+      "ppid": 1016,
+      "pFullName": "C:\\Windows\\System32\\services.exe",
+      "cmdLine": "C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s Appinfo",
+      "processName": "svchost.exe",
+      "integrity": 4,
+      "user": {
+        "domain": "NT AUTHORITY",
+        "id": "S-1-5-18",
+        "name": "SYSTEM"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-11-28T05:36:54.902Z",
+        "md5": "145DCF6706EEEA5B066885EE17964C09",
+        "sha1": "445F5F38365AF88EC29B357F4696F0E3EE50A1D8",
+        "sha256": "F13DE58416730D210DAB465B242E9C949FB0A0245EEF45B07C381F0C6C8A43C3",
+        "name": "svchost.exe",
+        "path": "C:\\Windows\\System32\\svchost.exe",
+        "size": 55456,
+        "embedFilename": "svchost.exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T20:51:54Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "ea625c96-053c-4ca0-bf08-e3935516c85a",
+      "traceId": "274404b9-af99-4728-a660-d27cc38caae6",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 22076,
+      "it": 1,
+      "time": "2024-01-29T21:10:28.015Z",
+      "pSha2": "53E000F5AA9B3A00934319DB8080BB99CB323BF48FC628A64F75D7847C265606",
+      "ppid": 21640,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "ipconfig  /flushdns",
+      "processName": "ipconfig.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:09:33.990Z",
+        "md5": "62F170FB07FDBB79CEB7147101406EB8",
+        "sha1": "D9BBB4E4900FF03B0486FAC32768170249DAD82D",
+        "sha256": "53E000F5AA9B3A00934319DB8080BB99CB323BF48FC628A64F75D7847C265606",
+        "name": "ipconfig.exe",
+        "path": "C:\\Windows\\System32\\ipconfig.exe",
+        "size": 35840,
+        "embedFilename": "ipconfig.exe",
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.1",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        1112,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:11:03Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s1",
+      "detectionsSets": [
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1016",
+            "@MSI._process_general_discovery"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1016",
+            "@MSI._apt_process_ipconfiginfo"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+      "traceId": "919748de-7577-42c7-85d5-4343873edb3d",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 16460,
+      "it": 1,
+      "time": "2024-01-29T21:07:15.754Z",
+      "pSha2": "C24886AF476F33CC4B05AD3A3C5C11F0DFE11AB97F37C1ED8024644BD4D23BF6",
+      "ppid": 5172,
+      "pFullName": "C:\\Windows\\System32\\svchost.exe",
+      "cmdLine": "runonce.exe /Explorer",
+      "processName": "runonce.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-11-28T05:37:12.715Z",
+        "md5": "1DD3B5EA7926057F944E980FD679246A",
+        "sha1": "CD71C30532A4F74A1BAE79DAC6C76DBAFFBB0C72",
+        "sha256": "C24886AF476F33CC4B05AD3A3C5C11F0DFE11AB97F37C1ED8024644BD4D23BF6",
+        "name": "runonce.exe",
+        "path": "C:\\Windows\\System32\\runonce.exe",
+        "size": 61952,
+        "embedFilename": "RUNONCE.EXE",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:07:30Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@MSI._process_lolbas_no_param_runonce"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Persistence",
+            "@ATA.DefenseEvasion",
+            "@ATA.PrivilegeEscalation",
+            "@ATE.T1547.001",
+            "@ATE.T1112",
+            "@MSI._reg_ep0104_run_del"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "97a52cab-3970-4b8f-b1f9-20643c0938c5",
+      "traceId": "46b0b369-e246-438c-8435-51e9383cdd04",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 17200,
+      "it": 1,
+      "time": "2024-01-29T21:10:25.815Z",
+      "pSha2": "E62071AA18768DD88ACAF97FA7B1F2FEC9FCCE89736C1EE9A800699328D196EA",
+      "ppid": 20808,
+      "pFullName": "C:\\Windows\\System32\\net.exe",
+      "cmdLine": "C:\\Windows\\system32\\net1  start spooler",
+      "processName": "net1.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-11-28T05:38:30.486Z",
+        "md5": "78E53D5AE8839C58FA40BEA32B775999",
+        "sha1": "886622877AFB2F110ABFAAB79C107119A7E569AB",
+        "sha256": "E62071AA18768DD88ACAF97FA7B1F2FEC9FCCE89736C1EE9A800699328D196EA",
+        "name": "net1.exe",
+        "path": "C:\\Windows\\System32\\net1.exe",
+        "size": 183808,
+        "embedFilename": "net1.exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "97a52cab-3970-4b8f-b1f9-20643c0938c5",
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:11:03Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1569.002",
+            "@MSI._apt_process_serviceexecute"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "ea625c96-053c-4ca0-bf08-e3935516c85a",
+      "traceId": "555ba227-9a9d-41f3-a634-0ba20c86e5c3",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 10336,
+      "it": 1,
+      "time": "2024-01-29T21:10:50.663Z",
+      "pSha2": "CD7AB08D987F6A2BFC7AFFA1C43C461CC483D8FBF40BCA0B31A6C6194EA9ABD4",
+      "ppid": 21640,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "WMIC  USERACCOUNT WHERE \"name='862administrator'\" SET  PasswordExpires=FALSE",
+      "processName": "WMIC.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-11-28T05:36:00.762Z",
+        "md5": "71E9A9FB929BBFF78EA4970FF7EB840D",
+        "sha1": "D108C99222272C8020EB7B57D2A7907DEC922CD1",
+        "sha256": "CD7AB08D987F6A2BFC7AFFA1C43C461CC483D8FBF40BCA0B31A6C6194EA9ABD4",
+        "name": "WMIC.exe",
+        "path": "C:\\Windows\\System32\\wbem\\WMIC.exe",
+        "size": 576000,
+        "embedFilename": "wmic.exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        103,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:10:55Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "c8c937e0-1279-4799-baf9-c1e9c2101649",
+      "traceId": "44111118-f4ec-488d-94c1-9c1b6dee42bc",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 13940,
+      "it": 1,
+      "time": "2024-01-29T21:10:50.579Z",
+      "pSha2": "E62071AA18768DD88ACAF97FA7B1F2FEC9FCCE89736C1EE9A800699328D196EA",
+      "ppid": 14956,
+      "pFullName": "C:\\Windows\\System32\\net.exe",
+      "cmdLine": "C:\\Windows\\system32\\net1  user 862administrator s@nt@R0s@ /add",
+      "processName": "net1.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-11-28T05:38:30.486Z",
+        "md5": "78E53D5AE8839C58FA40BEA32B775999",
+        "sha1": "886622877AFB2F110ABFAAB79C107119A7E569AB",
+        "sha256": "E62071AA18768DD88ACAF97FA7B1F2FEC9FCCE89736C1EE9A800699328D196EA",
+        "name": "net1.exe",
+        "path": "C:\\Windows\\System32\\net1.exe",
+        "size": 183808,
+        "embedFilename": "net1.exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "c8c937e0-1279-4799-baf9-c1e9c2101649",
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:10:55Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1033",
+            "@ATE.T1069.001",
+            "@ATE.T1069.002",
+            "@ATE.T1087.001",
+            "@ATE.T1087.002",
+            "@ATE.T1018",
+            "@MSI._apt_process_user"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "ea625c96-053c-4ca0-bf08-e3935516c85a",
+      "traceId": "09f912ad-64aa-48f8-9dcb-eafb95635b06",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 21632,
+      "it": 1,
+      "time": "2024-01-29T21:10:41.878Z",
+      "pSha2": "56F8CC2C1790C389394733B84C3FB55E10977E9F0FE0C08110AC11F0FE47F05E",
+      "ppid": 21640,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "taskkill  /F /IM \"microsoftedge.exe\"",
+      "processName": "taskkill.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:09:51.678Z",
+        "md5": "A599D3B2FAFBDE4C1A6D7D0F839451C7",
+        "sha1": "0225BBEC16CB7B23B189F811065767180EDA9801",
+        "sha256": "56F8CC2C1790C389394733B84C3FB55E10977E9F0FE0C08110AC11F0FE47F05E",
+        "name": "taskkill.exe",
+        "path": "C:\\Windows\\System32\\taskkill.exe",
+        "size": 101376,
+        "embedFilename": "taskkill.exe",
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.1",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:10:55Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATA.DefenseEvasion",
+            "@ATA.Impact",
+            "@ATE.T1057",
+            "@ATE.T1562.001",
+            "@ATE.T1489",
+            "@MSI._apt_process_taskkillname"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "00000000-0000-0000-0000-000000000000",
+      "traceId": "14a44e39-ff96-4fe4-bdd5-4fbade9e609f",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 944,
+      "time": "2024-01-29T19:55:20.721Z",
+      "pSha2": "D07523D9640BB239D74A26A4DE12CAE5F7A509B796DBA1B58D64AA7892B37B66",
+      "ppid": 824,
+      "pFullName": "",
+      "cmdLine": "C:\\Windows\\System32\\wininit.exe",
+      "processName": "wininit.exe",
+      "integrity": 4,
+      "user": {
+        "domain": "NT AUTHORITY",
+        "id": "S-1-5-18",
+        "name": "NT AUTHORITY\\SYSTEM"
+      },
+      "procFileAttrs": {
+        "creationDate": "2024-01-16T06:24:51.575Z",
+        "md5": "1FD4446BC2C8154A3A063EF0DEE5C166",
+        "sha1": "9C49BCBEF25A20B098BE433BEDF3F26BA3C6D378",
+        "sha256": "D07523D9640BB239D74A26A4DE12CAE5F7A509B796DBA1B58D64AA7892B37B66",
+        "name": "wininit.exe",
+        "path": "C:\\Windows\\System32\\wininit.exe",
+        "size": 427200,
+        "embedFilename": "WinInit.exe",
+        "embedFileVersion": "10.0.19041.3758 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3758",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T19:56:19Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "ea625c96-053c-4ca0-bf08-e3935516c85a",
+      "traceId": "36df5c3e-430d-4cdd-a713-a431e03d61a0",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 22036,
+      "it": 1,
+      "time": "2024-01-29T21:10:28.074Z",
+      "pSha2": "53E000F5AA9B3A00934319DB8080BB99CB323BF48FC628A64F75D7847C265606",
+      "ppid": 21640,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "ipconfig  /registerdns",
+      "processName": "ipconfig.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:09:33.990Z",
+        "md5": "62F170FB07FDBB79CEB7147101406EB8",
+        "sha1": "D9BBB4E4900FF03B0486FAC32768170249DAD82D",
+        "sha256": "53E000F5AA9B3A00934319DB8080BB99CB323BF48FC628A64F75D7847C265606",
+        "name": "ipconfig.exe",
+        "path": "C:\\Windows\\System32\\ipconfig.exe",
+        "size": 35840,
+        "embedFilename": "ipconfig.exe",
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.1",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        1112,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:11:03Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "3d0e796a-e660-431b-8db5-04965fc3b601",
+      "traceId": "79ef8aa0-0e42-4f59-b528-6c9abb5fb841",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 22344,
+      "it": 1,
+      "time": "2024-01-29T21:10:25.703Z",
+      "pSha2": "E62071AA18768DD88ACAF97FA7B1F2FEC9FCCE89736C1EE9A800699328D196EA",
+      "ppid": 16616,
+      "pFullName": "C:\\Windows\\System32\\net.exe",
+      "cmdLine": "C:\\Windows\\system32\\net1  stop spooler",
+      "processName": "net1.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-11-28T05:38:30.486Z",
+        "md5": "78E53D5AE8839C58FA40BEA32B775999",
+        "sha1": "886622877AFB2F110ABFAAB79C107119A7E569AB",
+        "sha256": "E62071AA18768DD88ACAF97FA7B1F2FEC9FCCE89736C1EE9A800699328D196EA",
+        "name": "net1.exe",
+        "path": "C:\\Windows\\System32\\net1.exe",
+        "size": 183808,
+        "embedFilename": "net1.exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "3d0e796a-e660-431b-8db5-04965fc3b601",
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:11:03Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.DefenseEvasion",
+            "@ATA.Impact",
+            "@ATE.T1569.002",
+            "@ATE.T1489",
+            "@ATE.T1562.001",
+            "@MSI._process_service_manipulate"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.DefenseEvasion",
+            "@ATA.Impact",
+            "@ATE.T1569.002",
+            "@ATE.T1489",
+            "@ATE.T1562.001",
+            "@MSI._process_service_manipulate"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "ea625c96-053c-4ca0-bf08-e3935516c85a",
+      "traceId": "651a3ed3-1088-46be-9645-cdbf8aa27144",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 11540,
+      "it": 1,
+      "time": "2024-01-29T21:10:42.172Z",
+      "pSha2": "56F8CC2C1790C389394733B84C3FB55E10977E9F0FE0C08110AC11F0FE47F05E",
+      "ppid": 21640,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "taskkill  /F /IM \"msedge.exe\"",
+      "processName": "taskkill.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:09:51.678Z",
+        "md5": "A599D3B2FAFBDE4C1A6D7D0F839451C7",
+        "sha1": "0225BBEC16CB7B23B189F811065767180EDA9801",
+        "sha256": "56F8CC2C1790C389394733B84C3FB55E10977E9F0FE0C08110AC11F0FE47F05E",
+        "name": "taskkill.exe",
+        "path": "C:\\Windows\\System32\\taskkill.exe",
+        "size": 101376,
+        "embedFilename": "taskkill.exe",
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.1",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:10:55Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATA.DefenseEvasion",
+            "@ATA.Impact",
+            "@ATE.T1057",
+            "@ATE.T1562.001",
+            "@ATE.T1489",
+            "@MSI._apt_process_taskkillname"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "ea625c96-053c-4ca0-bf08-e3935516c85a",
+      "traceId": "427e4351-650f-42de-aa55-885ac383cd24",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 2784,
+      "it": 1,
+      "time": "2024-01-29T21:10:42.468Z",
+      "pSha2": "00BE065F405E93233CC2F0012DEFDCBB1D6817B58969D5FFD9FD72FC4783C6F4",
+      "ppid": 21640,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "RunDll32.exe  InetCpl.cpl,ClearMyTracksByProcess 255",
+      "processName": "rundll32.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-11-28T05:37:02.366Z",
+        "md5": "100F56A73211E0B2BCD076A55E6393FD",
+        "sha1": "2576C63F45FBE13DBDC619C39124FADE94E002D0",
+        "sha256": "00BE065F405E93233CC2F0012DEFDCBB1D6817B58969D5FFD9FD72FC4783C6F4",
+        "name": "rundll32.exe",
+        "path": "C:\\Windows\\System32\\rundll32.exe",
+        "size": 71680,
+        "embedFilename": "RUNDLL32.EXE",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        1333,
+        100003,
+        100008
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:10:55Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.DefenseEvasion",
+            "@ATE.T1218.011",
+            "@ATE.T1218.002",
+            "@MSI._process_rundllcpl"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "984dc0bc-a0e9-47ce-a206-f2d628ce4a80",
+      "traceId": "5150063e-8072-43fc-b440-e89cabfdd88d",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 14768,
+      "it": 1,
+      "time": "2024-01-29T21:10:33.819Z",
+      "pSha2": "E62071AA18768DD88ACAF97FA7B1F2FEC9FCCE89736C1EE9A800699328D196EA",
+      "ppid": 22280,
+      "pFullName": "C:\\Windows\\System32\\net.exe",
+      "cmdLine": "C:\\Windows\\system32\\net1  start wuauserv",
+      "processName": "net1.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-11-28T05:38:30.486Z",
+        "md5": "78E53D5AE8839C58FA40BEA32B775999",
+        "sha1": "886622877AFB2F110ABFAAB79C107119A7E569AB",
+        "sha256": "E62071AA18768DD88ACAF97FA7B1F2FEC9FCCE89736C1EE9A800699328D196EA",
+        "name": "net1.exe",
+        "path": "C:\\Windows\\System32\\net1.exe",
+        "size": 183808,
+        "embedFilename": "net1.exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "984dc0bc-a0e9-47ce-a206-f2d628ce4a80",
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:11:03Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "8939624d-e6ed-4211-ada8-7e79aa1f548e",
+      "traceId": "1b291729-8642-4bad-8bc7-b899d46af56c",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 19808,
+      "it": 1,
+      "time": "2024-01-29T21:11:23.429Z",
+      "pSha2": "64DD55E1C2373DEED25C2776F553C632E58C45E56A0E4639DFD54EE97EAB9C19",
+      "ppid": 18628,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "powershell  -file \"\\\\fl1462itmon.hma.com\\applications\\applications\\sccm\\runAllSccmActions - edit then run in PowerShell ISE.ps1\"",
+      "processName": "powershell.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-11-28T05:40:16.768Z",
+        "md5": "6726185B70B5ADF05E8A1A1DF82EBF30",
+        "sha1": "8DB8FF070EABF20486DCD3BA7C84619081880A73",
+        "sha256": "64DD55E1C2373DEED25C2776F553C632E58C45E56A0E4639DFD54EE97EAB9C19",
+        "name": "powershell.exe",
+        "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "size": 493568,
+        "embedFilename": "PowerShell.EXE",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "8939624d-e6ed-4211-ada8-7e79aa1f548e",
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        99,
+        100000,
+        100007
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:11:31Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "interpreter": "powershell",
+      "nonpeType": "file",
+      "nonpeScript": "\\fl1462itmon.hma.com\\applications\\applications\\sccm\\runAllSccmActions",
+      "pattern": "runAllSccmActions",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATA.Execution",
+            "@ATE.T1082",
+            "@ATE.T1059.001",
+            "@MSI._apt_process_PS_env_systeminfo"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "0a4947c9-74d8-4303-951d-8eccdd0fc500",
+      "traceId": "f0a2edbd-387c-42c8-ba82-839962592a4e",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 21492,
+      "it": 1,
+      "time": "2024-01-29T21:10:50.427Z",
+      "pSha2": "E62071AA18768DD88ACAF97FA7B1F2FEC9FCCE89736C1EE9A800699328D196EA",
+      "ppid": 12084,
+      "pFullName": "C:\\Windows\\System32\\net.exe",
+      "cmdLine": "C:\\Windows\\system32\\net1  localgroup administrators hma\\862ServerAdmins /ADD",
+      "processName": "net1.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-11-28T05:38:30.486Z",
+        "md5": "78E53D5AE8839C58FA40BEA32B775999",
+        "sha1": "886622877AFB2F110ABFAAB79C107119A7E569AB",
+        "sha256": "E62071AA18768DD88ACAF97FA7B1F2FEC9FCCE89736C1EE9A800699328D196EA",
+        "name": "net1.exe",
+        "path": "C:\\Windows\\System32\\net1.exe",
+        "size": 183808,
+        "embedFilename": "net1.exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "0a4947c9-74d8-4303-951d-8eccdd0fc500",
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:10:55Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1033",
+            "@ATE.T1069.001",
+            "@ATE.T1069.002",
+            "@ATE.T1087.001",
+            "@ATE.T1087.002",
+            "@ATE.T1018",
+            "@MSI._apt_process_user"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Persistence",
+            "@ATA.DefenseEvasion",
+            "@ATA.InitialAccess",
+            "@ATA.PrivilegeEscalation",
+            "@ATA.Discovery",
+            "@ATE.T1136.001",
+            "@ATE.T1136.002",
+            "@ATE.T1078.001",
+            "@ATE.T1078.003",
+            "@ATE.T1087.001",
+            "@ATE.T1098",
+            "@MSI._apt_process_adduser"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATA.DefenseEvasion",
+            "@ATA.Persistence",
+            "@ATA.PrivilegeEscalation",
+            "@ATA.InitialAccess",
+            "@ATE.T1069.001",
+            "@ATE.T1078.001",
+            "@ATE.T1078.003",
+            "@MSI._apt_process_usergroup"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "919748de-7577-42c7-85d5-4343873edb3d",
+      "traceId": "de61c1c1-f98d-4c87-9a5b-c0126754ea80",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 17496,
+      "it": 1,
+      "time": "2024-01-29T21:07:17.182Z",
+      "pSha2": "5693EDFDF764E2F41524C74856A504D97DD78CA78BB8930B1EA63547A27782C2",
+      "ppid": 16460,
+      "pFullName": "C:\\Windows\\System32\\runonce.exe",
+      "cmdLine": "\"C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\120.0.2210.144\\Installer\\setup.exe\" --msedgewebview --delete-old-versions --system-level --verbose-logging --on-logon",
+      "processName": "setup.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2024-01-20T08:48:01.174Z",
+        "md5": "BFFDB9ADA323164983B0CC4F53561849",
+        "sha1": "361B7AFB3EB85C31EA9AA0293A5CFDB37A4E35F7",
+        "sha256": "5693EDFDF764E2F41524C74856A504D97DD78CA78BB8930B1EA63547A27782C2",
+        "name": "setup.exe",
+        "path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\120.0.2210.144\\Installer\\setup.exe",
+        "size": 4650552,
+        "embedFilename": "setup.exe",
+        "embedFileVersion": "120.0.2210.144",
+        "embedProductName": "Microsoft Edge Installer",
+        "embedProductVersion": "120.0.2210.144",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "919748de-7577-42c7-85d5-4343873edb3d",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        105,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:07:30Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATE.T1112",
+            "@MSI._reg_ep0131_pendingrename"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "ea625c96-053c-4ca0-bf08-e3935516c85a",
+      "traceId": "244682ea-5da4-4390-8ffe-c44fccffda75",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 21484,
+      "it": 1,
+      "time": "2024-01-29T21:09:03.955Z",
+      "pSha2": "9F376759BCBCD705F726460FC4A7E2B07F310F52BAA73CAAAAA124FDDBDF993E",
+      "ppid": 21640,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "net  use m: \\\\fl1462itmon\\applications",
+      "processName": "net.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:09:33.990Z",
+        "md5": "0BD94A338EEA5A4E1F2830AE326E6D19",
+        "sha1": "88B101598CC6726B7A57D02B1FA95BE1B272A821",
+        "sha256": "9F376759BCBCD705F726460FC4A7E2B07F310F52BAA73CAAAAA124FDDBDF993E",
+        "name": "net.exe",
+        "path": "C:\\Windows\\System32\\net.exe",
+        "size": 59904,
+        "embedFilename": "net.exe",
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.1",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:09:31Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Collection",
+            "@ATA.Discovery",
+            "@ATE.T1074.002",
+            "@ATE.T1049",
+            "@ATE.T1135",
+            "@MSI._apt_process_netuseremote"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Api",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+      "traceId": "7f1cbce5-07f0-4f01-a0c8-9351649fb110",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 5172,
+      "it": 1,
+      "time": "2024-01-29T21:15:09.296Z",
+      "pSha2": "F13DE58416730D210DAB465B242E9C949FB0A0245EEF45B07C381F0C6C8A43C3",
+      "ppid": 5172,
+      "pFullName": "C:\\Windows\\System32\\svchost.exe",
+      "api": {
+        "name": "WriteProcessMemory",
+        "data": "AADvJHsBAAA=",
+        "result": "0",
+        "moduleName": "",
+        "arguments": [
+          "0x21e56d62d8",
+          "0x8",
+          "0x0"
+        ],
+        "targetPid": 3756
+      },
+      "uniqueRuleId": 11,
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:15:32Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.APICall"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "ea625c96-053c-4ca0-bf08-e3935516c85a",
+      "traceId": "45b0e113-db1f-4220-869a-20307949918a",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 16480,
+      "it": 1,
+      "time": "2024-01-29T21:10:45.832Z",
+      "pSha2": "56F8CC2C1790C389394733B84C3FB55E10977E9F0FE0C08110AC11F0FE47F05E",
+      "ppid": 21640,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "taskkill  /F /IM \"chrome.exe\"",
+      "processName": "taskkill.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:09:51.678Z",
+        "md5": "A599D3B2FAFBDE4C1A6D7D0F839451C7",
+        "sha1": "0225BBEC16CB7B23B189F811065767180EDA9801",
+        "sha256": "56F8CC2C1790C389394733B84C3FB55E10977E9F0FE0C08110AC11F0FE47F05E",
+        "name": "taskkill.exe",
+        "path": "C:\\Windows\\System32\\taskkill.exe",
+        "size": 101376,
+        "embedFilename": "taskkill.exe",
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.1",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:10:55Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATA.DefenseEvasion",
+            "@ATA.Impact",
+            "@ATE.T1057",
+            "@ATE.T1562.001",
+            "@ATE.T1489",
+            "@MSI._apt_process_taskkillname"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "ea625c96-053c-4ca0-bf08-e3935516c85a",
+      "traceId": "0a4947c9-74d8-4303-951d-8eccdd0fc500",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 12084,
+      "it": 1,
+      "time": "2024-01-29T21:10:50.383Z",
+      "pSha2": "9F376759BCBCD705F726460FC4A7E2B07F310F52BAA73CAAAAA124FDDBDF993E",
+      "ppid": 21640,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "net  localgroup administrators hma\\862ServerAdmins /ADD",
+      "processName": "net.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:09:33.990Z",
+        "md5": "0BD94A338EEA5A4E1F2830AE326E6D19",
+        "sha1": "88B101598CC6726B7A57D02B1FA95BE1B272A821",
+        "sha256": "9F376759BCBCD705F726460FC4A7E2B07F310F52BAA73CAAAAA124FDDBDF993E",
+        "name": "net.exe",
+        "path": "C:\\Windows\\System32\\net.exe",
+        "size": 59904,
+        "embedFilename": "net.exe",
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.1",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:10:55Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s1",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1033",
+            "@ATE.T1069.001",
+            "@ATE.T1069.002",
+            "@ATE.T1087.001",
+            "@ATE.T1087.002",
+            "@ATE.T1018",
+            "@MSI._apt_process_user"
+          ]
+        },
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1016",
+            "@MSI._process_general_discovery"
+          ]
+        },
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.Persistence",
+            "@ATA.Discovery",
+            "@ATE.T1069.002",
+            "@ATE.T1087.002",
+            "@MSI._process_added_user_elevated_groups"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1033",
+            "@ATE.T1069.001",
+            "@ATE.T1069.002",
+            "@ATE.T1087.001",
+            "@ATE.T1087.002",
+            "@ATE.T1018",
+            "@MSI._apt_process_user"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "ea625c96-053c-4ca0-bf08-e3935516c85a",
+      "traceId": "b2cdc48e-ffa9-4247-bff6-49018a06d56b",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 18296,
+      "it": 1,
+      "time": "2024-01-29T21:10:41.556Z",
+      "pSha2": "56F8CC2C1790C389394733B84C3FB55E10977E9F0FE0C08110AC11F0FE47F05E",
+      "ppid": 21640,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "taskkill  /F /IM \"iexplore.exe\"",
+      "processName": "taskkill.exe",
+      "integrity": 3,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-1144152",
+        "name": "tayla"
+      },
+      "procFileAttrs": {
+        "creationDate": "2019-12-07T09:09:51.678Z",
+        "md5": "A599D3B2FAFBDE4C1A6D7D0F839451C7",
+        "sha1": "0225BBEC16CB7B23B189F811065767180EDA9801",
+        "sha256": "56F8CC2C1790C389394733B84C3FB55E10977E9F0FE0C08110AC11F0FE47F05E",
+        "name": "taskkill.exe",
+        "path": "C:\\Windows\\System32\\taskkill.exe",
+        "size": 101376,
+        "embedFilename": "taskkill.exe",
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.1",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "ea625c96-053c-4ca0-bf08-e3935516c85a",
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:10:55Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATA.DefenseEvasion",
+            "@ATA.Impact",
+            "@ATE.T1057",
+            "@ATE.T1562.001",
+            "@ATE.T1489",
+            "@MSI._apt_process_taskkillname"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "21433986-898A-11EE-1281-000000000000",
+      "host": "1462MED-HDICT4",
+      "rv": 2287,
+      "parentTraceId": "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+      "traceId": "ab8c983f-e147-40b9-9077-038223562de2",
+      "contextTraceId": "e5fe134c-a2ed-4b3e-a57d-08676779b68c",
+      "pid": 3756,
+      "it": 1,
+      "time": "2024-01-29T21:15:09.270Z",
+      "pSha2": "BC1AC9C190C716778D80EF36AAE620F2B7B334D3776B628907581301ED97128C",
+      "ppid": 5172,
+      "pFullName": "C:\\Windows\\System32\\svchost.exe",
+      "cmdLine": "consent.exe 5172 330 000002C00A644CC0",
+      "processName": "consent.exe",
+      "integrity": 4,
+      "user": {
+        "domain": "NT AUTHORITY",
+        "id": "S-1-5-18",
+        "name": "SYSTEM"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-11-28T05:37:16.014Z",
+        "md5": "959461FE7E338B2BF1F75D6F860DAAE1",
+        "sha1": "4FB83228E33895D3D756531491CA52D2BB39F305",
+        "sha256": "BC1AC9C190C716778D80EF36AAE620F2B7B334D3776B628907581301ED97128C",
+        "name": "consent.exe",
+        "path": "C:\\Windows\\System32\\consent.exe",
+        "size": 186848,
+        "embedFilename": "consent.exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "722ea132-1f2a-4d58-835e-f2b0cdbca677",
+        "7d8f225a-fe5b-4a43-9af1-e69d18843984",
+        "14a44e39-ff96-4fe4-bdd5-4fbade9e609f"
+      ],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-29T21:15:32Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Persistence",
+            "@ATA.DefenseEvasion",
+            "@ATA.PrivilegeEscalation",
+            "@ATE.T1547.001",
+            "@ATE.T1112",
+            "@MSI._reg_ep0104_run_del"
+          ]
+        }
+      ]
+    }
+  ]
+}

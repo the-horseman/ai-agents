@@ -1,0 +1,21 @@
+version: 1
+formatters:
+  simple:
+    format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+
+    formatter: simple
+  file:
+    class: logging.FileHandler
+
+    filename: ../lightweight-investigation.log
+    level: INFO
+    formatter: simple
+loggers:
+  lightweight-investigation:
+    level: INFO
+    handlers: [console, file]
+    propagate: False

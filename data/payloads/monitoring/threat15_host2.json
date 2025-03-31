@@ -1,0 +1,523 @@
+{
+  "detections": [
+    {
+      "id": "3628719226",
+      "traceId": "e6c0ad82-a695-4c4a-b3f9-21e564a1f93e",
+      "firstDetected": "2024-02-19T17:31:43Z",
+      "severity": "s1",
+      "rank": 91,
+      "tags": [
+        "@ATA.PrivilegeEscalation",
+        "@ATE.T1127",
+        "@MSI._process_trusted_developer_utilities",
+        "@ATE.T1127.001",
+        "@ATE.T1548.002",
+        "@ATE.T1218.002",
+        "@ATE.T1112",
+        "@MSI._process_rundllcpl",
+        "@ATA.DefenseEvasion",
+        "@ATA.Execution",
+        "@MSI._reg_ep0029_intranet",
+        "@MSI._process_autoelevatedpe_end",
+        "@ATE.T1218.011"
+      ],
+      "host": {
+        "maGuid": "ACAB362C-B707-11EE-308E-005056BFA607",
+        "hostname": "AZ1730VYRAPP02",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 17763,
+          "sp": "",
+          "desc": "Windows 2019"
+        },
+        "lastBootTime": "2024-02-20T01:33:07Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet0 5",
+            "macAddress": "00:50:56:bf:a6:07",
+            "ip": "10.38.175.18",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "1BC61BA104CEAF2AC5BFA5239141397768F904A0F17C82105170189E0BB42782"
+    }
+  ],
+  "traces": [
+    {
+      "traceId": "84d086ab-ecfc-45a4-9d90-62e71cfad360",
+      "dtsType": "all",
+      "h_tp": "mar_3.5.2.1104",
+      "maGuid": "ACAB362C-B707-11EE-308E-005056BFA607",
+      "rv": 1104,
+      "pSha2": "1BC61BA104CEAF2AC5BFA5239141397768F904A0F17C82105170189E0BB42782",
+      "dtsId": "EDR",
+      "pid": 4888,
+      "eventType": "File Modified",
+      "parentTraceId": "e6c0ad82-a695-4c4a-b3f9-21e564a1f93e",
+      "contextTraceId": "3a0c2a03-44b3-46c9-9094-9164a49287ba",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 4888,
+      "tags": [
+        "@AC.NonPECreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 21,
+      "pFullName": "C:\\Windows\\System32\\RuntimeBroker.exe",
+      "fileAttributes": {
+        "sha1": "09ABA4B627C17673729428DCE1331F22EB293B07",
+        "path": "C:\\Users\\lynette-leighton\\AppData\\Roaming\\Microsoft\\Windows\\Recent\\AutomaticDestinations\\f01b4d95cf55d32a.automaticDestinations-ms",
+        "lastModificationDate": "2024-02-19T17:02:15.987Z",
+        "fsattrs": 32,
+        "sha256": "A51D0C4D1619AE28C098C1AD2AFC5D082AADEC64C2017B434746D44C0800485F",
+        "size": 5632,
+        "name": "f01b4d95cf55d32a.automaticDestinations-ms",
+        "mhdr": "d0cf11e0a1b11ae1",
+        "creationDate": "2024-02-19T17:02:15.940Z",
+        "md5": "3039FA20077FE47CAB1EE76492DBE3A5"
+      },
+      "detectionDate": "2024-02-19T17:07:11Z",
+      "host": "AZ1730VYRAPP02",
+      "time": "2024-02-19T17:06:53.645Z",
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_3.5.2.1104",
+      "maGuid": "ACAB362C-B707-11EE-308E-005056BFA607",
+      "rv": 1104,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.17763.1697 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.17763.1697",
+        "sha256": "9F1E56A3BF293AC536CF4B8DAD57040797D62DBB0CA19C4ED9683B5565549481",
+        "embedFilename": "RUNDLL32.EXE",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2021-03-03T04:11:15.591Z",
+        "sha1": "A40886F98905F3D9DBDD61DA1D59CCB4F4854758",
+        "path": "C:\\Windows\\System32\\rundll32.exe",
+        "size": 71168,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "rundll32.exe",
+        "md5": "80F8E0C26028E83F1EF371D7B44DE3DF"
+      },
+      "pSha2": "9F1E56A3BF293AC536CF4B8DAD57040797D62DBB0CA19C4ED9683B5565549481",
+      "pid": 12420,
+      "parentTraceId": "9b510149-4743-42cc-bec9-92907adc723d",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\control.exe",
+      "processName": "rundll32.exe",
+      "host": "AZ1730VYRAPP02",
+      "h_traceType": "all",
+      "traceId": "13333ed1-6976-4699-ad2b-6ea47224ed14",
+      "cmdLine": "\"C:\\Windows\\system32\\rundll32.exe\" Shell32.dll,Control_RunDLL \"C:\\Windows\\System32\\appwiz.cpl\",",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "9b510149-4743-42cc-bec9-92907adc723d",
+        "e6c0ad82-a695-4c4a-b3f9-21e564a1f93e",
+        "5effd423-04ff-40cd-9449-7b886e1c25ce",
+        "b31bb9a6-fd84-4fab-b595-d744c230d752",
+        "f416b93d-963f-40ac-ad1c-b7fff4556748"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "3a0c2a03-44b3-46c9-9094-9164a49287ba",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 14164,
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        103,
+        100003,
+        100005
+      ],
+      "detectionDate": "2024-02-19T17:23:16Z",
+      "time": "2024-02-19T17:22:43.482Z",
+      "user": {
+        "domain": "US",
+        "name": "lynette-leighton",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2302914"
+      },
+      "severity": "s1",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.DefenseEvasion",
+            "@ATE.T1218.011",
+            "@ATE.T1218.002",
+            "@MSI._process_rundllcpl"
+          ]
+        },
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATA.PrivilegeEscalation",
+            "@ATE.T1548.002",
+            "@MSI._process_autoelevatedpe_end"
+          ]
+        }
+      ]
+    },
+    {
+      "h_tp": "mar_3.5.2.1104",
+      "maGuid": "ACAB362C-B707-11EE-308E-005056BFA607",
+      "rv": 1104,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.17763.2989 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.17763.2989",
+        "sha256": "1BC61BA104CEAF2AC5BFA5239141397768F904A0F17C82105170189E0BB42782",
+        "embedFilename": "RuntimeBroker.exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2022-09-09T01:09:24.128Z",
+        "sha1": "176FE0A6BAAA147C2D447965965A5582B7C561DA",
+        "path": "C:\\Windows\\System32\\RuntimeBroker.exe",
+        "size": 100248,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "RuntimeBroker.exe",
+        "md5": "6F4AFC061F47E6C1FDE61AB14B392515"
+      },
+      "pSha2": "1BC61BA104CEAF2AC5BFA5239141397768F904A0F17C82105170189E0BB42782",
+      "pid": 4888,
+      "parentTraceId": "5effd423-04ff-40cd-9449-7b886e1c25ce",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\svchost.exe",
+      "processName": "RuntimeBroker.exe",
+      "host": "AZ1730VYRAPP02",
+      "h_traceType": "all",
+      "traceId": "e6c0ad82-a695-4c4a-b3f9-21e564a1f93e",
+      "cmdLine": "C:\\Windows\\System32\\RuntimeBroker.exe -Embedding",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "5effd423-04ff-40cd-9449-7b886e1c25ce",
+        "b31bb9a6-fd84-4fab-b595-d744c230d752",
+        "f416b93d-963f-40ac-ad1c-b7fff4556748"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "3a0c2a03-44b3-46c9-9094-9164a49287ba",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 940,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        104,
+        100003,
+        100004
+      ],
+      "detectionDate": "2024-02-19T17:02:46Z",
+      "time": "2024-02-19T17:02:20.218Z",
+      "user": {
+        "domain": "US",
+        "name": "lynette-leighton",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2302914"
+      }
+    },
+    {
+      "traceId": "af58014b-08d4-4619-927a-4ab0d6559a31",
+      "dtsType": "all",
+      "h_tp": "mar_3.5.2.1104",
+      "maGuid": "ACAB362C-B707-11EE-308E-005056BFA607",
+      "rv": 1104,
+      "pSha2": "1BC61BA104CEAF2AC5BFA5239141397768F904A0F17C82105170189E0BB42782",
+      "dtsId": "EDR",
+      "pid": 4888,
+      "eventType": "Api",
+      "parentTraceId": "e6c0ad82-a695-4c4a-b3f9-21e564a1f93e",
+      "contextTraceId": "3a0c2a03-44b3-46c9-9094-9164a49287ba",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 4888,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19116,
+      "pFullName": "C:\\Windows\\System32\\RuntimeBroker.exe",
+      "detectionDate": "2024-02-19T17:02:46Z",
+      "host": "AZ1730VYRAPP02",
+      "time": "2024-02-19T17:02:29.643Z",
+      "api": {
+        "result": "18446744071562397601",
+        "name": "NtGdiCreateCompatibleBitmap",
+        "moduleName": "",
+        "targetPid": 0,
+        "arguments": []
+      },
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_3.5.2.1104",
+      "maGuid": "ACAB362C-B707-11EE-308E-005056BFA607",
+      "rv": 1104,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.17763.2300 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.17763.2300",
+        "sha256": "134ECBBD93E45C5E781FAF8A0BB9CE2E5711EB98E1C02C75981B739362F5D49C",
+        "embedFilename": "CONTROL.EXE",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2022-04-01T19:57:04.693Z",
+        "sha1": "3BAAFC9FC490FB4A0B5F71A133448BB8849BF6EC",
+        "path": "C:\\Windows\\System32\\control.exe",
+        "size": 117760,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "control.exe",
+        "md5": "CB12F8B6DA30A99B15196CF7D129094A"
+      },
+      "pSha2": "134ECBBD93E45C5E781FAF8A0BB9CE2E5711EB98E1C02C75981B739362F5D49C",
+      "pid": 14164,
+      "parentTraceId": "e6c0ad82-a695-4c4a-b3f9-21e564a1f93e",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\RuntimeBroker.exe",
+      "processName": "control.exe",
+      "host": "AZ1730VYRAPP02",
+      "h_traceType": "all",
+      "traceId": "9b510149-4743-42cc-bec9-92907adc723d",
+      "cmdLine": "\"C:\\Windows\\System32\\control.exe\" \"C:\\Windows\\System32\\appwiz.cpl\",",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "e6c0ad82-a695-4c4a-b3f9-21e564a1f93e",
+        "5effd423-04ff-40cd-9449-7b886e1c25ce",
+        "b31bb9a6-fd84-4fab-b595-d744c230d752",
+        "f416b93d-963f-40ac-ad1c-b7fff4556748"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "3a0c2a03-44b3-46c9-9094-9164a49287ba",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 4888,
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "detectionDate": "2024-02-19T17:23:16Z",
+      "time": "2024-02-19T17:22:42.651Z",
+      "user": {
+        "domain": "US",
+        "name": "lynette-leighton",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2302914"
+      },
+      "severity": "s1",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATE.T1112",
+            "@MSI._reg_ep0029_intranet"
+          ]
+        },
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATA.PrivilegeEscalation",
+            "@ATE.T1548.002",
+            "@MSI._process_autoelevatedpe_end"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATE.T1127",
+            "@ATE.T1127.001",
+            "@MSI._process_trusted_developer_utilities"
+          ]
+        }
+      ]
+    },
+    {
+      "traceId": "a51f3292-b578-484b-ae37-889e2816f84b",
+      "dtsType": "all",
+      "h_tp": "mar_3.5.2.1104",
+      "maGuid": "ACAB362C-B707-11EE-308E-005056BFA607",
+      "rv": 1104,
+      "pSha2": "1BC61BA104CEAF2AC5BFA5239141397768F904A0F17C82105170189E0BB42782",
+      "dtsId": "EDR",
+      "pid": 4888,
+      "eventType": "File Modified",
+      "parentTraceId": "e6c0ad82-a695-4c4a-b3f9-21e564a1f93e",
+      "contextTraceId": "3a0c2a03-44b3-46c9-9094-9164a49287ba",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 4888,
+      "tags": [
+        "@AC.NonPECreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 21,
+      "pFullName": "C:\\Windows\\System32\\RuntimeBroker.exe",
+      "fileAttributes": {
+        "sha1": "A4018F7F95F3A1592E1580E3355E5C5D27AB0B6B",
+        "path": "C:\\Users\\lynette-leighton\\AppData\\Roaming\\Microsoft\\Windows\\Recent\\AutomaticDestinations\\5f7b5f1e01b83767.automaticDestinations-ms",
+        "lastModificationDate": "2024-02-19T17:04:02.549Z",
+        "fsattrs": 32,
+        "sha256": "BDE5FFDBAE52B8316489C8B326A751CE644DDDB79B9E067EC4D4CD78481EC14B",
+        "size": 1536,
+        "name": "5f7b5f1e01b83767.automaticDestinations-ms",
+        "mhdr": "d0cf11e0a1b11ae1",
+        "creationDate": "2024-02-19T17:03:58.840Z",
+        "md5": "6F5369B0DD439B99ED849FE21B3D3C6A"
+      },
+      "detectionDate": "2024-02-19T17:07:11Z",
+      "host": "AZ1730VYRAPP02",
+      "time": "2024-02-19T17:06:54.089Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "ed2f7dd3-0103-4953-b321-8691a0939142",
+      "dtsType": "all",
+      "h_tp": "mar_3.5.2.1104",
+      "maGuid": "ACAB362C-B707-11EE-308E-005056BFA607",
+      "rv": 1104,
+      "pSha2": "1BC61BA104CEAF2AC5BFA5239141397768F904A0F17C82105170189E0BB42782",
+      "dtsId": "EDR",
+      "pid": 4888,
+      "eventType": "Api",
+      "parentTraceId": "e6c0ad82-a695-4c4a-b3f9-21e564a1f93e",
+      "contextTraceId": "3a0c2a03-44b3-46c9-9094-9164a49287ba",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 4888,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19116,
+      "pFullName": "C:\\Windows\\System32\\RuntimeBroker.exe",
+      "detectionDate": "2024-02-19T17:02:46Z",
+      "host": "AZ1730VYRAPP02",
+      "time": "2024-02-19T17:02:28.353Z",
+      "api": {
+        "result": "1",
+        "name": "BitBlt",
+        "moduleName": "",
+        "targetPid": 0,
+        "arguments": []
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "cee4dea6-99b0-4296-aa69-4c56b4671840",
+      "dtsType": "all",
+      "h_tp": "mar_3.5.2.1104",
+      "maGuid": "ACAB362C-B707-11EE-308E-005056BFA607",
+      "rv": 1104,
+      "pSha2": "1BC61BA104CEAF2AC5BFA5239141397768F904A0F17C82105170189E0BB42782",
+      "dtsId": "EDR",
+      "pid": 4888,
+      "eventType": "File Modified",
+      "parentTraceId": "e6c0ad82-a695-4c4a-b3f9-21e564a1f93e",
+      "contextTraceId": "3a0c2a03-44b3-46c9-9094-9164a49287ba",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 4888,
+      "tags": [
+        "@AC.NonPECreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 21,
+      "pFullName": "C:\\Windows\\System32\\RuntimeBroker.exe",
+      "fileAttributes": {
+        "sha1": "A4018F7F95F3A1592E1580E3355E5C5D27AB0B6B",
+        "path": "C:\\Users\\lynette-leighton\\AppData\\Roaming\\Microsoft\\Windows\\Recent\\AutomaticDestinations\\5f7b5f1e01b83767.automaticDestinations-ms",
+        "lastModificationDate": "2024-02-19T17:04:02.549Z",
+        "fsattrs": 32,
+        "sha256": "BDE5FFDBAE52B8316489C8B326A751CE644DDDB79B9E067EC4D4CD78481EC14B",
+        "size": 1536,
+        "name": "5f7b5f1e01b83767.automaticDestinations-ms",
+        "mhdr": "d0cf11e0a1b11ae1",
+        "creationDate": "2024-02-19T17:03:58.840Z",
+        "md5": "6F5369B0DD439B99ED849FE21B3D3C6A"
+      },
+      "detectionDate": "2024-02-19T17:44:16Z",
+      "host": "AZ1730VYRAPP02",
+      "time": "2024-02-19T17:44:09.393Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "38b7a8cd-18a7-4769-b95f-399e5c350487",
+      "dtsType": "all",
+      "h_tp": "mar_3.5.2.1104",
+      "maGuid": "ACAB362C-B707-11EE-308E-005056BFA607",
+      "rv": 1104,
+      "pSha2": "1BC61BA104CEAF2AC5BFA5239141397768F904A0F17C82105170189E0BB42782",
+      "dtsId": "EDR",
+      "pid": 4888,
+      "eventType": "File Modified",
+      "parentTraceId": "e6c0ad82-a695-4c4a-b3f9-21e564a1f93e",
+      "contextTraceId": "3a0c2a03-44b3-46c9-9094-9164a49287ba",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 4888,
+      "tags": [
+        "@AC.NonPECreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 21,
+      "pFullName": "C:\\Windows\\System32\\RuntimeBroker.exe",
+      "fileAttributes": {
+        "sha1": "D69A48D2F9D4BD107DEA5DD8E0B86C0A1039AC51",
+        "path": "C:\\Users\\lynette-leighton\\AppData\\Roaming\\Microsoft\\Windows\\Recent\\AutomaticDestinations\\f01b4d95cf55d32a.automaticDestinations-ms",
+        "lastModificationDate": "2024-02-19T17:22:43.089Z",
+        "fsattrs": 32,
+        "sha256": "5DEC74196E321B07EAFEE732E6CC79FFDC5615D930A2043FBF54E68FA0B12925",
+        "size": 13312,
+        "name": "f01b4d95cf55d32a.automaticDestinations-ms",
+        "mhdr": "d0cf11e0a1b11ae1",
+        "creationDate": "2024-02-19T17:02:15.940Z",
+        "md5": "91085E94E6C6906C466C480AFA445CC4"
+      },
+      "detectionDate": "2024-02-19T17:44:16Z",
+      "host": "AZ1730VYRAPP02",
+      "time": "2024-02-19T17:44:09.259Z",
+      "h_traceType": "all"
+    }
+  ]
+}

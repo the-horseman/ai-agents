@@ -1,0 +1,416 @@
+{
+    "detections": [
+        {
+            "id": "5113320",
+            "traceId": "2b0d22f9-3014-42d5-bda2-b7e0e2af5711",
+            "firstDetected": "2024-08-26T12:56:58Z",
+            "severity": "s4",
+            "rank": 275,
+            "tags": [
+                "@ATA.Execution",
+                "@MSI._process_reputation_known_malicious",
+                "@MSI._process_suspicious_path"
+            ],
+            "host": {
+                "maGuid": "329E1C58-4F0C-11EF-0B0C-005056A40D8C",
+                "hostname": "479W10RS5X64",
+                "os": {
+                    "major": 10,
+                    "minor": 0,
+                    "build": 17763,
+                    "sp": "",
+                    "desc": "Windows 10"
+                },
+                "lastBootTime": "2024-07-31T08:22:17Z",
+                "netInterfaces": [
+                    {
+                        "name": "Ethernet0",
+                        "macAddress": "00:50:56:a4:0d:8c",
+                        "ip": "10.26.23.232",
+                        "type": 6
+                    },
+                    {
+                        "name": "Primary",
+                        "ip": "10.26.23.232"
+                    }
+                ],
+                "traceExtendedVisibility": 0,
+                "hostOs": "windows"
+            },
+            "sha256": "9ED16B711776E1F4033D8B5E216B655A229A358131320033959BE6D07B7BED3D"
+        }
+    ],
+    "traces": [
+        {
+            "api": {
+                "arguments": [],
+                "moduleName": "",
+                "name": "BitBlt",
+                "result": "1",
+                "targetPid": 0
+            },
+            "contextTraceId": "dab4bd57-a356-44f6-84b4-236a0bbbc7f9",
+            "detectionDate": "2024-08-26T12:55:41Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Api",
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "479W10RS5X64",
+            "it": 1,
+            "maGuid": "329E1C58-4F0C-11EF-0B0C-005056A40D8C",
+            "pFullName": "C:\\Users\\cdaauto\\Desktop\\Treatsample\\Artemis-pwd-clean\\Artemis\\Artemis-VeryLow-Troj.exe",
+            "pSha2": "9ED16B711776E1F4033D8B5E216B655A229A358131320033959BE6D07B7BED3D",
+            "parentTraceId": "2b0d22f9-3014-42d5-bda2-b7e0e2af5711",
+            "pid": 5432,
+            "ppid": 5432,
+            "rv": 4528,
+            "tags": [
+                "@AC.APICall"
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-08-26T12:55:32.848Z",
+            "traceId": "4138aa4b-64c9-4474-a654-a47fec932037",
+            "uniqueRuleId": 19116,
+            "version": "3.0",
+            "action": "",
+            "productId": "",
+            "description": ""
+        },
+        {
+            "cmdLine": "\"C:\\Users\\cdaauto\\Desktop\\Treatsample\\Artemis-pwd-clean\\Artemis\\Artemis-VeryLow-Troj.exe\" ",
+            "contextTraceId": "dab4bd57-a356-44f6-84b4-236a0bbbc7f9",
+            "detectionDate": "2024-08-26T12:55:41Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Process Created",
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "479W10RS5X64",
+            "integrity": 3,
+            "it": 1,
+            "maGuid": "329E1C58-4F0C-11EF-0B0C-005056A40D8C",
+            "pFullName": "C:\\Windows\\explorer.exe",
+            "pSha2": "9ED16B711776E1F4033D8B5E216B655A229A358131320033959BE6D07B7BED3D",
+            "parentTraceId": "381edd97-5cf9-490b-8cde-044fba240146",
+            "parentsTraceId": [
+                "381edd97-5cf9-490b-8cde-044fba240146"
+            ],
+            "pid": 5432,
+            "ppid": 5440,
+            "procFileAttrs": {
+                "creationDate": "2015-04-09T14:26:00.000Z",
+                "md5": "F22F09A8C4C6CBAC02A4EC2C2DAE38CA",
+                "name": "Artemis-VeryLow-Troj.exe",
+                "path": "C:\\Users\\cdaauto\\Desktop\\Treatsample\\Artemis-pwd-clean\\Artemis\\Artemis-VeryLow-Troj.exe",
+                "sha1": "E7B9F1268E46AFC6CD0143B98B097300CBA71CC6",
+                "sha256": "9ED16B711776E1F4033D8B5E216B655A229A358131320033959BE6D07B7BED3D",
+                "size": 1024,
+                "subsystem": 2
+            },
+            "processName": "Artemis-VeryLow-Troj.exe",
+            "rv": 4528,
+            "tags": [
+                "@AC.ProcessCreated"
+            ],
+            "tdmRuleIds": [
+                108,
+                100003,
+                100005,
+                100006
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-08-26T12:55:32.782Z",
+            "traceId": "2b0d22f9-3014-42d5-bda2-b7e0e2af5711",
+            "user": {
+                "domain": "CDA",
+                "id": "S-1-5-21-2561662139-2012859153-108931552-1137",
+                "name": "cdaauto"
+            },
+            "version": "3.0",
+            "severity": "s4",
+            "detectionsSets": [
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@MSI._process_suspicious_path"
+                    ]
+                },
+                {
+                    "sev": "s4",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@MSI._process_reputation_known_malicious"
+                    ]
+                }
+            ],
+            "endTime": null,
+            "originalSeverity": "s4",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "2b0d22f9-3014-42d5-bda2-b7e0e2af5711",
+            "lastActivityTime": "2024-08-26T12:55:32.848Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        },
+        {
+            "api": {
+                "arguments": [],
+                "moduleName": "",
+                "name": "GetWindowInfo",
+                "result": "1",
+                "targetPid": 0
+            },
+            "contextTraceId": "dab4bd57-a356-44f6-84b4-236a0bbbc7f9",
+            "detectionDate": "2024-08-26T12:55:41Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Api",
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "479W10RS5X64",
+            "it": 1,
+            "maGuid": "329E1C58-4F0C-11EF-0B0C-005056A40D8C",
+            "pFullName": "C:\\Users\\cdaauto\\Desktop\\Treatsample\\Artemis-pwd-clean\\Artemis\\Artemis-VeryLow-Troj.exe",
+            "pSha2": "9ED16B711776E1F4033D8B5E216B655A229A358131320033959BE6D07B7BED3D",
+            "parentTraceId": "2b0d22f9-3014-42d5-bda2-b7e0e2af5711",
+            "pid": 5432,
+            "ppid": 5432,
+            "rv": 4528,
+            "tags": [
+                "@AC.APICall"
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-08-26T12:55:32.833Z",
+            "traceId": "584d5bfd-0df5-47b3-b1df-aa98d3adc9ff",
+            "uniqueRuleId": 19118,
+            "version": "3.0",
+            "action": "",
+            "productId": "",
+            "description": ""
+        },
+        {
+            "api": {
+                "arguments": [],
+                "moduleName": "",
+                "name": "NtGdiCreateCompatibleBitmap",
+                "result": "470092738",
+                "targetPid": 0
+            },
+            "contextTraceId": "dab4bd57-a356-44f6-84b4-236a0bbbc7f9",
+            "detectionDate": "2024-08-26T12:55:41Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Api",
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "479W10RS5X64",
+            "it": 1,
+            "maGuid": "329E1C58-4F0C-11EF-0B0C-005056A40D8C",
+            "pFullName": "C:\\Users\\cdaauto\\Desktop\\Treatsample\\Artemis-pwd-clean\\Artemis\\Artemis-VeryLow-Troj.exe",
+            "pSha2": "9ED16B711776E1F4033D8B5E216B655A229A358131320033959BE6D07B7BED3D",
+            "parentTraceId": "2b0d22f9-3014-42d5-bda2-b7e0e2af5711",
+            "pid": 5432,
+            "ppid": 5432,
+            "rv": 4528,
+            "tags": [
+                "@AC.APICall"
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-08-26T12:55:32.848Z",
+            "traceId": "9c187de8-ec37-460d-b22a-4249a95c0ce9",
+            "uniqueRuleId": 19116,
+            "version": "3.0",
+            "action": "",
+            "productId": "",
+            "description": ""
+        },
+        {
+            "api": {
+                "arguments": [],
+                "moduleName": "",
+                "name": "GetWindowLong",
+                "result": "0",
+                "targetPid": 0
+            },
+            "contextTraceId": "dab4bd57-a356-44f6-84b4-236a0bbbc7f9",
+            "detectionDate": "2024-08-26T12:55:41Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Api",
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "479W10RS5X64",
+            "it": 1,
+            "maGuid": "329E1C58-4F0C-11EF-0B0C-005056A40D8C",
+            "pFullName": "C:\\Users\\cdaauto\\Desktop\\Treatsample\\Artemis-pwd-clean\\Artemis\\Artemis-VeryLow-Troj.exe",
+            "pSha2": "9ED16B711776E1F4033D8B5E216B655A229A358131320033959BE6D07B7BED3D",
+            "parentTraceId": "2b0d22f9-3014-42d5-bda2-b7e0e2af5711",
+            "pid": 5432,
+            "ppid": 5432,
+            "rv": 4528,
+            "tags": [
+                "@AC.APICall"
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-08-26T12:55:32.817Z",
+            "traceId": "b1e8e040-29d8-4ec8-b7ff-75d39dd8686b",
+            "uniqueRuleId": 19118,
+            "version": "3.0",
+            "action": "",
+            "productId": "",
+            "description": ""
+        }
+    ]
+}

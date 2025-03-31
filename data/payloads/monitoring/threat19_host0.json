@@ -1,0 +1,2283 @@
+{
+  "detections": [
+    {
+      "id": "3608115972",
+      "traceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "firstDetected": "2024-02-02T17:01:19Z",
+      "severity": "s4",
+      "rank": 271,
+      "tags": [
+        "@ATA.PrivilegeEscalation",
+        "@ATE.T1204.002",
+        "@MSI._process_exec3",
+        "@ATA.Discovery",
+        "@ATE.T1120",
+        "@ATE.T1547.009",
+        "@ATE.T1059.001",
+        "@ATE.T1059",
+        "@MSI._process_epp_response_blocked",
+        "@ATE.T1036",
+        "@MSI._api_peripheral_device_discovery",
+        "@MSI._process_exec2",
+        "@ATA.DefenseEvasion",
+        "@MSI._process_unmanaged_powershell",
+        "@MSI._hunting_credential_access2",
+        "@ATE.T1134.001",
+        "@ATA.Execution",
+        "@ATE.T1134",
+        "@MSI._file_sysscript",
+        "@ATE.T1059.003",
+        "@ATE.T1106",
+        "@ATA.Persistence",
+        "@MSI._process_suspicious_path",
+        "@MSI._api_tokenimpersonation_privileges"
+      ],
+      "host": {
+        "maGuid": "301649CA-B735-11EE-1118-000000000000",
+        "hostname": "15832ns301",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:33Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "ac:1a:3d:66:28:3e",
+            "ip": "169.254.31.172",
+            "type": 6
+          },
+          {
+            "name": "Ethernet 2",
+            "macAddress": "ac:1a:3d:52:cc:fb",
+            "ip": "10.12.47.179",
+            "type": 6
+          },
+          {
+            "name": "Wi-Fi",
+            "macAddress": "28:c5:d2:e5:06:aa",
+            "ip": "169.254.232.70",
+            "type": 71
+          },
+          {
+            "name": "Bluetooth Network Connection",
+            "macAddress": "28:c5:d2:e5:06:ae",
+            "ip": "169.254.217.41",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10"
+    },
+    {
+      "id": "3608484834",
+      "traceId": "1c373de2-6a21-47d4-bc2d-bc06276be999",
+      "firstDetected": "2024-02-03T00:30:52Z",
+      "severity": "s4",
+      "rank": 271,
+      "tags": [
+        "@ATA.PrivilegeEscalation",
+        "@ATE.T1204.002",
+        "@MSI._process_exec3",
+        "@ATA.Discovery",
+        "@ATE.T1120",
+        "@ATE.T1059.001",
+        "@MSI._process_epp_response_blocked",
+        "@ATE.T1036",
+        "@MSI._api_peripheral_device_discovery",
+        "@MSI._process_exec2",
+        "@ATA.DefenseEvasion",
+        "@MSI._process_unmanaged_powershell",
+        "@MSI._hunting_credential_access2",
+        "@ATE.T1134.001",
+        "@ATA.Execution",
+        "@ATE.T1134",
+        "@MSI._reg_newservice_suspicious_servicechanged",
+        "@ATE.T1059.003",
+        "@ATE.T1106",
+        "@ATA.Persistence",
+        "@ATE.T1543.003",
+        "@MSI._process_suspicious_path",
+        "@MSI._api_tokenimpersonation_privileges"
+      ],
+      "host": {
+        "maGuid": "301649CA-B735-11EE-1118-000000000000",
+        "hostname": "15832ns301",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:33Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "ac:1a:3d:66:28:3e",
+            "ip": "169.254.31.172",
+            "type": 6
+          },
+          {
+            "name": "Ethernet 2",
+            "macAddress": "ac:1a:3d:52:cc:fb",
+            "ip": "10.12.47.179",
+            "type": 6
+          },
+          {
+            "name": "Wi-Fi",
+            "macAddress": "28:c5:d2:e5:06:aa",
+            "ip": "169.254.232.70",
+            "type": 71
+          },
+          {
+            "name": "Bluetooth Network Connection",
+            "macAddress": "28:c5:d2:e5:06:ae",
+            "ip": "169.254.217.41",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10"
+    }
+  ],
+  "traces": [
+    {
+      "eventType": "Process Created",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "host": "1583neu301",
+      "rv": 2287,
+      "parentTraceId": "947d6070-f04f-4508-8adf-a397912e5a14",
+      "traceId": "52868ce7-8778-4dd2-a757-f71e50e4e416",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "pid": 596,
+      "time": "2024-01-28T03:38:40.010Z",
+      "pSha2": "D44C73818B0CF757A1D07274013BAA87F36EBF9C59BEC8972FEA08C6CFB03862",
+      "ppid": 4,
+      "pFullName": "",
+      "cmdLine": "C:\\Windows\\System32\\smss.exe",
+      "processName": "smss.exe",
+      "integrity": 4,
+      "user": {
+        "domain": "NT AUTHORITY",
+        "id": "S-1-5-18",
+        "name": "NT AUTHORITY\\SYSTEM"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-09-12T01:54:44.070Z",
+        "md5": "54A7E1168CF0D30D449462DA5FC5A600",
+        "sha1": "FC4B6F48A8A7ECE73F1DA2370D7B488820F10B0D",
+        "sha256": "D44C73818B0CF757A1D07274013BAA87F36EBF9C59BEC8972FEA08C6CFB03862",
+        "name": "smss.exe",
+        "path": "C:\\Windows\\System32\\smss.exe",
+        "size": 157152,
+        "embedFilename": "smss.exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 1,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "parentsTraceId": [
+        "947d6070-f04f-4508-8adf-a397912e5a14"
+      ],
+      "tdmRuleIds": [
+        110
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-28T03:39:49Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "traceId": "655a3fb0-d4a6-45cf-889c-432bdf254c20",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "File Read",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.ScriptCreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 5,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "fileAttributes": {
+        "sha1": "6AB83620379FC69F80C0242105DDFFD7D98D5D9D",
+        "path": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\__PSScriptPolicyTest_k002iqqz.vrr.ps1",
+        "lastModificationDate": "2024-02-02T16:54:06.698Z",
+        "fsattrs": 32,
+        "sha256": "96AD1146EB96877EAB5942AE0736B82D8B5E2039A80D3D6932665C1A4C87DCF7",
+        "size": 60,
+        "name": "__PSScriptPolicyTest_k002iqqz.vrr.ps1",
+        "mhdr": "2320506f77657253",
+        "creationDate": "2024-02-02T16:54:06.698Z",
+        "md5": "D17FE0A3F47BE24A6453E9EF58C94641"
+      },
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:06.722Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "9c35f07e-7934-45c0-9341-f6af672c37fc",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19120,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:10.198Z",
+      "api": {
+        "result": "1",
+        "name": "SetThreadToken",
+        "moduleName": "",
+        "targetPid": 13880,
+        "arguments": [
+          "0x11bc",
+          "0x0"
+        ]
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "adec2be5-ef88-4611-ac78-751b50b652e2",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19115,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:17.495Z",
+      "api": {
+        "result": "0",
+        "data": "IkM6XFByb2dyYW0gRmlsZXMgKHg4NilcTWljcm9zb2Z0XEVkZ2VcQXBwbGljYXRpb25cbXNlZGdlLmV4ZSIgLS1zaW5nbGUtYXJndW1lbnQgaHR0cDovL3d3dy5vZmZpY2UueGVyb3guY29tL2NnaS1iaW4vcHJpbnRlci5wbA==",
+        "name": "CreateProcess",
+        "moduleName": "",
+        "targetPid": 18512,
+        "arguments": [
+          "0x3",
+          "0x4080414",
+          "0x1418",
+          "0x5870"
+        ]
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "e9a6c039-93ca-421c-a536-fced9433d39a",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19120,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:06.838Z",
+      "api": {
+        "result": "1",
+        "data": "U2VEZWJ1Z1ByaXZpbGVnZToyOw==",
+        "name": "AdjustTokenPrivileges",
+        "moduleName": "",
+        "targetPid": 13880,
+        "arguments": [
+          "0x488",
+          "0x0"
+        ]
+      },
+      "h_traceType": "all",
+      "severity": "s1",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATA.PrivilegeEscalation",
+            "@ATA.Execution",
+            "@ATE.T1134.001",
+            "@ATE.T1106",
+            "@MSI._api_tokenimpersonation_privileges"
+          ]
+        },
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1059.003",
+            "@MSI._process_exec2"
+          ]
+        }
+      ]
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.3636",
+        "sha256": "33D0F627A62DED9A4CF0D6E2A59AB3777BBECF7D794373B8052D9CC9253A4C74",
+        "embedFilename": "USERINIT.EXE",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2023-09-12T01:54:41.584Z",
+        "sha1": "E5A153AF6AB857FC4752A2BB008B435ADD5BF0B8",
+        "path": "C:\\Windows\\System32\\userinit.exe",
+        "size": 54272,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "userinit.exe",
+        "md5": "961093C2AA93542221884B14EC103899"
+      },
+      "pSha2": "33D0F627A62DED9A4CF0D6E2A59AB3777BBECF7D794373B8052D9CC9253A4C74",
+      "pid": 14604,
+      "parentTraceId": "ef6df28b-80c4-4af0-becd-2c9c6568399b",
+      "h_version": "3.0",
+      "integrity": 2,
+      "pFullName": "C:\\Windows\\System32\\winlogon.exe",
+      "processName": "userinit.exe",
+      "host": "1583neu301",
+      "h_traceType": "all",
+      "traceId": "eb143a57-365d-45f8-9438-44020c11d371",
+      "cmdLine": "C:\\Windows\\system32\\userinit.exe",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "ef6df28b-80c4-4af0-becd-2c9c6568399b",
+        "b4f430c2-9a7c-4899-89ea-7f19805ddf08",
+        "52868ce7-8778-4dd2-a757-f71e50e4e416",
+        "947d6070-f04f-4508-8adf-a397912e5a14"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 18788,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "detectionDate": "2024-02-02T16:35:57Z",
+      "time": "2024-02-02T16:35:37.577Z",
+      "user": {
+        "domain": "US",
+        "name": "ibbie",
+        "id": "S-1-5-21-3102552752-417709957-33154223-159771"
+      }
+    },
+    {
+      "traceId": "d01a7db4-74d4-4555-9d42-b975cd3cbbb8",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dns": {
+        "name": "dc.services.visualstudio.com",
+        "type": 1
+      },
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "DNS Query",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.DNSQuery"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19112,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:12.041Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "c88e2536-c0e7-4a97-a4a3-da3562622848",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "File Created",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.NonPECreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 1,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "fileAttributes": {
+        "sha1": "DA39A3EE5E6B4B0D3255BFEF95601890AFD80709",
+        "path": "C:\\ProgramData\\Xerox",
+        "lastModificationDate": "2024-02-02T16:54:11.401Z",
+        "fsattrs": 8208,
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "size": 0,
+        "name": "Xerox",
+        "creationDate": "2024-02-02T16:54:11.401Z",
+        "md5": "D41D8CD98F00B204E9800998ECF8427E"
+      },
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:11.404Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "44f4909f-d4a4-401c-880c-be81ba2241e7",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19117,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:10.151Z",
+      "api": {
+        "result": "0",
+        "name": "BCryptEncrypt",
+        "moduleName": "",
+        "targetPid": 13880,
+        "arguments": [
+          "0x3f",
+          "0x0",
+          "0x7ffc00000000"
+        ]
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "d0ef2c84-363a-47e0-9039-1dfe0b63003d",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Epp Process Response",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.EPP_Response"
+      ],
+      "h_version": "3.0",
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "response": {
+        "reason": 1,
+        "productId": 513,
+        "action": 1,
+        "description": "US\\ibbie ran C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe, which attempted to access the process System.Management.Automation.ni.dll, violating the rule \"Unmanaged Powershell Detected\", and was blocked. For information about how to respond to this event, see KB85494.",
+        "ruleId": "6135",
+        "operation": 1
+      },
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:08.417Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "24b736a1-9bc8-4a8b-a00a-f97a93d76474",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19120,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:07.401Z",
+      "api": {
+        "result": "3",
+        "data": "Qzpc",
+        "name": "GetDriveType",
+        "moduleName": "",
+        "targetPid": 0,
+        "arguments": []
+      },
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.3758 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.3758",
+        "sha256": "81D8EA67D17BF48524C82D576F8DDADDB37A218D0566FD7F0AAB8B8FBD03F193",
+        "embedFilename": "EXPLORER.EXE",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2023-09-12T23:27:11.681Z",
+        "sha1": "F25E92EDC0CAB5E7446A302863802F3879B27BD9",
+        "path": "C:\\Windows\\explorer.exe",
+        "size": 5550856,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "explorer.exe",
+        "md5": "02280F4613E3D8EB6579D79AB7A182CA"
+      },
+      "pSha2": "81D8EA67D17BF48524C82D576F8DDADDB37A218D0566FD7F0AAB8B8FBD03F193",
+      "pid": 13236,
+      "parentTraceId": "eb143a57-365d-45f8-9438-44020c11d371",
+      "h_version": "3.0",
+      "integrity": 2,
+      "pFullName": "C:\\Windows\\System32\\userinit.exe",
+      "processName": "explorer.exe",
+      "host": "1583neu301",
+      "h_traceType": "all",
+      "traceId": "6733f9dd-f492-476f-8488-3a3e0451d1f1",
+      "cmdLine": "C:\\Windows\\Explorer.EXE",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "eb143a57-365d-45f8-9438-44020c11d371",
+        "ef6df28b-80c4-4af0-becd-2c9c6568399b",
+        "b4f430c2-9a7c-4899-89ea-7f19805ddf08",
+        "52868ce7-8778-4dd2-a757-f71e50e4e416",
+        "947d6070-f04f-4508-8adf-a397912e5a14"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 14604,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        104,
+        100003
+      ],
+      "detectionDate": "2024-02-02T16:35:57Z",
+      "time": "2024-02-02T16:35:37.738Z",
+      "user": {
+        "domain": "US",
+        "name": "ibbie",
+        "id": "S-1-5-21-3102552752-417709957-33154223-159771"
+      }
+    },
+    {
+      "traceId": "e1988b74-b851-4023-8fbf-868766b9a170",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19118,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:09.683Z",
+      "api": {
+        "result": "0",
+        "name": "GetParent",
+        "moduleName": "",
+        "targetPid": 0,
+        "arguments": []
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "04bc29b2-0b87-428a-8bdf-b088082d4ab9",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19120,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:17.323Z",
+      "api": {
+        "result": "0",
+        "name": "GetKeyState",
+        "moduleName": "",
+        "targetPid": 13880,
+        "arguments": [
+          "0x1"
+        ]
+      },
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "sha1": "F8C7BD2570A4807DF3BC4B88EADEDFD7DDBBC1D2",
+        "path": "\\\\al1583pubshare1\\public\\Everyone\\Printer\\XeroxSmartStart_1.9.12.0.exe",
+        "sha256": "8F2A9B7FF7B14E16D3AD93B4C41A6CAA4C8696C5880450F83579ECDACB0D3EF8",
+        "size": 0,
+        "name": "XeroxSmartStart_1.9.12.0.exe",
+        "md5": "DE45E393D26FAFFFCC3435BA4C1CA4AF"
+      },
+      "pSha2": "8F2A9B7FF7B14E16D3AD93B4C41A6CAA4C8696C5880450F83579ECDACB0D3EF8",
+      "pid": 1328,
+      "parentTraceId": "6733f9dd-f492-476f-8488-3a3e0451d1f1",
+      "h_version": "3.0",
+      "integrity": 2,
+      "pFullName": "C:\\Windows\\explorer.exe",
+      "processName": "XeroxSmartStart_1.9.12.0.exe",
+      "host": "1583neu301",
+      "h_traceType": "all",
+      "traceId": "5cb091b9-c7e1-47cb-9838-2006245a7b64",
+      "cmdLine": "\"\\\\al1583pubshare1\\public\\Everyone\\Printer\\XeroxSmartStart_1.9.12.0.exe\" ",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "6733f9dd-f492-476f-8488-3a3e0451d1f1",
+        "eb143a57-365d-45f8-9438-44020c11d371",
+        "ef6df28b-80c4-4af0-becd-2c9c6568399b",
+        "b4f430c2-9a7c-4899-89ea-7f19805ddf08",
+        "52868ce7-8778-4dd2-a757-f71e50e4e416",
+        "947d6070-f04f-4508-8adf-a397912e5a14"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13236,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        108
+      ],
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "time": "2024-02-02T16:54:05.749Z",
+      "user": {
+        "domain": "US",
+        "name": "ibbie",
+        "id": "S-1-5-21-3102552752-417709957-33154223-159771"
+      }
+    },
+    {
+      "traceId": "8a30941d-2c41-456f-9ec1-8662710b6d0a",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "File Created",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.ScriptCreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 1,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "fileAttributes": {
+        "sha1": "6AB83620379FC69F80C0242105DDFFD7D98D5D9D",
+        "path": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\__PSScriptPolicyTest_k002iqqz.vrr.ps1",
+        "lastModificationDate": "2024-02-02T16:54:06.698Z",
+        "fsattrs": 32,
+        "sha256": "96AD1146EB96877EAB5942AE0736B82D8B5E2039A80D3D6932665C1A4C87DCF7",
+        "size": 60,
+        "name": "__PSScriptPolicyTest_k002iqqz.vrr.ps1",
+        "mhdr": "2320506f77657253",
+        "creationDate": "2024-02-02T16:54:06.698Z",
+        "md5": "D17FE0A3F47BE24A6453E9EF58C94641"
+      },
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:06.747Z",
+      "h_traceType": "all",
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.Persistence",
+            "@ATA.PrivilegeEscalation",
+            "@ATE.T1059",
+            "@ATE.T1547.009",
+            "@MSI._file_sysscript"
+          ]
+        }
+      ]
+    },
+    {
+      "traceId": "ae6b8d3d-1eba-42c7-9702-b5c4f1d5e793",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19120,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:09.620Z",
+      "api": {
+        "result": "0",
+        "name": "GetRawInputDeviceList",
+        "moduleName": "",
+        "targetPid": 0,
+        "arguments": []
+      },
+      "h_traceType": "all",
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATA.Execution",
+            "@ATE.T1120",
+            "@ATE.T1106",
+            "@MSI._api_peripheral_device_discovery"
+          ]
+        }
+      ]
+    },
+    {
+      "traceId": "d3f98827-ff79-4cf4-9773-31fd36edaa5e",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "File Deleted",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.ScriptCreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 6,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "fileAttributes": {
+        "sha1": "6AB83620379FC69F80C0242105DDFFD7D98D5D9D",
+        "path": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\__PSScriptPolicyTest_rehjmmxc.4ik.ps1",
+        "lastModificationDate": "2024-02-02T16:54:08.448Z",
+        "fsattrs": 32,
+        "sha256": "96AD1146EB96877EAB5942AE0736B82D8B5E2039A80D3D6932665C1A4C87DCF7",
+        "size": 60,
+        "name": "__PSScriptPolicyTest_rehjmmxc.4ik.ps1",
+        "mhdr": "2320506f77657253",
+        "creationDate": "2024-02-02T16:54:08.448Z",
+        "md5": "D17FE0A3F47BE24A6453E9EF58C94641"
+      },
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:08.459Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "67690ee2-748b-463d-b7ac-7f743555b6f9",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "File Deleted",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.ScriptCreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 6,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "fileAttributes": {
+        "sha1": "6AB83620379FC69F80C0242105DDFFD7D98D5D9D",
+        "path": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\__PSScriptPolicyTest_k002iqqz.vrr.ps1",
+        "lastModificationDate": "2024-02-02T16:54:06.698Z",
+        "fsattrs": 32,
+        "sha256": "96AD1146EB96877EAB5942AE0736B82D8B5E2039A80D3D6932665C1A4C87DCF7",
+        "size": 60,
+        "name": "__PSScriptPolicyTest_k002iqqz.vrr.ps1",
+        "mhdr": "2320506f77657253",
+        "creationDate": "2024-02-02T16:54:06.698Z",
+        "md5": "D17FE0A3F47BE24A6453E9EF58C94641"
+      },
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:06.749Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "a665b551-ccb1-47a6-9f05-0715b514e0f8",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19118,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:09.698Z",
+      "api": {
+        "result": "1",
+        "name": "GetWindowInfo",
+        "moduleName": "",
+        "targetPid": 0,
+        "arguments": []
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "fc4982a0-be99-47d9-ab5f-e5d1d54f0bca",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19117,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:06.495Z",
+      "api": {
+        "result": "1",
+        "name": "CryptExportKey",
+        "moduleName": "",
+        "targetPid": 13880,
+        "arguments": [
+          "0x212ad9be340",
+          "0x6",
+          "0x0"
+        ]
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "79bb5f1b-8e68-4898-bd15-d7c4ae9727a2",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19120,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:07.401Z",
+      "api": {
+        "result": "1310724",
+        "name": "GetLogicalDrives",
+        "moduleName": "",
+        "targetPid": 0,
+        "arguments": []
+      },
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.3758 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.3758",
+        "sha256": "6EC2D3D2CB7397DC0C193A20B9B3EA0AE0F05A7FEFDDFA555254453ADD89A5B6",
+        "embedFilename": "WINLOGON.EXE",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2023-09-12T23:27:22.550Z",
+        "sha1": "134474B2C558064F2C0A7F91BAE467A593323C44",
+        "path": "C:\\Windows\\System32\\winlogon.exe",
+        "size": 905728,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "winlogon.exe",
+        "md5": "AC8E6842E0A9C37B747F62D23EF372E9"
+      },
+      "pSha2": "6EC2D3D2CB7397DC0C193A20B9B3EA0AE0F05A7FEFDDFA555254453ADD89A5B6",
+      "pid": 18788,
+      "parentTraceId": "b4f430c2-9a7c-4899-89ea-7f19805ddf08",
+      "h_version": "3.0",
+      "integrity": 4,
+      "pFullName": "C:\\Windows\\System32\\smss.exe",
+      "processName": "winlogon.exe",
+      "host": "1583neu301",
+      "h_traceType": "all",
+      "traceId": "ef6df28b-80c4-4af0-becd-2c9c6568399b",
+      "cmdLine": "winlogon.exe",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "b4f430c2-9a7c-4899-89ea-7f19805ddf08",
+        "52868ce7-8778-4dd2-a757-f71e50e4e416",
+        "947d6070-f04f-4508-8adf-a397912e5a14"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 6208,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "detectionDate": "2024-02-02T16:35:57Z",
+      "time": "2024-02-02T16:35:26.042Z",
+      "user": {
+        "domain": "NT AUTHORITY",
+        "name": "SYSTEM",
+        "id": "S-1-5-18"
+      }
+    },
+    {
+      "traceId": "82904712-09d2-411e-84b3-7ce885fd9541",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Epp Process Response",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.EPP_Response"
+      ],
+      "h_version": "3.0",
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "response": {
+        "reason": 1,
+        "productId": 513,
+        "action": 1,
+        "description": "US\\ibbie ran C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe, which attempted to access the process System.Management.Automation.ni.dll, violating the rule \"Unmanaged Powershell Detected\", and was blocked. For information about how to respond to this event, see KB85494.",
+        "ruleId": "6135",
+        "operation": 1
+      },
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:06.538Z",
+      "h_traceType": "all",
+      "severity": "s4",
+      "detectionsSets": [
+        {
+          "sev": "s4",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1059.003",
+            "@MSI._process_exec3"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1204.002",
+            "@MSI._process_epp_response_blocked"
+          ]
+        }
+      ]
+    },
+    {
+      "traceId": "66c3458b-afd6-4aeb-841f-9d571a4e21f9",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19118,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:06.479Z",
+      "api": {
+        "result": "2348810240",
+        "name": "GetWindowLong",
+        "moduleName": "",
+        "targetPid": 0,
+        "arguments": []
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "ad6d9245-74ca-48dc-a26a-c8d0df8450c9",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19120,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:07.838Z",
+      "api": {
+        "result": "0",
+        "name": "NtDuplicateToken",
+        "moduleName": "",
+        "targetPid": 13880,
+        "arguments": [
+          "0x4",
+          "0x2"
+        ]
+      },
+      "h_traceType": "all",
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATA.PrivilegeEscalation",
+            "@ATA.Execution",
+            "@ATE.T1134.001",
+            "@ATE.T1106",
+            "@MSI._api_tokenimpersonation_privileges"
+          ]
+        }
+      ]
+    },
+    {
+      "traceId": "a6ccb4e9-abc6-44a0-868a-1db2f10c4f42",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "reputation": {
+        "reason": 2,
+        "productId": 514,
+        "data": "{\"module_filepath\":\"C:\\\\Windows\\\\assembly\\\\NativeImages_v4.0.30319_64\\\\Presentatioaec034ca#\\\\32e16def2d4e1d9574c122ca5d5656bc\\\\PresentationFramework.Aero2.ni.dll\",\"module_reputation\":85,\"process_previous_reputation\":99}\n",
+        "reputation": 85
+      },
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Process Reputation Changed",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "h_version": "3.0",
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:09.589Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "e41524a1-52c1-4e4a-855c-e58b1fe0fae2",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19118,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:09.792Z",
+      "api": {
+        "result": "17",
+        "name": "GetWindowText",
+        "moduleName": "",
+        "targetPid": 0,
+        "arguments": []
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "7deb8a0e-ee3b-4a85-a06b-41d5edb11454",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dns": {
+        "name": "www.xerox.com",
+        "type": 1
+      },
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "DNS Query",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.DNSQuery"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19112,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:09.995Z",
+      "h_traceType": "all",
+      "severity": "s1",
+      "detectionsSets": [
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1059.003",
+            "@MSI._process_exec2"
+          ]
+        }
+      ]
+    },
+    {
+      "traceId": "1343ffc4-f4ed-46a8-8c34-13b7270bab63",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19115,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:17.417Z",
+      "api": {
+        "result": "0",
+        "name": "CreateProcessPre",
+        "moduleName": "",
+        "targetPid": 0,
+        "arguments": [
+          "0x5870",
+          "0x4080414",
+          "0x0"
+        ]
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "4802f5c3-04fb-4abe-a5d3-56a9dd390f5e",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19120,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:09.104Z",
+      "api": {
+        "result": "0",
+        "name": "LsaOpenPolicy",
+        "moduleName": "",
+        "targetPid": 0,
+        "arguments": [
+          "0x800"
+        ]
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "1e8c2b16-2011-4a14-b2a2-c701007f833b",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Image Loaded",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "modules": [
+        {
+          "loadTime": "2024-02-02T16:54:06.543Z",
+          "vtpPrivileges": 1,
+          "fsattrs": 32,
+          "sha256": "89118C7377D44A593E95DB8C6DABA2DA26C240BA58D013B3E01987213B383389",
+          "name": "C:\\Windows\\Microsoft.NET\\assembly\\GAC_MSIL\\System.Management.Automation\\v4.0_3.0.0.0__31bf3856ad364e35\\System.Management.Automation.dll"
+        },
+        {
+          "loadTime": "2024-02-02T16:54:06.538Z",
+          "vtpPrivileges": 0,
+          "fsattrs": 32,
+          "sha256": "D759484D18C7419DE9F5D33638C07564DFFD2DDAA1DB56A7B42794E19A033E7D",
+          "name": "C:\\Windows\\assembly\\NativeImages_v4.0.30319_64\\System.Manaa57fc8cc#\\b60fb4987078897b8ef964bc08084c1a\\System.Management.Automation.ni.dll"
+        }
+      ],
+      "ppid": 13880,
+      "tags": [
+        "@AC.LoadedDLLs"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 13,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:06.543Z",
+      "h_traceType": "all",
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.DefenseEvasion",
+            "@ATE.T1059.001",
+            "@ATE.T1036",
+            "@MSI._process_unmanaged_powershell"
+          ]
+        }
+      ]
+    },
+    {
+      "traceId": "c2afda2d-0949-4e5a-8c75-4b6cb390244a",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "File Read",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.ScriptCreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 5,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "fileAttributes": {
+        "sha1": "6AB83620379FC69F80C0242105DDFFD7D98D5D9D",
+        "path": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\__PSScriptPolicyTest_rehjmmxc.4ik.ps1",
+        "lastModificationDate": "2024-02-02T16:54:08.448Z",
+        "fsattrs": 32,
+        "sha256": "96AD1146EB96877EAB5942AE0736B82D8B5E2039A80D3D6932665C1A4C87DCF7",
+        "size": 60,
+        "name": "__PSScriptPolicyTest_rehjmmxc.4ik.ps1",
+        "mhdr": "2320506f77657253",
+        "creationDate": "2024-02-02T16:54:08.448Z",
+        "md5": "D17FE0A3F47BE24A6453E9EF58C94641"
+      },
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:08.456Z",
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.3636",
+        "sha256": "D44C73818B0CF757A1D07274013BAA87F36EBF9C59BEC8972FEA08C6CFB03862",
+        "embedFilename": "smss.exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 1,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2023-09-12T01:54:44.070Z",
+        "sha1": "FC4B6F48A8A7ECE73F1DA2370D7B488820F10B0D",
+        "path": "C:\\Windows\\System32\\smss.exe",
+        "size": 157152,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "smss.exe",
+        "md5": "54A7E1168CF0D30D449462DA5FC5A600"
+      },
+      "pSha2": "D44C73818B0CF757A1D07274013BAA87F36EBF9C59BEC8972FEA08C6CFB03862",
+      "pid": 6208,
+      "parentTraceId": "52868ce7-8778-4dd2-a757-f71e50e4e416",
+      "h_version": "3.0",
+      "integrity": 4,
+      "pFullName": "C:\\Windows\\System32\\smss.exe",
+      "processName": "smss.exe",
+      "host": "1583neu301",
+      "h_traceType": "all",
+      "traceId": "b4f430c2-9a7c-4899-89ea-7f19805ddf08",
+      "cmdLine": "\\SystemRoot\\System32\\smss.exe 0000010c 00000084 ",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "52868ce7-8778-4dd2-a757-f71e50e4e416",
+        "947d6070-f04f-4508-8adf-a397912e5a14"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 596,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        110
+      ],
+      "detectionDate": "2024-02-02T16:35:57Z",
+      "time": "2024-02-02T16:35:25.993Z",
+      "user": {
+        "domain": "NT AUTHORITY",
+        "name": "SYSTEM",
+        "id": "S-1-5-18"
+      }
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "120.0.2210.144",
+        "embedProductVersion": "120.0.2210.144",
+        "sha256": "065D2802A5069ABAF7C12EE356620643A121F72ACE223D505C32EE525F9B91D3",
+        "embedFilename": "msedge.exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2021-08-05T22:41:46.806Z",
+        "sha1": "6960502A0FFF3D0646EEF64F6E59365E735E31AC",
+        "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "size": 3854376,
+        "embedProductName": "Microsoft Edge",
+        "name": "msedge.exe",
+        "md5": "6CC0A3E411A54743DCBF24541B1BC795"
+      },
+      "pSha2": "065D2802A5069ABAF7C12EE356620643A121F72ACE223D505C32EE525F9B91D3",
+      "pid": 18512,
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "h_version": "3.0",
+      "integrity": 2,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "processName": "msedge.exe",
+      "host": "1583neu301",
+      "h_traceType": "all",
+      "traceId": "d3e71170-159c-4dc3-801c-9dcfc9f353ca",
+      "cmdLine": "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --single-argument http://www.office.xerox.com/cgi-bin/printer.pl?APP=XQLA&Page=Color&Model=XQLA&PgName=installer_packages_xss",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+        "5cb091b9-c7e1-47cb-9838-2006245a7b64",
+        "6733f9dd-f492-476f-8488-3a3e0451d1f1",
+        "eb143a57-365d-45f8-9438-44020c11d371",
+        "ef6df28b-80c4-4af0-becd-2c9c6568399b",
+        "b4f430c2-9a7c-4899-89ea-7f19805ddf08",
+        "52868ce7-8778-4dd2-a757-f71e50e4e416",
+        "947d6070-f04f-4508-8adf-a397912e5a14"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        102,
+        100003
+      ],
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "time": "2024-02-02T16:54:17.432Z",
+      "user": {
+        "domain": "US",
+        "name": "ibbie",
+        "id": "S-1-5-21-3102552752-417709957-33154223-159771"
+      }
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "host": "1583neu301",
+      "rv": 2287,
+      "parentTraceId": "00000000-0000-0000-0000-000000000000",
+      "traceId": "947d6070-f04f-4508-8adf-a397912e5a14",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "pid": 4,
+      "time": "2024-01-28T03:38:40.009Z",
+      "pSha2": "",
+      "cmdLine": "",
+      "processName": "",
+      "integrity": 4,
+      "user": {
+        "domain": "NT AUTHORITY",
+        "id": "S-1-5-18",
+        "name": "NT AUTHORITY\\SYSTEM"
+      },
+      "parentsTraceId": [],
+      "tdmRuleIds": [
+        106
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_4.1.0.2287",
+      "detectionDate": "2024-01-28T03:39:49Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "traceId": "cb41fc2d-eac0-4298-852c-6bf387d8c23a",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19116,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:09.698Z",
+      "api": {
+        "result": "855969150",
+        "name": "NtGdiCreateCompatibleBitmap",
+        "moduleName": "",
+        "targetPid": 0,
+        "arguments": []
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "04abd6a2-3b32-4bf9-846f-5cee9281ee0b",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 11,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:17.495Z",
+      "api": {
+        "result": "0",
+        "data": "AADtwFkCAAA=",
+        "name": "WriteProcessMemory",
+        "moduleName": "",
+        "targetPid": 18512,
+        "arguments": [
+          "0xd1eb08b2d8",
+          "0x8",
+          "0x0"
+        ]
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "8e4b2546-8436-4577-9615-54ddf34116d9",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19120,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:09.854Z",
+      "api": {
+        "result": "0",
+        "name": "LsaOpenPolicy",
+        "moduleName": "",
+        "targetPid": 0,
+        "arguments": [
+          "0x1"
+        ]
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "cd43c95d-373d-434b-9701-0c3ad2568941",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "File Created",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.ScriptCreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 1,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "fileAttributes": {
+        "sha1": "6AB83620379FC69F80C0242105DDFFD7D98D5D9D",
+        "path": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\__PSScriptPolicyTest_rehjmmxc.4ik.ps1",
+        "lastModificationDate": "2024-02-02T16:54:08.448Z",
+        "fsattrs": 32,
+        "sha256": "96AD1146EB96877EAB5942AE0736B82D8B5E2039A80D3D6932665C1A4C87DCF7",
+        "size": 60,
+        "name": "__PSScriptPolicyTest_rehjmmxc.4ik.ps1",
+        "mhdr": "2320506f77657253",
+        "creationDate": "2024-02-02T16:54:08.448Z",
+        "md5": "D17FE0A3F47BE24A6453E9EF58C94641"
+      },
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:08.459Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "0a717eb4-774a-4aff-aac9-5800d3c1e340",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19120,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:06.464Z",
+      "api": {
+        "result": "2279244862608",
+        "data": "QzpcV2luZG93c1xNaWNyb3NvZnQuTkVUXEZyYW1ld29yazY0XHY0LjAuMzAzMTlcbXNjb3JlZWkuZGxs",
+        "name": "FindFirstFile",
+        "moduleName": "",
+        "targetPid": 0,
+        "arguments": []
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "29febbd6-fc04-43f9-83e4-752140c95aee",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19120,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:08.995Z",
+      "api": {
+        "result": "1",
+        "name": "SetThreadToken",
+        "moduleName": "",
+        "targetPid": 13880,
+        "arguments": [
+          "0xb9c",
+          "0x0"
+        ]
+      },
+      "h_traceType": "all",
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATA.PrivilegeEscalation",
+            "@ATA.Execution",
+            "@ATE.T1134.001",
+            "@ATE.T1106",
+            "@MSI._api_tokenimpersonation_privileges"
+          ]
+        }
+      ]
+    },
+    {
+      "traceId": "79edf052-3f06-4fc7-92f1-24e0332a6706",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19118,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:09.683Z",
+      "api": {
+        "result": "66064",
+        "name": "FindWindow",
+        "moduleName": "",
+        "targetPid": 0,
+        "arguments": []
+      },
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "1.0.0.0",
+        "embedProductVersion": "1.0.0.0",
+        "sha256": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+        "embedFilename": "XeroxSmartStart.exe",
+        "embedVendorName": "",
+        "subsystem": 2,
+        "creationDate": "2023-06-22T18:57:14.000Z",
+        "sha1": "CF12A8D45FFE01A788777648A1E82113847575CF",
+        "path": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+        "size": 1655240,
+        "certificates": [
+          [
+            {
+              "sha1": "88F8339F7EC5CAAC2E49CFFDEA81BA41DD89C5D2",
+              "issuerName": "GB, Sectigo Limited, Sectigo Public Code Signing CA R36",
+              "subject": "US, Connecticut, Xerox Corporation, Xerox Corporation",
+              "publicKeyHash": "BEEEADBD08D18DFAF1A7A31A7013A81A2D247704"
+            },
+            {
+              "sha1": "0BC5E76773D2E44FC9903D4DFEFE451553BBEC4A",
+              "issuerName": "GB, Sectigo Limited, Sectigo Public Code Signing Root R46",
+              "subject": "GB, Sectigo Limited, Sectigo Public Code Signing CA R36",
+              "publicKeyHash": "0F2ACB208728B8EC6F48AE2B54A629AA17A4CD0C"
+            },
+            {
+              "sha1": "329B78A5C9EBC2043242DE90CE1B7C6B1BA6C692",
+              "issuerName": "GB, Greater Manchester, Salford, Comodo CA Limited, AAA Certificate Services",
+              "subject": "GB, Sectigo Limited, Sectigo Public Code Signing Root R46",
+              "publicKeyHash": "32EB929AFF3596482F284042702036915C1785E6"
+            },
+            {
+              "sha1": "D1EB23A46D17D68FD92564C2F1F1601764D8E349",
+              "issuerName": "GB, Greater Manchester, Salford, Comodo CA Limited, AAA Certificate Services",
+              "subject": "GB, Greater Manchester, Salford, Comodo CA Limited, AAA Certificate Services",
+              "publicKeyHash": "A0110A233E96F107ECE2AF29EF82A57FD030A4B4"
+            }
+          ]
+        ],
+        "embedProductName": "XeroxSmartStart",
+        "name": "XeroxSmartStart.exe",
+        "md5": "289C2D8FCFEDB302405C9347CE60F939"
+      },
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "pid": 13880,
+      "parentTraceId": "5cb091b9-c7e1-47cb-9838-2006245a7b64",
+      "h_version": "3.0",
+      "integrity": 2,
+      "pFullName": "\\\\al1583pubshare1\\public\\Everyone\\Printer\\XeroxSmartStart_1.9.12.0.exe",
+      "processName": "XeroxSmartStart.exe",
+      "host": "1583neu301",
+      "h_traceType": "all",
+      "traceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "cmdLine": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe ",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "5cb091b9-c7e1-47cb-9838-2006245a7b64",
+        "6733f9dd-f492-476f-8488-3a3e0451d1f1",
+        "eb143a57-365d-45f8-9438-44020c11d371",
+        "ef6df28b-80c4-4af0-becd-2c9c6568399b",
+        "b4f430c2-9a7c-4899-89ea-7f19805ddf08",
+        "52868ce7-8778-4dd2-a757-f71e50e4e416",
+        "947d6070-f04f-4508-8adf-a397912e5a14"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 1328,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        108,
+        100003,
+        100005,
+        100006
+      ],
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "time": "2024-02-02T16:54:06.422Z",
+      "user": {
+        "domain": "US",
+        "name": "ibbie",
+        "id": "S-1-5-21-3102552752-417709957-33154223-159771"
+      },
+      "severity": "s4",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATA.Execution",
+            "@ATE.T1120",
+            "@ATE.T1106",
+            "@MSI._api_peripheral_device_discovery"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATA.PrivilegeEscalation",
+            "@ATA.Execution",
+            "@ATE.T1134.001",
+            "@ATE.T1106",
+            "@MSI._api_tokenimpersonation_privileges"
+          ]
+        },
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1059.003",
+            "@MSI._process_exec2"
+          ]
+        },
+        {
+          "sev": "s4",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1059.003",
+            "@MSI._process_exec3"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.DefenseEvasion",
+            "@ATE.T1059.001",
+            "@ATE.T1036",
+            "@MSI._process_unmanaged_powershell"
+          ]
+        },
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.PrivilegeEscalation",
+            "@ATE.T1134",
+            "@MSI._hunting_credential_access2"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1204.002",
+            "@MSI._process_epp_response_blocked"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.Persistence",
+            "@ATA.PrivilegeEscalation",
+            "@ATE.T1059",
+            "@ATE.T1547.009",
+            "@MSI._file_sysscript"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@MSI._process_suspicious_path"
+          ]
+        }
+      ]
+    },
+    {
+      "traceId": "3cf36df9-9438-4e03-a94a-b7fa985ce104",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dns": {
+        "name": "download.support.xerox.com",
+        "type": 1
+      },
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "DNS Query",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.DNSQuery"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19112,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:11.510Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "cb19fbad-bf53-4e47-98a0-0935c5811565",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19116,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:09.698Z",
+      "api": {
+        "result": "1",
+        "name": "BitBlt",
+        "moduleName": "",
+        "targetPid": 0,
+        "arguments": []
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "2f15e951-63d7-4a6f-b7ab-346f6904a3bb",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "301649CA-B735-11EE-1118-000000000000",
+      "rv": 2287,
+      "pSha2": "1AC7D0AC07A25032C1B48897C50A5B26137DB8490FE98AEAF57B0B769027FB10",
+      "dtsId": "EDR",
+      "pid": 13880,
+      "eventType": "Api",
+      "parentTraceId": "8a139e02-6bd8-435d-87bc-38ba7809ee0c",
+      "contextTraceId": "727e2aa5-bee8-4ed1-ae25-06292be6ec00",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13880,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19117,
+      "pFullName": "C:\\Users\\ibbie\\AppData\\Local\\Temp\\7\\Xerox\\XSS\\x86\\XeroxSmartStart.exe",
+      "detectionDate": "2024-02-02T16:54:25Z",
+      "host": "1583neu301",
+      "time": "2024-02-02T16:54:06.495Z",
+      "api": {
+        "result": "0",
+        "data": "UlNBfA==",
+        "name": "BCryptOpenAlgorithmProvider",
+        "moduleName": "",
+        "targetPid": 13880,
+        "arguments": [
+          "0x0"
+        ]
+      },
+      "h_traceType": "all"
+    }
+  ]
+}

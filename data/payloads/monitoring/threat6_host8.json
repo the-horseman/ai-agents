@@ -1,0 +1,2952 @@
+{
+  "detections": [
+    {
+      "id": "3610583026",
+      "traceId": "249dff25-3802-4518-8ba6-ec1686280044",
+      "firstDetected": "2024-02-05T16:29:27Z",
+      "severity": "s1",
+      "rank": 85,
+      "tags": [
+        "@ATE.T1204.002",
+        "@ATE.T1112",
+        "@ATA.DefenseEvasion",
+        "@ATE.T1059.003",
+        "@MSI._process_VBS_via_office",
+        "@ATE.T1059.005",
+        "@ATA.Execution",
+        "@MSI._reg_ep0044_officesecure",
+        "@ATE.T1559.001"
+      ],
+      "host": {
+        "maGuid": "AA68EB86-888E-11EE-3266-000000000000",
+        "hostname": "1446AS19W",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:23Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "6c:3c:8c:fd:a2:d0",
+            "ip": "169.254.241.188",
+            "type": 6
+          },
+          {
+            "name": "Wi-Fi",
+            "macAddress": "d4:e9:8a:0c:31:40",
+            "ip": "10.156.21.186",
+            "type": 71
+          },
+          {
+            "name": "Bluetooth Network Connection",
+            "macAddress": "d4:e9:8a:0c:31:44",
+            "ip": "169.254.239.107",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2"
+    }
+  ],
+  "traces": [
+    {
+      "eventType": "File Deleted",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "088c661a-f210-4cd0-b9f3-872f8bc16118",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:07.609Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2024-01-08T14:56:33.930Z",
+        "creationDate": "2024-01-08T07:10:46.992Z",
+        "md5": "",
+        "sha1": "",
+        "sha256": "7BE71C8EF0AB19D238A442728511F942FC08BC0F5217F1A8A91F91E7FFF819FE",
+        "name": "Operating Room on intranet.tx1620.chs.net.url",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\Office\\Recent\\Operating Room on intranet.tx1620.chs.net.url",
+        "size": 110,
+        "fsattrs": 32
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "File Deleted",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "ea0a1917-cb16-4f0c-86fa-49b0ca9a554b",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:34:16.719Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2024-01-29T21:33:07.540Z",
+        "creationDate": "2024-01-29T21:33:07.540Z",
+        "md5": "D02701F5C39CBD542F0C44C651A9B7DA",
+        "sha1": "D9C2238983E90C293580A05D062663053E164E6C",
+        "sha256": "05C0FEBB985FCDC9D73580B16D6E3E6BDCA1E41049DF8D1B8B5A520B4FD558B6",
+        "name": "Operating Room-Operating Room Manual Policy.doc.url",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\Office\\Recent\\Operating Room-Operating Room Manual Policy.doc.url",
+        "size": 165,
+        "fsattrs": 32,
+        "mhdr": "5b496e7465726e65"
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:34:39Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "Api",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "aae893fc-045d-4b37-9e85-4bcf5bbdcc5b",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:44:50.601Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "api": {
+        "name": "FindWindow",
+        "result": "0",
+        "moduleName": "",
+        "arguments": [],
+        "targetPid": 0
+      },
+      "uniqueRuleId": 0,
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:45:07Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.APICall"
+      ]
+    },
+    {
+      "eventType": "File Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "19e8d75e-c29c-4477-8ee0-96a92d4a5eb3",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:07.553Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2024-01-29T21:33:07.540Z",
+        "creationDate": "2024-01-29T21:33:07.540Z",
+        "md5": "D02701F5C39CBD542F0C44C651A9B7DA",
+        "sha1": "D9C2238983E90C293580A05D062663053E164E6C",
+        "sha256": "05C0FEBB985FCDC9D73580B16D6E3E6BDCA1E41049DF8D1B8B5A520B4FD558B6",
+        "name": "Operating Room-Operating Room Manual Policy.doc.url",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\Office\\Recent\\Operating Room-Operating Room Manual Policy.doc.url",
+        "size": 165,
+        "fsattrs": 32,
+        "mhdr": "5b496e7465726e65"
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "File Deleted",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "f8e72f7b-f0c9-4278-b934-4640dc7014a2",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:44:51.200Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2024-01-08T07:22:38.894Z",
+        "creationDate": "2024-01-08T07:22:38.879Z",
+        "md5": "",
+        "sha1": "",
+        "sha256": "279AC63ECF6C7BD2450F7D7B782DEB574D0249F3F4AE9651752E4DD302A30B47",
+        "name": "Operating Room-Visitors in the OR.doc.url",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\Office\\Recent\\Operating Room-Visitors in the OR.doc.url",
+        "size": 155,
+        "fsattrs": 32
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:45:07Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "File Deleted",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "17a0d490-4427-463e-b32d-71d11aee10b0",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:34:16.767Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2024-01-29T21:33:07.610Z",
+        "creationDate": "2024-01-08T07:10:46.992Z",
+        "md5": "0E906CD9C4F4DD140D765B4DF7E63ADE",
+        "sha1": "ABE05C6781418354DBB7E5669C0F8588DE6F1EFA",
+        "sha256": "7BE71C8EF0AB19D238A442728511F942FC08BC0F5217F1A8A91F91E7FFF819FE",
+        "name": "Operating Room on intranet.tx1620.chs.net.url",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\Office\\Recent\\Operating Room on intranet.tx1620.chs.net.url",
+        "size": 110,
+        "fsattrs": 32,
+        "mhdr": "5b496e7465726e65"
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:34:39Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "File Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "5f5dee04-2cdb-41be-b84b-59da72a81a39",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:50.407Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2024-01-29T21:33:50.397Z",
+        "creationDate": "2024-01-29T21:33:50.397Z",
+        "md5": "D41D8CD98F00B204E9800998ECF8427E",
+        "sha1": "DA39A3EE5E6B4B0D3255BFEF95601890AFD80709",
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "name": "odc.officeapps.live.com",
+        "path": "C:\\Users\\lori\\AppData\\Local\\Microsoft\\Office\\15.0\\WebServiceCache\\AllUsers\\odc.officeapps.live.com",
+        "size": 4096,
+        "fsattrs": 16
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:34:08Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.PECreated"
+      ]
+    },
+    {
+      "eventType": "File Modified",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "9d68921f-5d8f-4557-aaa3-1042dd337222",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:04.090Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2023-08-28T04:16:35.714Z",
+        "creationDate": "2023-08-25T13:54:18.849Z",
+        "md5": "0A4AF75B7DFD0FE1F20202624F3A084D",
+        "sha1": "D9DFBD72C5D25E64042887CD44FD79BA2D963CBC",
+        "sha256": "89E88BB52055FD275C2543FCC8C2F641157623395BEF9609FD7B73A4E01EEA35",
+        "name": "Normal.dotm",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\Templates\\Normal.dotm",
+        "size": 17810,
+        "fsattrs": 32,
+        "mhdr": "504b030414000600"
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "Network Accessed",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "8f3220bc-eb28-4c9e-830c-d39d30216a6d",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:06.213Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 19103,
+      "network": {
+        "accessType": "connection_opened",
+        "direction": "outbound",
+        "dstIp": "10.5.208.52",
+        "dstPort": 80,
+        "srcIp": "10.37.78.119",
+        "srcPort": 60015,
+        "protocol": "tcp",
+        "dnsNames": [
+          "intranet.tx1620.chs.net",
+          "hospsps.chs.net"
+        ]
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NetworkConnection"
+      ]
+    },
+    {
+      "eventType": "File Modified",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "cd1c1983-db11-4f1a-8ff9-43f919c26301",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:07.961Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2023-08-25T13:53:34.693Z",
+        "creationDate": "2023-08-25T13:53:34.693Z",
+        "md5": "F3B25701FE362EC84616A93A45CE9998",
+        "sha1": "D62636D8CAEC13F04E28442A0A6FA1AFEB024BBB",
+        "sha256": "B3D510EF04275CA8E698E5B3CBB0ECE3949EF9252F0CDC839E9EE347409A2209",
+        "name": "CUSTOM.DIC",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\UProof\\CUSTOM.DIC",
+        "size": 2,
+        "fsattrs": 32,
+        "mhdr": "fffe000000000000"
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "d0f15cd5-850b-4b50-8f8c-05e4c752470f",
+      "traceId": "d3898438-0ab5-47c0-8ae4-2e0d8fe00c0f",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 4528,
+      "time": "2024-01-29T16:35:56.219Z",
+      "pSha2": "81D8EA67D17BF48524C82D576F8DDADDB37A218D0566FD7F0AAB8B8FBD03F193",
+      "ppid": 11108,
+      "pFullName": "C:\\Windows\\System32\\userinit.exe",
+      "cmdLine": "C:\\Windows\\Explorer.EXE",
+      "processName": "explorer.exe",
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-203798",
+        "name": "lori"
+      },
+      "procFileAttrs": {
+        "creationDate": "2024-01-23T14:11:03.816Z",
+        "md5": "02280F4613E3D8EB6579D79AB7A182CA",
+        "sha1": "F25E92EDC0CAB5E7446A302863802F3879B27BD9",
+        "sha256": "81D8EA67D17BF48524C82D576F8DDADDB37A218D0566FD7F0AAB8B8FBD03F193",
+        "name": "explorer.exe",
+        "path": "C:\\Windows\\explorer.exe",
+        "size": 5550856,
+        "embedFilename": "EXPLORER.EXE",
+        "embedFileVersion": "10.0.19041.3758 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3758",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "integrity": 2,
+      "parentsTraceId": [
+        "d0f15cd5-850b-4b50-8f8c-05e4c752470f",
+        "c1a5c8ba-26d2-49bd-b915-2f00e6fb76d1"
+      ],
+      "tdmRuleIds": [
+        104,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T16:36:14Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "RegKey Deleted",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "a8974b33-8e24-4a04-9c7d-9e4316738d42",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:54.976Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "registry": {
+        "regKeyName": "HKCU\\SOFTWARE\\MICROSOFT\\OFFICE\\15.0\\WORD\\RESILIENCY\\STARTUPITEMS"
+      },
+      "uniqueRuleId": 9,
+      "ruleTags": [
+        "aseps"
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:34:08Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ASEPCreatedOrModified"
+      ]
+    },
+    {
+      "eventType": "Network Accessed",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "65c0d3c4-16c4-4c7f-b188-0fd5dca2a4cf",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:05.749Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 29000,
+      "network": {
+        "accessType": "connection_opened",
+        "direction": "outbound",
+        "dstIp": "10.5.208.52",
+        "dstPort": 80,
+        "srcIp": "10.37.78.119",
+        "srcPort": 60005,
+        "protocol": "http",
+        "bSent": 42,
+        "bRec": 0,
+        "layer7": {
+          "url": "http://intranet.tx1620.chs.net/_vti_bin/shtml.dll/_vti_rpc",
+          "httpRequestHeaders": "POST /_vti_bin/shtml.dll/_vti_rpc HTTP/1.1\r\nDate: Mon, 29 Jan 2024 21:33:04 GMT\r\nMIME-Version: 1.0\r\nUser-Agent: MSFrontPage/15.0\r\nHost: intranet.tx1620.chs.net\r\nAccept: auth/sicily\r\nContent-Type: application/x-www-form-urlencoded\r\nX-Vermeer-Content-Type: application/x-www-form-urlencoded\r\nConnection: Keep-Alive\r\nCache-Control: no-cache\r\nContent-Length: 42\r\n\r\n",
+          "httpResponseHeaders": "HTTP/1.1 200 OK\r\nServer: Microsoft-IIS/7.5\r\nDate: Mon, 29 Jan 2024 21:33:04 GMT\r\nConnection: close\r\nContent-type: application/x-vermeer-rpc\r\n\r\n"
+        }
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NetworkConnection"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "c1a5c8ba-26d2-49bd-b915-2f00e6fb76d1",
+      "traceId": "d0f15cd5-850b-4b50-8f8c-05e4c752470f",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 11108,
+      "time": "2024-01-29T16:35:55.996Z",
+      "pSha2": "33D0F627A62DED9A4CF0D6E2A59AB3777BBECF7D794373B8052D9CC9253A4C74",
+      "ppid": 1408,
+      "pFullName": "C:\\Windows\\System32\\winlogon.exe",
+      "cmdLine": "C:\\Windows\\system32\\userinit.exe",
+      "processName": "userinit.exe",
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-203798",
+        "name": "lori"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-12-05T15:12:36.395Z",
+        "md5": "961093C2AA93542221884B14EC103899",
+        "sha1": "E5A153AF6AB857FC4752A2BB008B435ADD5BF0B8",
+        "sha256": "33D0F627A62DED9A4CF0D6E2A59AB3777BBECF7D794373B8052D9CC9253A4C74",
+        "name": "userinit.exe",
+        "path": "C:\\Windows\\System32\\userinit.exe",
+        "size": 54272,
+        "embedFilename": "USERINIT.EXE",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "integrity": 2,
+      "parentsTraceId": [
+        "c1a5c8ba-26d2-49bd-b915-2f00e6fb76d1"
+      ],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T16:36:14Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Network Accessed",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "b9368aeb-9020-4d6f-bc5a-01517d4afe86",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:05.980Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 19103,
+      "network": {
+        "accessType": "connection_opened",
+        "direction": "outbound",
+        "dstIp": "10.5.208.52",
+        "dstPort": 80,
+        "srcIp": "10.37.78.119",
+        "srcPort": 60013,
+        "protocol": "tcp",
+        "dnsNames": [
+          "intranet.tx1620.chs.net",
+          "hospsps.chs.net"
+        ]
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NetworkConnection"
+      ]
+    },
+    {
+      "eventType": "File Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "d524537d-c739-431d-a8b3-5ca4da86bbec",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:44:51.259Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2024-01-29T21:44:51.250Z",
+        "creationDate": "2024-01-29T21:44:51.180Z",
+        "md5": "46109190236E59621825E0484216B526",
+        "sha1": "312C72521C9494C319A28B3276F3BF55D91EE726",
+        "sha256": "D1D432FB479481966B76B28262A5993FDBE7A0DB9D66D4AC9107A0EA96F0C5D6",
+        "name": "Disciplinary action form.LNK",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\Office\\Recent\\Disciplinary action form.LNK",
+        "size": 563,
+        "fsattrs": 32,
+        "mhdr": "4c00000001140200"
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:45:07Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "Image Loaded",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "daa8e328-fcce-460b-96e7-600eccfb1d06",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:35:35.523Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 18,
+      "modules": [
+        {
+          "sha256": "FC8AC404294F41FB6915DC37919430A40DEF60BEF6490E857E6EE178F1B247EE",
+          "name": "C:\\Windows\\SysWOW64\\samcli.dll",
+          "loadTime": "2024-01-29T21:35:35.523Z",
+          "vtpPrivileges": 1,
+          "fsattrs": 32
+        },
+        {
+          "sha256": "FC8AC404294F41FB6915DC37919430A40DEF60BEF6490E857E6EE178F1B247EE",
+          "name": "C:\\WINDOWS\\SYSWOW64\\SAMCLI.DLL",
+          "loadTime": "2024-01-29T21:35:35.524Z",
+          "vtpPrivileges": 1,
+          "fsattrs": 32
+        }
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:36:08Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.LoadedDLLs"
+      ]
+    },
+    {
+      "eventType": "Network Accessed",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "9cd78fd4-f181-424d-b9bd-6ef6465583d4",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:42.989Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 19103,
+      "network": {
+        "accessType": "connection_opened",
+        "direction": "outbound",
+        "dstIp": "10.5.208.52",
+        "dstPort": 80,
+        "srcIp": "10.37.78.119",
+        "srcPort": 60030,
+        "protocol": "tcp",
+        "dnsNames": [
+          "intranet.tx1620.chs.net",
+          "hospsps.chs.net"
+        ]
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:34:08Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NetworkConnection"
+      ]
+    },
+    {
+      "eventType": "File Modified",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "43be1af0-e1db-40a2-abf6-84249e257eb2",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:07.964Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2024-01-29T19:03:42.896Z",
+        "creationDate": "2023-08-15T18:00:03.738Z",
+        "md5": "C93553488231B15EC500869C5B40D599",
+        "sha1": "B0EC22FE29792E87DCEDD19AF02FE1D8B3C845E9",
+        "sha256": "1DA998DB480B5BE040356D29D2BC0CC227796463626A2A153A8C7CE920E586E0",
+        "name": "default.dic",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\Spelling\\en-US\\default.dic",
+        "size": 24,
+        "fsattrs": 32,
+        "mhdr": "fffe23004c004900"
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "RegKey Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "90c46391-3527-44d5-a0b0-d5c3f0280dc3",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:54.975Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "registry": {
+        "regKeyName": "HKCU\\SOFTWARE\\MICROSOFT\\OFFICE\\15.0\\WORD\\RESILIENCY\\STARTUPITEMS"
+      },
+      "uniqueRuleId": 9,
+      "ruleTags": [
+        "aseps"
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:34:08Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ASEPCreatedOrModified"
+      ]
+    },
+    {
+      "eventType": "Network Accessed",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "8e0af800-630c-4f39-bd20-a60efd0f3846",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:04.688Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 19103,
+      "network": {
+        "accessType": "connection_opened",
+        "direction": "outbound",
+        "dstIp": "10.5.208.52",
+        "dstPort": 80,
+        "srcIp": "10.37.78.119",
+        "srcPort": 60005,
+        "protocol": "tcp",
+        "dnsNames": [
+          "intranet.tx1620.chs.net",
+          "hospsps.chs.net"
+        ]
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NetworkConnection"
+      ]
+    },
+    {
+      "eventType": "RegKey Deleted",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "ceb41af6-ddf8-419b-bfb2-138b0b0ec0ee",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:21.201Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "registry": {
+        "regKeyName": "HKCU\\SOFTWARE\\MICROSOFT\\OFFICE\\15.0\\WORD\\RESILIENCY\\STARTUPITEMS"
+      },
+      "uniqueRuleId": 9,
+      "ruleTags": [
+        "aseps"
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ASEPCreatedOrModified"
+      ]
+    },
+    {
+      "eventType": "File Modified",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "cc7af924-7a56-4d7e-9a80-d9a480eb86ee",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:07.986Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2023-08-25T13:53:34.818Z",
+        "creationDate": "2023-08-25T13:53:34.693Z",
+        "md5": "3E063DA332C91E43C9898501B1C9E7A8",
+        "sha1": "CDC3238E060BE6F5B24A8F25938C86FA87ED2CEB",
+        "sha256": "1032EE265EAEB89637E9B0CF57C544A4216676BDEFB23C693648F5E580D5CB2D",
+        "name": "RoamingCustom.dic",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\Office\\15.0\\1f1c49b8\\Proofing\\RoamingCustom.dic",
+        "size": 50,
+        "fsattrs": 32,
+        "mhdr": "fffe4b0065006900"
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "RegKey Deleted",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "9e55c478-dafe-4342-aa62-1188e6bd1849",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:44:51.106Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "registry": {
+        "regKeyName": "HKCU\\SOFTWARE\\MICROSOFT\\OFFICE\\15.0\\WORD\\RESILIENCY\\STARTUPITEMS"
+      },
+      "uniqueRuleId": 9,
+      "ruleTags": [
+        "aseps"
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:45:07Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ASEPCreatedOrModified"
+      ]
+    },
+    {
+      "eventType": "Api",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "9b3a1857-61b0-44dd-86a8-f7442df4f51d",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:44:50.662Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "api": {
+        "name": "NetShareGetInfo",
+        "data": "dHgxNjIwd2ZwczAyAA==",
+        "result": "0",
+        "moduleName": "hrinfo",
+        "arguments": [
+          "0x1"
+        ],
+        "targetPid": 0
+      },
+      "uniqueRuleId": 0,
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:45:07Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.APICall"
+      ],
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.Discovery",
+            "@ATE.T1106",
+            "@ATE.T1135",
+            "@MSI._api_network_share_discovery"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "File Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "ce7210ae-3818-4f06-93b2-e7261f67bb86",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:34:16.769Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2024-01-29T21:33:07.610Z",
+        "creationDate": "2024-01-08T07:10:46.992Z",
+        "md5": "0E906CD9C4F4DD140D765B4DF7E63ADE",
+        "sha1": "ABE05C6781418354DBB7E5669C0F8588DE6F1EFA",
+        "sha256": "7BE71C8EF0AB19D238A442728511F942FC08BC0F5217F1A8A91F91E7FFF819FE",
+        "name": "Operating Room on intranet.tx1620.chs.net.url",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\Office\\Recent\\Operating Room on intranet.tx1620.chs.net.url",
+        "size": 110,
+        "fsattrs": 32,
+        "mhdr": "5b496e7465726e65"
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:34:39Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "File Modified",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "00b531b7-58dc-4789-930c-a4fcb80c68e8",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:44:51.262Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2024-01-29T21:33:07.612Z",
+        "creationDate": "2023-08-25T13:51:59.499Z",
+        "md5": "4C19C136932CCAB9D6A2536DCC0981BC",
+        "sha1": "CC5D4E1A81D84633B044AA16F0A91E3F55EFA070",
+        "sha256": "515FB905416788FDBF9706B25AF94E3CED52600359BD985B4A7C087ED343D911",
+        "name": "index.dat",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\Office\\Recent\\index.dat",
+        "size": 1735,
+        "fsattrs": 34,
+        "mhdr": "5b6d6973635d0d0a"
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:45:07Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "Network Accessed",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "7540f270-f1e1-461a-8ab3-c95baddf04b7",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:05.048Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 19103,
+      "network": {
+        "accessType": "connection_opened",
+        "direction": "outbound",
+        "dstIp": "10.5.208.52",
+        "dstPort": 80,
+        "srcIp": "10.37.78.119",
+        "srcPort": 60009,
+        "protocol": "tcp",
+        "dnsNames": [
+          "intranet.tx1620.chs.net",
+          "hospsps.chs.net"
+        ]
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NetworkConnection"
+      ]
+    },
+    {
+      "eventType": "NamedPipe Connected",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "907b53a8-f82f-432f-8d0c-3ba6f9cc2e20",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:44:50.663Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 4,
+      "pipe": {
+        "name": "\\\\.\\pipe\\DAV RPC SERVICE"
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:45:07Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all"
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "2b869188-8365-4fdc-89a5-577f833668ca",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 19572,
+      "it": 1,
+      "time": "2024-01-29T21:45:44.219Z",
+      "pSha2": "C2B9D60261DACFC8D03E8406AF142D401B262E0E5439A89BF845694CE537983A",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "cmdLine": "\"C:\\Program Files (x86)\\Microsoft Office\\Office15\\MsoSync.exe\"",
+      "processName": "MSOSYNC.EXE",
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-203798",
+        "name": "lori"
+      },
+      "procFileAttrs": {
+        "creationDate": "2012-10-02T01:32:30.000Z",
+        "md5": "8E16790002B164BDEC9C0DF2A2F5DFC5",
+        "sha1": "EE8A060F8572F76DF3712CF8F869756A559DA927",
+        "sha256": "C2B9D60261DACFC8D03E8406AF142D401B262E0E5439A89BF845694CE537983A",
+        "name": "MSOSYNC.EXE",
+        "path": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\MSOSYNC.EXE",
+        "size": 448136,
+        "embedFilename": "msosync.exe",
+        "embedFileVersion": "15.0.4420.1017",
+        "embedProductName": "Microsoft Office 2013",
+        "embedProductVersion": "15.0.4420.1017",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "integrity": 2,
+      "parentsTraceId": [
+        "4f5cbde4-14ab-4656-b474-c5099faca687",
+        "b0e0c491-4007-4cc7-a572-f906f9c2f043",
+        "d3898438-0ab5-47c0-8ae4-2e0d8fe00c0f",
+        "d0f15cd5-850b-4b50-8f8c-05e4c752470f",
+        "c1a5c8ba-26d2-49bd-b915-2f00e6fb76d1"
+      ],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:46:12Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Api",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "5619c361-d644-496c-bf9b-2135b3c3ca40",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:45:44.218Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "api": {
+        "name": "WriteProcessMemory",
+        "data": "AAB5AAA=",
+        "result": "0",
+        "moduleName": "",
+        "arguments": [
+          "0x8c21e8",
+          "0x4",
+          "0x0"
+        ],
+        "targetPid": 19572
+      },
+      "uniqueRuleId": 11,
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:46:12Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.APICall"
+      ]
+    },
+    {
+      "eventType": "Network Accessed",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "30ca0095-3b33-406d-b098-cc5b1c58722b",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:05.600Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 29000,
+      "network": {
+        "accessType": "connection_opened",
+        "direction": "outbound",
+        "dstIp": "10.5.208.52",
+        "dstPort": 80,
+        "srcIp": "10.37.78.119",
+        "srcPort": 60005,
+        "protocol": "http",
+        "bSent": 0,
+        "bRec": 247,
+        "dnsNames": [
+          "intranet.tx1620.chs.net"
+        ],
+        "layer7": {
+          "url": "http://intranet.tx1620.chs.net/_vti_inf.html",
+          "httpRequestHeaders": "GET /_vti_inf.html HTTP/1.1\r\nDate: Mon, 29 Jan 2024 21:33:04 GMT\r\nMIME-Version: 1.0\r\nAccept: */*\r\nUser-Agent: Mozilla/4.0 (compatible; MS FrontPage 15.0)\r\nHost: intranet.tx1620.chs.net\r\nAccept: auth/sicily\r\nContent-Length: 0\r\nConnection: Keep-Alive\r\nCache-Control: no-cache\r\n\r\n",
+          "httpResponseHeaders": "HTTP/1.1 200 OK\r\nCache-Control: private,max-age=0\r\nContent-Length: 247\r\nExpires: Sun, 14 Jan 2024 21:33:04 GMT\r\nServer: Microsoft-IIS/7.5\r\nSPRequestGuid: e3bab553-21d5-4da8-9885-038ba48cff7a\r\nX-SharePointHealthScore: 0\r\nPublic-Extension: http://schemas.microsoft.com/repl-2\r\nX-Powered-By: ASP.NET\r\nServerName: 2010WFE2\r\nMicrosoftSharePointTeamServices: 14.0.0.7006\r\nX-MS-InvokeApp: 1; RequireReadOnly\r\nDate: Mon, 29 Jan 2024 21:33:04 GMT\r\n\r\n"
+        }
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NetworkConnection"
+      ]
+    },
+    {
+      "eventType": "File Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "1baa3359-a4a4-4ece-b9ad-7c6906c71e44",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:04.181Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2024-01-29T21:33:04.175Z",
+        "creationDate": "2024-01-29T21:33:04.175Z",
+        "md5": "D41D8CD98F00B204E9800998ECF8427E",
+        "sha1": "DA39A3EE5E6B4B0D3255BFEF95601890AFD80709",
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "name": "STARTUP",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\Word\\STARTUP",
+        "size": 0,
+        "fsattrs": 16
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "Image Loaded",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "5e48fd4b-587f-4083-ada2-d1e5b4dbc156",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:45:44.190Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 18,
+      "modules": [
+        {
+          "sha256": "0F15534DC00A65E980CAA2E11F5D5251518D528F2F28165E9881B598BF64BDD1",
+          "name": "C:\\WINDOWS\\SYSWOW64\\TASKSCHD.DLL",
+          "loadTime": "2024-01-29T21:45:44.190Z",
+          "vtpPrivileges": 1,
+          "fsattrs": 32
+        }
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:46:12Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.LoadedDLLs"
+      ],
+      "severity": "s1",
+      "detectionsSets": [
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.PrivilegeEscalation",
+            "@ATA.Persistence",
+            "@ATA.Execution",
+            "@ATE.T1137.001",
+            "@ATE.T1053.005",
+            "@MSI._process_office_taskschd_dll"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "Network Accessed",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "5a3c389e-c104-4a30-b3e4-a9c73021639c",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:03.406Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 19103,
+      "network": {
+        "accessType": "connection_opened",
+        "direction": "outbound",
+        "dstIp": "157.55.59.243",
+        "dstPort": 80,
+        "srcIp": "10.37.78.119",
+        "srcPort": 59991,
+        "protocol": "tcp",
+        "dnsNames": [
+          "clientconfig.microsoftonline-p.net"
+        ]
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:10Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NetworkConnection"
+      ]
+    },
+    {
+      "eventType": "Network Accessed",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "dd2de22e-c51d-4a95-b889-c0e1004cd80f",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:04.357Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 19103,
+      "network": {
+        "accessType": "connection_opened",
+        "direction": "outbound",
+        "dstIp": "10.5.208.52",
+        "dstPort": 80,
+        "srcIp": "10.37.78.119",
+        "srcPort": 59992,
+        "protocol": "tcp",
+        "dnsNames": [
+          "intranet.tx1620.chs.net",
+          "hospsps.chs.net"
+        ]
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NetworkConnection"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "00000000-0000-0000-0000-000000000000",
+      "traceId": "c1a5c8ba-26d2-49bd-b915-2f00e6fb76d1",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 1408,
+      "time": "2024-01-29T16:31:55.079Z",
+      "pSha2": "6EC2D3D2CB7397DC0C193A20B9B3EA0AE0F05A7FEFDDFA555254453ADD89A5B6",
+      "ppid": 968,
+      "pFullName": "",
+      "cmdLine": "winlogon.exe",
+      "processName": "winlogon.exe",
+      "user": {
+        "domain": "NT AUTHORITY",
+        "id": "S-1-5-18",
+        "name": "NT AUTHORITY\\SYSTEM"
+      },
+      "procFileAttrs": {
+        "creationDate": "2024-01-23T14:11:19.139Z",
+        "md5": "AC8E6842E0A9C37B747F62D23EF372E9",
+        "sha1": "134474B2C558064F2C0A7F91BAE467A593323C44",
+        "sha256": "6EC2D3D2CB7397DC0C193A20B9B3EA0AE0F05A7FEFDDFA555254453ADD89A5B6",
+        "name": "winlogon.exe",
+        "path": "C:\\Windows\\System32\\winlogon.exe",
+        "size": 905728,
+        "embedFilename": "WINLOGON.EXE",
+        "embedFileVersion": "10.0.19041.3758 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3758",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "integrity": 4,
+      "parentsTraceId": [],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T16:32:42Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "RegValue Modified",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "12bee34c-a359-452c-8906-55c460ff232c",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:45:44.324Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "registry": {
+        "keyName": "HKCU\\SOFTWARE\\MICROSOFT\\OFFICE\\15.0\\WORD\\OPTIONS",
+        "keyValueName": "VISIFLM",
+        "keyValueType": "REG_DWORD",
+        "keyValue": "1",
+        "keyOldValue": "3"
+      },
+      "uniqueRuleId": 9,
+      "ruleTags": [
+        "aseps"
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:46:12Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ASEPCreatedOrModified"
+      ]
+    },
+    {
+      "eventType": "Network Accessed",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "557ddf4a-21b4-412a-8120-d3e1dd1cd8e0",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:54.990Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 19103,
+      "network": {
+        "accessType": "connection_opened",
+        "direction": "outbound",
+        "dstIp": "10.5.208.52",
+        "dstPort": 80,
+        "srcIp": "10.37.78.119",
+        "srcPort": 60052,
+        "protocol": "tcp",
+        "dnsNames": [
+          "intranet.tx1620.chs.net",
+          "hospsps.chs.net"
+        ]
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:34:08Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NetworkConnection"
+      ]
+    },
+    {
+      "eventType": "File Deleted",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "54cd343e-5444-432b-bd6c-a7dc1d20fb5a",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:44:51.245Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2024-01-29T21:44:51.189Z",
+        "creationDate": "2024-01-29T21:44:51.180Z",
+        "md5": "",
+        "sha1": "",
+        "sha256": "D1D432FB479481966B76B28262A5993FDBE7A0DB9D66D4AC9107A0EA96F0C5D6",
+        "name": "Disciplinary action form.LNK",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\Office\\Recent\\Disciplinary action form.LNK",
+        "size": 563,
+        "fsattrs": 32
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:45:07Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "d3898438-0ab5-47c0-8ae4-2e0d8fe00c0f",
+      "traceId": "b0e0c491-4007-4cc7-a572-f906f9c2f043",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 15580,
+      "it": 1,
+      "time": "2024-01-29T16:36:22.489Z",
+      "pSha2": "B3303621B63D6D4A18B0DD1627A717FC37CBBCFBD9ADB4C799C6C6115E28534B",
+      "ppid": 4528,
+      "pFullName": "C:\\Windows\\explorer.exe",
+      "cmdLine": "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --no-startup-window --win-session-start /prefetch:5",
+      "processName": "msedge.exe",
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-203798",
+        "name": "lori"
+      },
+      "procFileAttrs": {
+        "creationDate": "2021-08-05T22:41:46.806Z",
+        "md5": "ECCDDFB2A52F308E0533E110BF8304F4",
+        "sha1": "5B9F025CAE7EACBD98DC86FE861868AA0BE80D0A",
+        "sha256": "B3303621B63D6D4A18B0DD1627A717FC37CBBCFBD9ADB4C799C6C6115E28534B",
+        "name": "msedge.exe",
+        "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "size": 4088272,
+        "embedFilename": "msedge.exe",
+        "embedFileVersion": "115.0.1901.203",
+        "embedProductName": "Microsoft Edge",
+        "embedProductVersion": "115.0.1901.203",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "integrity": 2,
+      "parentsTraceId": [
+        "d3898438-0ab5-47c0-8ae4-2e0d8fe00c0f",
+        "d0f15cd5-850b-4b50-8f8c-05e4c752470f",
+        "c1a5c8ba-26d2-49bd-b915-2f00e6fb76d1"
+      ],
+      "tdmRuleIds": [
+        102,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T16:36:40Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "b0e0c491-4007-4cc7-a572-f906f9c2f043",
+      "traceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:02.064Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 15580,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+      "cmdLine": "\"C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE\" /h /n \"http://intranet.tx1620.chs.net/Hospital%20Policies%20%20Procedures/Operating%20Room/Operating%20Room-Operating%20Room%20Manual%20Policy.doc\"",
+      "processName": "WINWORD.EXE",
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-203798",
+        "name": "lori"
+      },
+      "procFileAttrs": {
+        "creationDate": "2012-10-02T01:32:50.000Z",
+        "md5": "7C22121F33AF2BAD8656AC09300416EE",
+        "sha1": "81852CB9950604EDA0918F625C71B0962865DB23",
+        "sha256": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+        "name": "WINWORD.EXE",
+        "path": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+        "size": 1922664,
+        "embedFilename": "WinWord.exe",
+        "embedFileVersion": "15.0.4420.1017",
+        "embedProductName": "Microsoft Office 2013",
+        "embedProductVersion": "15.0.4420.1017",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "integrity": 2,
+      "parentsTraceId": [
+        "b0e0c491-4007-4cc7-a572-f906f9c2f043",
+        "d3898438-0ab5-47c0-8ae4-2e0d8fe00c0f",
+        "d0f15cd5-850b-4b50-8f8c-05e4c752470f",
+        "c1a5c8ba-26d2-49bd-b915-2f00e6fb76d1"
+      ],
+      "tdmRuleIds": [
+        121,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:10Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "severity": "s1",
+      "detectionsSets": [
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.PrivilegeEscalation",
+            "@ATA.Persistence",
+            "@ATA.Execution",
+            "@ATE.T1137.001",
+            "@ATE.T1053.005",
+            "@MSI._process_office_taskschd_dll"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.Discovery",
+            "@ATE.T1106",
+            "@ATE.T1135",
+            "@MSI._api_network_share_discovery"
+          ]
+        }
+      ]
+    },
+    {
+      "eventType": "File Modified",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "2110197d-5c3b-4195-b140-dc409af83832",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:45:44.418Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2024-01-08T16:48:48.203Z",
+        "creationDate": "2023-09-13T15:51:02.784Z",
+        "md5": "299DD2612AD5C3DCAE6A8B3E2F6C53A3",
+        "sha1": "60DE35364519A125A7DB3B6A665707C9D1A63413",
+        "sha256": "1D303307F649EED55EFC2401BB3B466886F1A7C95D43B3926B50E749FD47194A",
+        "name": "nol_intranet_tx1620_chs_net_80_.web",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\Web Server Extensions\\Cache\\nol_intranet_tx1620_chs_net_80_.web",
+        "size": 24501,
+        "fsattrs": 32,
+        "mhdr": "0400000000000000"
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:46:12Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "RegKey Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "04976d4b-b252-491d-9a6a-2f344d96ad15",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:02.480Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "registry": {
+        "regKeyName": "HKCU\\SOFTWARE\\MICROSOFT\\OFFICE\\15.0\\WORD\\RESILIENCY\\STARTUPITEMS"
+      },
+      "uniqueRuleId": 9,
+      "ruleTags": [
+        "aseps"
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:10Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ASEPCreatedOrModified"
+      ]
+    },
+    {
+      "eventType": "File Modified",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "c49ac15e-be29-4576-a413-9fc117cdaaf6",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:34:16.771Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2024-01-29T21:33:07.612Z",
+        "creationDate": "2023-08-25T13:51:59.499Z",
+        "md5": "4EA4A8489443B8DE63201448445D1228",
+        "sha1": "54E7DB6BAB558105F9C18920DCAEE68EF16AAF3A",
+        "sha256": "3C3B07E97FDE0FBF06234D88E55F190CC2D085B9555DEFB9F72EB77C09CF0FC8",
+        "name": "index.dat",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\Office\\Recent\\index.dat",
+        "size": 1716,
+        "fsattrs": 34,
+        "mhdr": "5b6d6973635d0d0a"
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:34:39Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "File Deleted",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "e2462aa0-0d8b-4dd0-864c-4b2b2cfd03ea",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:07.567Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2024-01-08T07:19:18.685Z",
+        "creationDate": "2024-01-08T07:19:18.685Z",
+        "md5": "",
+        "sha1": "",
+        "sha256": "F78231DDD4317F599DEA0B8AFE49E993444DD047A36F026887A7F970961C42EC",
+        "name": "Operating Room-Handling Storage and Transport.doc.url",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\Office\\Recent\\Operating Room-Handling Storage and Transport.doc.url",
+        "size": 167,
+        "fsattrs": 32
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "Image Loaded",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "07fa0544-f71d-45f7-85c2-fc5fc435b60a",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:07.443Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 34,
+      "modules": [
+        {
+          "sha256": "096FBE35275622997423932D6F84D5872D43D1BB3B0CFDE47FC0FBA0BD4B326F",
+          "name": "C:\\Windows\\SysWOW64\\DataExchange.dll",
+          "loadTime": "2024-01-29T21:33:07.443Z",
+          "vtpPrivileges": 1,
+          "fsattrs": 32
+        },
+        {
+          "sha256": "096FBE35275622997423932D6F84D5872D43D1BB3B0CFDE47FC0FBA0BD4B326F",
+          "name": "C:\\WINDOWS\\SYSWOW64\\DATAEXCHANGE.DLL",
+          "loadTime": "2024-01-29T21:33:07.443Z",
+          "vtpPrivileges": 1,
+          "fsattrs": 32
+        }
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.LoadedDLLs"
+      ]
+    },
+    {
+      "eventType": "Api",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "e57cbecc-df5b-4d11-a292-dba3429dca7d",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:35:36.021Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "api": {
+        "name": "GetWindowLong",
+        "result": "24526944",
+        "moduleName": "",
+        "arguments": [],
+        "targetPid": 0
+      },
+      "uniqueRuleId": 0,
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:36:08Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.APICall"
+      ]
+    },
+    {
+      "eventType": "Api",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "25cf3305-7f03-40dd-9a10-b7eea3e0657c",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:45:44.170Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "api": {
+        "name": "WriteProcessMemory",
+        "data": "AQA=",
+        "result": "0",
+        "moduleName": "",
+        "arguments": [
+          "0x11f0175",
+          "0x1",
+          "0x0"
+        ],
+        "targetPid": 17988
+      },
+      "uniqueRuleId": 11,
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:46:12Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.APICall"
+      ]
+    },
+    {
+      "eventType": "Api",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "8e8d8cc3-bb83-4954-85f7-bac3a58738c2",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:35:36.839Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "api": {
+        "name": "GetWindowInfo",
+        "result": "1",
+        "moduleName": "",
+        "arguments": [],
+        "targetPid": 0
+      },
+      "uniqueRuleId": 0,
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:36:08Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.APICall"
+      ]
+    },
+    {
+      "eventType": "Network Accessed",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "626c514f-7771-4c78-969f-60ee2941becd",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:21.220Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 19103,
+      "network": {
+        "accessType": "connection_opened",
+        "direction": "outbound",
+        "dstIp": "10.5.208.52",
+        "dstPort": 80,
+        "srcIp": "10.37.78.119",
+        "srcPort": 60027,
+        "protocol": "tcp",
+        "dnsNames": [
+          "intranet.tx1620.chs.net",
+          "hospsps.chs.net"
+        ]
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NetworkConnection"
+      ]
+    },
+    {
+      "eventType": "File Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "585cb832-4551-411a-9055-ea46f9f6c52c",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:07.612Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2024-01-29T21:33:07.610Z",
+        "creationDate": "2024-01-08T07:10:46.992Z",
+        "md5": "0E906CD9C4F4DD140D765B4DF7E63ADE",
+        "sha1": "ABE05C6781418354DBB7E5669C0F8588DE6F1EFA",
+        "sha256": "7BE71C8EF0AB19D238A442728511F942FC08BC0F5217F1A8A91F91E7FFF819FE",
+        "name": "Operating Room on intranet.tx1620.chs.net.url",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\Office\\Recent\\Operating Room on intranet.tx1620.chs.net.url",
+        "size": 110,
+        "fsattrs": 32,
+        "mhdr": "5b496e7465726e65"
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "Network Accessed",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "79f1d6a1-82d4-4756-9e79-41f5a6ca9ae2",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:06.743Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 29000,
+      "network": {
+        "accessType": "connection_opened",
+        "direction": "outbound",
+        "dstIp": "10.5.208.52",
+        "dstPort": 80,
+        "srcIp": "10.37.78.119",
+        "srcPort": 60011,
+        "protocol": "http",
+        "bSent": 323,
+        "bRec": 0,
+        "layer7": {
+          "url": "http://intranet.tx1620.chs.net/_vti_bin/_vti_aut/author.dll",
+          "httpRequestHeaders": "POST /_vti_bin/_vti_aut/author.dll HTTP/1.1\r\nDate: Mon, 29 Jan 2024 21:33:05 GMT\r\nMIME-Version: 1.0\r\nUser-Agent: MSFrontPage/15.0\r\nHost: intranet.tx1620.chs.net\r\nAccept: auth/sicily\r\nContent-Type: application/x-www-form-urlencoded\r\nX-Vermeer-Content-Type: application/x-www-form-urlencoded\r\nConnection: Keep-Alive\r\nCache-Control: no-cache\r\nContent-Length: 323\r\n\r\n",
+          "httpResponseHeaders": "HTTP/1.1 200 OK\r\nServer: Microsoft-IIS/7.5\r\nDate: Mon, 29 Jan 2024 21:33:05 GMT\r\nConnection: close\r\nContent-type: application/x-vermeer-rpc\r\n\r\n"
+        }
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NetworkConnection"
+      ]
+    },
+    {
+      "eventType": "File Modified",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "977ec16f-eb6d-4648-9456-0fd312c650c7",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:07.613Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2024-01-29T21:33:07.612Z",
+        "creationDate": "2023-08-25T13:51:59.499Z",
+        "md5": "4EA4A8489443B8DE63201448445D1228",
+        "sha1": "54E7DB6BAB558105F9C18920DCAEE68EF16AAF3A",
+        "sha256": "3C3B07E97FDE0FBF06234D88E55F190CC2D085B9555DEFB9F72EB77C09CF0FC8",
+        "name": "index.dat",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\Office\\Recent\\index.dat",
+        "size": 1716,
+        "fsattrs": 34,
+        "mhdr": "5b6d6973635d0d0a"
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "Network Accessed",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "c408f224-19f8-41b4-8714-f36ee38b1d06",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:05.732Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 19103,
+      "network": {
+        "accessType": "connection_opened",
+        "direction": "outbound",
+        "dstIp": "10.5.208.52",
+        "dstPort": 80,
+        "srcIp": "10.37.78.119",
+        "srcPort": 60011,
+        "protocol": "tcp",
+        "dnsNames": [
+          "intranet.tx1620.chs.net",
+          "hospsps.chs.net"
+        ]
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NetworkConnection"
+      ]
+    },
+    {
+      "eventType": "RegKey Deleted",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "3e1ecb35-05c0-4104-b928-7b4d8f2cfef4",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:07.704Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "registry": {
+        "regKeyName": "HKCU\\SOFTWARE\\MICROSOFT\\OFFICE\\15.0\\WORD\\RESILIENCY\\STARTUPITEMS"
+      },
+      "uniqueRuleId": 9,
+      "ruleTags": [
+        "aseps"
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ASEPCreatedOrModified"
+      ]
+    },
+    {
+      "eventType": "File Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "0bc11262-8967-4137-9b85-91d5b24840ac",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:44:51.189Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2024-01-29T21:44:51.189Z",
+        "creationDate": "2024-01-29T21:44:51.180Z",
+        "md5": "",
+        "sha1": "",
+        "sha256": "D1D432FB479481966B76B28262A5993FDBE7A0DB9D66D4AC9107A0EA96F0C5D6",
+        "name": "Disciplinary action form.LNK",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\Office\\Recent\\Disciplinary action form.LNK",
+        "size": 563,
+        "fsattrs": 32
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:45:07Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "Network Accessed",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "09070091-923a-4f99-af63-54f43b3b232a",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:04.918Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 19103,
+      "network": {
+        "accessType": "connection_opened",
+        "direction": "outbound",
+        "dstIp": "10.5.208.52",
+        "dstPort": 80,
+        "srcIp": "10.37.78.119",
+        "srcPort": 60007,
+        "protocol": "tcp",
+        "dnsNames": [
+          "intranet.tx1620.chs.net",
+          "hospsps.chs.net"
+        ]
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NetworkConnection"
+      ]
+    },
+    {
+      "eventType": "Api",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "d3253954-f157-4f89-9aa8-330b64248b10",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:45:39.124Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "api": {
+        "name": "FindWindowEx",
+        "result": "0",
+        "moduleName": "",
+        "arguments": [],
+        "targetPid": 0
+      },
+      "uniqueRuleId": 1038,
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:46:12Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.APICall"
+      ]
+    },
+    {
+      "eventType": "RegKey Deleted",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "348818f6-bb7b-48e4-b913-9008cafc8483",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:45:44.234Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "registry": {
+        "regKeyName": "HKCU\\SOFTWARE\\MICROSOFT\\OFFICE\\15.0\\WORD\\RESILIENCY\\DOCUMENTRECOVERY"
+      },
+      "uniqueRuleId": 9,
+      "ruleTags": [
+        "aseps"
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:46:12Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ASEPCreatedOrModified"
+      ]
+    },
+    {
+      "eventType": "RegKey Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "9f1d2a48-2fb6-4e93-9ede-ad3ca3778ea3",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:44:50.776Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "registry": {
+        "regKeyName": "HKCU\\SOFTWARE\\MICROSOFT\\OFFICE\\15.0\\WORD\\RESILIENCY\\STARTUPITEMS"
+      },
+      "uniqueRuleId": 9,
+      "ruleTags": [
+        "aseps"
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:45:07Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ASEPCreatedOrModified"
+      ]
+    },
+    {
+      "eventType": "Network Accessed",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "8358fca4-41ff-4f59-b229-af91856a3563",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:05.879Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 29000,
+      "network": {
+        "accessType": "connection_opened",
+        "direction": "outbound",
+        "dstIp": "10.5.208.52",
+        "dstPort": 80,
+        "srcIp": "10.37.78.119",
+        "srcPort": 60007,
+        "protocol": "http",
+        "bSent": 158,
+        "bRec": 0,
+        "layer7": {
+          "url": "http://intranet.tx1620.chs.net/_vti_bin/shtml.dll/_vti_rpc",
+          "httpRequestHeaders": "POST /_vti_bin/shtml.dll/_vti_rpc HTTP/1.1\r\nDate: Mon, 29 Jan 2024 21:33:04 GMT\r\nMIME-Version: 1.0\r\nUser-Agent: MSFrontPage/15.0\r\nHost: intranet.tx1620.chs.net\r\nAccept: auth/sicily\r\nContent-Type: application/x-www-form-urlencoded\r\nX-Vermeer-Content-Type: application/x-www-form-urlencoded\r\nConnection: Keep-Alive\r\nCache-Control: no-cache\r\nContent-Length: 158\r\n\r\n",
+          "httpResponseHeaders": "HTTP/1.1 200 OK\r\nServer: Microsoft-IIS/7.5\r\nDate: Mon, 29 Jan 2024 21:33:04 GMT\r\nConnection: close\r\nContent-type: application/x-vermeer-rpc\r\n\r\n"
+        }
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NetworkConnection"
+      ]
+    },
+    {
+      "eventType": "RegKey Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "a760e441-297e-4273-a776-09382b318e49",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:42.970Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "registry": {
+        "regKeyName": "HKCU\\SOFTWARE\\MICROSOFT\\OFFICE\\15.0\\WORD\\RESILIENCY\\STARTUPITEMS"
+      },
+      "uniqueRuleId": 9,
+      "ruleTags": [
+        "aseps"
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:34:08Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ASEPCreatedOrModified"
+      ]
+    },
+    {
+      "eventType": "Network Accessed",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "e6c89cc8-f8df-4b52-9307-7f8dce1ee68e",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:06.542Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 29000,
+      "network": {
+        "accessType": "connection_opened",
+        "direction": "outbound",
+        "dstIp": "10.5.208.52",
+        "dstPort": 80,
+        "srcIp": "10.37.78.119",
+        "srcPort": 60009,
+        "protocol": "http",
+        "bSent": 59,
+        "bRec": 0,
+        "layer7": {
+          "url": "http://intranet.tx1620.chs.net/_vti_bin/_vti_aut/author.dll",
+          "httpRequestHeaders": "POST /_vti_bin/_vti_aut/author.dll HTTP/1.1\r\nDate: Mon, 29 Jan 2024 21:33:05 GMT\r\nMIME-Version: 1.0\r\nUser-Agent: MSFrontPage/15.0\r\nHost: intranet.tx1620.chs.net\r\nAccept: auth/sicily\r\nContent-Type: application/x-www-form-urlencoded\r\nX-Vermeer-Content-Type: application/x-www-form-urlencoded\r\nConnection: Keep-Alive\r\nCache-Control: no-cache\r\nContent-Length: 59\r\n\r\n",
+          "httpResponseHeaders": "HTTP/1.1 200 OK\r\nServer: Microsoft-IIS/7.5\r\nDate: Mon, 29 Jan 2024 21:33:05 GMT\r\nConnection: close\r\nContent-type: application/x-vermeer-rpc\r\n\r\n"
+        }
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NetworkConnection"
+      ]
+    },
+    {
+      "eventType": "Process Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "9d30b6ab-aeec-41f4-869e-d73b7370c16c",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 13544,
+      "it": 1,
+      "time": "2024-01-29T21:33:22.484Z",
+      "pSha2": "9EF7C3A794116D04FC76CFD153EBB9056651A7A4A22776837DBD94737D40CCED",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "cmdLine": "C:\\Windows\\splwow64.exe 8192",
+      "processName": "splwow64.exe",
+      "user": {
+        "domain": "US",
+        "id": "S-1-5-21-3102552752-417709957-33154223-203798",
+        "name": "lori"
+      },
+      "procFileAttrs": {
+        "creationDate": "2023-12-05T15:11:49.759Z",
+        "md5": "E37A90B8278FAEA3A1C3E352A2F4C71D",
+        "sha1": "9DB7342AFF99083C2F65F661E80F65FB51D3ED2F",
+        "sha256": "9EF7C3A794116D04FC76CFD153EBB9056651A7A4A22776837DBD94737D40CCED",
+        "name": "splwow64.exe",
+        "path": "C:\\Windows\\splwow64.exe",
+        "size": 163840,
+        "embedFilename": "splwow64.exe",
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "embedProductVersion": "10.0.19041.3636",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "reputation": 99,
+          "vtpPrivileges": 1
+        }
+      },
+      "integrity": 2,
+      "parentsTraceId": [
+        "4f5cbde4-14ab-4656-b474-c5099faca687",
+        "b0e0c491-4007-4cc7-a572-f906f9c2f043",
+        "d3898438-0ab5-47c0-8ae4-2e0d8fe00c0f",
+        "d0f15cd5-850b-4b50-8f8c-05e4c752470f",
+        "c1a5c8ba-26d2-49bd-b915-2f00e6fb76d1"
+      ],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ProcessCreated"
+      ]
+    },
+    {
+      "eventType": "File Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "a3f495e3-353e-4406-a139-c46b0c7c6dab",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:34:16.722Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "uniqueRuleId": 21,
+      "fileAttributes": {
+        "lastModificationDate": "2024-01-29T21:33:07.540Z",
+        "creationDate": "2024-01-29T21:33:07.540Z",
+        "md5": "D02701F5C39CBD542F0C44C651A9B7DA",
+        "sha1": "D9C2238983E90C293580A05D062663053E164E6C",
+        "sha256": "05C0FEBB985FCDC9D73580B16D6E3E6BDCA1E41049DF8D1B8B5A520B4FD558B6",
+        "name": "Operating Room-Operating Room Manual Policy.doc.url",
+        "path": "C:\\Users\\lori\\AppData\\Roaming\\Microsoft\\Office\\Recent\\Operating Room-Operating Room Manual Policy.doc.url",
+        "size": 165,
+        "fsattrs": 32,
+        "mhdr": "5b496e7465726e65"
+      },
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:34:39Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.NonPECreated"
+      ]
+    },
+    {
+      "eventType": "RegKey Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "48238f2e-3440-47a6-80e0-d387360bf705",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:21.200Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "registry": {
+        "regKeyName": "HKCU\\SOFTWARE\\MICROSOFT\\OFFICE\\15.0\\WORD\\RESILIENCY\\STARTUPITEMS"
+      },
+      "uniqueRuleId": 9,
+      "ruleTags": [
+        "aseps"
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ASEPCreatedOrModified"
+      ]
+    },
+    {
+      "eventType": "RegKey Created",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "77172a5d-d316-4017-94f9-c14b4bf0720a",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:07.519Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "registry": {
+        "regKeyName": "HKCU\\SOFTWARE\\MICROSOFT\\OFFICE\\15.0\\WORD\\RESILIENCY\\DOCUMENTRECOVERY"
+      },
+      "uniqueRuleId": 9,
+      "ruleTags": [
+        "aseps"
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:33:37Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ASEPCreatedOrModified"
+      ]
+    },
+    {
+      "eventType": "Api",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "600cbf5a-2234-4558-84ea-f25da8f8610c",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:44:50.875Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "api": {
+        "name": "GetWindowText",
+        "result": "4",
+        "moduleName": "",
+        "arguments": [],
+        "targetPid": 0
+      },
+      "uniqueRuleId": 0,
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:45:07Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.APICall"
+      ]
+    },
+    {
+      "eventType": "Api",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "9da9dade-9492-45ef-9b36-52498dbafb07",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:35:36.823Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "api": {
+        "name": "GetParent",
+        "result": "721094",
+        "moduleName": "",
+        "arguments": [],
+        "targetPid": 0
+      },
+      "uniqueRuleId": 0,
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:36:08Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.APICall"
+      ]
+    },
+    {
+      "eventType": "RegKey Deleted",
+      "maGuid": "F3DC511C-3B82-11EE-0C23-000000000000",
+      "host": "1620ORT1",
+      "rv": 1104,
+      "parentTraceId": "4f5cbde4-14ab-4656-b474-c5099faca687",
+      "traceId": "5d7a8876-231a-4eca-b0ca-d2c6ce6e8d15",
+      "contextTraceId": "ecef7bb9-cf8f-4ac2-9eaf-def39cd90199",
+      "pid": 17988,
+      "it": 1,
+      "time": "2024-01-29T21:33:42.971Z",
+      "pSha2": "3D46E95284F93BBB76B3B7E1BF0E1B2D51E8A9411C2B6E649112F22F92DE63C2",
+      "ppid": 17988,
+      "pFullName": "C:\\Program Files (x86)\\Microsoft Office\\Office15\\WINWORD.EXE",
+      "registry": {
+        "regKeyName": "HKCU\\SOFTWARE\\MICROSOFT\\OFFICE\\15.0\\WORD\\RESILIENCY\\STARTUPITEMS"
+      },
+      "uniqueRuleId": 9,
+      "ruleTags": [
+        "aseps"
+      ],
+      "dtsType": "all",
+      "h_version": "3.0",
+      "h_tp": "mar_3.5.2.1104",
+      "detectionDate": "2024-01-29T21:34:08Z",
+      "dtsId": "EDR",
+      "h_os": "windows",
+      "version": "3.0",
+      "h_traceType": "all",
+      "tags": [
+        "@AC.ASEPCreatedOrModified"
+      ]
+    }
+  ]
+}

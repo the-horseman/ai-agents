@@ -1,0 +1,1822 @@
+{
+  "detections": [
+    {
+      "id": "3621906676",
+      "traceId": "b641d439-55f8-44d9-b266-6aacfa84e663",
+      "firstDetected": "2024-02-14T21:39:08Z",
+      "severity": "s1",
+      "rank": 85,
+      "tags": [
+        "@MSI._epp_file_blocked",
+        "@ATE.T1204.002",
+        "@ATA.Execution"
+      ],
+      "host": {
+        "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+        "hostname": "1490RAD119",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:36Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "dc:4a:3e:75:33:7e",
+            "ip": "10.47.22.135",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57"
+    },
+    {
+      "id": "3638929814",
+      "traceId": "956e19f0-81dc-4ac4-979c-3f8103014d58",
+      "firstDetected": "2024-02-26T19:07:21Z",
+      "severity": "s1",
+      "rank": 85,
+      "tags": [
+        "@MSI._epp_file_blocked",
+        "@ATE.T1204.002",
+        "@ATA.Execution"
+      ],
+      "host": {
+        "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+        "hostname": "1490RAD119",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:36Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "dc:4a:3e:75:33:7e",
+            "ip": "10.47.22.135",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57"
+    },
+    {
+      "id": "3638929813",
+      "traceId": "ffc0b6b2-591b-4025-9184-1241427f26d4",
+      "firstDetected": "2024-02-26T19:07:21Z",
+      "severity": "s1",
+      "rank": 85,
+      "tags": [
+        "@ATA.Impact",
+        "@MSI._epp_file_blocked",
+        "@ATE.T1489",
+        "@ATA.DefenseEvasion",
+        "@ATE.T1204.002",
+        "@ATA.Discovery",
+        "@ATE.T1562.001",
+        "@ATE.T1057",
+        "@ATA.Execution",
+        "@MSI._apt_process_taskkillname"
+      ],
+      "host": {
+        "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+        "hostname": "1490RAD119",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:36Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "dc:4a:3e:75:33:7e",
+            "ip": "10.47.22.135",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57"
+    },
+    {
+      "id": "3636425359",
+      "traceId": "29e8da63-c76b-4ec3-b10b-3a200dca48d5",
+      "firstDetected": "2024-02-24T16:42:52Z",
+      "severity": "s1",
+      "rank": 85,
+      "tags": [
+        "@MSI._epp_file_blocked",
+        "@ATE.T1204.002",
+        "@ATA.Execution"
+      ],
+      "host": {
+        "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+        "hostname": "1490RAD119",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:36Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "dc:4a:3e:75:33:7e",
+            "ip": "10.47.22.135",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57"
+    },
+    {
+      "id": "3634962901",
+      "traceId": "6652524a-fa1d-4eda-83b5-34f3514dc40e",
+      "firstDetected": "2024-02-23T13:51:48Z",
+      "severity": "s1",
+      "rank": 85,
+      "tags": [
+        "@ATE.T1489",
+        "@MSI._file_pe_malware_folder",
+        "@ATE.T1204.002",
+        "@ATA.Discovery",
+        "@ATE.T1106",
+        "@MSI._apt_process_taskkillname",
+        "@ATA.Impact",
+        "@MSI._epp_file_blocked",
+        "@ATA.DefenseEvasion",
+        "@MSI._api_process_discovery_untrusted",
+        "@ATE.T1562.001",
+        "@ATE.T1057",
+        "@ATA.Execution"
+      ],
+      "host": {
+        "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+        "hostname": "1490RAD119",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:36Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "dc:4a:3e:75:33:7e",
+            "ip": "10.47.22.135",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57"
+    },
+    {
+      "id": "3632135074",
+      "traceId": "6f20c889-6b69-4d5f-a7c4-1a90bd560690",
+      "firstDetected": "2024-02-21T19:25:50Z",
+      "severity": "s1",
+      "rank": 85,
+      "tags": [
+        "@MSI._epp_file_blocked",
+        "@ATE.T1204.002",
+        "@ATA.Execution"
+      ],
+      "host": {
+        "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+        "hostname": "1490RAD119",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:36Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "dc:4a:3e:75:33:7e",
+            "ip": "10.47.22.135",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57"
+    },
+    {
+      "id": "3632133566",
+      "traceId": "e6c75a11-a016-423f-ab5c-584b07a6122b",
+      "firstDetected": "2024-02-21T19:24:20Z",
+      "severity": "s1",
+      "rank": 85,
+      "tags": [
+        "@ATA.Impact",
+        "@MSI._epp_file_blocked",
+        "@ATE.T1489",
+        "@ATA.DefenseEvasion",
+        "@ATE.T1204.002",
+        "@ATA.Discovery",
+        "@ATE.T1562.001",
+        "@ATE.T1057",
+        "@ATA.Execution",
+        "@MSI._apt_process_taskkillname"
+      ],
+      "host": {
+        "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+        "hostname": "1490RAD119",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:36Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "dc:4a:3e:75:33:7e",
+            "ip": "10.47.22.135",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57"
+    },
+    {
+      "id": "3624540740",
+      "traceId": "ef20dd92-6d62-4b00-8109-4a04d8aaee30",
+      "firstDetected": "2024-02-16T17:56:19Z",
+      "severity": "s1",
+      "rank": 85,
+      "tags": [
+        "@MSI._epp_file_blocked",
+        "@ATE.T1204.002",
+        "@ATA.Execution"
+      ],
+      "host": {
+        "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+        "hostname": "1490RAD119",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:36Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "dc:4a:3e:75:33:7e",
+            "ip": "10.47.22.135",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57"
+    },
+    {
+      "id": "3622867520",
+      "traceId": "8134cdac-6db1-4791-aad4-ef4e45cc6f95",
+      "firstDetected": "2024-02-15T14:09:33Z",
+      "severity": "s1",
+      "rank": 85,
+      "tags": [
+        "@ATA.Impact",
+        "@MSI._epp_file_blocked",
+        "@ATE.T1489",
+        "@ATA.DefenseEvasion",
+        "@ATE.T1204.002",
+        "@ATA.Discovery",
+        "@ATE.T1562.001",
+        "@ATE.T1057",
+        "@ATA.Execution",
+        "@MSI._apt_process_taskkillname"
+      ],
+      "host": {
+        "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+        "hostname": "1490RAD119",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:36Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "dc:4a:3e:75:33:7e",
+            "ip": "10.47.22.135",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57"
+    },
+    {
+      "id": "3606024120",
+      "traceId": "53b5f947-1e6c-4808-8d67-7ce5bce290a7",
+      "firstDetected": "2024-02-01T02:39:15Z",
+      "severity": "s1",
+      "rank": 85,
+      "tags": [
+        "@MSI._epp_file_blocked",
+        "@ATE.T1204.002",
+        "@ATA.Execution"
+      ],
+      "host": {
+        "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+        "hostname": "1490RAD119",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:36Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "dc:4a:3e:75:33:7e",
+            "ip": "10.47.22.135",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57"
+    },
+    {
+      "id": "3619024767",
+      "traceId": "fce8fba5-0f14-4b39-96a2-6ea58100fe3d",
+      "firstDetected": "2024-02-12T21:31:55Z",
+      "severity": "s1",
+      "rank": 85,
+      "tags": [
+        "@MSI._epp_file_blocked",
+        "@ATE.T1204.002",
+        "@ATA.Execution"
+      ],
+      "host": {
+        "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+        "hostname": "1490RAD119",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:36Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "dc:4a:3e:75:33:7e",
+            "ip": "10.47.22.135",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57"
+    },
+    {
+      "id": "3614677162",
+      "traceId": "1cb77617-ab34-4b56-ae7e-2b17eed076d0",
+      "firstDetected": "2024-02-08T18:11:59Z",
+      "severity": "s1",
+      "rank": 85,
+      "tags": [
+        "@MSI._epp_file_blocked",
+        "@ATE.T1204.002",
+        "@ATA.Execution"
+      ],
+      "host": {
+        "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+        "hostname": "1490RAD119",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:36Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "dc:4a:3e:75:33:7e",
+            "ip": "10.47.22.135",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57"
+    },
+    {
+      "id": "3614677161",
+      "traceId": "75a52da5-a434-4bed-9af6-a610d5603279",
+      "firstDetected": "2024-02-08T18:11:59Z",
+      "severity": "s1",
+      "rank": 85,
+      "tags": [
+        "@ATA.Impact",
+        "@MSI._epp_file_blocked",
+        "@ATE.T1489",
+        "@ATA.DefenseEvasion",
+        "@ATE.T1204.002",
+        "@ATA.Discovery",
+        "@ATE.T1562.001",
+        "@ATE.T1057",
+        "@ATA.Execution",
+        "@MSI._apt_process_taskkillname"
+      ],
+      "host": {
+        "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+        "hostname": "1490RAD119",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:36Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "dc:4a:3e:75:33:7e",
+            "ip": "10.47.22.135",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57"
+    },
+    {
+      "id": "3611592960",
+      "traceId": "1b636cfc-156a-4daf-998d-6cad90b248fe",
+      "firstDetected": "2024-02-06T13:14:10Z",
+      "severity": "s1",
+      "rank": 85,
+      "tags": [
+        "@ATA.Impact",
+        "@MSI._epp_file_blocked",
+        "@ATE.T1489",
+        "@ATA.DefenseEvasion",
+        "@ATE.T1204.002",
+        "@ATA.Discovery",
+        "@ATE.T1562.001",
+        "@ATE.T1057",
+        "@ATA.Execution",
+        "@MSI._apt_process_taskkillname"
+      ],
+      "host": {
+        "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+        "hostname": "1490RAD119",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:36Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "dc:4a:3e:75:33:7e",
+            "ip": "10.47.22.135",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57"
+    },
+    {
+      "id": "3609667625",
+      "traceId": "c85386b5-6bc3-406a-9265-846782c3343a",
+      "firstDetected": "2024-02-04T17:00:32Z",
+      "severity": "s1",
+      "rank": 85,
+      "tags": [
+        "@ATA.Impact",
+        "@MSI._epp_file_blocked",
+        "@ATE.T1489",
+        "@ATA.DefenseEvasion",
+        "@ATE.T1204.002",
+        "@ATA.Discovery",
+        "@ATE.T1562.001",
+        "@ATE.T1057",
+        "@ATA.Execution",
+        "@MSI._apt_process_taskkillname"
+      ],
+      "host": {
+        "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+        "hostname": "1490RAD119",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:36Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "dc:4a:3e:75:33:7e",
+            "ip": "10.47.22.135",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57"
+    },
+    {
+      "id": "3608988331",
+      "traceId": "bdde4d16-ac53-4a2b-9e76-8e92e0bbe56e",
+      "firstDetected": "2024-02-03T16:35:44Z",
+      "severity": "s1",
+      "rank": 85,
+      "tags": [
+        "@MSI._epp_file_blocked",
+        "@ATE.T1204.002",
+        "@ATA.Execution"
+      ],
+      "host": {
+        "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+        "hostname": "1490RAD119",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:36Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "dc:4a:3e:75:33:7e",
+            "ip": "10.47.22.135",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57"
+    },
+    {
+      "id": "3607968202",
+      "traceId": "484b67ff-5974-4e70-b74f-83f7d7ab1ae1",
+      "firstDetected": "2024-02-02T14:19:16Z",
+      "severity": "s1",
+      "rank": 85,
+      "tags": [
+        "@ATA.Impact",
+        "@MSI._epp_file_blocked",
+        "@ATE.T1489",
+        "@ATA.DefenseEvasion",
+        "@ATE.T1204.002",
+        "@ATA.Discovery",
+        "@ATE.T1562.001",
+        "@ATE.T1057",
+        "@ATA.Execution",
+        "@MSI._apt_process_taskkillname"
+      ],
+      "host": {
+        "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+        "hostname": "1490RAD119",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:36Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "dc:4a:3e:75:33:7e",
+            "ip": "10.47.22.135",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57"
+    },
+    {
+      "id": "3606024121",
+      "traceId": "bcad2e79-d2b4-44cb-8e28-df743d81a17b",
+      "firstDetected": "2024-02-01T02:39:15Z",
+      "severity": "s1",
+      "rank": 85,
+      "tags": [
+        "@ATA.Impact",
+        "@MSI._epp_file_blocked",
+        "@ATE.T1489",
+        "@ATA.DefenseEvasion",
+        "@ATE.T1204.002",
+        "@ATA.Discovery",
+        "@ATE.T1562.001",
+        "@ATE.T1057",
+        "@ATA.Execution",
+        "@MSI._apt_process_taskkillname"
+      ],
+      "host": {
+        "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+        "hostname": "1490RAD119",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-25T09:35:36Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "dc:4a:3e:75:33:7e",
+            "ip": "10.47.22.135",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57"
+    }
+  ],
+  "traces": [
+    {
+      "traceId": "6af6493d-eb7f-4042-bbc5-9b515901a434",
+      "dtsType": "all",
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "pSha2": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57",
+      "dtsId": "EDR",
+      "pid": 19964,
+      "eventType": "File Created",
+      "parentTraceId": "b641d439-55f8-44d9-b266-6aacfa84e663",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 19964,
+      "tags": [
+        "@AC.PECreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 21,
+      "pFullName": "C:\\ProgramData\\AGFA\\IMPAX Agility\\com.oracle.jre32_1.8.0.171\\bin\\javaw.exe",
+      "fileAttributes": {
+        "sha1": "DA39A3EE5E6B4B0D3255BFEF95601890AFD80709",
+        "path": "C:\\ProgramData\\AGFA\\IMPAX Agility\\temp\\zariah-abbey\\netboot-dll\\focus4175717644256354.dll",
+        "lastModificationDate": "2024-02-14T21:31:33.708Z",
+        "fsattrs": 32,
+        "sha256": "11E1E2589FF26AF4F82F075CCBA9B26D4B7AC2C6C8D6A4F16639DFC465E07ABB",
+        "size": 34304,
+        "name": "focus4175717644256354.dll",
+        "creationDate": "2024-02-14T21:31:33.689Z",
+        "fileType": "PE",
+        "md5": "D41D8CD98F00B204E9800998ECF8427E"
+      },
+      "detectionDate": "2024-02-14T21:32:00Z",
+      "host": "1490RAD119",
+      "time": "2024-02-14T21:31:33.828Z",
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.3636",
+        "sha256": "D44C73818B0CF757A1D07274013BAA87F36EBF9C59BEC8972FEA08C6CFB03862",
+        "embedFilename": "smss.exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 1,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2023-12-11T23:42:11.174Z",
+        "sha1": "FC4B6F48A8A7ECE73F1DA2370D7B488820F10B0D",
+        "path": "C:\\Windows\\System32\\smss.exe",
+        "size": 157152,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "smss.exe",
+        "md5": "54A7E1168CF0D30D449462DA5FC5A600"
+      },
+      "pSha2": "D44C73818B0CF757A1D07274013BAA87F36EBF9C59BEC8972FEA08C6CFB03862",
+      "pid": 5556,
+      "parentTraceId": "4b20e923-28f8-48e3-b6e6-8603dc2e1604",
+      "h_version": "3.0",
+      "integrity": 4,
+      "pFullName": "C:\\Windows\\System32\\smss.exe",
+      "processName": "smss.exe",
+      "host": "1490RAD119",
+      "h_traceType": "all",
+      "traceId": "a5b82ee6-56ab-4975-8984-4fc1edacdd80",
+      "cmdLine": "\\SystemRoot\\System32\\smss.exe 000000ec 00000084 ",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "4b20e923-28f8-48e3-b6e6-8603dc2e1604",
+        "cc56487e-5390-45ef-a3bb-1b683ec00fb4"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 548,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        110
+      ],
+      "detectionDate": "2024-02-02T21:53:13Z",
+      "time": "2024-02-02T21:53:09.081Z",
+      "user": {
+        "domain": "NT AUTHORITY",
+        "name": "SYSTEM",
+        "id": "S-1-5-18"
+      }
+    },
+    {
+      "traceId": "1afcb001-7d8d-4ed4-86a0-d761f611cf39",
+      "dtsType": "all",
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "pSha2": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57",
+      "dtsId": "EDR",
+      "pid": 19964,
+      "eventType": "File Deleted",
+      "parentTraceId": "b641d439-55f8-44d9-b266-6aacfa84e663",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 19964,
+      "tags": [
+        "@AC.PECreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 21,
+      "pFullName": "C:\\ProgramData\\AGFA\\IMPAX Agility\\com.oracle.jre32_1.8.0.171\\bin\\javaw.exe",
+      "fileAttributes": {
+        "sha1": "DA39A3EE5E6B4B0D3255BFEF95601890AFD80709",
+        "path": "C:\\ProgramData\\AGFA\\IMPAX Agility\\temp\\zariah-abbey\\netboot-dll\\focus8249833743116948658.dll",
+        "lastModificationDate": "2024-02-08T18:02:27.430Z",
+        "fsattrs": 128,
+        "sha256": "11E1E2589FF26AF4F82F075CCBA9B26D4B7AC2C6C8D6A4F16639DFC465E07ABB",
+        "size": 34304,
+        "name": "focus8249833743116948658.dll",
+        "creationDate": "2024-02-08T18:02:27.423Z",
+        "fileType": "PE",
+        "md5": "D41D8CD98F00B204E9800998ECF8427E"
+      },
+      "detectionDate": "2024-02-14T21:32:00Z",
+      "host": "1490RAD119",
+      "time": "2024-02-14T21:31:33.687Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "23d97aba-9fb4-48f9-80d8-20705014dbdf",
+      "dtsType": "all",
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "pSha2": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57",
+      "dtsId": "EDR",
+      "pid": 19964,
+      "eventType": "Network Accessed",
+      "parentTraceId": "b641d439-55f8-44d9-b266-6aacfa84e663",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 19964,
+      "network": {
+        "accessType": "connection_opened",
+        "srcIp": "10.47.22.135",
+        "protocol": "tcp",
+        "dstPort": 443,
+        "dnsNames": [
+          "1490agfaeilb.hma.com"
+        ],
+        "dstIp": "10.127.90.16",
+        "srcPort": 53713,
+        "direction": "outbound"
+      },
+      "tags": [
+        "@AC.NetworkConnection"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19104,
+      "pFullName": "C:\\ProgramData\\AGFA\\IMPAX Agility\\com.oracle.jre32_1.8.0.171\\bin\\javaw.exe",
+      "detectionDate": "2024-02-14T21:32:00Z",
+      "host": "1490RAD119",
+      "time": "2024-02-14T21:31:33.131Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "8b57af58-09b7-4664-a45c-a28b18ab556a",
+      "dtsType": "all",
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "pSha2": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57",
+      "dtsId": "EDR",
+      "pid": 19964,
+      "eventType": "File Attribute Changed",
+      "parentTraceId": "b641d439-55f8-44d9-b266-6aacfa84e663",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 19964,
+      "tags": [
+        "@AC.PECreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 7,
+      "pFullName": "C:\\ProgramData\\AGFA\\IMPAX Agility\\com.oracle.jre32_1.8.0.171\\bin\\javaw.exe",
+      "fileAttributes": {
+        "sha1": "",
+        "path": "C:\\ProgramData\\AGFA\\IMPAX Agility\\temp\\zariah-abbey\\netboot-dll\\focus1905971880389159630.dll",
+        "lastModificationDate": "2024-02-12T21:25:23.341Z",
+        "fsattrs": 128,
+        "sha256": "11E1E2589FF26AF4F82F075CCBA9B26D4B7AC2C6C8D6A4F16639DFC465E07ABB",
+        "size": 34304,
+        "name": "focus1905971880389159630.dll",
+        "creationDate": "2024-02-12T21:25:23.323Z",
+        "fileType": "PE",
+        "md5": ""
+      },
+      "detectionDate": "2024-02-14T21:32:00Z",
+      "host": "1490RAD119",
+      "time": "2024-02-14T21:31:33.684Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "5172698b-c7ee-40f5-bf33-cee50e938be5",
+      "dtsType": "all",
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "pSha2": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57",
+      "dtsId": "EDR",
+      "pid": 19964,
+      "eventType": "File Moved",
+      "parentTraceId": "b641d439-55f8-44d9-b266-6aacfa84e663",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 19964,
+      "tags": [
+        "@AC.NonPECreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 21,
+      "pFullName": "C:\\ProgramData\\AGFA\\IMPAX Agility\\com.oracle.jre32_1.8.0.171\\bin\\javaw.exe",
+      "fileAttributes": {
+        "sha1": "5731D8A3E6568A5F2DFBBC87E3DB9637DF280B61",
+        "path": "C:\\Users\\zariah-abbey\\AppData\\Roaming\\Microsoft\\Crypto\\RSA\\S-1-5-21-1715567821-1957994488-1801674531-216898\\83aa4cc77f591dfc2374580bbd95f6ba_c9813558-832c-4923-a3fc-a7bfa0168612",
+        "lastModificationDate": "2020-07-07T20:07:07.152Z",
+        "fsattrs": 36,
+        "sha256": "11E6ACA8E682C046C83B721EEB5C72C5EF03CB5936C60DF6F4993511DDC61238",
+        "size": 45,
+        "name": "83aa4cc77f591dfc2374580bbd95f6ba_c9813558-832c-4923-a3fc-a7bfa0168612",
+        "creationDate": "2020-07-07T20:07:07.152Z",
+        "newFilePath": "C:\\Users\\zariah-abbey\\AppData\\Roaming\\Microsoft\\Crypto\\RSA\\S-1-5-21-3102552752-417709957-33154223-2837177\\83aa4cc77f591dfc2374580bbd95f6ba_c9813558-832c-4923-a3fc-a7bfa0168612",
+        "md5": "C8366AE350E7019AEFC9D1E6E6A498C6"
+      },
+      "detectionDate": "2024-02-14T21:32:00Z",
+      "host": "1490RAD119",
+      "time": "2024-02-14T21:31:32.804Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "c9bab45b-ae42-4fb1-905d-40c706f5ad37",
+      "dtsType": "all",
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "pSha2": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57",
+      "dns": {
+        "name": "1490agfaeilb.hma.com",
+        "type": 1
+      },
+      "dtsId": "EDR",
+      "pid": 19964,
+      "eventType": "DNS Query",
+      "parentTraceId": "b641d439-55f8-44d9-b266-6aacfa84e663",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 19964,
+      "tags": [
+        "@AC.DNSQuery"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19112,
+      "pFullName": "C:\\ProgramData\\AGFA\\IMPAX Agility\\com.oracle.jre32_1.8.0.171\\bin\\javaw.exe",
+      "detectionDate": "2024-02-14T21:32:00Z",
+      "host": "1490RAD119",
+      "time": "2024-02-14T21:31:32.889Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "7f2df702-417c-4425-966c-cbde78909e80",
+      "dtsType": "all",
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "pSha2": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57",
+      "dtsId": "EDR",
+      "pid": 19964,
+      "eventType": "File Deleted",
+      "parentTraceId": "b641d439-55f8-44d9-b266-6aacfa84e663",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 19964,
+      "tags": [
+        "@AC.PECreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 21,
+      "pFullName": "C:\\ProgramData\\AGFA\\IMPAX Agility\\com.oracle.jre32_1.8.0.171\\bin\\javaw.exe",
+      "fileAttributes": {
+        "sha1": "",
+        "path": "C:\\ProgramData\\AGFA\\IMPAX Agility\\temp\\zariah-abbey\\netboot-dll\\focus1905971880389159630.dll",
+        "lastModificationDate": "2024-02-12T21:25:23.341Z",
+        "fsattrs": 128,
+        "sha256": "11E1E2589FF26AF4F82F075CCBA9B26D4B7AC2C6C8D6A4F16639DFC465E07ABB",
+        "size": 34304,
+        "name": "focus1905971880389159630.dll",
+        "creationDate": "2024-02-12T21:25:23.323Z",
+        "fileType": "PE",
+        "md5": ""
+      },
+      "detectionDate": "2024-02-14T21:32:00Z",
+      "host": "1490RAD119",
+      "time": "2024-02-14T21:31:33.685Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "ed0272cd-4788-42d9-aaa0-c5bc1aeac808",
+      "dtsType": "all",
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "pSha2": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57",
+      "dtsId": "EDR",
+      "pid": 19964,
+      "eventType": "Api",
+      "parentTraceId": "b641d439-55f8-44d9-b266-6aacfa84e663",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 19964,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19119,
+      "pFullName": "C:\\ProgramData\\AGFA\\IMPAX Agility\\com.oracle.jre32_1.8.0.171\\bin\\javaw.exe",
+      "detectionDate": "2024-02-14T21:32:00Z",
+      "host": "1490RAD119",
+      "time": "2024-02-14T21:31:32.735Z",
+      "api": {
+        "result": "0",
+        "name": "GetAdaptersAddresses",
+        "moduleName": "",
+        "targetPid": 0,
+        "arguments": []
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "eb8a1be6-4526-43d8-832a-fa92e36a4faa",
+      "dtsType": "all",
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "pSha2": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57",
+      "dtsId": "EDR",
+      "pid": 19964,
+      "eventType": "Network Accessed",
+      "parentTraceId": "b641d439-55f8-44d9-b266-6aacfa84e663",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 19964,
+      "network": {
+        "accessType": "connection_opened",
+        "srcIp": "10.47.22.135",
+        "protocol": "tcp",
+        "dstPort": 443,
+        "dnsNames": [
+          "1490agfaeilb.hma.com"
+        ],
+        "dstIp": "10.127.90.16",
+        "srcPort": 53712,
+        "direction": "outbound"
+      },
+      "tags": [
+        "@AC.NetworkConnection"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19104,
+      "pFullName": "C:\\ProgramData\\AGFA\\IMPAX Agility\\com.oracle.jre32_1.8.0.171\\bin\\javaw.exe",
+      "detectionDate": "2024-02-14T21:32:00Z",
+      "host": "1490RAD119",
+      "time": "2024-02-14T21:31:32.903Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "491f3907-f347-4111-8296-b4de36bfd416",
+      "dtsType": "all",
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "pSha2": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57",
+      "dns": {
+        "name": "1490agfaeilb.hma.com",
+        "type": 28
+      },
+      "dtsId": "EDR",
+      "pid": 19964,
+      "eventType": "DNS Query",
+      "parentTraceId": "b641d439-55f8-44d9-b266-6aacfa84e663",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 19964,
+      "tags": [
+        "@AC.DNSQuery"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19112,
+      "pFullName": "C:\\ProgramData\\AGFA\\IMPAX Agility\\com.oracle.jre32_1.8.0.171\\bin\\javaw.exe",
+      "detectionDate": "2024-02-14T21:32:00Z",
+      "host": "1490RAD119",
+      "time": "2024-02-14T21:31:32.893Z",
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.3758 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.3758",
+        "sha256": "81D8EA67D17BF48524C82D576F8DDADDB37A218D0566FD7F0AAB8B8FBD03F193",
+        "embedFilename": "EXPLORER.EXE",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2024-01-21T09:09:12.534Z",
+        "sha1": "F25E92EDC0CAB5E7446A302863802F3879B27BD9",
+        "path": "C:\\Windows\\explorer.exe",
+        "size": 5550856,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "explorer.exe",
+        "md5": "02280F4613E3D8EB6579D79AB7A182CA"
+      },
+      "pSha2": "81D8EA67D17BF48524C82D576F8DDADDB37A218D0566FD7F0AAB8B8FBD03F193",
+      "pid": 17044,
+      "parentTraceId": "b1b56030-6abf-4954-ab26-b47c882dcef1",
+      "h_version": "3.0",
+      "integrity": 2,
+      "pFullName": "C:\\Windows\\System32\\userinit.exe",
+      "processName": "explorer.exe",
+      "host": "1490RAD119",
+      "h_traceType": "all",
+      "traceId": "90220156-7917-4662-8e4e-1a96aaf5333d",
+      "cmdLine": "C:\\WINDOWS\\Explorer.EXE",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "b1b56030-6abf-4954-ab26-b47c882dcef1",
+        "31d01b46-2eb5-4ef6-a044-9db45f47b775",
+        "a5b82ee6-56ab-4975-8984-4fc1edacdd80",
+        "4b20e923-28f8-48e3-b6e6-8603dc2e1604",
+        "cc56487e-5390-45ef-a3bb-1b683ec00fb4"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 460,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        104,
+        100003
+      ],
+      "detectionDate": "2024-02-02T21:53:43Z",
+      "time": "2024-02-02T21:53:26.352Z",
+      "user": {
+        "domain": "US",
+        "name": "zariah-abbey",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2837177"
+      }
+    },
+    {
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.3758 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.3758",
+        "sha256": "6EC2D3D2CB7397DC0C193A20B9B3EA0AE0F05A7FEFDDFA555254453ADD89A5B6",
+        "embedFilename": "WINLOGON.EXE",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2024-01-21T09:09:42.610Z",
+        "sha1": "134474B2C558064F2C0A7F91BAE467A593323C44",
+        "path": "C:\\Windows\\System32\\winlogon.exe",
+        "size": 905728,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "winlogon.exe",
+        "md5": "AC8E6842E0A9C37B747F62D23EF372E9"
+      },
+      "pSha2": "6EC2D3D2CB7397DC0C193A20B9B3EA0AE0F05A7FEFDDFA555254453ADD89A5B6",
+      "pid": 8640,
+      "parentTraceId": "a5b82ee6-56ab-4975-8984-4fc1edacdd80",
+      "h_version": "3.0",
+      "integrity": 4,
+      "pFullName": "C:\\Windows\\System32\\smss.exe",
+      "processName": "winlogon.exe",
+      "host": "1490RAD119",
+      "h_traceType": "all",
+      "traceId": "31d01b46-2eb5-4ef6-a044-9db45f47b775",
+      "cmdLine": "winlogon.exe",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "a5b82ee6-56ab-4975-8984-4fc1edacdd80",
+        "4b20e923-28f8-48e3-b6e6-8603dc2e1604",
+        "cc56487e-5390-45ef-a3bb-1b683ec00fb4"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 5556,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "detectionDate": "2024-02-02T21:53:13Z",
+      "time": "2024-02-02T21:53:09.161Z",
+      "user": {
+        "domain": "NT AUTHORITY",
+        "name": "SYSTEM",
+        "id": "S-1-5-18"
+      }
+    },
+    {
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.3636",
+        "sha256": "D44C73818B0CF757A1D07274013BAA87F36EBF9C59BEC8972FEA08C6CFB03862",
+        "embedFilename": "smss.exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 1,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2023-12-11T23:42:11.174Z",
+        "sha1": "FC4B6F48A8A7ECE73F1DA2370D7B488820F10B0D",
+        "path": "C:\\Windows\\System32\\smss.exe",
+        "size": 157152,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "smss.exe",
+        "md5": "54A7E1168CF0D30D449462DA5FC5A600"
+      },
+      "pSha2": "D44C73818B0CF757A1D07274013BAA87F36EBF9C59BEC8972FEA08C6CFB03862",
+      "pid": 548,
+      "parentTraceId": "cc56487e-5390-45ef-a3bb-1b683ec00fb4",
+      "h_version": "3.0",
+      "integrity": 4,
+      "pFullName": "",
+      "processName": "smss.exe",
+      "host": "1490RAD119",
+      "h_traceType": "all",
+      "traceId": "4b20e923-28f8-48e3-b6e6-8603dc2e1604",
+      "cmdLine": "C:\\Windows\\System32\\smss.exe",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "cc56487e-5390-45ef-a3bb-1b683ec00fb4"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 4,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        110
+      ],
+      "detectionDate": "2024-02-02T14:13:16Z",
+      "time": "2024-02-02T14:12:15.093Z",
+      "user": {
+        "domain": "NT AUTHORITY",
+        "name": "NT AUTHORITY\\SYSTEM",
+        "id": "S-1-5-18"
+      }
+    },
+    {
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "procFileAttrs": {
+        "embedFileVersion": "8.0.1710.11",
+        "embedProductVersion": "8.0.1710.11",
+        "sha256": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57",
+        "embedFilename": "javaw.exe",
+        "embedVendorName": "Oracle Corporation",
+        "subsystem": 2,
+        "creationDate": "2020-07-07T19:51:16.886Z",
+        "sha1": "21967D83E5401CEE94BF170370330ABAD8BC4FEC",
+        "path": "C:\\ProgramData\\AGFA\\IMPAX Agility\\com.oracle.jre32_1.8.0.171\\bin\\javaw.exe",
+        "size": 192456,
+        "certificates": [
+          [
+            {
+              "sha1": "3B75816D15A6D8F4598E9CF5603F1839EE84D73D",
+              "issuerName": "US, Symantec Corporation, Symantec Trust Network, Symantec Class 3 SHA256 Code Signing CA",
+              "subject": "US, California, Redwood Shores, \"Oracle America, Inc.\", Code Signing Bureau, \"Oracle America, Inc.\"",
+              "publicKeyHash": "3359A30DB65D9CE675018F7C54B4B114012C5F7A"
+            },
+            {
+              "sha1": "007790F6561DAD89B0BCD85585762495E358F8A5",
+              "issuerName": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "subject": "US, Symantec Corporation, Symantec Trust Network, Symantec Class 3 SHA256 Code Signing CA",
+              "publicKeyHash": "963B53F0793397AF7D83EF2E2BCCCAB7861E7266"
+            },
+            {
+              "sha1": "4EB6D578499B1CCF5F581EAD56BE3D9B6744A5E5",
+              "issuerName": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "subject": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "publicKeyHash": "7FD365A7C2DDECBBF03009F34339FA02AF333133"
+            }
+          ]
+        ],
+        "embedProductName": "Java(TM) Platform SE 8",
+        "name": "javaw.exe",
+        "md5": "D554CF4A04E7973DF28372BCDAE820B3"
+      },
+      "pSha2": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57",
+      "pid": 19964,
+      "parentTraceId": "90220156-7917-4662-8e4e-1a96aaf5333d",
+      "h_version": "3.0",
+      "integrity": 2,
+      "pFullName": "C:\\Windows\\explorer.exe",
+      "processName": "javaw.exe",
+      "host": "1490RAD119",
+      "h_traceType": "all",
+      "traceId": "b641d439-55f8-44d9-b266-6aacfa84e663",
+      "cmdLine": "\"C:\\ProgramData\\AGFA\\IMPAX Agility\\com.oracle.jre32_1.8.0.171\\bin\\javaw.exe\" -jar \"C:\\ProgramData\\AGFA\\IMPAX Agility\\cache\\com.agfa.agility.netboot_1.0.1500.R812_v20180718_0743.jar\" \"1490agfaeilb.hma.com\" ",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "90220156-7917-4662-8e4e-1a96aaf5333d",
+        "b1b56030-6abf-4954-ab26-b47c882dcef1",
+        "31d01b46-2eb5-4ef6-a044-9db45f47b775",
+        "a5b82ee6-56ab-4975-8984-4fc1edacdd80",
+        "4b20e923-28f8-48e3-b6e6-8603dc2e1604",
+        "cc56487e-5390-45ef-a3bb-1b683ec00fb4"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 17044,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        1333,
+        100003,
+        100005,
+        100006
+      ],
+      "detectionDate": "2024-02-14T21:32:00Z",
+      "time": "2024-02-14T21:31:31.186Z",
+      "user": {
+        "domain": "US",
+        "name": "zariah-abbey",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2837177"
+      },
+      "severity": "s1",
+      "detectionsSets": [
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1204.002",
+            "@MSI._epp_file_blocked"
+          ]
+        }
+      ]
+    },
+    {
+      "traceId": "5b580d85-12e0-47a6-92dc-5ff7e7b971b4",
+      "dtsType": "all",
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "pSha2": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57",
+      "dtsId": "EDR",
+      "pid": 19964,
+      "eventType": "File Deleted",
+      "parentTraceId": "b641d439-55f8-44d9-b266-6aacfa84e663",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 19964,
+      "tags": [
+        "@AC.NonPECreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 21,
+      "pFullName": "C:\\ProgramData\\AGFA\\IMPAX Agility\\com.oracle.jre32_1.8.0.171\\bin\\javaw.exe",
+      "fileAttributes": {
+        "sha1": "DA39A3EE5E6B4B0D3255BFEF95601890AFD80709",
+        "path": "C:\\Users\\zariah-abbey\\AppData\\Roaming\\Microsoft\\Crypto\\RSA\\S-1-5-21-1715567821-1957994488-1801674531-216898",
+        "lastModificationDate": "2023-01-18T12:46:06.015Z",
+        "fsattrs": 20,
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "size": 32768,
+        "name": "S-1-5-21-1715567821-1957994488-1801674531-216898",
+        "creationDate": "2020-07-07T20:07:07.137Z",
+        "md5": "D41D8CD98F00B204E9800998ECF8427E"
+      },
+      "detectionDate": "2024-02-14T21:32:00Z",
+      "host": "1490RAD119",
+      "time": "2024-02-14T21:31:32.509Z",
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "pSha2": "",
+      "pid": 4,
+      "parentTraceId": "00000000-0000-0000-0000-000000000000",
+      "h_version": "3.0",
+      "integrity": 4,
+      "processName": "",
+      "host": "1490RAD119",
+      "h_traceType": "all",
+      "traceId": "cc56487e-5390-45ef-a3bb-1b683ec00fb4",
+      "cmdLine": "",
+      "dtsType": "all",
+      "parentsTraceId": [],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "h_os": "windows",
+      "version": "3.0",
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        106
+      ],
+      "detectionDate": "2024-02-02T14:13:16Z",
+      "time": "2024-02-02T14:12:15.084Z",
+      "user": {
+        "domain": "NT AUTHORITY",
+        "name": "NT AUTHORITY\\SYSTEM",
+        "id": "S-1-5-18"
+      }
+    },
+    {
+      "traceId": "ab0b0896-2216-4fb7-b422-b6719d49eb6c",
+      "dtsType": "all",
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "pSha2": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57",
+      "dtsId": "EDR",
+      "pid": 19964,
+      "eventType": "File Moved",
+      "parentTraceId": "b641d439-55f8-44d9-b266-6aacfa84e663",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 19964,
+      "tags": [
+        "@AC.NonPECreated"
+      ],
+      "h_version": "3.0",
+      "pFullName": "C:\\ProgramData\\AGFA\\IMPAX Agility\\com.oracle.jre32_1.8.0.171\\bin\\javaw.exe",
+      "fileAttributes": {
+        "sha1": "",
+        "path": "C:\\Users\\zariah-abbey\\AppData\\Roaming\\Microsoft\\Crypto\\RSA\\S-1-5-21-1715567821-1957994488-1801674531-216898\\83aa4cc77f591dfc2374580bbd95f6ba_c9813558-832c-4923-a3fc-a7bfa0168612",
+        "fsattrs": 128,
+        "sha256": "",
+        "size": 0,
+        "name": "83aa4cc77f591dfc2374580bbd95f6ba_c9813558-832c-4923-a3fc-a7bfa0168612",
+        "md5": "c8366ae350e7019aefc9d1e6e6a498c6"
+      },
+      "response": {
+        "reason": 1,
+        "productId": 513,
+        "action": 1,
+        "description": "US\\zariah-abbey ran C:\\ProgramData\\AGFA\\IMPAX Agility\\com.oracle.jre32_1.8.0.171\\bin\\javaw.exe, which tried to access the file C:\\Users\\zariah-abbey\\AppData\\Roaming\\Microsoft\\Crypto\\RSA\\S-1-5-21-1715567821-1957994488-1801674531-216898\\83aa4cc77f591dfc2374580bbd95f6ba_c9813558-832c-4923-a3fc-a7bfa0168612, violating the rule \"Malware Behavior: Windows EFS abuse\", and was blocked. For information about how to respond to this event, see KB85494.",
+        "ruleId": "6148",
+        "operation": 7
+      },
+      "detectionDate": "2024-02-14T21:32:00Z",
+      "host": "1490RAD119",
+      "time": "2024-02-14T21:31:32.508Z",
+      "h_traceType": "all",
+      "severity": "s1",
+      "detectionsSets": [
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1204.002",
+            "@MSI._epp_file_blocked"
+          ]
+        }
+      ]
+    },
+    {
+      "traceId": "0c2c2e66-df3e-44b2-9f78-6ee898edd738",
+      "dtsType": "all",
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "pSha2": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57",
+      "dtsId": "EDR",
+      "pid": 19964,
+      "eventType": "File Deleted",
+      "parentTraceId": "b641d439-55f8-44d9-b266-6aacfa84e663",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 19964,
+      "tags": [
+        "@AC.NonPECreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 21,
+      "pFullName": "C:\\ProgramData\\AGFA\\IMPAX Agility\\com.oracle.jre32_1.8.0.171\\bin\\javaw.exe",
+      "fileAttributes": {
+        "sha1": "DA39A3EE5E6B4B0D3255BFEF95601890AFD80709",
+        "path": "C:\\Users\\zariah-abbey\\AppData\\Roaming\\Microsoft\\Crypto\\RSA\\S-1-5-21-1715567821-1957994488-1801674531-216898",
+        "lastModificationDate": "2023-01-18T12:46:06.015Z",
+        "fsattrs": 20,
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "size": 32768,
+        "name": "S-1-5-21-1715567821-1957994488-1801674531-216898",
+        "creationDate": "2020-07-07T20:07:07.137Z",
+        "md5": "D41D8CD98F00B204E9800998ECF8427E"
+      },
+      "detectionDate": "2024-02-14T21:32:00Z",
+      "host": "1490RAD119",
+      "time": "2024-02-14T21:31:32.510Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "cade6d81-8501-435e-beab-f0289adc42c6",
+      "dtsType": "all",
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "pSha2": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57",
+      "dtsId": "EDR",
+      "pid": 19964,
+      "eventType": "File Attribute Changed",
+      "parentTraceId": "b641d439-55f8-44d9-b266-6aacfa84e663",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 19964,
+      "tags": [
+        "@AC.PECreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 7,
+      "pFullName": "C:\\ProgramData\\AGFA\\IMPAX Agility\\com.oracle.jre32_1.8.0.171\\bin\\javaw.exe",
+      "fileAttributes": {
+        "sha1": "DA39A3EE5E6B4B0D3255BFEF95601890AFD80709",
+        "path": "C:\\ProgramData\\AGFA\\IMPAX Agility\\temp\\zariah-abbey\\netboot-dll\\focus8249833743116948658.dll",
+        "lastModificationDate": "2024-02-08T18:02:27.430Z",
+        "fsattrs": 128,
+        "sha256": "11E1E2589FF26AF4F82F075CCBA9B26D4B7AC2C6C8D6A4F16639DFC465E07ABB",
+        "size": 34304,
+        "name": "focus8249833743116948658.dll",
+        "creationDate": "2024-02-08T18:02:27.423Z",
+        "fileType": "PE",
+        "md5": "D41D8CD98F00B204E9800998ECF8427E"
+      },
+      "detectionDate": "2024-02-14T21:32:00Z",
+      "host": "1490RAD119",
+      "time": "2024-02-14T21:31:33.686Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "8c8c610a-7a3f-4e58-a1d3-d8c0f56a9384",
+      "dtsType": "all",
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "pSha2": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57",
+      "dtsId": "EDR",
+      "pid": 19964,
+      "eventType": "File Deleted",
+      "parentTraceId": "b641d439-55f8-44d9-b266-6aacfa84e663",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 19964,
+      "tags": [
+        "@AC.NonPECreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 21,
+      "pFullName": "C:\\ProgramData\\AGFA\\IMPAX Agility\\com.oracle.jre32_1.8.0.171\\bin\\javaw.exe",
+      "fileAttributes": {
+        "sha1": "DA39A3EE5E6B4B0D3255BFEF95601890AFD80709",
+        "path": "C:\\Users\\zariah-abbey\\AppData\\Roaming\\Microsoft\\Crypto\\RSA\\S-1-5-21-1715567821-1957994488-1801674531-216898",
+        "lastModificationDate": "2023-01-18T12:46:06.015Z",
+        "fsattrs": 20,
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "size": 32768,
+        "name": "S-1-5-21-1715567821-1957994488-1801674531-216898",
+        "creationDate": "2020-07-07T20:07:07.137Z",
+        "md5": "D41D8CD98F00B204E9800998ECF8427E"
+      },
+      "detectionDate": "2024-02-14T21:32:00Z",
+      "host": "1490RAD119",
+      "time": "2024-02-14T21:31:32.806Z",
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.3636 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.3636",
+        "sha256": "33D0F627A62DED9A4CF0D6E2A59AB3777BBECF7D794373B8052D9CC9253A4C74",
+        "embedFilename": "USERINIT.EXE",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2023-12-11T23:42:05.151Z",
+        "sha1": "E5A153AF6AB857FC4752A2BB008B435ADD5BF0B8",
+        "path": "C:\\Windows\\System32\\userinit.exe",
+        "size": 54272,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "userinit.exe",
+        "md5": "961093C2AA93542221884B14EC103899"
+      },
+      "pSha2": "33D0F627A62DED9A4CF0D6E2A59AB3777BBECF7D794373B8052D9CC9253A4C74",
+      "pid": 460,
+      "parentTraceId": "31d01b46-2eb5-4ef6-a044-9db45f47b775",
+      "h_version": "3.0",
+      "integrity": 2,
+      "pFullName": "C:\\Windows\\System32\\winlogon.exe",
+      "processName": "userinit.exe",
+      "host": "1490RAD119",
+      "h_traceType": "all",
+      "traceId": "b1b56030-6abf-4954-ab26-b47c882dcef1",
+      "cmdLine": "C:\\Windows\\system32\\userinit.exe",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "31d01b46-2eb5-4ef6-a044-9db45f47b775",
+        "a5b82ee6-56ab-4975-8984-4fc1edacdd80",
+        "4b20e923-28f8-48e3-b6e6-8603dc2e1604",
+        "cc56487e-5390-45ef-a3bb-1b683ec00fb4"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 8640,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "detectionDate": "2024-02-02T21:53:43Z",
+      "time": "2024-02-02T21:53:26.185Z",
+      "user": {
+        "domain": "US",
+        "name": "zariah-abbey",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2837177"
+      }
+    },
+    {
+      "traceId": "e6b2f72a-7734-44f9-a384-0a6f586f07cb",
+      "dtsType": "all",
+      "h_tp": "mar_4.0.0.1408",
+      "maGuid": "D8C0C6B2-1F1D-11EB-0A90-DC4A3E75337E",
+      "rv": 1408,
+      "pSha2": "69F70DE18DBE78CE1B1D3B2F4A8C12A8FAAE86B9A1D94716916968D6CDBDDA57",
+      "dtsId": "EDR",
+      "pid": 19964,
+      "eventType": "File Deleted",
+      "parentTraceId": "b641d439-55f8-44d9-b266-6aacfa84e663",
+      "contextTraceId": "468536a3-fc44-40a6-a61f-1013f8b44261",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 19964,
+      "tags": [
+        "@AC.NonPECreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 21,
+      "pFullName": "C:\\ProgramData\\AGFA\\IMPAX Agility\\com.oracle.jre32_1.8.0.171\\bin\\javaw.exe",
+      "fileAttributes": {
+        "sha1": "DA39A3EE5E6B4B0D3255BFEF95601890AFD80709",
+        "path": "C:\\Users\\zariah-abbey\\AppData\\Roaming\\Microsoft\\Crypto\\RSA\\S-1-5-21-1715567821-1957994488-1801674531-216898",
+        "lastModificationDate": "2023-01-18T12:46:06.015Z",
+        "fsattrs": 20,
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "size": 32768,
+        "name": "S-1-5-21-1715567821-1957994488-1801674531-216898",
+        "creationDate": "2020-07-07T20:07:07.137Z",
+        "md5": "D41D8CD98F00B204E9800998ECF8427E"
+      },
+      "detectionDate": "2024-02-14T21:32:00Z",
+      "host": "1490RAD119",
+      "time": "2024-02-14T21:31:32.806Z",
+      "h_traceType": "all"
+    }
+  ]
+}

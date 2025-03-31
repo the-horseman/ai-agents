@@ -1,0 +1,1644 @@
+[
+    {
+        "catalogVersion": 6,
+        "name": "KillProcess",
+        "description": "Kills a process by its process ID",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Kill Process"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "linux"
+                },
+                "capability": {
+                    "name": "Kill Process"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "macos"
+                },
+                "capability": {
+                    "name": "Kill Process"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [
+            {
+                "name": "pid",
+                "type": "NUMBER",
+                "collectorMappings" : [
+                    {
+                        "name": "Processes",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "id",
+                            "type": "NUMBER"
+                        }
+                    },
+                    {
+                        "name": "NetworkFlow",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "process_id",
+                            "type": "NUMBER"
+                        }
+                    },
+                    {
+                        "name": "CurrentFlow",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "process_id",
+                            "type": "NUMBER"
+                        }
+                    }
+                ]
+            }
+        ],
+        "task":"REACTION",
+        "availableOffline": false,
+        "remediation": false,
+        "internalName": "killProcess",
+        "classification": "CONTAINMENT"
+    },
+    {
+        "catalogVersion": 5,
+        "name": "StopAndRemoveContent",
+        "description": "Stop interpreter process by PID (Ex. Python, Bash, etc.) and removes the asociated script by full_path",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Kill Content"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "macos"
+                },
+                "capability": {
+                    "name": "Kill Content"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "linux"
+                },
+                "capability": {
+                    "name": "NonExistentCapability"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [
+            {
+                "name": "pid",
+                "type": "NUMBER",
+                "collectorMappings" : [
+                    {
+                        "name": "Processes",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "id",
+                            "type": "NUMBER"
+                        }
+                    },
+                    {
+                        "name": "NetworkFlow",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "process_id",
+                            "type": "NUMBER"
+                        }
+                    },
+                    {
+                        "name": "CurrentFlow",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "process_id",
+                            "type": "NUMBER"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "full_name",
+                "type": "STRING",
+                "collectorMappings" : [
+                    {
+                        "name": "Processes",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "content_file",
+                            "type": "STRING"
+                        }
+                    }
+                ]
+            }
+        ],
+        "availableForTrigger": true,
+        "task":"REACTION",
+        "availableOffline": true,
+        "remediation": true,
+        "internalName": "stopAndRemoveContent",
+        "classification": "REMEDIATION"
+    },
+    {
+        "catalogVersion": 3,
+        "name": "KillProcessTree",
+        "description": "Kills a process and its subprocesses by its process ID",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Kill Process Tree"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "linux"
+                },
+                "capability": {
+                    "name": "Kill Process Tree"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "macos"
+                },
+                "capability": {
+                    "name": "Kill Process Tree"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [
+            {
+                "name": "pid",
+                "type": "NUMBER",
+                "collectorMappings" : [
+                    {
+                        "name": "Processes",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "id",
+                            "type": "NUMBER"
+                        }
+                    },
+                    {
+                        "name": "NetworkFlow",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "process_id",
+                            "type": "NUMBER"
+                        }
+                    },
+                    {
+                        "name": "CurrentFlow",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "process_id",
+                            "type": "NUMBER"
+                        }
+                    }
+                ]
+            }
+        ],
+        "task":"REACTION",
+        "availableOffline": false,
+        "remediation": false,
+        "internalName": "killProcessTree",
+        "classification": "CONTAINMENT"
+    },
+    {
+        "catalogVersion": 10,
+        "name": "KillProcessByHash",
+        "description": "Kills a process by its hash",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Kill Process"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "linux"
+                },
+                "capability": {
+                    "name": "Kill Process"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "macos"
+                },
+                "capability": {
+                    "name": "Kill Process"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [
+            {
+                "name": "md5",
+                "type": "STRING",
+                "collectorMappings" : [
+                    {
+                        "name": "Processes",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "md5",
+                            "type": "STRING"
+                        }
+                    }
+                ],
+                "optional": true
+            },
+            {
+                "name": "sha1",
+                "type": "STRING",
+                "collectorMappings" : [
+                    {
+                        "name": "Processes",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "sha1",
+                            "type": "STRING"
+                        }
+                    }
+                ],
+                "optional": true
+            },
+            {
+                "name": "sha256",
+                "type": "STRING",
+                "collectorMappings" : [
+                    {
+                        "name": "Processes",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "sha256",
+                            "type": "STRING"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "pid",
+                "type": "NUMBER",
+                "collectorMappings" : [
+                    {
+                        "name": "Processes",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "id",
+                            "type": "NUMBER"
+                        }
+                    },
+                    {
+                        "name": "NetworkFlow",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "process_id",
+                            "type": "NUMBER"
+                        }
+                    },
+                    {
+                        "name": "CurrentFlow",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "process_id",
+                            "type": "NUMBER"
+                        }
+                    }
+                ],
+                "optional": true
+            },
+            {
+                "name": "kill_tree",
+                "type": "BOOLEAN",
+                "collectorMappings" : [],
+                "optional":true
+            }
+        ],
+        "task":"REACTION",
+        "availableOffline": true,
+        "remediation": false,
+        "internalName": "killProcessByHash",
+        "classification": "CONTAINMENT"
+    },
+    {
+        "catalogVersion": 5,
+        "name": "KillProcessByPath",
+        "description": "Kills a process by its path",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Kill Process"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "linux"
+                },
+                "capability": {
+                    "name": "Kill Process"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "macos"
+                },
+                "capability": {
+                    "name": "Kill Process"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [
+            {
+                "name": "full_name",
+                "type": "STRING",
+                "collectorMappings" : [
+                    {
+                        "name": "Files",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "full_name",
+                            "type": "STRING"
+                        }
+                    },
+                    {
+                        "name": "Processes",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "imagepath",
+                            "type": "STRING"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "pid",
+                "type": "NUMBER",
+                "collectorMappings" : [
+                    {
+                        "name": "Processes",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "id",
+                            "type": "NUMBER"
+                        }
+                    },
+                    {
+                        "name": "NetworkFlow",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "process_id",
+                            "type": "NUMBER"
+                        }
+                    },
+                    {
+                        "name": "CurrentFlow",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "process_id",
+                            "type": "NUMBER"
+                        }
+                    }
+                ],
+                "optional": true
+            }
+        ],
+        "task":"REACTION",
+        "availableOffline": true,
+        "remediation": false,
+        "internalName": "killProcessByPath",
+        "classification": "CONTAINMENT"
+    },
+    {
+        "catalogVersion": 8,
+        "name": "RemoveFile",
+        "description": "Remove file by full name even if it's trusted or critical",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Stop And Remove File"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "linux"
+                },
+                "capability": {
+                    "name": "Stop And Remove File"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "macos"
+                },
+                "capability": {
+                    "name": "Stop And Remove File"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [
+            {
+                "name": "full_name",
+                "type": "STRING",
+                "collectorMappings" : [
+                    {
+                        "name": "Files",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "full_name",
+                            "type": "STRING"
+                        }
+                    }
+                ]
+            }
+        ],
+	"internalArguments": {},
+        "task":"REACTION",
+        "availableOffline": false,
+        "remediation": true,
+        "internalName": "removeFile",
+        "classification": "REMEDIATION"
+    },
+    {
+        "catalogVersion": 3,
+        "name": "RemoveFileSafe",
+        "description": "Remove file by full name ignoring those that may be critical or trusted",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Stop And Remove File Safe"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "linux"
+                },
+                "capability": {
+                    "name": "Stop And Remove File Safe"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "macos"
+                },
+                "capability": {
+                    "name": "Stop And Remove File Safe"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [
+            {
+                "name": "full_name",
+                "type": "STRING",
+                "collectorMappings" : [
+                    {
+                        "name": "Files",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "full_name",
+                            "type": "STRING"
+                        }
+                    }
+                ]
+            }
+        ],
+	"internalArguments": {},
+        "task":"REACTION",
+        "availableOffline": false,
+        "remediation": true,
+        "internalName": "removeFileSafe",
+        "classification": "REMEDIATION"
+    },
+    {
+        "catalogVersion": 6,
+        "name": "StopAndRemoveFile",
+        "description": "Stop a running process and remove its file. If the process is not running, then its file is just removed from the managed endpoint ignoring those that may be critical or trusted. Referenced as Stop And Remove File Safe from the Real Time Search dashboad.",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Stop And Remove File Safe"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "linux"
+                },
+                "capability": {
+                    "name": "Stop And Remove File Safe"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "macos"
+                },
+                "capability": {
+                    "name": "Stop And Remove File Safe"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [
+            {
+                "name": "full_name",
+                "type": "STRING",
+                "collectorMappings" : [
+                    {
+                        "name": "Files",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "full_name",
+                            "type": "STRING"
+                        }
+                    },
+                    {
+                        "name": "Processes",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "imagepath",
+                            "type": "STRING"
+                        }
+                    }
+                ],
+                "optional":true
+            },
+            {
+                "name": "md5",
+                "type": "STRING",
+                "collectorMappings" : [
+                    {
+                        "name": "Files",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "md5",
+                            "type": "STRING"
+                        }
+                    },
+                    {
+                        "name": "Processes",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "md5",
+                            "type": "STRING"
+                        }
+                    }
+                ],
+                "optional":true
+            },
+            {
+                "name": "sha1",
+                "type": "STRING",
+                "collectorMappings" : [
+                    {
+                        "name": "Files",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "sha1",
+                            "type": "STRING"
+                        }
+                    },
+                    {
+                        "name": "Processes",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "sha1",
+                            "type": "STRING"
+                        }
+                    }
+                ],
+                "optional":true
+            },
+            {
+                "name": "sha256",
+                "type": "STRING",
+                "collectorMappings" : [],
+                "optional":true
+            },
+            {
+                "name": "kill_tree",
+                "type": "BOOLEAN",
+                "collectorMappings" : [],
+                "optional":true
+            }
+        ],
+        "hidden": false,
+        "availableForTrigger": false,
+        "task":"REACTION",
+        "availableOffline": true,
+        "internalName": "stopAndRemoveFile",
+	"classification": "REMEDIATION"
+    },
+    {
+        "catalogVersion": 7,
+        "name": "DeleteRegistryValue",
+        "description": "Deletes a Windows Registry value in a specified registry key path",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Delete Registry Value"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "linux"
+                },
+                "capability": {
+                    "name": "NonExistentCapability"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "macos"
+                },
+                "capability": {
+                    "name": "NonExistentCapability"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [
+            {
+                "name": "keypath",
+                "type": "REG_PATH",
+                "collectorMappings" : [
+                    {
+                        "name": "WinRegistry",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "keypath",
+                            "type": "REG_PATH"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "keyvalue",
+                "type": "REG_STR",
+                "collectorMappings" : [
+                    {
+                        "name": "WinRegistry",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "keyvalue",
+                            "type": "REG_STR"
+                        }
+                    }
+                ]
+            }
+        ],
+        "task":"REACTION",
+        "availableOffline": false,
+        "remediation": false,
+        "internalName": "deleteRegistryValue",
+        "classification": "REMEDIATION"
+    },
+    {
+        "catalogVersion": 6,
+        "name": "Start Containment",
+        "description": "Start containment task",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Add Task"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [
+            {
+                "name": "full_name",
+                "type": "STRING",
+                "collectorMappings" : [
+                    {
+                        "name": "Processes",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "imagepath",
+                            "type": "STRING"
+                        }
+                    },
+                    {
+                        "name": "NetworkFlow",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "process",
+                            "type": "STRING"
+                        }
+                    },
+                    {
+                        "name": "CurrentFlow",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "process",
+                            "type": "STRING"
+                        }
+                    },
+                    {
+                        "name": "Files",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "full_name",
+                            "type": "STRING"
+                        }
+                    }
+                ]
+            }
+        ],
+        "internalArguments": {"type": "Contain"},
+        "hidden": true,
+        "task":"TASK",
+        "availableOffline": true,
+        "availableForTrigger": false,
+        "remediation": false,
+        "internalName": "startContainment"
+    },
+    {
+        "catalogVersion": 5,
+        "name": "Stop Containment",
+        "description": "Stop containment task",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Remove Task"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [
+            {
+                "name": "full_name",
+                "type": "STRING",
+                "collectorMappings" : [
+                    {
+                        "name": "Processes",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "imagepath",
+                            "type": "STRING"
+                        }
+                    },
+                    {
+                        "name": "NetworkFlow",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "process",
+                            "type": "STRING"
+                        }
+                    },
+                    {
+                        "name": "CurrentFlow",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "process",
+                            "type": "STRING"
+                        }
+                    },
+                    {
+                        "name": "Files",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "full_name",
+                            "type": "STRING"
+                        }
+                    }
+                ]
+            }
+        ],
+        "internalArguments": {"type": "Contain"},
+        "hidden": true,
+        "task":"TASK",
+        "availableOffline": true,
+        "availableForTrigger": false,
+        "remediation": false,
+        "internalName": "stopContainment"
+    },
+    {
+        "catalogVersion": 2,
+        "name": "Start Deep Trace",
+        "description": "Start deep trace task",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Add Trace Task"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [
+            {
+                "name": "full_name",
+                "type": "STRING",
+                "collectorMappings" : [
+                    {
+                        "name": "Processes",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "imagepath",
+                            "type": "STRING"
+                        }
+                    },
+                    {
+                        "name": "NetworkFlow",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "process",
+                            "type": "STRING"
+                        }
+                    },
+                    {
+                        "name": "CurrentFlow",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "process",
+                            "type": "STRING"
+                        }
+                    },
+                    {
+                        "name": "Files",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "full_name",
+                            "type": "STRING"
+                        }
+                    }
+                ]
+            }
+        ],
+        "internalArguments": {"type": "Trace"},
+        "hidden": true,
+        "task":"TASK",
+        "availableOffline": false,
+        "availableForTrigger": false,
+        "remediation": false,
+        "internalName": "startDeepTrace"
+    },
+    {
+        "catalogVersion": 2,
+        "name": "Stop Deep Trace",
+        "description": "Stop deep trace task",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Remove Trace Task"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [
+            {
+                "name": "full_name",
+                "type": "STRING",
+                "collectorMappings" : [
+                    {
+                        "name": "Processes",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "imagepath",
+                            "type": "STRING"
+                        }
+                    },
+                    {
+                        "name": "NetworkFlow",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "process",
+                            "type": "STRING"
+                        }
+                    },
+                    {
+                        "name": "CurrentFlow",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "process",
+                            "type": "STRING"
+                        }
+                    },
+                    {
+                        "name": "Files",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "full_name",
+                            "type": "STRING"
+                        }
+                    }
+                ]
+            }
+        ],
+        "internalArguments": {"type": "Trace"},
+        "hidden": true,
+        "task":"TASK",
+        "availableOffline": false,
+        "availableForTrigger": false,
+        "remediation": false,
+        "internalName": "stopDeepTrace"
+    },
+    {
+        "catalogVersion": 2,
+        "name": "SendTraces",
+        "description": "Force the endpoint to refresh trace data",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Send Traces"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [],
+        "hidden": true,
+        "task":"REACTION",
+        "availableOffline": false,
+        "availableForTrigger": false,
+        "remediation": false,
+        "internalName": "sendTraces"
+    },
+    {
+        "catalogVersion": 3,
+        "name": "DeleteFolder",
+        "description": "Delete a folder by its full path",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Delete Folder"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "linux"
+                },
+                "capability": {
+                    "name": "Delete Folder"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "macos"
+                },
+                "capability": {
+                    "name": "Delete Folder"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [
+            {
+                "name": "full_path",
+                "type": "STRING",
+                "collectorMappings" : [
+                    {
+                        "name": "Files",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "dir",
+                            "type": "STRING"
+                        }
+                    }
+                ]
+            }
+        ],
+        "task":"REACTION",
+        "availableOffline": false,
+        "remediation": false,
+        "internalName": "DeleteFolder",
+        "classification": "REMEDIATION"
+    },
+    {
+        "catalogVersion": 4,
+        "name": "Execute Reboot Operating System",
+        "description": "Reboots the Operating System",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Execute Reboot OS"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "linux"
+                },
+                "capability": {
+                    "name": "Bash Script"
+                },
+                "content": "${scriptFile:RebootOS-lin.sh}",
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "macos"
+                },
+                "capability": {
+                    "name": "Execute Reboot OS"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [],
+        "task":"REACTION",
+        "availableOffline": false,
+        "remediation": false,
+        "internalName": "RebootOS",
+        "classification": "REMEDIATION"
+    },
+    {
+        "catalogVersion": 4,
+        "name": "Execute Shutdown Operating System",
+        "description": "Shuts down the Operating System",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Execute Shutdown OS"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "linux"
+                },
+                "capability": {
+                    "name": "Bash Script"
+                },
+                "content": "${scriptFile:ShutdownOS-lin.sh}",
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "macos"
+                },
+                "capability": {
+                    "name": "Execute Shutdown OS"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [],
+        "task":"REACTION",
+        "availableOffline": false,
+        "remediation": false,
+        "internalName": "ShutdownOS",
+        "classification": "CONTAINMENT"
+    },
+    {
+        "catalogVersion": 3,
+        "name": "Execute User Logoff",
+        "description": "Logoff user by user name",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Execute User Logoff"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "linux"
+                },
+                "capability": {
+                    "name": "Execute User Logoff"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "macos"
+                },
+                "capability": {
+                    "name": "Execute User Logoff"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [
+            {
+                "name": "username",
+                "type": "STRING",
+                "collectorMappings" : [
+                    {
+                        "name": "InteractiveSessions",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "userid",
+                            "type": "STRING"
+                        }
+                    },
+                    {
+                        "name": "LoggedInUsers",
+                        "type": "BUILTIN",
+                        "output" : {
+                            "name": "username",
+                            "type": "STRING"
+                        }
+                    }
+                ]
+            }
+        ],
+        "task":"REACTION",
+        "availableOffline": false,
+        "remediation": false,
+        "internalName": "forceUserLogOff",
+        "classification": "CONTAINMENT"
+    },
+    {
+        "catalogVersion": 3,
+        "name": "Schedule Reboot",
+        "description": "Schedule system reboot",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Execute PowerShell Script"
+                },
+                "content": "${scriptFile:ScheduleReboot-win.ps1}",
+                "arguments": [],
+                "utf8Sensitive": false
+            },
+            {
+                "platform": {
+                    "name": "macos"
+                },
+                "capability": {
+                    "name": "Bash Script"
+                },
+                "content": "${scriptFile:ScheduleReboot-mac.sh}",
+                "arguments": [],
+                "utf8Sensitive": false
+            },
+            {
+                "platform": {
+                    "name": "linux"
+                },
+                "capability": {
+                    "name": "Bash Script"
+                },
+                "content": "${scriptFile:ScheduleReboot-lin.sh}",
+                "arguments" : []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [
+            {
+                "name": "reboot_time",
+                "type": "DATE"
+            }
+        ],
+        "task":"REACTION",
+        "availableOffline": false,
+        "remediation": false,
+        "internalName": "scheduleReboot",
+        "classification": "CONTAINMENT"
+    },
+    {
+    "catalogVersion": 4,
+    "name": "KillProcessByName",
+    "description": "Kills a process by its name",
+    "type": "BUILTIN",
+    "contents": [
+        {
+            "platform": {
+                "name": "windows"
+            },
+            "capability": {
+                "name": "Execute PowerShell Script"
+            },
+            "content": "${scriptFile:KillProcessByName-win.ps1}",
+            "arguments": [],
+            "utf8Sensitive": false
+        },
+        {
+            "platform": {
+                "name": "macos"
+            },
+            "capability": {
+                "name": "Bash Script"
+            },
+            "content": "${scriptFile:KillProcessByName-mac.sh}",
+            "arguments": [],
+            "utf8Sensitive": false
+        },
+        {
+            "platform": {
+                "name": "linux"
+            },
+            "capability": {
+                "name": "Bash Script"
+            },
+            "content": "${scriptFile:KillProcessByName-lin.sh}",
+            "arguments" : []
+        }
+    ],
+    "timeout": 60,
+    "arguments": [
+        {
+            "name": "name",
+            "type": "STRING",
+            "collectorMappings" : [
+                {
+                    "name": "Processes",
+                    "type": "BUILTIN",
+                    "output" : {
+                        "name": "name",
+                        "type": "STRING"
+                    }
+                }
+            ]
+        }
+    ],
+    "task":"REACTION",
+    "availableOffline": false,
+    "remediation": false,
+    "internalName": "killProcessByName",
+    "classification": "CONTAINMENT"
+},
+    {
+    "catalogVersion": 4,
+    "name": "QuarantineHost",
+    "description": "Quarantines the host",
+    "type": "BUILTIN",
+    "contents": [
+        {
+            "platform": {
+                "name": "windows"
+            },
+            "capability": {
+                "name": "QuarantineHost"
+            },
+            "arguments": []
+        },
+        {
+            "platform": {
+                "name": "macos"
+            },
+            "capability": {
+                "name": "QuarantineHost"
+            },
+            "arguments": []
+        },
+        {
+            "platform": {
+                "name": "linux"
+            },
+            "capability": {
+                "name": "NonExistentCapability"
+            },
+            "arguments" : []
+        }
+    ],
+    "timeout": 60,
+    "arguments": [ ],
+    "task":"REACTION",
+    "availableOffline": true,
+    "remediation": false,
+    "internalName": "QuarantineHost",
+    "classification": "CONTAINMENT"
+},
+    {
+    "catalogVersion": 4,
+    "name": "UnquarantineHost",
+    "description": "Unquarantines the host",
+    "type": "BUILTIN",
+    "contents": [
+        {
+            "platform": {
+                "name": "windows"
+            },
+            "capability": {
+                "name": "UnquarantineHost"
+            },
+            "arguments": []
+        },
+        {
+            "platform": {
+                "name": "macos"
+            },
+            "capability": {
+                "name": "UnquarantineHost"
+            },
+            "arguments": []
+        },
+        {
+            "platform": {
+                "name": "linux"
+            },
+            "capability": {
+                "name": "NonExistentCapability"
+            },
+            "arguments" : []
+        }
+    ],
+    "timeout": 60,
+    "arguments": [ ],
+    "task":"REACTION",
+    "availableOffline": true,
+    "remediation": false,
+    "internalName": "UnquarantineHost",
+    "classification": "CONTAINMENT"
+},
+    {
+        "catalogVersion": 4,
+        "name": "DumpProcessToFile",
+        "description": "Make a memory dump of a given process",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "DumpProcessToFile"
+                },
+                "arguments": []
+            },
+            {
+                "platform": {
+                    "name": "linux"
+                },
+                "capability": {
+                    "name": "DumpProcessToFile"
+                },
+                "arguments" : []
+            },
+            {
+                "platform": {
+                    "name": "macos"
+                },
+                "capability": {
+                    "name": "NonExistentCapability"
+                },
+                "arguments" : []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [
+            {
+                "name": "pid",
+                "type": "NUMBER"
+            },
+            {
+                "name": "dump_full_path",
+                "type": "STRING",
+                "optional":true
+            }
+        ],
+        "task":"REACTION",
+        "availableOffline": true,
+        "remediation": false,
+        "internalName": "DumpProcessToFile",
+        "classification": "INVESTIGATION"
+    },
+    {
+        "catalogVersion": 4,
+        "name": "PhoenixSnapshot",
+        "description": "Runs the Phoenix runtime to make a snapshot of the endpoint",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "PhoenixSnapshot"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 540,
+        "arguments": [
+            {
+                "name": "input",
+                "type": "STRING"
+            },
+            {
+                "name": "api_environment",
+                "type": "STRING"
+            },
+            {
+                "name": "api_token",
+                "type": "STRING"
+            },
+            {
+                "name": "snapshot_id",
+                "type": "STRING"
+            }
+        ],
+        "hidden": true,
+        "task":"REACTION",
+        "availableOffline": true,
+        "remediation": false,
+        "internalName": "PhoenixSnapshot"
+    },
+    {
+        "catalogVersion": 2,
+        "name": "ChangeTraceExtendedVisibility",
+        "description": "Temporarily extends tracing rules.",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Change Trace Visibility"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 60,
+        "arguments": [
+            {
+                "name": "tags",
+                "type": "NUMBER"
+            },
+            {
+                "name": "duration",
+                "type": "NUMBER"
+            }
+        ],
+        "hidden": true,
+        "task":"REACTION",
+        "availableOffline": false,
+        "remediation": false,
+        "internalName": "ChangeTraceExtendedVisibility"
+    },
+    {
+        "catalogVersion": 1,
+        "name": "ApplyContentPatch",
+        "description": "Apply client content patch",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Set Content Patch"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 900,
+        "arguments": [
+            {
+                "name": "patch",
+                "type": "STRING"
+            }
+        ],
+        "hidden": true,
+        "task":"REACTION",
+        "availableOffline": false,
+        "remediation": false,
+        "internalName": "ApplyContentPatch"
+    },
+    {
+        "catalogVersion": 1,
+        "name": "RemoveContentPatch",
+        "description": "Remove client content patch",
+        "type": "BUILTIN",
+        "contents": [
+            {
+                "platform": {
+                    "name": "windows"
+                },
+                "capability": {
+                    "name": "Remove Content Patch"
+                },
+                "arguments": []
+            }
+        ],
+        "timeout": 900,
+        "arguments": [
+            {
+                "name": "patch_version",
+                "type": "NUMBER"
+            }
+        ],
+        "hidden": true,
+        "task":"REACTION",
+        "availableOffline": false,
+        "remediation": false,
+        "internalName": "RemoveContentPatch"
+    }
+
+]

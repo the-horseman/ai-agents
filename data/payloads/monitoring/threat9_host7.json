@@ -1,0 +1,3178 @@
+{
+  "detections": [
+    {
+      "id": "3628742607",
+      "traceId": "ff606344-86a6-434f-9d1e-84331c0695cb",
+      "firstDetected": "2024-02-19T17:52:28Z",
+      "severity": "s1",
+      "rank": 100,
+      "tags": [
+        "@MSI._apt_process_newuser_high",
+        "@ATE.T1135",
+        "@MSI._apt_process_netuseremote",
+        "@ATA.Discovery",
+        "@ATE.T1033",
+        "@MSI._process_added_user_elevated_groups",
+        "@ATE.T1018",
+        "@ATE.T1087.001",
+        "@ATA.Persistence",
+        "@ATE.T1049",
+        "@ATA.Collection",
+        "@MSI._apt_process_user",
+        "@ATE.T1069.001",
+        "@ATE.T1136.002",
+        "@ATE.T1087.002",
+        "@ATE.T1136.001",
+        "@ATE.T1074.002",
+        "@ATE.T1069.002"
+      ],
+      "host": {
+        "maGuid": "4606308E-CF5D-11EE-002A-000000000000",
+        "hostname": "1611VED30",
+        "os": {
+          "major": 10,
+          "minor": 0,
+          "build": 19041,
+          "sp": "",
+          "desc": "Windows 10"
+        },
+        "lastBootTime": "2024-02-19T18:09:09Z",
+        "netInterfaces": [
+          {
+            "name": "Ethernet",
+            "macAddress": "70:b5:e8:5d:0c:30",
+            "ip": "10.37.36.156",
+            "type": 6
+          },
+          {
+            "name": "Wi-Fi",
+            "macAddress": "7c:50:79:b8:a0:5b",
+            "ip": "169.254.247.248",
+            "type": 71
+          },
+          {
+            "name": "Bluetooth Network Connection",
+            "macAddress": "7c:50:79:b8:a0:5f",
+            "ip": "169.254.28.123",
+            "type": 6
+          },
+          {
+            "name": "Primary",
+            "ip": ""
+          }
+        ],
+        "traceExtendedVisibility": 0,
+        "hostOs": "windows"
+      },
+      "sha256": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450"
+    }
+  ],
+  "traces": [
+    {
+      "traceId": "0c7667aa-957a-48a6-b677-3cd7bca06363",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "pSha2": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450",
+      "dtsId": "EDR",
+      "pid": 2316,
+      "eventType": "Api",
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 11,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "host": "1611VED48",
+      "time": "2024-02-19T21:33:48.763Z",
+      "api": {
+        "result": "0",
+        "data": "AABUp9MBAAA=",
+        "name": "WriteProcessMemory",
+        "moduleName": "",
+        "targetPid": 14020,
+        "arguments": [
+          "0x72295f22d8",
+          "0x8",
+          "0x0"
+        ]
+      },
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.746 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.746",
+        "sha256": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450",
+        "embedFilename": "Cmd.Exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2022-02-04T07:08:24.768Z",
+        "sha1": "F1EFB0FDDC156E4C61C5F78A54700E4E7984D55D",
+        "path": "C:\\Windows\\System32\\cmd.exe",
+        "size": 289792,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "cmd.exe",
+        "md5": "8A2122E8162DBEF04694B9C3E0B6CDEE"
+      },
+      "pSha2": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450",
+      "pid": 2316,
+      "parentTraceId": "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\svchost.exe",
+      "processName": "cmd.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "cmdLine": "\"C:\\Windows\\system32\\cmd.exe\" ",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "interpreter": "cmd",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 1000,
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        103,
+        100000,
+        100003
+      ],
+      "detectionDate": "2024-02-19T21:31:55Z",
+      "time": "2024-02-19T21:31:37.703Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      },
+      "severity": "s1",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Collection",
+            "@ATA.Discovery",
+            "@ATE.T1074.002",
+            "@ATE.T1049",
+            "@ATE.T1135",
+            "@MSI._apt_process_netuseremote"
+          ]
+        },
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.Persistence",
+            "@ATA.Discovery",
+            "@ATE.T1069.002",
+            "@ATE.T1087.002",
+            "@MSI._process_added_user_elevated_groups"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Persistence",
+            "@ATE.T1136.001",
+            "@ATE.T1136.002",
+            "@MSI._apt_process_newuser_high"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1033",
+            "@ATE.T1069.001",
+            "@ATE.T1069.002",
+            "@ATE.T1087.001",
+            "@ATE.T1087.002",
+            "@ATE.T1018",
+            "@MSI._apt_process_user"
+          ]
+        }
+      ]
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.1466 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.1466",
+        "sha256": "18F76BC1F02A161EBDEDF3142273C186D05A836ADDCAAEE599194089FD59F398",
+        "embedFilename": "net1.exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2022-02-04T07:09:10.568Z",
+        "sha1": "7E95AE3D3632F4E29C336496224DF93A4E0934CC",
+        "path": "C:\\Windows\\System32\\net1.exe",
+        "size": 183808,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "net1.exe",
+        "md5": "55693DF2BB3CBE2899DFDDF18B4EB8C9"
+      },
+      "pSha2": "18F76BC1F02A161EBDEDF3142273C186D05A836ADDCAAEE599194089FD59F398",
+      "pid": 10492,
+      "parentTraceId": "dbd9469f-5664-4924-8365-fafa28593b51",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\net.exe",
+      "processName": "net1.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "1d015fb6-9dfd-415f-9201-cdee8de52c65",
+      "cmdLine": "C:\\Windows\\system32\\net1  localgroup administrators detaradmin /add",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "dbd9469f-5664-4924-8365-fafa28593b51",
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 17176,
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "time": "2024-02-19T21:34:26.693Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      },
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATA.DefenseEvasion",
+            "@ATA.Persistence",
+            "@ATA.PrivilegeEscalation",
+            "@ATA.InitialAccess",
+            "@ATE.T1069.001",
+            "@ATE.T1078.001",
+            "@ATE.T1078.003",
+            "@MSI._apt_process_usergroup"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1033",
+            "@ATE.T1069.001",
+            "@ATE.T1069.002",
+            "@ATE.T1087.001",
+            "@ATE.T1087.002",
+            "@ATE.T1018",
+            "@MSI._apt_process_user"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Persistence",
+            "@ATA.DefenseEvasion",
+            "@ATA.InitialAccess",
+            "@ATA.PrivilegeEscalation",
+            "@ATA.Discovery",
+            "@ATE.T1136.001",
+            "@ATE.T1136.002",
+            "@ATE.T1078.001",
+            "@ATE.T1078.003",
+            "@ATE.T1087.001",
+            "@ATE.T1098",
+            "@MSI._apt_process_adduser"
+          ]
+        }
+      ]
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.2913 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.2913",
+        "sha256": "B4E7BC24BF3F5C3DA2EB6E9EC5EC10F90099DEFA91B820F2F3FC70DD9E4785C4",
+        "embedFilename": "PowerShell.EXE",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2023-09-11T18:50:10.968Z",
+        "sha1": "EB39E26A364ECD0691A59FCEF61A90334112617E",
+        "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "size": 492032,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "powershell.exe",
+        "md5": "BCF01E61144D6D6325650134823198B8"
+      },
+      "pSha2": "B4E7BC24BF3F5C3DA2EB6E9EC5EC10F90099DEFA91B820F2F3FC70DD9E4785C4",
+      "pid": 14308,
+      "parentTraceId": "395d360c-a1a8-4e5e-9618-93bf5963d664",
+      "h_version": "3.0",
+      "nonpeType": "commandline",
+      "integrity": 3,
+      "cmdLineMd5": "00C082C1E1FF433AD59F0983D865C6C9",
+      "pFullName": "\\\\tx1611wfps02\\public\\Public Data\\Randy\\PCSetup\\java8u121\\Deploy-Application.exe",
+      "processName": "powershell.exe",
+      "cmdLineSha1": "13EB5F3027D8C43B3671B1252122D96A8299C188",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "06db1afe-9180-4dde-ba90-559e8c2e8806",
+      "cmdLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\PowerShell.exe\" -ExecutionPolicy Bypass -NoProfile -NoLogo -WindowStyle Hidden -Command & { & 'R:\\Public Data\\Randy\\PCSetup\\java8u121\\Deploy-Application.ps1'; Exit $LastExitCode }",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "395d360c-a1a8-4e5e-9618-93bf5963d664",
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "interpreter": "powershell",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 10000,
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        99,
+        100000,
+        100007
+      ],
+      "detectionDate": "2024-02-19T21:32:27Z",
+      "cmdLineSha256": "4A8574F29CDC640420BC20BBB8C47C302E5995779A5D55BBD39F997DE8DA70CD",
+      "time": "2024-02-19T21:32:11.607Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      },
+      "severity": "s1",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.CommandAndControl",
+            "@ATE.T1059.001",
+            "@ATE.T1105",
+            "@ATE.T1071",
+            "@MSI._process_psdownload_script"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.CommandAndControl",
+            "@ATE.T1059.001",
+            "@ATE.T1105",
+            "@ATE.T1071",
+            "@MSI._process_psdownload_executable"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATA.Execution",
+            "@ATE.T1120",
+            "@ATE.T1106",
+            "@MSI._api_peripheral_device_discovery"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATE.T1112",
+            "@MSI._reg_ep0169_certsstorage"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.Persistence",
+            "@ATA.PrivilegeEscalation",
+            "@ATE.T1053.005",
+            "@MSI._process_schtasks_create_low_public"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@MSI._file_pe_malware_folder"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATE.T1127",
+            "@ATE.T1127.001",
+            "@MSI._process_csc_cmdline_compiling"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATE.T1204.002",
+            "@MSI._process_epp_response_would_blocked"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATE.T1112",
+            "@MSI._reg_ep0169_certsstorage"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.Discovery",
+            "@ATE.T1106",
+            "@ATE.T1201",
+            "@MSI._api_AdsOpenObject"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATA.Execution",
+            "@ATE.T1033",
+            "@ATE.T1059.001",
+            "@ATE.T1087.001",
+            "@MSI._apt_process_ps_netfunctions_userinfo"
+          ]
+        },
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1087.002",
+            "@MSI._api_AdsOpenObject_LDAP"
+          ]
+        }
+      ]
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "sha1": "79FAAD054AFFE20BFC783DE1CD1A7E779023F7F8",
+        "path": "\\\\tx1611wfps02\\public\\Public Data\\Randy\\PCSetup\\java8u121\\Deploy-Application.exe",
+        "embedFileVersion": "1.1.1.0",
+        "embedProductVersion": "1.1.1.0",
+        "sha256": "C5B9E54ED3EB7FCAA56523CF374619ECCBB6CB922105C7F10BFFD869E25ED132",
+        "size": 314880,
+        "embedFilename": "Deploy-Application.exe",
+        "embedProductName": "Deploy Application",
+        "name": "Deploy-Application.exe",
+        "embedVendorName": "PSAppDeployToolkit",
+        "subsystem": 2,
+        "md5": "1F6B3733C0BD56D1957F8FE688CB5F71"
+      },
+      "pSha2": "C5B9E54ED3EB7FCAA56523CF374619ECCBB6CB922105C7F10BFFD869E25ED132",
+      "pid": 10000,
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "processName": "Deploy-Application.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "395d360c-a1a8-4e5e-9618-93bf5963d664",
+      "cmdLine": "java8u121\\deploy-application.exe",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        108,
+        100003,
+        100005,
+        100006
+      ],
+      "detectionDate": "2024-02-19T21:32:27Z",
+      "time": "2024-02-19T21:32:11.323Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      }
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "11.121.2.13",
+        "embedProductVersion": "8.0.1210.13",
+        "sha256": "3B4D3BB632242351EDC4C08E67FE320B00808E469B14B4CCA9735F88DDDDECB6",
+        "embedFilename": "jp2launcher.exe",
+        "embedVendorName": "Oracle Corporation",
+        "subsystem": 2,
+        "creationDate": "2024-02-19T21:33:19.143Z",
+        "sha1": "D8E6F6ACE318B44C045D5940D3BBD08B94D30926",
+        "path": "C:\\Program Files (x86)\\Java\\jre1.8.0_121\\bin\\jp2launcher.exe",
+        "size": 83008,
+        "certificates": [
+          [
+            {
+              "sha1": "3B75816D15A6D8F4598E9CF5603F1839EE84D73D",
+              "issuerName": "US, Symantec Corporation, Symantec Trust Network, Symantec Class 3 SHA256 Code Signing CA",
+              "subject": "US, California, Redwood Shores, \"Oracle America, Inc.\", Code Signing Bureau, \"Oracle America, Inc.\"",
+              "publicKeyHash": "3359A30DB65D9CE675018F7C54B4B114012C5F7A"
+            },
+            {
+              "sha1": "007790F6561DAD89B0BCD85585762495E358F8A5",
+              "issuerName": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "subject": "US, Symantec Corporation, Symantec Trust Network, Symantec Class 3 SHA256 Code Signing CA",
+              "publicKeyHash": "963B53F0793397AF7D83EF2E2BCCCAB7861E7266"
+            },
+            {
+              "sha1": "4EB6D578499B1CCF5F581EAD56BE3D9B6744A5E5",
+              "issuerName": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "subject": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "publicKeyHash": "7FD365A7C2DDECBBF03009F34339FA02AF333133"
+            }
+          ]
+        ],
+        "embedProductName": "Java(TM) Platform SE 8 U121",
+        "name": "jp2launcher.exe",
+        "md5": "BF6BCC0BC35AE1E1CC220DD13D0C14DB"
+      },
+      "pSha2": "3B4D3BB632242351EDC4C08E67FE320B00808E469B14B4CCA9735F88DDDDECB6",
+      "pid": 15180,
+      "parentTraceId": "07258ddd-917c-4027-aa44-ff1432e0d957",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Program Files (x86)\\Java\\jre1.8.0_121\\bin\\javaws.exe",
+      "processName": "jp2launcher.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "cdaad59e-106e-4838-ba36-de572cc59dcb",
+      "cmdLine": "\"C:\\Program Files (x86)\\Java\\jre1.8.0_121\\bin\\jp2launcher.exe\" -secure -javaws -jre \"C:\\Program Files (x86)\\Java\\jre1.8.0_121\" -vma LWNsYXNzcGF0aABDOlxQcm9ncmFtIEZpbGVzICh4ODYpXEphdmFcanJlMS44LjBfMTIxXGxpYlxkZXBsb3kuamFyAC1EamF2YS5zZWN1cml0eS5wb2xpY3k9ZmlsZTpDOlxQcm9ncmFtIEZpbGVzICh4ODYpXEphdmFcanJlMS44LjBfMTIxXGxpYlxzZWN1cml0eVxqYXZhd3MucG9saWN5AC1EdHJ1c3RQcm94eT10cnVlAC1YdmVyaWZ5OnJlbW90ZQAtRGpubHB4LmhvbWU9QzpcUHJvZ3JhbSBGaWxlcyAoeDg2KVxKYXZhXGpyZTEuOC4wXzEyMVxiaW4ALURqYXZhLnNlY3VyaXR5Lm1hbmFnZXIALURzdW4uYXd0Lndhcm11cD10cnVlAC1YYm9vdGNsYXNzcGF0aC9hOkM6XFByb2dyYW0gRmlsZXMgKHg4NilcSmF2YVxqcmUxLjguMF8xMjFcbGliXGphdmF3cy5qYXI7QzpcUHJvZ3JhbSBGaWxlcyAoeDg2KVxKYXZhXGpyZTEuOC4wXzEyMVxsaWJcZGVwbG95LmphcjtDOlxQcm9ncmFtIEZpbGVzICh4ODYpXEphdmFcanJlMS44LjBfMTIxXGxpYlxwbHVnaW4uamFyAC1Eam5scHguanZtPUM6XFByb2dyYW0gRmlsZXMgKHg4NilcSmF2YVxqcmUxLjguMF8xMjFcYmluXGphdmF3LmV4ZQ== -ma LXVuaW5zdGFsbAAtd2FpdAAtbm90V2ViSmF2YQ==",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "07258ddd-917c-4027-aa44-ff1432e0d957",
+        "06db1afe-9180-4dde-ba90-559e8c2e8806",
+        "395d360c-a1a8-4e5e-9618-93bf5963d664",
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 13548,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        108,
+        100003,
+        100005,
+        100006
+      ],
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "time": "2024-02-19T21:33:38.774Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      }
+    },
+    {
+      "traceId": "fc32afe8-471e-4d1b-a20c-2a8b2a4cf289",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "pSha2": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450",
+      "dtsId": "EDR",
+      "pid": 2316,
+      "eventType": "Api",
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 11,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "detectionDate": "2024-02-19T21:32:27Z",
+      "host": "1611VED48",
+      "time": "2024-02-19T21:32:11.389Z",
+      "api": {
+        "result": "0",
+        "data": "AADwAAAAAAA=",
+        "name": "WriteProcessMemory",
+        "moduleName": "",
+        "targetPid": 10000,
+        "arguments": [
+          "0xd702d8",
+          "0x8",
+          "0x0"
+        ]
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "9afd5844-c359-4078-b30e-44cb51921605",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "pSha2": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450",
+      "dtsId": "EDR",
+      "pid": 2316,
+      "eventType": "Api",
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19115,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "host": "1611VED48",
+      "time": "2024-02-19T21:33:45.451Z",
+      "api": {
+        "result": "0",
+        "data": "IkM6XFdpbmRvd3NcU3lzdGVtMzJcbXNpZXhlYy5leGUiIC9pICJSOlxQdWJsaWMgRGF0YVxSYW5keVxQQ1NldHVwXG1lZGhvc3QgcHJvdG9jb2wgaGFuZGxlciBpbnN0YWxsZXJcTWVkaG9zdFByb3RvY29sX3g2NC5tc2kiIA==",
+        "name": "CreateProcess",
+        "moduleName": "",
+        "targetPid": 3176,
+        "arguments": [
+          "0x3",
+          "0x4080404",
+          "0x994",
+          "0x1b34"
+        ]
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "356f8c95-12f8-4981-ad9c-5a43a062ebff",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "pSha2": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450",
+      "dtsId": "EDR",
+      "pid": 2316,
+      "eventType": "Api",
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 11,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "host": "1611VED48",
+      "time": "2024-02-19T21:34:26.433Z",
+      "api": {
+        "result": "0",
+        "data": "AABL6J8BAAA=",
+        "name": "WriteProcessMemory",
+        "moduleName": "",
+        "targetPid": 12912,
+        "arguments": [
+          "0x6be3c812d8",
+          "0x8",
+          "0x0"
+        ]
+      },
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.2364 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.2364",
+        "sha256": "9C620D2664464C54C9CDF4052C8F57B98E287FB372B309B1FB049700BD311897",
+        "embedFilename": "WinInit.exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2023-04-03T15:43:35.936Z",
+        "sha1": "C26116D0D8C30204ED35C36781F6C6BE7F105D23",
+        "path": "C:\\Windows\\System32\\wininit.exe",
+        "size": 420456,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "wininit.exe",
+        "md5": "D6E3B995E46D08046875E60ECCFF109B"
+      },
+      "pSha2": "9C620D2664464C54C9CDF4052C8F57B98E287FB372B309B1FB049700BD311897",
+      "pid": 988,
+      "parentTraceId": "00000000-0000-0000-0000-000000000000",
+      "h_version": "3.0",
+      "integrity": 4,
+      "pFullName": "",
+      "processName": "wininit.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "4e1a8701-9c17-431b-8cd9-e3238f1071ef",
+      "cmdLine": "C:\\Windows\\System32\\wininit.exe",
+      "dtsType": "all",
+      "parentsTraceId": [],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 672,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "detectionDate": "2024-02-19T21:09:47Z",
+      "time": "2024-02-19T21:09:03.151Z",
+      "user": {
+        "domain": "NT AUTHORITY",
+        "name": "NT AUTHORITY\\SYSTEM",
+        "id": "S-1-5-18"
+      }
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "4.8.4084.0 built by: NET48REL1",
+        "embedProductVersion": "4.8.4084.0",
+        "sha256": "4A6D0864E19C0368A47217C129B075DDDF61A6A262388F9D21045D82F3423ED7",
+        "embedFilename": "csc.exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2019-12-07T09:10:35.992Z",
+        "sha1": "528973416456C780051889CA1709510B6BF73370",
+        "path": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe",
+        "size": 2759232,
+        "embedProductName": "Microsoft\u00ae .NET Framework",
+        "name": "csc.exe",
+        "md5": "F65B029562077B648A6A5F6A1AA76A66"
+      },
+      "pSha2": "4A6D0864E19C0368A47217C129B075DDDF61A6A262388F9D21045D82F3423ED7",
+      "pid": 12104,
+      "parentTraceId": "06db1afe-9180-4dde-ba90-559e8c2e8806",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "processName": "csc.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "13bc0706-7749-452a-849f-87b2c28d2f33",
+      "cmdLine": "\"C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe\" /noconfig /fullpaths @\"C:\\Users\\johnny-sackville\\AppData\\Local\\Temp\\mntkkfv3\\mntkkfv3.cmdline\"",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "06db1afe-9180-4dde-ba90-559e8c2e8806",
+        "395d360c-a1a8-4e5e-9618-93bf5963d664",
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 14308,
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        110,
+        100000,
+        100003
+      ],
+      "detectionDate": "2024-02-19T21:32:27Z",
+      "time": "2024-02-19T21:32:16.583Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      },
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATE.T1127",
+            "@ATE.T1127.001",
+            "@MSI._process_csc_cmdline_compiling"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@MSI._process_lolbas_no_param_csc"
+          ]
+        }
+      ]
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "11.121.2.13",
+        "embedProductVersion": "8.0.1210.13",
+        "sha256": "523C1746D8EBE35A080F4EBE1BE68DE6FB15A3B48825E620916E5123E703A83C",
+        "embedFilename": "javaws.exe",
+        "embedVendorName": "Oracle Corporation",
+        "subsystem": 2,
+        "creationDate": "2024-02-19T21:33:19.036Z",
+        "sha1": "972EAD014E0383CA3668B578778CF54E2DFE19B1",
+        "path": "C:\\Program Files (x86)\\Java\\jre1.8.0_121\\bin\\javaws.exe",
+        "size": 268864,
+        "certificates": [
+          [
+            {
+              "sha1": "3B75816D15A6D8F4598E9CF5603F1839EE84D73D",
+              "issuerName": "US, Symantec Corporation, Symantec Trust Network, Symantec Class 3 SHA256 Code Signing CA",
+              "subject": "US, California, Redwood Shores, \"Oracle America, Inc.\", Code Signing Bureau, \"Oracle America, Inc.\"",
+              "publicKeyHash": "3359A30DB65D9CE675018F7C54B4B114012C5F7A"
+            },
+            {
+              "sha1": "007790F6561DAD89B0BCD85585762495E358F8A5",
+              "issuerName": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "subject": "US, Symantec Corporation, Symantec Trust Network, Symantec Class 3 SHA256 Code Signing CA",
+              "publicKeyHash": "963B53F0793397AF7D83EF2E2BCCCAB7861E7266"
+            },
+            {
+              "sha1": "4EB6D578499B1CCF5F581EAD56BE3D9B6744A5E5",
+              "issuerName": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "subject": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "publicKeyHash": "7FD365A7C2DDECBBF03009F34339FA02AF333133"
+            }
+          ]
+        ],
+        "embedProductName": "Java(TM) Platform SE 8 U121",
+        "name": "javaws.exe",
+        "md5": "03FBBFC587F2D6D06B6F085F2E745EC8"
+      },
+      "pSha2": "523C1746D8EBE35A080F4EBE1BE68DE6FB15A3B48825E620916E5123E703A83C",
+      "pid": 13548,
+      "parentTraceId": "06db1afe-9180-4dde-ba90-559e8c2e8806",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "processName": "javaws.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "07258ddd-917c-4027-aa44-ff1432e0d957",
+      "cmdLine": "\"C:\\Program Files (x86)\\Java\\jre1.8.0_121\\bin\\Javaws.exe\" -uninstall -wait",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "06db1afe-9180-4dde-ba90-559e8c2e8806",
+        "395d360c-a1a8-4e5e-9618-93bf5963d664",
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 14308,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        118,
+        100003,
+        100005,
+        100006
+      ],
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "time": "2024-02-19T21:33:38.696Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      }
+    },
+    {
+      "traceId": "de84f266-1110-4922-8f09-9fda7d46f0ae",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "pSha2": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450",
+      "dtsId": "EDR",
+      "pid": 2316,
+      "eventType": "Network Accessed",
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "network": {
+        "accessType": "connection_opened",
+        "srcIp": "10.37.8.32",
+        "protocol": "tcp",
+        "dstPort": 80,
+        "dnsNames": [
+          "ocsp.godaddy.com",
+          "ocsp.godaddy.com.akadns.net"
+        ],
+        "dstIp": "192.124.249.36",
+        "srcPort": 50370,
+        "direction": "outbound"
+      },
+      "tags": [
+        "@AC.NetworkConnection"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19104,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "host": "1611VED48",
+      "time": "2024-02-19T21:33:45.130Z",
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.1503 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.1503",
+        "sha256": "013C013E0EFD13C9380FAD58418B7ACA8356E591A5CCEFFDB910F7D8B0AD28EF",
+        "embedFilename": "schtasks.exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2022-02-04T07:08:43.910Z",
+        "sha1": "CCAA6EE9EF6D0F9C8157ADC996FFD477F73B5D02",
+        "path": "C:\\Windows\\System32\\schtasks.exe",
+        "size": 235008,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "schtasks.exe",
+        "md5": "76CD6626DD8834BD4A42E6A565104DC2"
+      },
+      "pSha2": "013C013E0EFD13C9380FAD58418B7ACA8356E591A5CCEFFDB910F7D8B0AD28EF",
+      "pid": 12208,
+      "parentTraceId": "06db1afe-9180-4dde-ba90-559e8c2e8806",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "processName": "schtasks.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "55ff16f4-0e24-446a-81b9-92da6acb2361",
+      "cmdLine": "\"C:\\Windows\\system32\\schtasks.exe\" /Create /F /SC ONLOGON /TN \"Clear Java System Cache\" /RU \"NT AUTHORITY\\SYSTEM\" /RL HIGHEST /TR \"javaws -system -clearcache -wait\"",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "06db1afe-9180-4dde-ba90-559e8c2e8806",
+        "395d360c-a1a8-4e5e-9618-93bf5963d664",
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 14308,
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "time": "2024-02-19T21:33:43.557Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      }
+    },
+    {
+      "traceId": "9794b275-d2e1-4f30-9f64-8da694cb8463",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "pSha2": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450",
+      "dns": {
+        "name": "ocsp.godaddy.com",
+        "type": 28
+      },
+      "dtsId": "EDR",
+      "pid": 2316,
+      "eventType": "DNS Query",
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.DNSQuery"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19112,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "host": "1611VED48",
+      "time": "2024-02-19T21:33:45.118Z",
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "4231c318-8cd9-455f-99dd-96528a49bcc6",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "pSha2": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450",
+      "dtsId": "EDR",
+      "pid": 2316,
+      "eventType": "Api",
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 11,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "detectionDate": "2024-02-19T21:31:55Z",
+      "host": "1611VED48",
+      "time": "2024-02-19T21:31:48.104Z",
+      "api": {
+        "result": "0",
+        "data": "AAAYSyQCAAA=",
+        "name": "WriteProcessMemory",
+        "moduleName": "",
+        "targetPid": 13732,
+        "arguments": [
+          "0xda7ffeb2d8",
+          "0x8",
+          "0x0"
+        ]
+      },
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.1503 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.1503",
+        "sha256": "013C013E0EFD13C9380FAD58418B7ACA8356E591A5CCEFFDB910F7D8B0AD28EF",
+        "embedFilename": "schtasks.exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2022-02-04T07:08:43.910Z",
+        "sha1": "CCAA6EE9EF6D0F9C8157ADC996FFD477F73B5D02",
+        "path": "C:\\Windows\\System32\\schtasks.exe",
+        "size": 235008,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "schtasks.exe",
+        "md5": "76CD6626DD8834BD4A42E6A565104DC2"
+      },
+      "pSha2": "013C013E0EFD13C9380FAD58418B7ACA8356E591A5CCEFFDB910F7D8B0AD28EF",
+      "pid": 16100,
+      "parentTraceId": "06db1afe-9180-4dde-ba90-559e8c2e8806",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "processName": "schtasks.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "f3b47e10-1efb-4d68-8c02-f5f281aa3c63",
+      "cmdLine": "\"C:\\Windows\\system32\\schtasks.exe\" /Create /F /SC ONLOGON /TN \"Clear Java User Cache\" /RU \"BUILTIN\\Users\" /TR \"javaws -clearcache -wait\"",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "06db1afe-9180-4dde-ba90-559e8c2e8806",
+        "395d360c-a1a8-4e5e-9618-93bf5963d664",
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 14308,
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "time": "2024-02-19T21:33:43.397Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      },
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@ATA.Persistence",
+            "@ATA.PrivilegeEscalation",
+            "@ATE.T1053.005",
+            "@MSI._process_schtasks_create_low_public"
+          ]
+        }
+      ]
+    },
+    {
+      "traceId": "40f876c6-b130-4be7-8f9b-07a247f16cd1",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "pSha2": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450",
+      "dtsId": "EDR",
+      "pid": 2316,
+      "eventType": "Network Accessed",
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "network": {
+        "accessType": "connection_opened",
+        "srcIp": "",
+        "protocol": "http",
+        "dstPort": 80,
+        "dnsNames": [
+          "ocsp.godaddy.com"
+        ],
+        "dstIp": "0",
+        "srcPort": 0,
+        "layer7": {
+          "httpRequestHeaders": "GET //MEkwRzBFMEMwQTAJBgUrDgMCGgUABBS2CA1fbGt26xPkOKX4ZguoUjM0TgQUQMK9J47MNIMwojPX%2B2yz8LQsgM4CCCYEBKFwo6Mv HTTP/1.1\r\nUser-Agent: Microsoft-CryptoAPI/10.0\r\n",
+          "url": "http://ocsp.godaddy.com:80//MEkwRzBFMEMwQTAJBgUrDgMCGgUABBS2CA1fbGt26xPkOKX4ZguoUjM0TgQUQMK9J47MNIMwojPX%2B2yz8LQsgM4CCCYEBKFwo6Mv"
+        },
+        "direction": "outbound"
+      },
+      "tags": [
+        "@AC.NetworkConnection"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 4294967295,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "host": "1611VED48",
+      "time": "2024-02-19T21:33:45.270Z",
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "5.0.19041.2193 (WinBuild.160101.0800)",
+        "embedProductVersion": "5.0.19041.2193",
+        "sha256": "AA2FA1000F9FEA03339EDF67295DD043806294EC1644E38B7DD08E7D670D5423",
+        "embedFilename": "msiexec.exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2023-04-03T15:44:33.904Z",
+        "sha1": "6513907ADC294F6A32E43245B0E37F6622E24FBD",
+        "path": "C:\\Windows\\System32\\msiexec.exe",
+        "size": 103936,
+        "embedProductName": "Windows Installer - Unicode",
+        "name": "msiexec.exe",
+        "md5": "977C9A890F0AB2864AA363A7D1455D83"
+      },
+      "pSha2": "AA2FA1000F9FEA03339EDF67295DD043806294EC1644E38B7DD08E7D670D5423",
+      "pid": 3176,
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "processName": "msiexec.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "8b63b7b1-970a-4c85-a5c7-88a33da1992e",
+      "cmdLine": "\"C:\\Windows\\System32\\msiexec.exe\" /i \"R:\\Public Data\\Randy\\PCSetup\\medhost protocol handler installer\\MedhostProtocol_x64.msi\"  /passive",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        104,
+        100003
+      ],
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "time": "2024-02-19T21:33:45.440Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      }
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.1806 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.1806",
+        "sha256": "ADD683A6910ABBBF0E28B557FAD0BA998166394932AE2ACA069D9AA19EA8FE88",
+        "embedFilename": "svchost.exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2022-08-25T16:44:38.371Z",
+        "sha1": "1BC5066DDF693FC034D6514618854E26A84FD0D1",
+        "path": "C:\\Windows\\System32\\svchost.exe",
+        "size": 55320,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "svchost.exe",
+        "md5": "B7F884C1B74A263F746EE12A5F7C9F6A"
+      },
+      "pSha2": "ADD683A6910ABBBF0E28B557FAD0BA998166394932AE2ACA069D9AA19EA8FE88",
+      "pid": 1000,
+      "parentTraceId": "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+      "h_version": "3.0",
+      "integrity": 4,
+      "pFullName": "C:\\Windows\\System32\\services.exe",
+      "processName": "svchost.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+      "cmdLine": "C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s Appinfo",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 396,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        110,
+        100003
+      ],
+      "detectionDate": "2024-02-19T21:25:18Z",
+      "time": "2024-02-19T21:24:51.446Z",
+      "user": {
+        "domain": "NT AUTHORITY",
+        "name": "SYSTEM",
+        "id": "S-1-5-18"
+      }
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.2788 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.2788",
+        "sha256": "E6FE9A94E8686E957DBCEC2B89C1C1DDCF8E75D76E9200D0CBEF74D510C71317",
+        "embedFilename": "services.exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2023-05-01T15:40:37.622Z",
+        "sha1": "2D79A17A7F226B4A3BC25D47D73570F9A33AAC1A",
+        "path": "C:\\Windows\\System32\\services.exe",
+        "size": 715936,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "services.exe",
+        "md5": "14B88FF4833012512278A5F3A5712BD2"
+      },
+      "pSha2": "E6FE9A94E8686E957DBCEC2B89C1C1DDCF8E75D76E9200D0CBEF74D510C71317",
+      "pid": 396,
+      "parentTraceId": "4e1a8701-9c17-431b-8cd9-e3238f1071ef",
+      "h_version": "3.0",
+      "integrity": 4,
+      "pFullName": "C:\\Windows\\System32\\wininit.exe",
+      "processName": "services.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+      "cmdLine": "C:\\Windows\\System32\\services.exe",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 988,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        1110,
+        100003
+      ],
+      "detectionDate": "2024-02-19T21:09:47Z",
+      "time": "2024-02-19T21:09:03.283Z",
+      "user": {
+        "domain": "NT AUTHORITY",
+        "name": "NT AUTHORITY\\SYSTEM",
+        "id": "S-1-5-18"
+      }
+    },
+    {
+      "traceId": "607cf85d-0601-4854-817d-5a4bf830894b",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "pSha2": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450",
+      "dtsId": "EDR",
+      "pid": 2316,
+      "eventType": "Api",
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 11,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "host": "1611VED48",
+      "time": "2024-02-19T21:33:45.451Z",
+      "api": {
+        "result": "0",
+        "data": "AADx4WUCAAA=",
+        "name": "WriteProcessMemory",
+        "moduleName": "",
+        "targetPid": 3176,
+        "arguments": [
+          "0xa08fde32d8",
+          "0x8",
+          "0x0"
+        ]
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "8f80bf2f-3870-42c1-8fed-37af4966a48f",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "pSha2": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450",
+      "dtsId": "EDR",
+      "pid": 2316,
+      "eventType": "File Read",
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.ScriptCreated"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 5,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "fileAttributes": {
+        "sha1": "",
+        "path": "R:\\Public Data\\Randy\\PCSetup\\PCSetup.bat",
+        "lastModificationDate": "2023-03-23T14:57:52.609Z",
+        "fsattrs": 32,
+        "sha256": "",
+        "size": 660,
+        "name": "PCSetup.bat",
+        "creationDate": "2020-05-19T02:44:43.890Z",
+        "md5": ""
+      },
+      "detectionDate": "2024-02-19T21:32:27Z",
+      "host": "1611VED48",
+      "time": "2024-02-19T21:32:10.944Z",
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "14.10.25028.0 built by: VCTOOLSD15RTM",
+        "embedProductVersion": "14.10.25028.0",
+        "sha256": "1FE531EAC592B480AA4BD16052B909C3431434F17E7AE163D248355558CE43A6",
+        "embedFilename": "CVTRES.EXE",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2019-12-07T09:10:36.196Z",
+        "sha1": "2A3249732F5AA4588A4A9895FFE217355041D663",
+        "path": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\cvtres.exe",
+        "size": 52744,
+        "embedProductName": "Microsoft\u00ae .NET Framework",
+        "name": "cvtres.exe",
+        "md5": "C877CBB966EA5939AA2A17B6A5160950"
+      },
+      "pSha2": "1FE531EAC592B480AA4BD16052B909C3431434F17E7AE163D248355558CE43A6",
+      "pid": 15572,
+      "parentTraceId": "13bc0706-7749-452a-849f-87b2c28d2f33",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe",
+      "processName": "cvtres.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "e6e38cab-8e7c-437b-a6c1-76d99f7faec5",
+      "cmdLine": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\cvtres.exe /NOLOGO /READONLY /MACHINE:IX86 \"/OUT:C:\\Users\\VDOBEC~1\\AppData\\Local\\Temp\\RES5A4F.tmp\" \"c:\\Users\\johnny-sackville\\AppData\\Local\\Temp\\mntkkfv3\\CSC114FE4A8641F47FF8671C1D3D08463E.TMP\"",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "13bc0706-7749-452a-849f-87b2c28d2f33",
+        "06db1afe-9180-4dde-ba90-559e8c2e8806",
+        "395d360c-a1a8-4e5e-9618-93bf5963d664",
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 12104,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        110,
+        100000,
+        100003
+      ],
+      "detectionDate": "2024-02-19T21:32:27Z",
+      "time": "2024-02-19T21:32:16.759Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      }
+    },
+    {
+      "traceId": "f2ba9961-4732-48cd-b328-27f75dcfdf0f",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "pSha2": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450",
+      "dtsId": "EDR",
+      "pid": 2316,
+      "eventType": "Api",
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 11,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "host": "1611VED48",
+      "time": "2024-02-19T21:33:59.519Z",
+      "api": {
+        "result": "0",
+        "data": "AABbAA==",
+        "name": "WriteProcessMemory",
+        "moduleName": "",
+        "targetPid": 12796,
+        "arguments": [
+          "0x7301e8",
+          "0x4",
+          "0x0"
+        ]
+      },
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "8.0.1210.13",
+        "embedProductVersion": "8.0.1210.13",
+        "sha256": "97D214215E294D0320AF0B5958A0082F40FFED61E410B34731237A9B4885DA5E",
+        "embedFilename": "wrapper_jre_offline.exe",
+        "embedVendorName": "Oracle Corporation",
+        "subsystem": 2,
+        "creationDate": "2024-02-19T21:32:59.177Z",
+        "sha1": "1CFAEAC2F41BE056FD426A086344D1FFF2A8B1DD",
+        "path": "C:\\Users\\johnny-sackville\\AppData\\Local\\Temp\\jds1441781.tmp\\jre-8u121-windows-i586.exe",
+        "size": 56134208,
+        "certificates": [
+          [
+            {
+              "sha1": "3B75816D15A6D8F4598E9CF5603F1839EE84D73D",
+              "issuerName": "US, Symantec Corporation, Symantec Trust Network, Symantec Class 3 SHA256 Code Signing CA",
+              "subject": "US, California, Redwood Shores, \"Oracle America, Inc.\", Code Signing Bureau, \"Oracle America, Inc.\"",
+              "publicKeyHash": "3359A30DB65D9CE675018F7C54B4B114012C5F7A"
+            },
+            {
+              "sha1": "007790F6561DAD89B0BCD85585762495E358F8A5",
+              "issuerName": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "subject": "US, Symantec Corporation, Symantec Trust Network, Symantec Class 3 SHA256 Code Signing CA",
+              "publicKeyHash": "963B53F0793397AF7D83EF2E2BCCCAB7861E7266"
+            },
+            {
+              "sha1": "4EB6D578499B1CCF5F581EAD56BE3D9B6744A5E5",
+              "issuerName": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "subject": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "publicKeyHash": "7FD365A7C2DDECBBF03009F34339FA02AF333133"
+            }
+          ]
+        ],
+        "embedProductName": "Java Platform SE 8 U121",
+        "name": "jre-8u121-windows-i586.exe",
+        "md5": "7A9B9B66FDA60B4D06CA9FA242BB9135"
+      },
+      "pSha2": "97D214215E294D0320AF0B5958A0082F40FFED61E410B34731237A9B4885DA5E",
+      "pid": 13852,
+      "parentTraceId": "d91ea0a8-adb8-4e7c-998a-2a7d3226ffff",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "\\\\tx1611wfps02\\public\\Public Data\\Randy\\PCSetup\\java8u121\\Files\\jre-8u121-windows-i586.exe",
+      "processName": "jre-8u121-windows-i586.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "9d2b931c-ebbe-4cb4-9bde-a15bd1e53ca3",
+      "cmdLine": "\"C:\\Users\\VDOBEC~1\\AppData\\Local\\Temp\\jds1441781.tmp\\jre-8u121-windows-i586.exe\" \"/s\" \"/L*v\" \"C:\\Windows\\Logs\\Software\\jre-8u121-windows-i586-Setup.log\" \"INSTALL_SILENT=Enable\" \"AUTO_UPDATE=Disable\" \"EULA=Disable\" \"REBOOT=Disable\" \"NOSTARTMENU=Enable\"",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "d91ea0a8-adb8-4e7c-998a-2a7d3226ffff",
+        "06db1afe-9180-4dde-ba90-559e8c2e8806",
+        "395d360c-a1a8-4e5e-9618-93bf5963d664",
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 1532,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        108,
+        100003,
+        100005,
+        100006
+      ],
+      "detectionDate": "2024-02-19T21:33:20Z",
+      "time": "2024-02-19T21:32:59.563Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      },
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Execution",
+            "@MSI._process_suspicious_path"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATA.PrivilegeEscalation",
+            "@ATA.Execution",
+            "@ATE.T1134.001",
+            "@ATE.T1106",
+            "@MSI._api_tokenimpersonation_privileges"
+          ]
+        }
+      ]
+    },
+    {
+      "traceId": "32bc1994-4485-4bda-87e1-f54504c1f0b9",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "pSha2": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450",
+      "dns": {
+        "name": "ocsp.godaddy.com",
+        "type": 1
+      },
+      "dtsId": "EDR",
+      "pid": 2316,
+      "eventType": "DNS Query",
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.DNSQuery"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19112,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "host": "1611VED48",
+      "time": "2024-02-19T21:33:45.118Z",
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.1",
+        "sha256": "9F376759BCBCD705F726460FC4A7E2B07F310F52BAA73CAAAAA124FDDBDF993E",
+        "embedFilename": "net.exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2019-12-07T09:09:33.990Z",
+        "sha1": "88B101598CC6726B7A57D02B1FA95BE1B272A821",
+        "path": "C:\\Windows\\System32\\net.exe",
+        "size": 59904,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "net.exe",
+        "md5": "0BD94A338EEA5A4E1F2830AE326E6D19"
+      },
+      "pSha2": "9F376759BCBCD705F726460FC4A7E2B07F310F52BAA73CAAAAA124FDDBDF993E",
+      "pid": 12912,
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "processName": "net.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "fdb54e41-96ff-4d53-af18-045af749e148",
+      "cmdLine": "net  user /add detaradmin R@ted2020!1611",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "time": "2024-02-19T21:34:26.416Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      },
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1033",
+            "@ATE.T1069.001",
+            "@ATE.T1069.002",
+            "@ATE.T1087.001",
+            "@ATE.T1087.002",
+            "@ATE.T1018",
+            "@MSI._apt_process_user"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Persistence",
+            "@ATE.T1136.001",
+            "@ATE.T1136.002",
+            "@MSI._apt_process_newuser_high"
+          ]
+        },
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1033",
+            "@ATE.T1069.001",
+            "@ATE.T1069.002",
+            "@ATE.T1087.001",
+            "@ATE.T1087.002",
+            "@ATE.T1018",
+            "@MSI._apt_process_user"
+          ]
+        }
+      ]
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "5.0.19041.2193 (WinBuild.160101.0800)",
+        "embedProductVersion": "5.0.19041.2193",
+        "sha256": "3247CF2A21F401513D3DB524433E8CBA7430FCFFE5BF81CE0FD90C429505F78C",
+        "embedFilename": "msiexec.exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2023-04-03T15:44:47.686Z",
+        "sha1": "A5510739178F422AA33BD1EEBA57BA81C2567680",
+        "path": "C:\\Windows\\SysWOW64\\msiexec.exe",
+        "size": 83968,
+        "embedProductName": "Windows Installer - Unicode",
+        "name": "msiexec.exe",
+        "md5": "358672CD45148B835B1529D15A746847"
+      },
+      "pSha2": "3247CF2A21F401513D3DB524433E8CBA7430FCFFE5BF81CE0FD90C429505F78C",
+      "pid": 3588,
+      "parentTraceId": "81bc14ab-b698-44ed-aac1-d3fba5455ab1",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "\\\\tx1611wfps02\\public\\Public Data\\Randy\\PCSetup\\openoffice\\setup.exe",
+      "processName": "msiexec.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "bc5fc5ef-d0d8-472a-896d-346669df9f57",
+      "cmdLine": "C:\\Windows\\SysWOW64\\\\msiexec.exe  SETUP_USED=1 /I \"R:\\Public Data\\Randy\\PCSetup\\openoffice\\openoffice416.msi\" /Q ",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "81bc14ab-b698-44ed-aac1-d3fba5455ab1",
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 12796,
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        104,
+        100003
+      ],
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "time": "2024-02-19T21:33:59.747Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      },
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATE.T1218.007",
+            "@MSI._apt_file_msiinstall"
+          ]
+        }
+      ]
+    },
+    {
+      "traceId": "00c20bff-851d-43ff-a18f-331142622bb2",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "pSha2": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450",
+      "dtsId": "EDR",
+      "pid": 2316,
+      "eventType": "Api",
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 19115,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "host": "1611VED48",
+      "time": "2024-02-19T21:33:45.437Z",
+      "api": {
+        "result": "0",
+        "name": "CreateProcessPre",
+        "moduleName": "",
+        "targetPid": 0,
+        "arguments": [
+          "0x1b34",
+          "0x4080404",
+          "0x0"
+        ]
+      },
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "11.121.2.13",
+        "embedProductVersion": "8.0.1210.13",
+        "sha256": "523C1746D8EBE35A080F4EBE1BE68DE6FB15A3B48825E620916E5123E703A83C",
+        "embedFilename": "javaws.exe",
+        "embedVendorName": "Oracle Corporation",
+        "subsystem": 2,
+        "creationDate": "2024-02-19T21:33:19.036Z",
+        "sha1": "972EAD014E0383CA3668B578778CF54E2DFE19B1",
+        "path": "C:\\Program Files (x86)\\Java\\jre1.8.0_121\\bin\\javaws.exe",
+        "size": 268864,
+        "certificates": [
+          [
+            {
+              "sha1": "3B75816D15A6D8F4598E9CF5603F1839EE84D73D",
+              "issuerName": "US, Symantec Corporation, Symantec Trust Network, Symantec Class 3 SHA256 Code Signing CA",
+              "subject": "US, California, Redwood Shores, \"Oracle America, Inc.\", Code Signing Bureau, \"Oracle America, Inc.\"",
+              "publicKeyHash": "3359A30DB65D9CE675018F7C54B4B114012C5F7A"
+            },
+            {
+              "sha1": "007790F6561DAD89B0BCD85585762495E358F8A5",
+              "issuerName": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "subject": "US, Symantec Corporation, Symantec Trust Network, Symantec Class 3 SHA256 Code Signing CA",
+              "publicKeyHash": "963B53F0793397AF7D83EF2E2BCCCAB7861E7266"
+            },
+            {
+              "sha1": "4EB6D578499B1CCF5F581EAD56BE3D9B6744A5E5",
+              "issuerName": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "subject": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "publicKeyHash": "7FD365A7C2DDECBBF03009F34339FA02AF333133"
+            }
+          ]
+        ],
+        "embedProductName": "Java(TM) Platform SE 8 U121",
+        "name": "javaws.exe",
+        "md5": "03FBBFC587F2D6D06B6F085F2E745EC8"
+      },
+      "pSha2": "523C1746D8EBE35A080F4EBE1BE68DE6FB15A3B48825E620916E5123E703A83C",
+      "pid": 8816,
+      "parentTraceId": "06db1afe-9180-4dde-ba90-559e8c2e8806",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "processName": "javaws.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "f62cb82f-a25b-4dd7-bf15-26570afbe6b6",
+      "cmdLine": "\"C:\\Program Files (x86)\\Java\\jre1.8.0_121\\bin\\Javaws.exe\" -system -clearcache -wait",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "06db1afe-9180-4dde-ba90-559e8c2e8806",
+        "395d360c-a1a8-4e5e-9618-93bf5963d664",
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 14308,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        118,
+        100003,
+        100005,
+        100006
+      ],
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "time": "2024-02-19T21:33:37.181Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      }
+    },
+    {
+      "traceId": "9d3ae51b-73eb-417c-a474-90860c7a61b9",
+      "dtsType": "all",
+      "registry": {
+        "regKeyName": "HKCU\\SOFTWARE\\MICROSOFT\\WINDOWS\\CURRENTVERSION\\EXPLORER\\MOUNTPOINTS2"
+      },
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "pSha2": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450",
+      "dtsId": "EDR",
+      "pid": 2316,
+      "eventType": "RegKey Created",
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.ASEPCreatedOrModified"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 2,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "host": "1611VED48",
+      "time": "2024-02-19T21:33:44.331Z",
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "5.0.19041.2193 (WinBuild.160101.0800)",
+        "embedProductVersion": "5.0.19041.2193",
+        "sha256": "AA2FA1000F9FEA03339EDF67295DD043806294EC1644E38B7DD08E7D670D5423",
+        "embedFilename": "msiexec.exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2023-04-03T15:44:33.904Z",
+        "sha1": "6513907ADC294F6A32E43245B0E37F6622E24FBD",
+        "path": "C:\\Windows\\System32\\msiexec.exe",
+        "size": 103936,
+        "embedProductName": "Windows Installer - Unicode",
+        "name": "msiexec.exe",
+        "md5": "977C9A890F0AB2864AA363A7D1455D83"
+      },
+      "pSha2": "AA2FA1000F9FEA03339EDF67295DD043806294EC1644E38B7DD08E7D670D5423",
+      "pid": 14464,
+      "parentTraceId": "06db1afe-9180-4dde-ba90-559e8c2e8806",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "processName": "msiexec.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "67a2eff6-a3f4-4659-9acd-a5f6212adb0c",
+      "cmdLine": "\"C:\\Windows\\system32\\msiexec.exe\" /x \"{4A03706F-666A-4037-7777-5F2748764D10}\" REBOOT=ReallySuppress /QN /L*v \"C:\\Windows\\Logs\\Software\\OracleCorporation_JavaAutoUpdater_2.8.121.13_Uninstall.log\"",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "06db1afe-9180-4dde-ba90-559e8c2e8806",
+        "395d360c-a1a8-4e5e-9618-93bf5963d664",
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 14308,
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        104,
+        100003
+      ],
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "time": "2024-02-19T21:33:42.461Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      }
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "11.121.2.13",
+        "embedProductVersion": "8.0.1210.13",
+        "sha256": "523C1746D8EBE35A080F4EBE1BE68DE6FB15A3B48825E620916E5123E703A83C",
+        "embedFilename": "javaws.exe",
+        "embedVendorName": "Oracle Corporation",
+        "subsystem": 2,
+        "creationDate": "2024-02-19T21:33:19.036Z",
+        "sha1": "972EAD014E0383CA3668B578778CF54E2DFE19B1",
+        "path": "C:\\Program Files (x86)\\Java\\jre1.8.0_121\\bin\\javaws.exe",
+        "size": 268864,
+        "certificates": [
+          [
+            {
+              "sha1": "3B75816D15A6D8F4598E9CF5603F1839EE84D73D",
+              "issuerName": "US, Symantec Corporation, Symantec Trust Network, Symantec Class 3 SHA256 Code Signing CA",
+              "subject": "US, California, Redwood Shores, \"Oracle America, Inc.\", Code Signing Bureau, \"Oracle America, Inc.\"",
+              "publicKeyHash": "3359A30DB65D9CE675018F7C54B4B114012C5F7A"
+            },
+            {
+              "sha1": "007790F6561DAD89B0BCD85585762495E358F8A5",
+              "issuerName": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "subject": "US, Symantec Corporation, Symantec Trust Network, Symantec Class 3 SHA256 Code Signing CA",
+              "publicKeyHash": "963B53F0793397AF7D83EF2E2BCCCAB7861E7266"
+            },
+            {
+              "sha1": "4EB6D578499B1CCF5F581EAD56BE3D9B6744A5E5",
+              "issuerName": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "subject": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "publicKeyHash": "7FD365A7C2DDECBBF03009F34339FA02AF333133"
+            }
+          ]
+        ],
+        "embedProductName": "Java(TM) Platform SE 8 U121",
+        "name": "javaws.exe",
+        "md5": "03FBBFC587F2D6D06B6F085F2E745EC8"
+      },
+      "pSha2": "523C1746D8EBE35A080F4EBE1BE68DE6FB15A3B48825E620916E5123E703A83C",
+      "pid": 6352,
+      "parentTraceId": "06db1afe-9180-4dde-ba90-559e8c2e8806",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "processName": "javaws.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "c0b0ea13-848d-4e01-86e5-cfcbf375432d",
+      "cmdLine": "\"C:\\Program Files (x86)\\Java\\jre1.8.0_121\\bin\\Javaws.exe\" -system -uninstall -wait",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "06db1afe-9180-4dde-ba90-559e8c2e8806",
+        "395d360c-a1a8-4e5e-9618-93bf5963d664",
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 14308,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        118,
+        100003,
+        100005,
+        100006
+      ],
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "time": "2024-02-19T21:33:39.681Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      }
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "11.121.2.13",
+        "embedProductVersion": "8.0.1210.13",
+        "sha256": "3B4D3BB632242351EDC4C08E67FE320B00808E469B14B4CCA9735F88DDDDECB6",
+        "embedFilename": "jp2launcher.exe",
+        "embedVendorName": "Oracle Corporation",
+        "subsystem": 2,
+        "creationDate": "2024-02-19T21:33:19.143Z",
+        "sha1": "D8E6F6ACE318B44C045D5940D3BBD08B94D30926",
+        "path": "C:\\Program Files (x86)\\Java\\jre1.8.0_121\\bin\\jp2launcher.exe",
+        "size": 83008,
+        "certificates": [
+          [
+            {
+              "sha1": "3B75816D15A6D8F4598E9CF5603F1839EE84D73D",
+              "issuerName": "US, Symantec Corporation, Symantec Trust Network, Symantec Class 3 SHA256 Code Signing CA",
+              "subject": "US, California, Redwood Shores, \"Oracle America, Inc.\", Code Signing Bureau, \"Oracle America, Inc.\"",
+              "publicKeyHash": "3359A30DB65D9CE675018F7C54B4B114012C5F7A"
+            },
+            {
+              "sha1": "007790F6561DAD89B0BCD85585762495E358F8A5",
+              "issuerName": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "subject": "US, Symantec Corporation, Symantec Trust Network, Symantec Class 3 SHA256 Code Signing CA",
+              "publicKeyHash": "963B53F0793397AF7D83EF2E2BCCCAB7861E7266"
+            },
+            {
+              "sha1": "4EB6D578499B1CCF5F581EAD56BE3D9B6744A5E5",
+              "issuerName": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "subject": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "publicKeyHash": "7FD365A7C2DDECBBF03009F34339FA02AF333133"
+            }
+          ]
+        ],
+        "embedProductName": "Java(TM) Platform SE 8 U121",
+        "name": "jp2launcher.exe",
+        "md5": "BF6BCC0BC35AE1E1CC220DD13D0C14DB"
+      },
+      "pSha2": "3B4D3BB632242351EDC4C08E67FE320B00808E469B14B4CCA9735F88DDDDECB6",
+      "pid": 14928,
+      "parentTraceId": "c0b0ea13-848d-4e01-86e5-cfcbf375432d",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Program Files (x86)\\Java\\jre1.8.0_121\\bin\\javaws.exe",
+      "processName": "jp2launcher.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "879c2503-6e1e-4da4-aa16-4bee116eaa73",
+      "cmdLine": "\"C:\\Program Files (x86)\\Java\\jre1.8.0_121\\bin\\jp2launcher.exe\" -secure -javaws -jre \"C:\\Program Files (x86)\\Java\\jre1.8.0_121\" -vma LWNsYXNzcGF0aABDOlxQcm9ncmFtIEZpbGVzICh4ODYpXEphdmFcanJlMS44LjBfMTIxXGxpYlxkZXBsb3kuamFyAC1EamF2YS5zZWN1cml0eS5wb2xpY3k9ZmlsZTpDOlxQcm9ncmFtIEZpbGVzICh4ODYpXEphdmFcanJlMS44LjBfMTIxXGxpYlxzZWN1cml0eVxqYXZhd3MucG9saWN5AC1EdHJ1c3RQcm94eT10cnVlAC1YdmVyaWZ5OnJlbW90ZQAtRGpubHB4LmhvbWU9QzpcUHJvZ3JhbSBGaWxlcyAoeDg2KVxKYXZhXGpyZTEuOC4wXzEyMVxiaW4ALURqYXZhLnNlY3VyaXR5Lm1hbmFnZXIALURzdW4uYXd0Lndhcm11cD10cnVlAC1YYm9vdGNsYXNzcGF0aC9hOkM6XFByb2dyYW0gRmlsZXMgKHg4NilcSmF2YVxqcmUxLjguMF8xMjFcbGliXGphdmF3cy5qYXI7QzpcUHJvZ3JhbSBGaWxlcyAoeDg2KVxKYXZhXGpyZTEuOC4wXzEyMVxsaWJcZGVwbG95LmphcjtDOlxQcm9ncmFtIEZpbGVzICh4ODYpXEphdmFcanJlMS44LjBfMTIxXGxpYlxwbHVnaW4uamFyAC1Eam5scHguanZtPUM6XFByb2dyYW0gRmlsZXMgKHg4NilcSmF2YVxqcmUxLjguMF8xMjFcYmluXGphdmF3LmV4ZQ== -ma LXN5c3RlbQAtdW5pbnN0YWxsAC13YWl0AC1ub3RXZWJKYXZh",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "c0b0ea13-848d-4e01-86e5-cfcbf375432d",
+        "06db1afe-9180-4dde-ba90-559e8c2e8806",
+        "395d360c-a1a8-4e5e-9618-93bf5963d664",
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 6352,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        108,
+        100003,
+        100005,
+        100006
+      ],
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "time": "2024-02-19T21:33:39.757Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      }
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.1466 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.1466",
+        "sha256": "18F76BC1F02A161EBDEDF3142273C186D05A836ADDCAAEE599194089FD59F398",
+        "embedFilename": "net1.exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2022-02-04T07:09:10.568Z",
+        "sha1": "7E95AE3D3632F4E29C336496224DF93A4E0934CC",
+        "path": "C:\\Windows\\System32\\net1.exe",
+        "size": 183808,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "net1.exe",
+        "md5": "55693DF2BB3CBE2899DFDDF18B4EB8C9"
+      },
+      "pSha2": "18F76BC1F02A161EBDEDF3142273C186D05A836ADDCAAEE599194089FD59F398",
+      "pid": 11676,
+      "parentTraceId": "fdb54e41-96ff-4d53-af18-045af749e148",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\net.exe",
+      "processName": "net1.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "788020bc-3aa6-4838-9282-82026a45b1f5",
+      "cmdLine": "C:\\Windows\\system32\\net1  user /add detaradmin R@ted2020!1611",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "fdb54e41-96ff-4d53-af18-045af749e148",
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 12912,
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "time": "2024-02-19T21:34:26.518Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      },
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1033",
+            "@ATE.T1069.001",
+            "@ATE.T1069.002",
+            "@ATE.T1087.001",
+            "@ATE.T1087.002",
+            "@ATE.T1018",
+            "@MSI._apt_process_user"
+          ]
+        }
+      ]
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "11.121.2.13",
+        "embedProductVersion": "8.0.1210.13",
+        "sha256": "523C1746D8EBE35A080F4EBE1BE68DE6FB15A3B48825E620916E5123E703A83C",
+        "embedFilename": "javaws.exe",
+        "embedVendorName": "Oracle Corporation",
+        "subsystem": 2,
+        "creationDate": "2024-02-19T21:33:19.036Z",
+        "sha1": "972EAD014E0383CA3668B578778CF54E2DFE19B1",
+        "path": "C:\\Program Files (x86)\\Java\\jre1.8.0_121\\bin\\javaws.exe",
+        "size": 268864,
+        "certificates": [
+          [
+            {
+              "sha1": "3B75816D15A6D8F4598E9CF5603F1839EE84D73D",
+              "issuerName": "US, Symantec Corporation, Symantec Trust Network, Symantec Class 3 SHA256 Code Signing CA",
+              "subject": "US, California, Redwood Shores, \"Oracle America, Inc.\", Code Signing Bureau, \"Oracle America, Inc.\"",
+              "publicKeyHash": "3359A30DB65D9CE675018F7C54B4B114012C5F7A"
+            },
+            {
+              "sha1": "007790F6561DAD89B0BCD85585762495E358F8A5",
+              "issuerName": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "subject": "US, Symantec Corporation, Symantec Trust Network, Symantec Class 3 SHA256 Code Signing CA",
+              "publicKeyHash": "963B53F0793397AF7D83EF2E2BCCCAB7861E7266"
+            },
+            {
+              "sha1": "4EB6D578499B1CCF5F581EAD56BE3D9B6744A5E5",
+              "issuerName": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "subject": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "publicKeyHash": "7FD365A7C2DDECBBF03009F34339FA02AF333133"
+            }
+          ]
+        ],
+        "embedProductName": "Java(TM) Platform SE 8 U121",
+        "name": "javaws.exe",
+        "md5": "03FBBFC587F2D6D06B6F085F2E745EC8"
+      },
+      "pSha2": "523C1746D8EBE35A080F4EBE1BE68DE6FB15A3B48825E620916E5123E703A83C",
+      "pid": 14812,
+      "parentTraceId": "06db1afe-9180-4dde-ba90-559e8c2e8806",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "processName": "javaws.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "9d14ae24-c1a2-410c-9a1c-7a368aa895a4",
+      "cmdLine": "\"C:\\Program Files (x86)\\Java\\jre1.8.0_121\\bin\\Javaws.exe\" -clearcache -wait",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "06db1afe-9180-4dde-ba90-559e8c2e8806",
+        "395d360c-a1a8-4e5e-9618-93bf5963d664",
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 14308,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        118,
+        100003,
+        100005,
+        100006
+      ],
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "time": "2024-02-19T21:33:37.014Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      }
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "sha1": "22AE33BABE447FB28789BCE713A20CBEE796A37C",
+        "path": "\\\\tx1611wfps02\\public\\Public Data\\Randy\\PCSetup\\java8u121\\Files\\jre-8u121-windows-i586.exe",
+        "sha256": "13D5ED94FE40D9403D5D25B1EF46593DC7F96993DF735EA36A32DB3DC8ED8EC7",
+        "size": 0,
+        "name": "jre-8u121-windows-i586.exe",
+        "md5": "06C3650E5F3B3518348844AF7EF1D64B"
+      },
+      "pSha2": "13D5ED94FE40D9403D5D25B1EF46593DC7F96993DF735EA36A32DB3DC8ED8EC7",
+      "pid": 1532,
+      "parentTraceId": "06db1afe-9180-4dde-ba90-559e8c2e8806",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "processName": "jre-8u121-windows-i586.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "d91ea0a8-adb8-4e7c-998a-2a7d3226ffff",
+      "cmdLine": "\"R:\\Public Data\\Randy\\PCSetup\\java8u121\\Files\\jre-8u121-windows-i586.exe\" /s /L*v C:\\Windows\\Logs\\Software\\jre-8u121-windows-i586-Setup.log INSTALL_SILENT=Enable AUTO_UPDATE=Disable EULA=Disable REBOOT=Disable NOSTARTMENU=Enable",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "06db1afe-9180-4dde-ba90-559e8c2e8806",
+        "395d360c-a1a8-4e5e-9618-93bf5963d664",
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 14308,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        108
+      ],
+      "detectionDate": "2024-02-19T21:33:20Z",
+      "time": "2024-02-19T21:32:58.294Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      }
+    },
+    {
+      "traceId": "a3e85bee-5960-49b7-a5bc-2971642a03a1",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "pSha2": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450",
+      "dtsId": "EDR",
+      "pid": 2316,
+      "eventType": "Api",
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 11,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "host": "1611VED48",
+      "time": "2024-02-19T21:33:59.519Z",
+      "api": {
+        "result": "0",
+        "data": "AABbAAAAAAA=",
+        "name": "WriteProcessMemory",
+        "moduleName": "",
+        "targetPid": 12796,
+        "arguments": [
+          "0x72f2d8",
+          "0x8",
+          "0x0"
+        ]
+      },
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "sha1": "C7D43010F8D9D93302A5E410260A2FFD7301F601",
+        "path": "\\\\tx1611wfps02\\public\\Public Data\\Randy\\PCSetup\\openoffice\\setup.exe",
+        "sha256": "6D611E419000F64167EAA646BA7489D86BCA96C549E344ACB0643FA583EEC7DA",
+        "size": 0,
+        "name": "setup.exe",
+        "md5": "B4DC219F72F490662910194B6E525937"
+      },
+      "pSha2": "6D611E419000F64167EAA646BA7489D86BCA96C549E344ACB0643FA583EEC7DA",
+      "pid": 12796,
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "processName": "setup.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "81bc14ab-b698-44ed-aac1-d3fba5455ab1",
+      "cmdLine": "openoffice\\setup.exe  /Q",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        108
+      ],
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "time": "2024-02-19T21:33:59.134Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      }
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "11.121.2.13",
+        "embedProductVersion": "8.0.1210.13",
+        "sha256": "3B4D3BB632242351EDC4C08E67FE320B00808E469B14B4CCA9735F88DDDDECB6",
+        "embedFilename": "jp2launcher.exe",
+        "embedVendorName": "Oracle Corporation",
+        "subsystem": 2,
+        "creationDate": "2024-02-19T21:33:19.143Z",
+        "sha1": "D8E6F6ACE318B44C045D5940D3BBD08B94D30926",
+        "path": "C:\\Program Files (x86)\\Java\\jre1.8.0_121\\bin\\jp2launcher.exe",
+        "size": 83008,
+        "certificates": [
+          [
+            {
+              "sha1": "3B75816D15A6D8F4598E9CF5603F1839EE84D73D",
+              "issuerName": "US, Symantec Corporation, Symantec Trust Network, Symantec Class 3 SHA256 Code Signing CA",
+              "subject": "US, California, Redwood Shores, \"Oracle America, Inc.\", Code Signing Bureau, \"Oracle America, Inc.\"",
+              "publicKeyHash": "3359A30DB65D9CE675018F7C54B4B114012C5F7A"
+            },
+            {
+              "sha1": "007790F6561DAD89B0BCD85585762495E358F8A5",
+              "issuerName": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "subject": "US, Symantec Corporation, Symantec Trust Network, Symantec Class 3 SHA256 Code Signing CA",
+              "publicKeyHash": "963B53F0793397AF7D83EF2E2BCCCAB7861E7266"
+            },
+            {
+              "sha1": "4EB6D578499B1CCF5F581EAD56BE3D9B6744A5E5",
+              "issuerName": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "subject": "US, \"VeriSign, Inc.\", VeriSign Trust Network, \"(c) 2006 VeriSign, Inc. - For authorized use only\", VeriSign Class 3 Public Primary Certification Authority - G5",
+              "publicKeyHash": "7FD365A7C2DDECBBF03009F34339FA02AF333133"
+            }
+          ]
+        ],
+        "embedProductName": "Java(TM) Platform SE 8 U121",
+        "name": "jp2launcher.exe",
+        "md5": "BF6BCC0BC35AE1E1CC220DD13D0C14DB"
+      },
+      "pSha2": "3B4D3BB632242351EDC4C08E67FE320B00808E469B14B4CCA9735F88DDDDECB6",
+      "pid": 16684,
+      "parentTraceId": "f62cb82f-a25b-4dd7-bf15-26570afbe6b6",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Program Files (x86)\\Java\\jre1.8.0_121\\bin\\javaws.exe",
+      "processName": "jp2launcher.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "67d6b96a-0a10-4b71-af0e-7f8331f081a9",
+      "cmdLine": "\"C:\\Program Files (x86)\\Java\\jre1.8.0_121\\bin\\jp2launcher.exe\" -secure -javaws -jre \"C:\\Program Files (x86)\\Java\\jre1.8.0_121\" -vma LWNsYXNzcGF0aABDOlxQcm9ncmFtIEZpbGVzICh4ODYpXEphdmFcanJlMS44LjBfMTIxXGxpYlxkZXBsb3kuamFyAC1EamF2YS5zZWN1cml0eS5wb2xpY3k9ZmlsZTpDOlxQcm9ncmFtIEZpbGVzICh4ODYpXEphdmFcanJlMS44LjBfMTIxXGxpYlxzZWN1cml0eVxqYXZhd3MucG9saWN5AC1EdHJ1c3RQcm94eT10cnVlAC1YdmVyaWZ5OnJlbW90ZQAtRGpubHB4LmhvbWU9QzpcUHJvZ3JhbSBGaWxlcyAoeDg2KVxKYXZhXGpyZTEuOC4wXzEyMVxiaW4ALURqYXZhLnNlY3VyaXR5Lm1hbmFnZXIALURzdW4uYXd0Lndhcm11cD10cnVlAC1YYm9vdGNsYXNzcGF0aC9hOkM6XFByb2dyYW0gRmlsZXMgKHg4NilcSmF2YVxqcmUxLjguMF8xMjFcbGliXGphdmF3cy5qYXI7QzpcUHJvZ3JhbSBGaWxlcyAoeDg2KVxKYXZhXGpyZTEuOC4wXzEyMVxsaWJcZGVwbG95LmphcjtDOlxQcm9ncmFtIEZpbGVzICh4ODYpXEphdmFcanJlMS44LjBfMTIxXGxpYlxwbHVnaW4uamFyAC1Eam5scHguanZtPUM6XFByb2dyYW0gRmlsZXMgKHg4NilcSmF2YVxqcmUxLjguMF8xMjFcYmluXGphdmF3LmV4ZQ== -ma LXN5c3RlbQAtY2xlYXJjYWNoZQAtd2FpdAAtbm90V2ViSmF2YQ==",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "f62cb82f-a25b-4dd7-bf15-26570afbe6b6",
+        "06db1afe-9180-4dde-ba90-559e8c2e8806",
+        "395d360c-a1a8-4e5e-9618-93bf5963d664",
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 8816,
+      "tags": [
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        108,
+        100003,
+        100005,
+        100006
+      ],
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "time": "2024-02-19T21:33:37.268Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      },
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.DefenseEvasion",
+            "@ATE.T1112",
+            "@MSI._reg_ep0051_fileext"
+          ]
+        }
+      ]
+    },
+    {
+      "traceId": "8e9c9f5d-357f-413e-8095-1cff30c2acd3",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "pSha2": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450",
+      "dtsId": "EDR",
+      "pid": 2316,
+      "eventType": "Network Accessed",
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "network": {
+        "accessType": "connection_opened",
+        "srcIp": "",
+        "protocol": "http",
+        "dstPort": 80,
+        "dnsNames": [
+          "ocsp.godaddy.com"
+        ],
+        "dstIp": "0",
+        "srcPort": 0,
+        "layer7": {
+          "httpRequestHeaders": "GET //MEIwQDA%2BMDwwOjAJBgUrDgMCGgUABBQdI2%2BOBkuXH93foRUj4a7lAr4rGwQUOpqFBxBnKLbv9r0FQW4gwZTaD94CAQc%3D HTTP/1.1\r\nUser-Agent: Microsoft-CryptoAPI/10.0\r\n",
+          "url": "http://ocsp.godaddy.com:80//MEIwQDA%2BMDwwOjAJBgUrDgMCGgUABBQdI2%2BOBkuXH93foRUj4a7lAr4rGwQUOpqFBxBnKLbv9r0FQW4gwZTaD94CAQc%3D"
+        },
+        "direction": "outbound"
+      },
+      "tags": [
+        "@AC.NetworkConnection"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 4294967295,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "host": "1611VED48",
+      "time": "2024-02-19T21:33:45.107Z",
+      "h_traceType": "all"
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.1",
+        "sha256": "9F376759BCBCD705F726460FC4A7E2B07F310F52BAA73CAAAAA124FDDBDF993E",
+        "embedFilename": "net.exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2019-12-07T09:09:33.990Z",
+        "sha1": "88B101598CC6726B7A57D02B1FA95BE1B272A821",
+        "path": "C:\\Windows\\System32\\net.exe",
+        "size": 59904,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "net.exe",
+        "md5": "0BD94A338EEA5A4E1F2830AE326E6D19"
+      },
+      "pSha2": "9F376759BCBCD705F726460FC4A7E2B07F310F52BAA73CAAAAA124FDDBDF993E",
+      "pid": 17176,
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "processName": "net.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "dbd9469f-5664-4924-8365-fafa28593b51",
+      "cmdLine": "net  localgroup administrators detaradmin /add",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "time": "2024-02-19T21:34:26.651Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      },
+      "severity": "s1",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Discovery",
+            "@ATE.T1033",
+            "@ATE.T1069.001",
+            "@ATE.T1069.002",
+            "@ATE.T1087.001",
+            "@ATE.T1087.002",
+            "@ATE.T1018",
+            "@MSI._apt_process_user"
+          ]
+        },
+        {
+          "sev": "s1",
+          "tags": [
+            "@ATA.Persistence",
+            "@ATA.Discovery",
+            "@ATE.T1069.002",
+            "@ATE.T1087.002",
+            "@MSI._process_added_user_elevated_groups"
+          ]
+        }
+      ]
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "5.0.19041.2193 (WinBuild.160101.0800)",
+        "embedProductVersion": "5.0.19041.2193",
+        "sha256": "AA2FA1000F9FEA03339EDF67295DD043806294EC1644E38B7DD08E7D670D5423",
+        "embedFilename": "msiexec.exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 2,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2023-04-03T15:44:33.904Z",
+        "sha1": "6513907ADC294F6A32E43245B0E37F6622E24FBD",
+        "path": "C:\\Windows\\System32\\msiexec.exe",
+        "size": 103936,
+        "embedProductName": "Windows Installer - Unicode",
+        "name": "msiexec.exe",
+        "md5": "977C9A890F0AB2864AA363A7D1455D83"
+      },
+      "pSha2": "AA2FA1000F9FEA03339EDF67295DD043806294EC1644E38B7DD08E7D670D5423",
+      "pid": 14020,
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "processName": "msiexec.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "50b756b2-86ee-49cb-93a9-0e3b648bdc90",
+      "cmdLine": "msiexec  /i Dameware_x64.msi /passive",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        104,
+        100003
+      ],
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "time": "2024-02-19T21:33:48.751Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      }
+    },
+    {
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "procFileAttrs": {
+        "embedFileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+        "embedProductVersion": "10.0.19041.1",
+        "sha256": "9F376759BCBCD705F726460FC4A7E2B07F310F52BAA73CAAAAA124FDDBDF993E",
+        "embedFilename": "net.exe",
+        "embedVendorName": "Microsoft Corporation",
+        "subsystem": 3,
+        "reputation": {
+          "vtpPrivileges": 1,
+          "reputation": 99
+        },
+        "creationDate": "2019-12-07T09:09:33.990Z",
+        "sha1": "88B101598CC6726B7A57D02B1FA95BE1B272A821",
+        "path": "C:\\Windows\\System32\\net.exe",
+        "size": 59904,
+        "embedProductName": "Microsoft\u00ae Windows\u00ae Operating System",
+        "name": "net.exe",
+        "md5": "0BD94A338EEA5A4E1F2830AE326E6D19"
+      },
+      "pSha2": "9F376759BCBCD705F726460FC4A7E2B07F310F52BAA73CAAAAA124FDDBDF993E",
+      "pid": 13732,
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "h_version": "3.0",
+      "integrity": 3,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "processName": "net.exe",
+      "host": "1611VED48",
+      "h_traceType": "all",
+      "traceId": "ddfc5882-1ad4-4ccd-967e-a2c7d0909574",
+      "cmdLine": "net  use r: \\\\tx1611wfps02\\public",
+      "dtsType": "all",
+      "parentsTraceId": [
+        "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+        "96762c1f-5377-4d3f-9f63-cba0f17c7f37",
+        "5e10b6af-c8f1-4358-96e1-f1abf56b5e1c",
+        "4e1a8701-9c17-431b-8cd9-e3238f1071ef"
+      ],
+      "dtsId": "EDR",
+      "eventType": "Process Created",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.AdminHackingToolExecuted",
+        "@AC.ProcessCreated"
+      ],
+      "tdmRuleIds": [
+        118,
+        100000,
+        100003
+      ],
+      "detectionDate": "2024-02-19T21:31:55Z",
+      "time": "2024-02-19T21:31:48.076Z",
+      "user": {
+        "domain": "US",
+        "name": "johnny-sackville",
+        "id": "S-1-5-21-3102552752-417709957-33154223-2636294"
+      },
+      "severity": "s0",
+      "detectionsSets": [
+        {
+          "sev": "s0",
+          "tags": [
+            "@ATA.Collection",
+            "@ATA.Discovery",
+            "@ATE.T1074.002",
+            "@ATE.T1049",
+            "@ATE.T1135",
+            "@MSI._apt_process_netuseremote"
+          ]
+        }
+      ]
+    },
+    {
+      "traceId": "6d5db6cb-d871-4039-9cac-b1e8048626a5",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "pSha2": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450",
+      "dtsId": "EDR",
+      "pid": 2316,
+      "eventType": "Api",
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "ppid": 2316,
+      "tags": [
+        "@AC.APICall"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 11,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "detectionDate": "2024-02-19T21:34:55Z",
+      "host": "1611VED48",
+      "time": "2024-02-19T21:34:26.666Z",
+      "api": {
+        "result": "0",
+        "data": "AADE3asCAAA=",
+        "name": "WriteProcessMemory",
+        "moduleName": "",
+        "targetPid": 17176,
+        "arguments": [
+          "0xf906e822d8",
+          "0x8",
+          "0x0"
+        ]
+      },
+      "h_traceType": "all"
+    },
+    {
+      "traceId": "860ecbe7-82e7-4e9f-a6ba-5155297f9125",
+      "dtsType": "all",
+      "h_tp": "mar_4.1.0.2287",
+      "maGuid": "99E44166-517F-11EE-2AF4-000000000000",
+      "rv": 2287,
+      "pSha2": "B99D61D874728EDC0918CA0EB10EAB93D381E7367E377406E65963366C874450",
+      "dtsId": "EDR",
+      "pid": 2316,
+      "eventType": "Image Loaded",
+      "parentTraceId": "fcebea7b-6ffb-48ce-bf9c-36071cfcf958",
+      "contextTraceId": "53cf5544-b064-446e-ae6a-32fd0e6a5676",
+      "it": 1,
+      "h_os": "windows",
+      "version": "3.0",
+      "modules": [
+        {
+          "loadTime": "2024-02-19T21:31:37.907Z",
+          "vtpPrivileges": 1,
+          "fsattrs": 32,
+          "sha256": "1F996574F38219CDD848375F517F8D86E17542BC84D64CCE63AA0C64CC15F22D",
+          "name": "C:\\WINDOWS\\SYSTEM32\\WS2_32.DLL"
+        },
+        {
+          "loadTime": "2024-02-19T21:31:37.914Z",
+          "vtpPrivileges": 1,
+          "fsattrs": 32,
+          "sha256": "928DCE6F2281A149076D4546EF5DC6CDE3DC334585DFBA50FD1D28A9BB217022",
+          "name": "C:\\Windows\\System32\\netapi32.dll"
+        },
+        {
+          "loadTime": "2024-02-19T21:31:37.915Z",
+          "vtpPrivileges": 1,
+          "fsattrs": 32,
+          "sha256": "928DCE6F2281A149076D4546EF5DC6CDE3DC334585DFBA50FD1D28A9BB217022",
+          "name": "C:\\WINDOWS\\SYSTEM32\\NETAPI32.DLL"
+        },
+        {
+          "loadTime": "2024-02-19T21:31:37.924Z",
+          "vtpPrivileges": 1,
+          "fsattrs": 32,
+          "sha256": "B44118094DFA7A100B42B338BCE94240616F253458AF74E205C864A756CD4F6E",
+          "name": "C:\\WINDOWS\\SYSTEM32\\BCRYPT.DLL"
+        },
+        {
+          "loadTime": "2024-02-19T21:31:37.992Z",
+          "vtpPrivileges": 1,
+          "fsattrs": 32,
+          "sha256": "E6EB43AA14C8889142AF2763B8198CE81369E87EE22D79477A18F19E921B3A68",
+          "name": "C:\\Windows\\System32\\samcli.dll"
+        },
+        {
+          "loadTime": "2024-02-19T21:31:37.993Z",
+          "vtpPrivileges": 1,
+          "fsattrs": 32,
+          "sha256": "E6EB43AA14C8889142AF2763B8198CE81369E87EE22D79477A18F19E921B3A68",
+          "name": "C:\\WINDOWS\\SYSTEM32\\SAMCLI.DLL"
+        }
+      ],
+      "ppid": 2316,
+      "tags": [
+        "@AC.LoadedDLLs"
+      ],
+      "h_version": "3.0",
+      "uniqueRuleId": 18,
+      "pFullName": "C:\\Windows\\System32\\cmd.exe",
+      "detectionDate": "2024-02-19T21:31:55Z",
+      "host": "1611VED48",
+      "time": "2024-02-19T21:31:37.907Z",
+      "h_traceType": "all"
+    }
+  ]
+}

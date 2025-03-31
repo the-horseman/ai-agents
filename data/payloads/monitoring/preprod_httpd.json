@@ -1,0 +1,2171 @@
+{
+    "detections": [
+        {
+            "id": "5712246",
+            "traceId": "427824b6-f489-43ad-bf4f-737147343b0c",
+            "firstDetected": "2024-10-07T11:17:07Z",
+            "severity": "s2",
+            "rank": 150,
+            "tags": [
+                "@ATA.Discovery",
+                "@ATA.Persistence",
+                "@ATE.T1033",
+                "@ATE.T1505.003",
+                "@MSI._linux_process_identify_users",
+                "@MSI._process_webshell_ubuntu"
+            ],
+            "host": {
+                "maGuid": "C7678EB0-7981-11EF-32B1-005056A4253E",
+                "hostname": "7ZFUBU1804D01",
+                "os": {
+                    "major": 18,
+                    "minor": 4,
+                    "build": 0,
+                    "sp": "",
+                    "desc": "Ubuntu 18.04.6 LTS (Bionic Beaver)"
+                },
+                "lastBootTime": "2024-09-27T06:21:42Z",
+                "netInterfaces": [
+                    {
+                        "name": "lo",
+                        "macAddress": "00:00:00:00:00:00",
+                        "ip": "127.0.0.1",
+                        "type": 4
+                    },
+                    {
+                        "name": "lo",
+                        "macAddress": "00:00:00:00:00:00",
+                        "ip": "::1",
+                        "type": 4
+                    },
+                    {
+                        "name": "ens160",
+                        "macAddress": "00:50:56:a4:25:3e",
+                        "ip": "10.26.45.150",
+                        "type": 1
+                    },
+                    {
+                        "name": "ens160",
+                        "macAddress": "00:50:56:a4:25:3e",
+                        "ip": "fe80::c765:fe22:b9b8:806",
+                        "type": 1
+                    },
+                    {
+                        "name": "ens160",
+                        "macAddress": "00:50:56:a4:25:3e",
+                        "ip": "fe80::b9cb:1042:3f68:c26c",
+                        "type": 1
+                    },
+                    {
+                        "name": "ens160",
+                        "macAddress": "00:50:56:a4:25:3e",
+                        "ip": "fe80::c0fe:1e8a:f94f:baa4",
+                        "type": 1
+                    },
+                    {
+                        "name": "Primary",
+                        "ip": ""
+                    }
+                ],
+                "traceExtendedVisibility": 0,
+                "hostOs": "linux"
+            },
+            "sha256": "29dc200050f712dbda0b1bd40cb946e5eceb073b7a3e0fb3f49849bdfacf6900"
+        }
+    ],
+    "traces": [
+        {
+            "action": "",
+            "cmdLine": "",
+            "contextTraceId": "742bcffc-c495-4fa8-ab48-95fad4b0b39d",
+            "detectionDate": "2024-10-07T11:15:46Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Process Created",
+            "fqdn": "7ZFUBU1804D01.CDA.BEA.LAB",
+            "h_os": "linux",
+            "h_tp": "edr_4.2.0.3481",
+            "h_traceType": "all",
+            "h_version": "4.2",
+            "host": "7ZFUBU1804D01",
+            "integrity": 2,
+            "it": 1,
+            "maGuid": "C7678EB0-7981-11EF-32B1-005056A4253E",
+            "pExecutionType": "fork",
+            "pFullName": "/home/appsadm/httpd",
+            "pSha2": "29dc200050f712dbda0b1bd40cb946e5eceb073b7a3e0fb3f49849bdfacf6900",
+            "parentTraceId": "427824b6-f489-43ad-bf4f-737147343b0c",
+            "parentsTraceId": [
+                "427824b6-f489-43ad-bf4f-737147343b0c",
+                "d8f229b9-bea9-4021-b7ab-013f59daa0cc",
+                "94f5c71b-e38f-42f7-bf83-bbe4609dc306",
+                "06bc3e06-9583-4e31-97da-351eaf8f58bc",
+                "dd4f24b9-bbc5-49e4-ba50-26311842a04c",
+                "1e0d39f1-1ab0-4afe-930b-39c6b09da43c",
+                "2c602cc1-447b-4bd7-ab6a-0f88cc39ba86",
+                "759758fb-4587-4d55-a93e-71751cdf199c",
+                "74a2ee13-94da-4c47-8622-34ece339a06a",
+                "f44597bf-ec8c-4e6b-864d-2d362ae622e7",
+                "bf8aac59-bc44-435c-9063-1f4480629fc2",
+                "29c07d1a-ad01-413e-ac70-96c3aeea3b56"
+            ],
+            "pid": 19864,
+            "ppid": 19861,
+            "procFileAttrs": {
+                "creationDate": "0",
+                "fsextendedattrs": 0,
+                "lastAccessDate": "2024-10-07T11:15:25.000Z",
+                "md5": "e4ead349c87857d866ca11e48e2fb150",
+                "mhdr": "",
+                "name": "httpd",
+                "path": "/home/appsadm/httpd",
+                "permissionMode": "0777",
+                "reputation": {
+                    "reputation": 0
+                },
+                "sha1": "205fd2cc7257a6837c2b59dd680e0d506444015c",
+                "sha256": "29dc200050f712dbda0b1bd40cb946e5eceb073b7a3e0fb3f49849bdfacf6900",
+                "size": 16792,
+                "symlinkType": ""
+            },
+            "processName": "httpd",
+            "reputation": {
+                "reputation": 78
+            },
+            "rv": 11,
+            "tags": [
+                "@AC.ProcessCreated"
+            ],
+            "tdmRuleIds": [
+                20221
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-10-07T11:15:26.000Z",
+            "traceId": "e5ce5646-a049-40f1-b313-dba093dd93ff",
+            "user": {
+                "authenticationMode": "",
+                "domain": "",
+                "gid": "0",
+                "id": "0",
+                "logonTerminal": "",
+                "name": "root",
+                "publicKey": ""
+            },
+            "version": "4.2",
+            "endTime": null,
+            "originalSeverity": "unknown",
+            "severity": "unknown",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "e5ce5646-a049-40f1-b313-dba093dd93ff",
+            "lastActivityTime": "2024-10-07T11:15:26.000Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        },
+        {
+            "action": "",
+            "cmdLine": "whoami",
+            "contextTraceId": "742bcffc-c495-4fa8-ab48-95fad4b0b39d",
+            "detectionDate": "2024-10-07T11:15:46Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Process Created",
+            "fqdn": "7ZFUBU1804D01.CDA.BEA.LAB",
+            "h_os": "linux",
+            "h_tp": "edr_4.2.0.3481",
+            "h_traceType": "all",
+            "h_version": "4.2",
+            "host": "7ZFUBU1804D01",
+            "integrity": 2,
+            "it": 1,
+            "maGuid": "C7678EB0-7981-11EF-32B1-005056A4253E",
+            "pExecutionType": "fork+exec",
+            "pFullName": "/bin/dash",
+            "pSha2": "12ad4434de2701a3c007e5d1a35e116ee113d279cca06540dca5cd22d4a3c691",
+            "parentTraceId": "0bec9140-471e-4138-8039-eacbf357ae67",
+            "parentsTraceId": [
+                "0bec9140-471e-4138-8039-eacbf357ae67",
+                "e094ddb8-40d2-4641-a5ca-845824ab9153",
+                "fe5fcdde-783f-4218-89f0-5ec27fc2381a",
+                "427824b6-f489-43ad-bf4f-737147343b0c",
+                "d8f229b9-bea9-4021-b7ab-013f59daa0cc",
+                "94f5c71b-e38f-42f7-bf83-bbe4609dc306",
+                "06bc3e06-9583-4e31-97da-351eaf8f58bc",
+                "dd4f24b9-bbc5-49e4-ba50-26311842a04c",
+                "1e0d39f1-1ab0-4afe-930b-39c6b09da43c",
+                "2c602cc1-447b-4bd7-ab6a-0f88cc39ba86",
+                "759758fb-4587-4d55-a93e-71751cdf199c",
+                "74a2ee13-94da-4c47-8622-34ece339a06a",
+                "f44597bf-ec8c-4e6b-864d-2d362ae622e7",
+                "bf8aac59-bc44-435c-9063-1f4480629fc2",
+                "29c07d1a-ad01-413e-ac70-96c3aeea3b56"
+            ],
+            "pid": 19863,
+            "ppid": 19862,
+            "procFileAttrs": {
+                "creationDate": "0",
+                "fsextendedattrs": 0,
+                "lastAccessDate": "2024-10-07T09:34:03.000Z",
+                "md5": "ae87a276ea911dbabbf91521bf72c943",
+                "mhdr": "",
+                "name": "whoami",
+                "path": "/usr/bin/whoami",
+                "permissionMode": "0755",
+                "reputation": {
+                    "reputation": 0
+                },
+                "sha1": "dabbb6a0debcf4a79b9371125df1428f3e7ca30c",
+                "sha256": "12ad4434de2701a3c007e5d1a35e116ee113d279cca06540dca5cd22d4a3c691",
+                "size": 30904,
+                "symlinkType": ""
+            },
+            "processName": "whoami",
+            "reputation": {
+                "reputation": 78
+            },
+            "rv": 11,
+            "tags": [
+                "@AC.ProcessCreated"
+            ],
+            "tdmRuleIds": [
+                20221
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-10-07T11:15:26.000Z",
+            "traceId": "f8674f81-47f4-4a88-a309-cec866d9a2cd",
+            "user": {
+                "authenticationMode": "",
+                "domain": "",
+                "gid": "0",
+                "id": "0",
+                "logonTerminal": "",
+                "name": "root",
+                "publicKey": ""
+            },
+            "version": "4.2",
+            "severity": "s0",
+            "detectionsSets": [
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Discovery",
+                        "@ATE.T1033",
+                        "@MSI._linux_process_identify_users"
+                    ]
+                }
+            ],
+            "endTime": null,
+            "originalSeverity": "s0",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "f8674f81-47f4-4a88-a309-cec866d9a2cd",
+            "lastActivityTime": "2024-10-07T11:15:26.000Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        },
+        {
+            "action": "",
+            "cmdLine": "",
+            "contextTraceId": "742bcffc-c495-4fa8-ab48-95fad4b0b39d",
+            "detectionDate": "2024-10-07T11:15:46Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Process Created",
+            "fqdn": "7ZFUBU1804D01.CDA.BEA.LAB",
+            "h_os": "linux",
+            "h_tp": "edr_4.2.0.3481",
+            "h_traceType": "all",
+            "h_version": "4.2",
+            "host": "7ZFUBU1804D01",
+            "integrity": 2,
+            "it": 1,
+            "maGuid": "C7678EB0-7981-11EF-32B1-005056A4253E",
+            "pExecutionType": "fork",
+            "pFullName": "/bin/dash",
+            "pSha2": "2fdc4546e1f425bcaf62624a7118fd4ba86c11e6277e8b9ee63263eb0dcbc6c5",
+            "parentTraceId": "118571d8-ea01-4e29-be5e-3aef0b4b317b",
+            "parentsTraceId": [
+                "118571d8-ea01-4e29-be5e-3aef0b4b317b",
+                "e5ce5646-a049-40f1-b313-dba093dd93ff",
+                "427824b6-f489-43ad-bf4f-737147343b0c",
+                "d8f229b9-bea9-4021-b7ab-013f59daa0cc",
+                "94f5c71b-e38f-42f7-bf83-bbe4609dc306",
+                "06bc3e06-9583-4e31-97da-351eaf8f58bc",
+                "dd4f24b9-bbc5-49e4-ba50-26311842a04c",
+                "1e0d39f1-1ab0-4afe-930b-39c6b09da43c",
+                "2c602cc1-447b-4bd7-ab6a-0f88cc39ba86",
+                "759758fb-4587-4d55-a93e-71751cdf199c",
+                "74a2ee13-94da-4c47-8622-34ece339a06a",
+                "f44597bf-ec8c-4e6b-864d-2d362ae622e7",
+                "bf8aac59-bc44-435c-9063-1f4480629fc2",
+                "29c07d1a-ad01-413e-ac70-96c3aeea3b56"
+            ],
+            "pid": 19865,
+            "ppid": 19864,
+            "procFileAttrs": {
+                "creationDate": "0",
+                "fsextendedattrs": 0,
+                "lastAccessDate": "2024-10-07T11:00:01.000Z",
+                "md5": "453dc13f62c115c7b28cb4ede0ea3107",
+                "mhdr": "",
+                "name": "dash",
+                "path": "/bin/dash",
+                "permissionMode": "0755",
+                "reputation": {
+                    "reputation": 0
+                },
+                "sha1": "74a1dc2024957db6a9074401954b57dad2cf2aac",
+                "sha256": "2fdc4546e1f425bcaf62624a7118fd4ba86c11e6277e8b9ee63263eb0dcbc6c5",
+                "size": 121432,
+                "symlinkType": ""
+            },
+            "processName": "dash",
+            "reputation": {
+                "reputation": 78
+            },
+            "rv": 11,
+            "tags": [
+                "@AC.ProcessCreated"
+            ],
+            "tdmRuleIds": [
+                20221
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-10-07T11:15:26.000Z",
+            "traceId": "3abe0da6-a9bd-4af9-a350-b04f7a4bbc36",
+            "user": {
+                "authenticationMode": "",
+                "domain": "",
+                "gid": "0",
+                "id": "0",
+                "logonTerminal": "",
+                "name": "root",
+                "publicKey": ""
+            },
+            "version": "4.2",
+            "endTime": null,
+            "originalSeverity": "unknown",
+            "severity": "unknown",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "3abe0da6-a9bd-4af9-a350-b04f7a4bbc36",
+            "lastActivityTime": "2024-10-07T11:15:26.000Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        },
+        {
+            "action": "",
+            "cmdLine": "date",
+            "contextTraceId": "742bcffc-c495-4fa8-ab48-95fad4b0b39d",
+            "detectionDate": "2024-10-07T11:15:46Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Process Created",
+            "fqdn": "7ZFUBU1804D01.CDA.BEA.LAB",
+            "h_os": "linux",
+            "h_tp": "edr_4.2.0.3481",
+            "h_traceType": "all",
+            "h_version": "4.2",
+            "host": "7ZFUBU1804D01",
+            "integrity": 2,
+            "it": 1,
+            "maGuid": "C7678EB0-7981-11EF-32B1-005056A4253E",
+            "pExecutionType": "fork+exec",
+            "pFullName": "/bin/dash",
+            "pSha2": "1f5e7c13d30a44a211f0cb86e9bf8ff75e7ccf04fed673437b3f86a8893f8bc6",
+            "parentTraceId": "3abe0da6-a9bd-4af9-a350-b04f7a4bbc36",
+            "parentsTraceId": [
+                "3abe0da6-a9bd-4af9-a350-b04f7a4bbc36",
+                "118571d8-ea01-4e29-be5e-3aef0b4b317b",
+                "e5ce5646-a049-40f1-b313-dba093dd93ff",
+                "427824b6-f489-43ad-bf4f-737147343b0c",
+                "d8f229b9-bea9-4021-b7ab-013f59daa0cc",
+                "94f5c71b-e38f-42f7-bf83-bbe4609dc306",
+                "06bc3e06-9583-4e31-97da-351eaf8f58bc",
+                "dd4f24b9-bbc5-49e4-ba50-26311842a04c",
+                "1e0d39f1-1ab0-4afe-930b-39c6b09da43c",
+                "2c602cc1-447b-4bd7-ab6a-0f88cc39ba86",
+                "759758fb-4587-4d55-a93e-71751cdf199c",
+                "74a2ee13-94da-4c47-8622-34ece339a06a",
+                "f44597bf-ec8c-4e6b-864d-2d362ae622e7",
+                "bf8aac59-bc44-435c-9063-1f4480629fc2",
+                "29c07d1a-ad01-413e-ac70-96c3aeea3b56"
+            ],
+            "pid": 19865,
+            "ppid": 19864,
+            "procFileAttrs": {
+                "creationDate": "0",
+                "fsextendedattrs": 0,
+                "lastAccessDate": "2024-10-07T07:11:01.000Z",
+                "md5": "ee234d9137cf221bdf977e36c301f977",
+                "mhdr": "",
+                "name": "date",
+                "path": "/bin/date",
+                "permissionMode": "0755",
+                "reputation": {
+                    "reputation": 0
+                },
+                "sha1": "639298eff80832b052380567e1a7a31261e35509",
+                "sha256": "1f5e7c13d30a44a211f0cb86e9bf8ff75e7ccf04fed673437b3f86a8893f8bc6",
+                "size": 100568,
+                "symlinkType": ""
+            },
+            "processName": "date",
+            "reputation": {
+                "reputation": 78
+            },
+            "rv": 11,
+            "tags": [
+                "@AC.ProcessCreated"
+            ],
+            "tdmRuleIds": [
+                20221
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-10-07T11:15:26.000Z",
+            "traceId": "0da2711e-6b19-48f4-b5d2-2f97da429454",
+            "user": {
+                "authenticationMode": "",
+                "domain": "",
+                "gid": "0",
+                "id": "0",
+                "logonTerminal": "",
+                "name": "root",
+                "publicKey": ""
+            },
+            "version": "4.2",
+            "endTime": null,
+            "originalSeverity": "unknown",
+            "severity": "unknown",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "0da2711e-6b19-48f4-b5d2-2f97da429454",
+            "lastActivityTime": "2024-10-07T11:15:26.000Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        },
+        {
+            "action": "",
+            "cmdLine": "",
+            "contextTraceId": "742bcffc-c495-4fa8-ab48-95fad4b0b39d",
+            "detectionDate": "2024-10-07T11:15:46Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Process Created",
+            "fqdn": "7ZFUBU1804D01.CDA.BEA.LAB",
+            "h_os": "linux",
+            "h_tp": "edr_4.2.0.3481",
+            "h_traceType": "all",
+            "h_version": "4.2",
+            "host": "7ZFUBU1804D01",
+            "integrity": 2,
+            "it": 1,
+            "maGuid": "C7678EB0-7981-11EF-32B1-005056A4253E",
+            "pExecutionType": "fork",
+            "pFullName": "/bin/dash",
+            "pSha2": "2fdc4546e1f425bcaf62624a7118fd4ba86c11e6277e8b9ee63263eb0dcbc6c5",
+            "parentTraceId": "e094ddb8-40d2-4641-a5ca-845824ab9153",
+            "parentsTraceId": [
+                "e094ddb8-40d2-4641-a5ca-845824ab9153",
+                "fe5fcdde-783f-4218-89f0-5ec27fc2381a",
+                "427824b6-f489-43ad-bf4f-737147343b0c",
+                "d8f229b9-bea9-4021-b7ab-013f59daa0cc",
+                "94f5c71b-e38f-42f7-bf83-bbe4609dc306",
+                "06bc3e06-9583-4e31-97da-351eaf8f58bc",
+                "dd4f24b9-bbc5-49e4-ba50-26311842a04c",
+                "1e0d39f1-1ab0-4afe-930b-39c6b09da43c",
+                "2c602cc1-447b-4bd7-ab6a-0f88cc39ba86",
+                "759758fb-4587-4d55-a93e-71751cdf199c",
+                "74a2ee13-94da-4c47-8622-34ece339a06a",
+                "f44597bf-ec8c-4e6b-864d-2d362ae622e7",
+                "bf8aac59-bc44-435c-9063-1f4480629fc2",
+                "29c07d1a-ad01-413e-ac70-96c3aeea3b56"
+            ],
+            "pid": 19863,
+            "ppid": 19862,
+            "procFileAttrs": {
+                "creationDate": "0",
+                "fsextendedattrs": 0,
+                "lastAccessDate": "2024-10-07T11:00:01.000Z",
+                "md5": "453dc13f62c115c7b28cb4ede0ea3107",
+                "mhdr": "",
+                "name": "dash",
+                "path": "/bin/dash",
+                "permissionMode": "0755",
+                "reputation": {
+                    "reputation": 0
+                },
+                "sha1": "74a1dc2024957db6a9074401954b57dad2cf2aac",
+                "sha256": "2fdc4546e1f425bcaf62624a7118fd4ba86c11e6277e8b9ee63263eb0dcbc6c5",
+                "size": 121432,
+                "symlinkType": ""
+            },
+            "processName": "dash",
+            "reputation": {
+                "reputation": 78
+            },
+            "rv": 11,
+            "tags": [
+                "@AC.ProcessCreated"
+            ],
+            "tdmRuleIds": [
+                20221
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-10-07T11:15:26.000Z",
+            "traceId": "0bec9140-471e-4138-8039-eacbf357ae67",
+            "user": {
+                "authenticationMode": "",
+                "domain": "",
+                "gid": "0",
+                "id": "0",
+                "logonTerminal": "",
+                "name": "root",
+                "publicKey": ""
+            },
+            "version": "4.2",
+            "severity": "s0",
+            "detectionsSets": [
+                {
+                    "sev": "s0",
+                    "tags": [
+                        "@ATA.Discovery",
+                        "@ATE.T1033",
+                        "@MSI._linux_process_identify_users"
+                    ]
+                }
+            ],
+            "endTime": null,
+            "originalSeverity": "s0",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "0bec9140-471e-4138-8039-eacbf357ae67",
+            "lastActivityTime": "2024-10-07T11:15:26.000Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        },
+        {
+            "action": "",
+            "cmdLine": "sh -c date",
+            "contextTraceId": "742bcffc-c495-4fa8-ab48-95fad4b0b39d",
+            "detectionDate": "2024-10-07T11:15:46Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Process Created",
+            "fqdn": "7ZFUBU1804D01.CDA.BEA.LAB",
+            "h_os": "linux",
+            "h_tp": "edr_4.2.0.3481",
+            "h_traceType": "all",
+            "h_version": "4.2",
+            "host": "7ZFUBU1804D01",
+            "integrity": 2,
+            "it": 1,
+            "maGuid": "C7678EB0-7981-11EF-32B1-005056A4253E",
+            "pExecutionType": "fork+exec",
+            "pFullName": "/home/appsadm/httpd",
+            "pSha2": "2fdc4546e1f425bcaf62624a7118fd4ba86c11e6277e8b9ee63263eb0dcbc6c5",
+            "parentTraceId": "e5ce5646-a049-40f1-b313-dba093dd93ff",
+            "parentsTraceId": [
+                "e5ce5646-a049-40f1-b313-dba093dd93ff",
+                "427824b6-f489-43ad-bf4f-737147343b0c",
+                "d8f229b9-bea9-4021-b7ab-013f59daa0cc",
+                "94f5c71b-e38f-42f7-bf83-bbe4609dc306",
+                "06bc3e06-9583-4e31-97da-351eaf8f58bc",
+                "dd4f24b9-bbc5-49e4-ba50-26311842a04c",
+                "1e0d39f1-1ab0-4afe-930b-39c6b09da43c",
+                "2c602cc1-447b-4bd7-ab6a-0f88cc39ba86",
+                "759758fb-4587-4d55-a93e-71751cdf199c",
+                "74a2ee13-94da-4c47-8622-34ece339a06a",
+                "f44597bf-ec8c-4e6b-864d-2d362ae622e7",
+                "bf8aac59-bc44-435c-9063-1f4480629fc2",
+                "29c07d1a-ad01-413e-ac70-96c3aeea3b56"
+            ],
+            "pid": 19864,
+            "ppid": 19861,
+            "procFileAttrs": {
+                "creationDate": "0",
+                "fsextendedattrs": 0,
+                "lastAccessDate": "2024-10-07T11:00:01.000Z",
+                "md5": "453dc13f62c115c7b28cb4ede0ea3107",
+                "mhdr": "",
+                "name": "dash",
+                "path": "/bin/dash",
+                "permissionMode": "0755",
+                "reputation": {
+                    "reputation": 0
+                },
+                "sha1": "74a1dc2024957db6a9074401954b57dad2cf2aac",
+                "sha256": "2fdc4546e1f425bcaf62624a7118fd4ba86c11e6277e8b9ee63263eb0dcbc6c5",
+                "size": 121432,
+                "symlinkType": ""
+            },
+            "processName": "dash",
+            "reputation": {
+                "reputation": 78
+            },
+            "rv": 11,
+            "tags": [
+                "@AC.ProcessCreated"
+            ],
+            "tdmRuleIds": [
+                20221
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-10-07T11:15:26.000Z",
+            "traceId": "118571d8-ea01-4e29-be5e-3aef0b4b317b",
+            "user": {
+                "authenticationMode": "",
+                "domain": "",
+                "gid": "0",
+                "id": "0",
+                "logonTerminal": "",
+                "name": "root",
+                "publicKey": ""
+            },
+            "version": "4.2",
+            "endTime": null,
+            "originalSeverity": "unknown",
+            "severity": "unknown",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "118571d8-ea01-4e29-be5e-3aef0b4b317b",
+            "lastActivityTime": "2024-10-07T11:15:26.000Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        },
+        {
+            "action": "",
+            "cmdLine": "./httpd",
+            "contextTraceId": "742bcffc-c495-4fa8-ab48-95fad4b0b39d",
+            "detectionDate": "2024-10-07T11:15:46Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Process Created",
+            "fqdn": "7ZFUBU1804D01.CDA.BEA.LAB",
+            "h_os": "linux",
+            "h_tp": "edr_4.2.0.3481",
+            "h_traceType": "all",
+            "h_version": "4.2",
+            "host": "7ZFUBU1804D01",
+            "integrity": 2,
+            "it": 1,
+            "maGuid": "C7678EB0-7981-11EF-32B1-005056A4253E",
+            "pExecutionType": "fork+exec",
+            "pFullName": "/bin/bash",
+            "pSha2": "29dc200050f712dbda0b1bd40cb946e5eceb073b7a3e0fb3f49849bdfacf6900",
+            "parentTraceId": "d8f229b9-bea9-4021-b7ab-013f59daa0cc",
+            "parentsTraceId": [
+                "d8f229b9-bea9-4021-b7ab-013f59daa0cc",
+                "94f5c71b-e38f-42f7-bf83-bbe4609dc306",
+                "06bc3e06-9583-4e31-97da-351eaf8f58bc",
+                "dd4f24b9-bbc5-49e4-ba50-26311842a04c",
+                "1e0d39f1-1ab0-4afe-930b-39c6b09da43c",
+                "2c602cc1-447b-4bd7-ab6a-0f88cc39ba86",
+                "759758fb-4587-4d55-a93e-71751cdf199c",
+                "74a2ee13-94da-4c47-8622-34ece339a06a",
+                "f44597bf-ec8c-4e6b-864d-2d362ae622e7",
+                "bf8aac59-bc44-435c-9063-1f4480629fc2",
+                "29c07d1a-ad01-413e-ac70-96c3aeea3b56"
+            ],
+            "pid": 19861,
+            "ppid": 19851,
+            "procFileAttrs": {
+                "creationDate": "0",
+                "fsextendedattrs": 0,
+                "lastAccessDate": "2024-10-07T11:15:25.000Z",
+                "md5": "e4ead349c87857d866ca11e48e2fb150",
+                "mhdr": "",
+                "name": "httpd",
+                "path": "/home/appsadm/httpd",
+                "permissionMode": "0777",
+                "reputation": {
+                    "reputation": 0
+                },
+                "sha1": "205fd2cc7257a6837c2b59dd680e0d506444015c",
+                "sha256": "29dc200050f712dbda0b1bd40cb946e5eceb073b7a3e0fb3f49849bdfacf6900",
+                "size": 16792,
+                "symlinkType": ""
+            },
+            "processName": "httpd",
+            "reputation": {
+                "reputation": 78
+            },
+            "rv": 11,
+            "tags": [
+                "@AC.ProcessCreated"
+            ],
+            "tdmRuleIds": [
+                20221
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-10-07T11:15:26.000Z",
+            "traceId": "427824b6-f489-43ad-bf4f-737147343b0c",
+            "user": {
+                "authenticationMode": "",
+                "domain": "",
+                "gid": "0",
+                "id": "0",
+                "logonTerminal": "",
+                "name": "root",
+                "publicKey": ""
+            },
+            "version": "4.2",
+            "endTime": null,
+            "originalSeverity": "unknown",
+            "severity": "unknown",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "427824b6-f489-43ad-bf4f-737147343b0c",
+            "lastActivityTime": "2024-10-07T11:15:26.000Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        },
+        {
+            "action": "",
+            "cmdLine": "",
+            "contextTraceId": "742bcffc-c495-4fa8-ab48-95fad4b0b39d",
+            "detectionDate": "2024-10-07T11:15:46Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Process Created",
+            "fqdn": "7ZFUBU1804D01.CDA.BEA.LAB",
+            "h_os": "linux",
+            "h_tp": "edr_4.2.0.3481",
+            "h_traceType": "all",
+            "h_version": "4.2",
+            "host": "7ZFUBU1804D01",
+            "integrity": 2,
+            "it": 1,
+            "maGuid": "C7678EB0-7981-11EF-32B1-005056A4253E",
+            "pExecutionType": "fork",
+            "pFullName": "/home/appsadm/httpd",
+            "pSha2": "29dc200050f712dbda0b1bd40cb946e5eceb073b7a3e0fb3f49849bdfacf6900",
+            "parentTraceId": "427824b6-f489-43ad-bf4f-737147343b0c",
+            "parentsTraceId": [
+                "427824b6-f489-43ad-bf4f-737147343b0c",
+                "d8f229b9-bea9-4021-b7ab-013f59daa0cc",
+                "94f5c71b-e38f-42f7-bf83-bbe4609dc306",
+                "06bc3e06-9583-4e31-97da-351eaf8f58bc",
+                "dd4f24b9-bbc5-49e4-ba50-26311842a04c",
+                "1e0d39f1-1ab0-4afe-930b-39c6b09da43c",
+                "2c602cc1-447b-4bd7-ab6a-0f88cc39ba86",
+                "759758fb-4587-4d55-a93e-71751cdf199c",
+                "74a2ee13-94da-4c47-8622-34ece339a06a",
+                "f44597bf-ec8c-4e6b-864d-2d362ae622e7",
+                "bf8aac59-bc44-435c-9063-1f4480629fc2",
+                "29c07d1a-ad01-413e-ac70-96c3aeea3b56"
+            ],
+            "pid": 19862,
+            "ppid": 19861,
+            "procFileAttrs": {
+                "creationDate": "0",
+                "fsextendedattrs": 0,
+                "lastAccessDate": "2024-10-07T11:15:25.000Z",
+                "md5": "e4ead349c87857d866ca11e48e2fb150",
+                "mhdr": "",
+                "name": "httpd",
+                "path": "/home/appsadm/httpd",
+                "permissionMode": "0777",
+                "reputation": {
+                    "reputation": 0
+                },
+                "sha1": "205fd2cc7257a6837c2b59dd680e0d506444015c",
+                "sha256": "29dc200050f712dbda0b1bd40cb946e5eceb073b7a3e0fb3f49849bdfacf6900",
+                "size": 16792,
+                "symlinkType": ""
+            },
+            "processName": "httpd",
+            "reputation": {
+                "reputation": 78
+            },
+            "rv": 11,
+            "tags": [
+                "@AC.ProcessCreated"
+            ],
+            "tdmRuleIds": [
+                20221
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-10-07T11:15:26.000Z",
+            "traceId": "fe5fcdde-783f-4218-89f0-5ec27fc2381a",
+            "user": {
+                "authenticationMode": "",
+                "domain": "",
+                "gid": "0",
+                "id": "0",
+                "logonTerminal": "",
+                "name": "root",
+                "publicKey": ""
+            },
+            "version": "4.2",
+            "endTime": null,
+            "originalSeverity": "unknown",
+            "severity": "unknown",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "fe5fcdde-783f-4218-89f0-5ec27fc2381a",
+            "lastActivityTime": "2024-10-07T11:15:26.000Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        },
+        {
+            "action": "",
+            "cmdLine": "sh -c whoami",
+            "contextTraceId": "742bcffc-c495-4fa8-ab48-95fad4b0b39d",
+            "detectionDate": "2024-10-07T11:15:46Z",
+            "dtsId": "EDR",
+            "dtsType": "all",
+            "eventType": "Process Created",
+            "fqdn": "7ZFUBU1804D01.CDA.BEA.LAB",
+            "h_os": "linux",
+            "h_tp": "edr_4.2.0.3481",
+            "h_traceType": "all",
+            "h_version": "4.2",
+            "host": "7ZFUBU1804D01",
+            "integrity": 2,
+            "it": 1,
+            "maGuid": "C7678EB0-7981-11EF-32B1-005056A4253E",
+            "pExecutionType": "fork+exec",
+            "pFullName": "/home/appsadm/httpd",
+            "pSha2": "2fdc4546e1f425bcaf62624a7118fd4ba86c11e6277e8b9ee63263eb0dcbc6c5",
+            "parentTraceId": "fe5fcdde-783f-4218-89f0-5ec27fc2381a",
+            "parentsTraceId": [
+                "fe5fcdde-783f-4218-89f0-5ec27fc2381a",
+                "427824b6-f489-43ad-bf4f-737147343b0c",
+                "d8f229b9-bea9-4021-b7ab-013f59daa0cc",
+                "94f5c71b-e38f-42f7-bf83-bbe4609dc306",
+                "06bc3e06-9583-4e31-97da-351eaf8f58bc",
+                "dd4f24b9-bbc5-49e4-ba50-26311842a04c",
+                "1e0d39f1-1ab0-4afe-930b-39c6b09da43c",
+                "2c602cc1-447b-4bd7-ab6a-0f88cc39ba86",
+                "759758fb-4587-4d55-a93e-71751cdf199c",
+                "74a2ee13-94da-4c47-8622-34ece339a06a",
+                "f44597bf-ec8c-4e6b-864d-2d362ae622e7",
+                "bf8aac59-bc44-435c-9063-1f4480629fc2",
+                "29c07d1a-ad01-413e-ac70-96c3aeea3b56"
+            ],
+            "pid": 19862,
+            "ppid": 19861,
+            "procFileAttrs": {
+                "creationDate": "0",
+                "fsextendedattrs": 0,
+                "lastAccessDate": "2024-10-07T11:00:01.000Z",
+                "md5": "453dc13f62c115c7b28cb4ede0ea3107",
+                "mhdr": "",
+                "name": "dash",
+                "path": "/bin/dash",
+                "permissionMode": "0755",
+                "reputation": {
+                    "reputation": 0
+                },
+                "sha1": "74a1dc2024957db6a9074401954b57dad2cf2aac",
+                "sha256": "2fdc4546e1f425bcaf62624a7118fd4ba86c11e6277e8b9ee63263eb0dcbc6c5",
+                "size": 121432,
+                "symlinkType": ""
+            },
+            "processName": "dash",
+            "reputation": {
+                "reputation": 78
+            },
+            "rv": 11,
+            "tags": [
+                "@AC.ProcessCreated"
+            ],
+            "tdmRuleIds": [
+                20221
+            ],
+            "tenantId": "9AC56A98-FD6D-4C4F-BD8B-3E58CAAC30BE",
+            "time": "2024-10-07T11:15:26.000Z",
+            "traceId": "e094ddb8-40d2-4641-a5ca-845824ab9153",
+            "user": {
+                "authenticationMode": "",
+                "domain": "",
+                "gid": "0",
+                "id": "0",
+                "logonTerminal": "",
+                "name": "root",
+                "publicKey": ""
+            },
+            "version": "4.2",
+            "severity": "s2",
+            "detectionsSets": [
+                {
+                    "sev": "s2",
+                    "tags": [
+                        "@ATA.Persistence",
+                        "@ATE.T1505.003",
+                        "@MSI._process_webshell_ubuntu"
+                    ]
+                }
+            ],
+            "endTime": null,
+            "originalSeverity": "s2",
+            "processCharacteristics": "",
+            "contained": "no",
+            "flagged": false,
+            "containedBy": "",
+            "summary": [
+                {
+                    "attribute": "cmdline",
+                    "attributeKey": "cmdLine",
+                    "label": "TRACE_TIMELINE.DETAILS.CMD_LINE",
+                    "summarizable": true,
+                    "shouldDisplayReadMore": true,
+                    "shouldDisplayCopyToClipboard": true
+                },
+                {
+                    "attribute": "domainName",
+                    "attributeKey": "user.domain",
+                    "label": "TRACE_TIMELINE.DETAILS.DOMAIN_NAME",
+                    "summarizable": true
+                },
+                {
+                    "attribute": "user",
+                    "attributeKey": "user.name",
+                    "label": "TRACE_TIMELINE.DETAILS.USER",
+                    "links": [
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ONE",
+                            "searchTarget": [
+                                "${maGuid}"
+                            ],
+                            "searchHostname": [
+                                "${hostname}"
+                            ],
+                            "drillDownKey": "PROCESS_USER_ONE",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.PROCESS_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Processes",
+                                        "outputs": [
+                                            "id",
+                                            "name",
+                                            "cmdline",
+                                            "parentid",
+                                            "parentname",
+                                            "sha1",
+                                            "md5",
+                                            "user"
+                                        ]
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "Processes",
+                                                    "output": "user",
+                                                    "op": "ENDS_WITH",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "label": "TRACE_TIMELINE.DRILL_DOWN_LINKS.LOGGED_USER_ALL",
+                            "searchQuery": {
+                                "projections": [
+                                    {
+                                        "name": "HostInfo",
+                                        "outputs": [
+                                            "hostname",
+                                            "ip_address"
+                                        ]
+                                    },
+                                    {
+                                        "name": "LoggedInUsers"
+                                    }
+                                ],
+                                "condition": {
+                                    "or": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "name": "LoggedInUsers",
+                                                    "output": "username",
+                                                    "op": "EQUALS",
+                                                    "value": "${user}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "summarizable": true
+                }
+            ],
+            "pidTraceId": "e094ddb8-40d2-4641-a5ca-845824ab9153",
+            "lastActivityTime": "2024-10-07T11:15:26.000Z",
+            "reputationInfo": {
+                "reason": ""
+            }
+        }
+    ]
+}
